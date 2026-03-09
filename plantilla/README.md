@@ -1,256 +1,37 @@
-# Plantilla de Proyectos Intermodulares - IES Serra Perenxisa
+# Plantilla de Proyectos "Nextra Premium 2.0" - IES Serra Perenxisa
 
-Plantilla HTML/CSS/JS para generar proyectos intermodulares con estilo **Nextra** utilizando **Vue.js 3** y **Tailwind CSS**.
+Plantilla HTML/CSS/JS avanzada para generar proyectos intermodulares con un diseño profesional y moderno, utilizando **Vue.js 3** y **Tailwind CSS**.
 
-## ⚠️ IMPORTANTE: Generación de Código
+## ✨ Novedades de la Versión 2.0
+- **Diseño "Nextra Premium"**: Interfaz limpia con efectos de desenfoque (glassmorphism) y tipografía mejorada (*Plus Jakarta Sans*).
+- **Títulos en Negrita**: Todos los encabezados (`h1`, `h2`, `h3`...) tienen un `font-weight` de 800 para mayor impacto visual.
+- **Barra Lateral Retráctil**: Funcionalidad completa para ocultar/mostrar la barra de navegación en escritorio y móvil, con transiciones suaves.
+- **Exportación a Word Mejorada**: Generación de un archivo `.doc` real y funcional directamente desde el navegador mediante Blob, conservando estilos básicos como negritas.
+- **Imagen de Portada Dinámica**: Automatización para descargar una imagen de alta calidad desde **Pexels** y vincularla localmente.
 
-Al generar contenido para esta plantilla, seguir estrictamente las reglas en `../scripts/INSTRUCCIONES-AGENTES.md`.
-
-**Reglas críticas:**
-
-1. **NUNCA usar template literals con backticks (`` ` ``)** en el JavaScript incrustado en HTML
-2. **Usar concatenación de cadenas** con `+` en lugar de `${}`
-3. **No incluir** la librería `html-to-docx` (da problemas de compatibilidad)
-4. **Usar Vue.js production build**: `vue.global.prod.js`
+## ⚠️ REGLAS CRÍTICAS DE GENERACIÓN DE CÓDIGO
+1.  **NUNCA usar template literals con backticks (`` ` ``)** en el JavaScript incrustado en HTML.
+2.  **Usar concatenación de cadenas** con `+` en lugar de `${}`.
+3.  La exportación a Word **DEBE** usar la función `exportWord()` con Blob para ser funcional.
 
 ❌ **INCORRECTO**:
-```javascript
-const header = `<div>${this.projectTitle}</div>`;
-```
+`const header = `<div>\${this.projectTitle}</div>`;`
 
 ✅ **CORRECTO**:
-```javascript
-const header = '<div>' + this.projectTitle + '</div>';
-```
+`const header = '<div>' + this.projectTitle + '</div>';`
 
-## 📁 Estructura del Directorio
+## 🚀 Uso para Agentes LLM
+1.  **Generar Contexto**: El agente debe crear un contexto empresarial y una problemática.
+2.  **Seleccionar Imagen**: El agente debe proponer un término de búsqueda para una imagen en **Pexels**.
+3.  **Descargar Imagen**: El orquestador descargará la imagen y la guardará en `images/hero.jpg`.
+4.  **Generar Contenido**: El agente generará el HTML para cada sección, asegurando que los títulos estén en negrita.
+5.  **Poblar Plantilla**: El contenido se insertará en el objeto `sectionsContent` de Vue.js en `plantilla/index.html`.
 
-```
-plantilla/
-├── index.html              # Plantilla HTML principal
-├── index.js                # Módulo JavaScript con exports
-├── README.md               # Este archivo
-├── sections/               # Secciones del proyecto
-│   ├── 01-introduccion.js
-│   ├── 02-estado-arte.js
-│   ├── 03-viabilidad.js
-│   ├── 04-requisitos.js
-│   ├── 05-diseno.js
-│   ├── 06-implementacion.js
-│   ├── 07-administracion.js
-│   ├── 08-herramientas.js
-│   ├── 09-conclusiones.js
-│   ├── 10-bibliografia.js
-│   └── 11-anexos.js
-└── agents/                 # Agentes LLM (instrucciones)
-    ├── 03-primer-curso.md
-    └── 04-segundo-curso.md
-```
-
-## 🎨 Características
-
-### Estilo Nextra
-- Diseño limpio y moderno inspirado en documentación técnica
-- Sidebar de navegación fija
-- Tipografía Inter para mejor legibilidad
-- Callouts/admoniciones para información destacada
-- Totalmente responsive
-
-### Tecnología
-- **Vue.js 3 (production)** - Reactividad y componentes (`vue.global.prod.js`)
-- **Tailwind CSS** - Estilos utilitarios (vía CDN)
-- **html2pdf.js** - Exportación a PDF
-- **JavaScript ES6+** - Módulos nativos (solo para scripts de Node.js)
-
-**NOTA:** La exportación a DOCX se realiza mediante impresión del navegador debido a problemas de compatibilidad con librerías externas.
-
-### Secciones Incluidas
-
-| Sección | Descripción |
-|---------|-------------|
-| Introducción | Contexto, problemática y objetivos |
-| Estado del Arte | Tecnologías y soluciones existentes |
-| Viabilidad | DAFO, CAME, recursos, planificación |
-| Requisitos | Funcionales, no funcionales, casos de uso |
-| Diseño | Arquitectura, diagramas, modelos |
-| Implementación | Tecnologías, configuración, desarrollo |
-| Administración | Usuarios, monitoreo, seguridad, backups |
-| Herramientas | Git, CI/CD, testing, depuración |
-| Conclusiones | Logros, aprendizajes, mejoras futuras |
-| Bibliografía | Fuentes comentadas |
-| Anexos | Material complementario |
-
-## 🚀 Uso
-
-### Para Agentes LLM
-
-La plantilla está diseñada para ser utilizada por agentes LLM que generarán el contenido de cada sección.
-
-1. **Importar los módulos:**
-```javascript
-import { 
-    generateIntroduccion, 
-    introduccionTemplate,
-    introduccionPrompt 
-} from './plantilla/sections/01-introduccion.js';
-```
-
-2. **Generar contenido:**
-```javascript
-const projectData = {
-    description: 'Descripción del proyecto...',
-    companyContext: 'Contexto empresarial...',
-    problemStatement: 'Problemática...',
-    // ... más datos
-};
-
-const htmlContent = generateIntroduccion(projectData);
-```
-
-3. **Usar el prompt para el agente:**
-```javascript
-const prompt = introduccionPrompt
-    .replace('{curso}', 'Segundo')
-    .replace('{ciclo}', 'ASIR')
-    .replace('{projectTheme}', 'Infraestructura Cloud');
-```
-
-### Para Generación Manual
-
-1. Copiar `index.html` como base
-2. Modificar los datos en el `data()` de Vue:
-```javascript
-data() {
-    return {
-        projectTitle: 'Mi Proyecto',
-        studentName: 'Nombre del Estudiante',
-        tutorName: 'Nombre del Tutor',
-        cycle: 'ASIR',
-        courseYear: 'Segundo',
-        // ...
-    }
-}
-```
-
-3. Rellenar el contenido de cada sección en `sectionsContent`
-
-## 📊 Ciclos Soportados
-
-- **ASIR** - Administración de Sistemas Informáticos en Red
-- **SMR** - Sistemas Microinformáticos y Redes
-- **DAM** - Desarrollo de Aplicaciones Multiplataforma
-- **DAW** - Desarrollo de Aplicaciones Web
-
-## 📚 Cursos
-
-### Primer Curso
-- **Duración:** 25 horas
-- **Objetivo:** Familiarizar con la dinámica de proyectos
-- **Alcance:** Proyecto sencillo
-
-### Segundo Curso
-- **Duración:** 96 horas
-- **Objetivo:** Proyecto integrador completo
-- **Alcance:** Todos los conocimientos del ciclo
-
-## 🎯 Personalización
-
-### Colores
-Editar las variables CSS en `index.html`:
-```css
-:root {
-    --nextra-primary: #0066CC;
-    --nextra-bg: #ffffff;
-    --nextra-bg-subtle: #f9fafb;
-}
-```
-
-### Logo
-Reemplazar el base64 del logo en el componente Vue:
-```javascript
-logoBase64: 'data:image/png;base64,...'
-```
-
-### Secciones
-Añadir/eliminar secciones en el array `sections`:
-```javascript
-sections: [
-    { id: 'nueva-seccion', title: 'Nueva Sección' },
-    // ...
-]
-```
-
-## 📝 Ejemplo de Uso con Agente
-
-```javascript
-// 1. Importar funciones
-import { 
-    generateCompletePrompt,
-    createEmptyProjectStructure 
-} from './plantilla/index.js';
-
-// 2. Generar prompts para el agente
-const prompts = generateCompletePrompt(
-    'ASIR', 
-    'SEGUNDO', 
-    'Infraestructura Cloud para Startup Fintech'
-);
-
-// 3. Enviar al agente LLM
-const introduccionContent = await callLLM(prompts.introduccion);
-
-// 4. Generar HTML
-const html = generateIntroduccion(introduccionContent);
-
-// 5. Insertar en la plantilla
-app.sectionsContent.introduccion = html;
-```
-
-## 🔧 Desarrollo
-
-### Añadir Nueva Sección
-
-1. Crear archivo en `sections/XX-nombre.js`:
-```javascript
-export function generateNombre(projectData) {
-    return `<div class="prose">...</div>`;
-}
-
-export const nombreTemplate = {
-    // estructura de datos
-};
-
-export const nombrePrompt = `
-// Prompt para el agente LLM
-`;
-```
-
-2. Exportar en `index.js`:
-```javascript
-export { 
-    generateNombre, 
-    nombreTemplate, 
-    nombrePrompt 
-} from './sections/XX-nombre.js';
-```
-
-3. Añadir en `index.html`:
-```javascript
-sections: [
-    // ...
-    { id: 'nombre', title: 'Nombre Sección' },
-]
-```
-
-## 📄 Licencia
-
-Misma licencia que el proyecto principal: **CC BY-NC-SA 4.0**
-
-## 👨‍💻 Autores
-
-Departamento de Informática - IES Serra Perenxisa
+## 🔧 Personalización
+- **Colores**: Edita las variables CSS en la sección `<style>` de `index.html`.
+- **Logo**: Reemplaza la ruta a `logo.png` o modifica la variable `logoUrl` en Vue.
+- **Imagen de Portada**: La imagen se gestiona a través de la variable `projectImage` en Vue, que debe apuntar a `./images/hero.jpg`.
 
 ---
-
-**Versión:** 1.0  
+**Versión:** 2.0
 **Última actualización:** Marzo 2026

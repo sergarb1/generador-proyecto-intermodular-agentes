@@ -23,10 +23,7 @@
             --text-muted: #64748b;
         }
 
-        * {
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-        }
+        * { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
 
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -36,11 +33,14 @@
             overflow-x: hidden;
         }
 
-        /* Scrollbar */
-        ::-webkit-scrollbar { width: 8px; height: 8px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        /* Titles in Bold */
+        h1, h2, h3, h4, h5, h6 { font-weight: 800 !important; color: #0f172a; }
+
+        h1 { font-size: 2.5rem; letter-spacing: -0.025em; margin-bottom: 1.5rem; line-height: 1.2; }
+        h2 { font-size: 1.875rem; letter-spacing: -0.025em; margin-top: 3.5rem; margin-bottom: 1.25rem; border-bottom: 2px solid #f1f5f9; padding-bottom: 0.75rem; }
+        h3 { font-size: 1.25rem; margin-top: 2rem; margin-bottom: 1rem; color: #334155; }
+        
+        p { margin-bottom: 1.5rem; color: #475569; text-align: justify; }
 
         /* Sidebar Styles */
         .sidebar {
@@ -50,129 +50,58 @@
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             will-change: transform;
         }
-
         .sidebar-collapsed { transform: translateX(-100%); }
 
-        .main-container {
-            transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            margin-left: var(--sidebar-width);
-        }
-
+        .main-container { transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1); margin-left: var(--sidebar-width); }
         .main-container-expanded { margin-left: 0; }
 
-        @media (max-width: 1024px) {
-            .main-container { margin-left: 0; }
-        }
+        @media (max-width: 1024px) { .main-container { margin-left: 0; } }
 
         /* Nav Items */
         .nav-item {
-            display: flex;
-            align-items: center;
-            padding: 0.625rem 1rem;
-            margin: 0.25rem 0.75rem;
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--text-muted);
-            border-radius: 0.5rem;
-            transition: all 0.2s;
-            text-decoration: none;
+            display: flex; align-items: center; padding: 0.625rem 1rem; margin: 0.25rem 0.75rem;
+            font-size: 0.875rem; font-weight: 600; color: var(--text-muted); border-radius: 0.5rem;
+            transition: all 0.2s; text-decoration: none;
         }
-
         .nav-item:hover { background-color: #f1f5f9; color: var(--text-main); }
-        .nav-item.active { background-color: #eff6ff; color: var(--primary); font-weight: 600; }
+        .nav-item.active { background-color: #eff6ff; color: var(--primary); }
 
-        /* Header */
         header {
-            height: var(--header-height);
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            height: var(--header-height); background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
         }
 
-        /* Typography */
-        h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -0.025em; margin-bottom: 1.5rem; color: #0f172a; line-height: 1.2; }
-        h2 { font-size: 1.875rem; font-weight: 700; letter-spacing: -0.025em; margin-top: 3.5rem; margin-bottom: 1.25rem; color: #1e293b; border-bottom: 1px solid #f1f5f9; padding-bottom: 0.75rem; }
-        h3 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #334155; }
-        p { margin-bottom: 1.5rem; color: #475569; text-align: justify; }
-
-        /* Callouts */
-        .callout {
-            position: relative;
-            padding: 1.25rem 1.5rem;
-            border-radius: 0.75rem;
-            margin: 2rem 0;
-            border: 1px solid transparent;
-            display: flex;
-            gap: 1rem;
-        }
-        .callout-info { background: #f0f9ff; border-color: #bae6fd; color: #0369a1; }
-        .callout-warning { background: #fffbeb; border-color: #fef3c7; color: #92400e; }
-        .callout-danger { background: #fef2f2; border-color: #fecaca; color: #b91c1c; }
-        .callout-icon { font-size: 1.25rem; flex-shrink: 0; margin-top: 0.125rem; }
-
-        /* Tables */
-        .table-container { overflow-x: auto; margin: 2rem 0; border-radius: 0.75rem; border: 1px solid var(--border); }
-        table { width: 100%; border-collapse: collapse; background: white; }
-        th { background: #f8fafc; padding: 0.75rem 1rem; text-align: left; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #64748b; border-bottom: 1px solid var(--border); }
-        td { padding: 1rem; font-size: 0.875rem; border-bottom: 1px solid #f1f5f9; color: #334155; }
-        tr:last-child td { border-bottom: none; }
-        tr:hover { background: #f8fafc; }
-
-        /* Code */
-        code { font-family: 'JetBrains Mono', monospace; background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 0.375rem; font-size: 0.85em; color: #e11d48; }
-        pre { background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; overflow-x: auto; margin: 1.5rem 0; position: relative; }
-        pre code { background: none; padding: 0; color: #f8fafc; }
-
-        /* Buttons */
-        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.625rem 1.25rem; border-radius: 0.5rem; font-weight: 600; font-size: 0.875rem; transition: all 0.2s; cursor: pointer; }
-        .btn-primary { background: var(--primary); color: white; box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.1); }
-        .btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2); }
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.625rem 1.25rem; border-radius: 0.5rem; font-weight: 700; font-size: 0.875rem; transition: all 0.2s; cursor: pointer; }
+        .btn-primary { background: var(--primary); color: white; }
         .btn-secondary { background: white; color: var(--text-main); border: 1px solid var(--border); }
-        .btn-secondary:hover { background: #f8fafc; border-color: #cbd5e1; }
 
-        /* Logo */
         .logo-container { background: white; padding: 0.5rem; border-radius: 0.75rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; }
 
         @media print {
             .sidebar, header, .btn, .no-print { display: none !important; }
             .main-container { margin-left: 0 !important; }
             .content-area { max-width: 100%; padding: 0; }
-            body { font-size: 11pt; }
         }
     </style>
 </head>
 <body>
     <div id="app" class="min-h-screen">
-        <!-- Overlay -->
-        <div v-if="sidebarOpen" @click="sidebarOpen = false"
-             class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-30 lg:hidden transition-opacity"></div>
+        <div v-if="sidebarOpen" @click="sidebarOpen = false" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-30 lg:hidden transition-opacity"></div>
 
-        <!-- Sidebar -->
-        <aside class="sidebar fixed inset-y-0 left-0 z-40 overflow-y-auto"
-               :class="{ 'sidebar-collapsed': !sidebarOpen }">
+        <aside class="sidebar fixed inset-y-0 left-0 z-40 overflow-y-auto" :class="{ 'sidebar-collapsed': !sidebarOpen }">
             <div class="h-16 flex items-center px-6 border-b border-slate-200 bg-white sticky top-0">
                 <div class="flex items-center gap-3">
-                    <div class="logo-container">
-                        <img :src="logoUrl" alt="Logo" class="max-h-full object-contain">
-                    </div>
+                    <div class="logo-container"><img :src="logoUrl" alt="Logo" class="max-h-full object-contain"></div>
                     <div>
                         <h2 class="text-sm font-bold m-0 p-0 border-none leading-none">Serra Perenxisa</h2>
                         <p class="text-[10px] text-slate-500 m-0 leading-tight mt-1">{{ cycle }} - {{ courseYear }}</p>
                     </div>
                 </div>
             </div>
-
             <nav class="py-6 px-3">
-                <div class="px-3 mb-2">
-                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Contenido</span>
-                </div>
-                <a href="#inicio" class="nav-item" :class="{ active: activeSection === 'inicio' }" @click="activeSection = 'inicio'">
-                    Portada
-                </a>
-                <a href="#resumen" class="nav-item" :class="{ active: activeSection === 'resumen' }" @click="activeSection = 'resumen'">
-                    Resumen
-                </a>
+                <a href="#inicio" class="nav-item" :class="{ active: activeSection === 'inicio' }" @click="activeSection = 'inicio'">Portada</a>
+                <a href="#resumen" class="nav-item" :class="{ active: activeSection === 'resumen' }" @click="activeSection = 'resumen'">Resumen</a>
                 <div class="my-4 border-t border-slate-100 mx-3"></div>
                 <a v-for="section in sections" :key="section.id" :href="'#' + section.id" class="nav-item" :class="{ active: activeSection === section.id }" @click="activeSection = section.id">
                     {{ section.title }}
@@ -180,36 +109,30 @@
             </nav>
         </aside>
 
-        <!-- Main Container -->
         <div class="main-container" :class="{ 'main-container-expanded': !sidebarOpen }">
-            <header class="fixed top-0 right-0 left-0 z-30 flex items-center justify-between px-4 sm:px-8"
-                    :class="sidebarOpen ? 'lg:left-[280px]' : 'left-0'" style="transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+            <header class="fixed top-0 right-0 left-0 z-30 flex items-center justify-between px-4 sm:px-8" :class="sidebarOpen ? 'lg:left-[280px]' : 'left-0'" style="transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
                 <div class="flex items-center gap-4">
                     <button @click="sidebarOpen = !sidebarOpen" class="p-2 rounded-lg hover:bg-slate-100 text-slate-600 transition-colors">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
                     </button>
                     <h1 class="text-sm font-bold text-slate-900 truncate max-w-[200px] sm:max-w-md m-0 border-none leading-none">{{ projectTitle }}</h1>
                 </div>
-
                 <div class="flex items-center gap-2">
-                    <button @click="exportPDF" class="btn btn-secondary text-red-600 border-red-100 hover:bg-red-50">PDF</button>
+                    <button @click="exportPDF" class="btn btn-secondary text-red-600">PDF</button>
                     <button @click="exportWord" class="btn btn-primary">Word</button>
                 </div>
             </header>
 
             <main id="export-content" class="max-w-[840px] mx-auto px-6 py-20">
-                <!-- Portada -->
                 <section id="inicio" class="text-center py-12 mb-20">
                     <div class="inline-block p-4 bg-slate-50 rounded-2xl mb-8 border border-slate-100 shadow-sm">
                         <img :src="logoUrl" alt="Logo Centro" class="h-24 mx-auto object-contain">
                     </div>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl">{{ projectTitle }}</h1>
                     <p class="text-xl text-slate-500 mb-12 max-w-2xl mx-auto">Proyecto Intermodular Final de Ciclo Formativo de Grado Superior en {{ cycle }}</p>
-                    
                     <div v-if="projectImage" class="relative group">
                         <img :src="projectImage" alt="Hero" class="relative rounded-2xl shadow-2xl w-full max-w-4xl mx-auto border border-slate-200">
                     </div>
-
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 text-left">
                         <div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
                             <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Autoría</span>
@@ -230,16 +153,8 @@
                     </div>
                 </section>
 
-                <section id="resumen" class="mb-16 scroll-mt-24">
-                    <h2>Resumen / Abstract</h2>
-                    <div v-html="sectionsContent.resumen"></div>
-                </section>
-
-                <section v-for="section in sections" :key="section.id" :id="section.id" class="mb-20 scroll-mt-24">
-                    <h2>{{ section.title }}</h2>
-                    <div v-html="getSectionContent(section.id)"></div>
-                </section>
-
+                <section id="resumen" class="mb-16 scroll-mt-24"><h2>Resumen / Abstract</h2><div v-html="sectionsContent.resumen"></div></section>
+                <section v-for="section in sections" :key="section.id" :id="section.id" class="mb-20 scroll-mt-24"><h2>{{ section.title }}</h2><div v-html="getSectionContent(section.id)"></div></section>
                 <section id="bibliografia" class="mb-16 scroll-mt-24"><h2>Bibliografía</h2><div v-html="sectionsContent.bibliografia"></div></section>
                 <section id="anexos" class="mb-16 scroll-mt-24"><h2>Anexos</h2><div v-html="sectionsContent.anexos"></div></section>
             </main>
@@ -257,30 +172,18 @@
         createApp({
             data() {
                 return {
-                    sidebarOpen: true,
-                    activeSection: 'inicio',
-                    projectTitle: 'Título del Proyecto',
-                    studentName: 'Estudiante',
-                    tutorName: 'Tutor/a',
-                    cycle: 'CICLO',
-                    courseYear: 'Segundo',
+                    sidebarOpen: true, activeSection: 'inicio', projectTitle: 'Título del Proyecto',
+                    studentName: 'Estudiante', tutorName: 'Tutor/a', cycle: 'CICLO', courseYear: 'Segundo',
                     currentDate: new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }),
-                    logoUrl: './logo.png',
-                    projectImage: './images/hero.jpg',
+                    logoUrl: './logo.png', projectImage: './images/hero.jpg',
                     sections: [
-                        { id: 'introduccion', title: '1. Introducción' },
-                        { id: 'estado-arte', title: '2. Estado del Arte' },
-                        { id: 'viabilidad', title: '3. Estudio de Viabilidad' },
-                        { id: 'requisitos', title: '4. Análisis de Requisitos' },
-                        { id: 'diseno', title: '5. Diseño' },
-                        { id: 'implementacion', title: '6. Implementación' },
-                        { id: 'administracion', title: '7. Administración' },
-                        { id: 'herramientas', title: '8. Herramientas de Apoyo' },
+                        { id: 'introduccion', title: '1. Introducción' }, { id: 'estado-arte', title: '2. Estado del Arte' },
+                        { id: 'viabilidad', title: '3. Estudio de Viabilidad' }, { id: 'requisitos', title: '4. Análisis de Requisitos' },
+                        { id: 'diseno', title: '5. Diseño' }, { id: 'implementacion', title: '6. Implementación' },
+                        { id: 'administracion', title: '7. Administración' }, { id: 'herramientas', title: '8. Herramientas de Apoyo' },
                         { id: 'conclusiones', title: '9. Conclusiones' }
                     ],
-                    sectionsContent: {
-                        resumen: '', introduccion: '', 'estado-arte': '', viabilidad: '', requisitos: '', diseno: '', implementacion: '', administracion: '', herramientas: '', conclusiones: '', bibliografia: '', anexos: ''
-                    }
+                    sectionsContent: { resumen: '', introduccion: '', 'estado-arte': '', viabilidad: '', requisitos: '', diseno: '', implementacion: '', administracion: '', herramientas: '', conclusiones: '', bibliografia: '', anexos: '' }
                 }
             },
             methods: {
@@ -292,7 +195,7 @@
                 },
                 exportWord() {
                     const content = document.getElementById('export-content').innerHTML;
-                    const header = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><style>body { font-family: sans-serif; }</style></head><body>";
+                    const header = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><style>body { font-family: sans-serif; } h1,h2,h3 { font-weight: bold; }</style></head><body>";
                     const footer = "</body></html>";
                     const blob = new Blob(['\ufeff', header + content + footer], { type: 'application/msword' });
                     const url = URL.createObjectURL(blob);

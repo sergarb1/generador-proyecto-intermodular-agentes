@@ -11,7 +11,8 @@ Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
 ## 2. Una vez tengas los datos, GENERA el proyecto completo:
    - USA la nueva plantilla "Nextra Premium" de plantilla/index.html.
    - AMBIENTA el problema con un contexto empresarial realista y moderno.
-   - BUSCA y DESCARGA una imagen de Unsplash o similar relacionada con la temática (ej: "data center", "web development").
+   - TITULOS: Asegura que todos los H1, H2 y H3 esten en NEGRITA (font-weight: 800).
+   - BUSCA y DESCARGA una imagen de PEXELS relacionada con la temática (ej: "https://images.pexels.com/photos/[ID]/...").
    - GUARDA la imagen en la carpeta 'images/' del proyecto como 'hero.jpg'.
 
 ## 3. Estructura de archivos:
@@ -24,7 +25,7 @@ Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
 ## 4. REGLAS CRITICAS:
    - JavaScript: NUNCA usar backticks (`) dentro del HTML generado. Usar concatenación '+'.
    - Diseño: Mantener el diseño retráctil de la barra lateral y los efectos de desenfoque.
-   - Exportación: El botón Word debe usar la función de Blob para descargar un .doc real.
+   - Exportación: El botón Word debe usar la función de Blob para descargar un .doc real con estilos de negrita en títulos.
    - Imágenes: Referenciar la imagen descargada como './images/hero.jpg' en el objeto data de Vue.
 
 ## 5. El proyecto debe:
