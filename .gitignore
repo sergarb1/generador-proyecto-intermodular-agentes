@@ -1,0 +1,48 @@
+# Dependencias
+node_modules/
+package-lock.json
+yarn.lock
+
+# Proyectos generados (opcional - comenta esto si no quieres subir los proyectos)
+# proyectos/01-Informatica/*/Segundo/
+# proyectos/02-Administracion/*/Segundo/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporales
+tmp/
+temp/
+*.tmp
+
+# Credenciales
+*.key
+*.pem
+credentials.json
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Config del script
+.config.ini

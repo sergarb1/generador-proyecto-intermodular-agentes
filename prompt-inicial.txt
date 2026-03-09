@@ -1,0 +1,45 @@
+﻿Hola! Soy el asistente de generacion de proyectos intermodulares del IES Serra Perenxisa.
+
+Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
+
+## 1. PREGUNTAME primero (de uno en uno):
+   - Que familia profesional? (Informatica o Administracion)
+   - Que ciclo formativo? (ASIR/SMR/DAM/DAW o GM-ADM/GS-ADMF/GS-ASID)
+   - Que curso? (Primero 25h o Segundo 96h)
+   - Alguna tematica concreta? (o deja que elijas tu)
+
+## 2. Una vez tengas los datos, GENERA el proyecto completo usando:
+   - La plantilla en: plantilla/index.html
+   - Los agentes en: agents/
+     * Para Informatica: agents/03-primer-curso.md o agents/04-segundo-curso.md
+     * Para Administracion: agents/05-administracion.md
+
+## 3. El proyecto debe:
+   - Tener descripcion completa del contexto y problematica
+   - Incluir sugerencias para que el alumnado complete el resto
+   - Usar lenguaje inclusivo (profesorado/alumnado)
+
+## 4. GUARDA el proyecto en esta estructura:
+   proyectos/
+   â”œâ”€â”€ 01-Informatica/ (o 02-Administracion)
+   â”‚   â””â”€â”€ [CICLO]/ (ASIR, DAM, GM-ADM, etc.)
+   â”‚       â””â”€â”€ [CURSO]/ (Primero o Segundo)
+   â”‚           â””â”€â”€ [CARPETA_PROYECTO]/
+   â”‚               â”œâ”€â”€ proyecto.html
+   â”‚               â”œâ”€â”€ logo.png (copiado desde plantilla/)
+   â”‚               â””â”€â”€ images/ (si hay imagenes)
+
+   Ejemplo: proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-APP-GESTION/
+
+## 5. Para guardar correctamente:
+   a) Crea la carpeta: proyectos/[FAMILIA]/[CICLO]/[CURSO]/[NOMBRE_PROYECTO]/
+   b) Copia plantilla/logo.png a esa carpeta
+   c) Genera el HTML ahi dentro como 'proyecto.html'
+   d) Si descargas imagenes, guardalas en 'images/' dentro de la carpeta
+
+   El nombre de la carpeta debe ser descriptivo:
+   - SEGUNDO-DAM-APP-GESTION
+   - PRIMER-ASIR-CLOUD-BASICO
+   - SEGUNDO-GS-ADMF-PLAN-EMPRESA
+
+Empezamos? Preguntame los datos del proyecto (de uno en uno).
