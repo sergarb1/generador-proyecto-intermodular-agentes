@@ -1,21 +1,14 @@
 /**
  * Sección: Introducción
  * 
- * Esta sección presenta el proyecto, su contexto, objetivos y la problemática que resuelve.
+ * 👋 ¡Bienvenido al inicio de tu gran proyecto! Esta es la carta de presentación.
+ * Aquí explicas el "qué", el "por qué" y el "para quién".
  * 
- * NOTA PARA EL ALUMNO: Esta sección debe ser completada por ti con la información
- * de tu proyecto específico. Las sugerencias a continuación te guiarán.
- * 
- * Estructura esperada:
- * - Breve descripción del proyecto y su objetivo
- * - Contexto donde se desarrollará el proyecto
- * - Problemática existente y cómo se está solucionando actualmente
- * - Propuesta para mejorar o solucionar el problema
- * - Reflexiones o dudas que se resolverán en el proyecto
- * 
- * @param {Object} projectData - Datos del proyecto proporcionados por el agente
- * @returns {String} HTML content for the introduction section
+ * ⏱️ Tiempo estimado: 45-60 minutos (¡no te agobies, ve paso a paso!)
  */
+
+export const introduccionIcon = '👋';
+
 export function generateIntroduccion(projectData) {
     const {
         projectTitle,
@@ -28,134 +21,124 @@ export function generateIntroduccion(projectData) {
     } = projectData;
 
     return `
-        <div class="prose">
-            <div class="callout callout-info mb-6">
+        <div class="prose max-w-none">
+            <div class="estimate-badge">
+                <span>⏱️</span> Tiempo estimado: 60 min.
+            </div>
+
+            <div class="callout callout-info mb-8">
                 <div class="callout-title">
-                    <span>📝</span>
-                    <span>Instrucciones para el alumno</span>
+                    <span>💡</span>
+                    <span>¿Qué estamos haciendo aquí?</span>
                 </div>
-                <p class="text-sm">
-                    Completa esta sección con la información de tu proyecto. Debes escribir aproximadamente 
-                    <strong>2-3 páginas</strong> cubriendo todos los puntos que se indican a continuación.
+                <p>
+                    La introducción es donde enganchas al lector. Debes contar una historia: 
+                    hay una empresa, tienen un problema que les quita el sueño, y tú tienes la solución mágica.
                 </p>
+                <div class="mt-4 p-3 bg-blue-100/50 rounded-lg border border-blue-200">
+                    <p class="text-xs font-bold mb-1">🚀 CONSEJO RÁPIDO:</p>
+                    <p class="text-xs m-0">No intentes escribirlo todo de una vez. Primero rellena los huecos y luego une los párrafos.</p>
+                </div>
             </div>
 
             <h3 id="descripcion-proyecto">1.1. Descripción del Proyecto</h3>
             <div class="callout callout-warning">
-                <p><strong>Lo que debes incluir:</strong></p>
+                <div class="callout-title">
+                    <span>📝</span>
+                    <span>Tu misión en esta parte:</span>
+                </div>
                 <ul>
-                    <li>Explica en qué consiste tu proyecto con tus propias palabras</li>
-                    <li>Describe el contexto empresarial proporcionado</li>
-                    <li>Indica cuál es tu rol en este proyecto</li>
+                    <li>Presenta el nombre de tu proyecto (que suene potente).</li>
+                    <li>Explica en 3 frases qué vas a montar.</li>
+                    <li>Di claramente qué vas a aportar tú como experto/a.</li>
                 </ul>
-                <p class="mt-2 text-sm text-gray-600">
-                    💡 <strong>Sugerencia:</strong> Comienza con un párrafo introductorio que presente el proyecto, 
-                    luego describe la empresa y finalmente explica qué vas a hacer tú.
-                </p>
             </div>
-            <p class="text-gray-500 italic">[Escribe aquí tu descripción del proyecto - mínimo 2 párrafos]</p>
+            <p class="text-gray-400 italic bg-slate-50 p-4 rounded-lg border-2 border-dashed border-slate-200">
+                [Escribe aquí tu descripción - Imagina que se lo cuentas a un amigo que no sabe nada de informática]
+            </p>
 
             <h3 id="contexto-empresarial">1.2. Contexto Empresarial</h3>
-            <div class="bg-gray-50 p-4 rounded-lg mb-4">
-                <p class="font-medium mb-2">Información del contexto:</p>
-                <p class="text-sm">${companyContext || '[Contexto proporcionado por el profesor]'}</p>
-            </div>
-            <div class="callout callout-warning">
-                <p><strong>Lo que debes investigar:</strong></p>
-                <ul>
-                    <li>¿A qué se dedica esta empresa?</li>
-                    <li>¿Cuál es su tamaño (número de empleados, facturación)?</li>
-                    <li>¿Qué tecnologías utiliza actualmente?</li>
-                </ul>
-            </div>
-            <p class="text-gray-500 italic">[Amplía la información del contexto empresarial - mínimo 1 párrafo]</p>
-
-            <div class="callout callout-warning my-6">
-                <div class="callout-title">
-                    <span>⚠️</span>
-                    <span>Problemática Detectada</span>
+            <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 mb-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-2xl">🏢</span>
+                    <h4 class="text-lg font-bold m-0 p-0 border-none">La Empresa</h4>
                 </div>
-                <p class="mb-2"><strong>Descripción de la problemática:</strong></p>
-                <p class="text-sm">${problemStatement || '[Problemática proporcionada por el profesor]'}</p>
-                <p class="mt-4"><strong>Lo que debes explicar:</strong></p>
-                <ul>
-                    <li>¿Por qué es un problema esta situación?</li>
-                    <li>¿A quién afecta?</li>
-                    <li>¿Qué consecuencias tiene no resolverlo?</li>
-                </ul>
+                <p class="text-sm leading-relaxed">${companyContext || 'Aquí aparecerá la descripción de la empresa que te han dado.'}</p>
             </div>
-            <p class="text-gray-500 italic">[Explica la problemática con tus palabras - mínimo 1 párrafo]</p>
+
+            <div class="callout callout-warning">
+                <div class="callout-title">
+                    <span>🔍</span>
+                    <span>Investiga un poco:</span>
+                </div>
+                <p>Busca en Google empresas similares. ¿Cuánta gente suele trabajar ahí? ¿Qué software usan? ¡Añade esos detalles para que parezca real!</p>
+            </div>
+
+            <div class="callout callout-error my-8">
+                <div class="callout-title">
+                    <span>🔥</span>
+                    <span>¡Tenemos un problema!</span>
+                </div>
+                <p class="font-bold mb-2">Lo que está fallando:</p>
+                <p class="text-sm opacity-90">${problemStatement || 'Aquí se describirá el problema a resolver.'}</p>
+                <hr class="my-3 border-red-200 opacity-30">
+                <p class="text-xs italic">¿Qué pasa si no lo arreglamos? ¿Pierden dinero? ¿Se enfadan los clientes? ¡Cuéntalo!</p>
+            </div>
 
             <h3 id="situacion-actual">1.3. Situación Actual</h3>
             <div class="callout callout-warning">
-                <p><strong>Debes describir:</strong></p>
-                <ul>
-                    <li>¿Cómo se está solucionando el problema actualmente?</li>
-                    <li>¿Qué limitaciones tiene la solución actual?</li>
-                    <li>¿Por qué es necesario un cambio?</li>
-                </ul>
-            </div>
-            <p class="text-gray-500 italic">[Describe la situación actual - mínimo 1 párrafo]</p>
-
-            <div class="callout callout-success my-6">
                 <div class="callout-title">
-                    <span>✅</span>
-                    <span>Propuesta de Mejora</span>
+                    <span>🕰️</span>
+                    <span>¿Cómo lo hacen ahora?</span>
                 </div>
-                <p class="mb-2"><strong>Tu propuesta debe incluir:</strong></p>
-                <p class="text-sm">${proposedSolution || '[Descripción de la propuesta proporcionada por el profesor]'}</p>
+                <p>Explica esa forma "antigua" o "manual" de trabajar que tienen ahora. Destaca por qué es un rollo o por qué falla tanto.</p>
             </div>
-            <div class="callout callout-warning">
-                <p><strong>Lo que debes explicar:</strong></p>
-                <ul>
-                    <li>¿En qué consiste tu solución?</li>
-                    <li>¿Cómo resuelve la problemática?</li>
-                    <li>¿Qué ventajas tiene sobre la situación actual?</li>
-                </ul>
+            <p class="text-gray-400 italic bg-slate-50 p-4 rounded-lg border-2 border-dashed border-slate-200">[Describe el "caos" actual]</p>
+
+            <div class="callout callout-success my-8">
+                <div class="callout-title">
+                    <span>✨</span>
+                    <span>Tu Propuesta Estrella</span>
+                </div>
+                <p class="mb-4">${proposedSolution || 'Aquí va tu idea para salvar el día.'}</p>
+                <div class="bg-white/50 p-3 rounded-lg text-sm">
+                    <strong>Beneficios:</strong>
+                    <ul class="mt-1">
+                        <li>✅ Más rapidez</li>
+                        <li>✅ Cero errores</li>
+                        <li>✅ Clientes felices</li>
+                    </ul>
+                </div>
             </div>
-            <p class="text-gray-500 italic">[Describe tu propuesta de mejora - mínimo 2 párrafos]</p>
 
             <h3 id="objetivos-principales">1.4. Objetivos del Proyecto</h3>
-            <div class="callout callout-warning">
-                <p><strong>Debes definir 3-5 objetivos SMART:</strong></p>
-                <ul>
-                    <li>Específicos (qué exactamente)</li>
-                    <li>Medibles (cómo sabrás que lo has conseguido)</li>
-                    <li>Alcanzables (que puedas realizar en el tiempo disponible)</li>
-                    <li>Relevantes (que importen para el negocio)</li>
-                    <li>Temporales (con plazo definido)</li>
-                </ul>
+            <div class="callout callout-info">
+                <div class="callout-title">
+                    <span>🎯</span>
+                    <span>Apunta y dispara</span>
+                </div>
+                <p>Define 3 cosas concretas que vas a conseguir. Que sean REALISTAS (no digas que vas a hackear la NASA en una tarde).</p>
             </div>
-            <ul class="list-none">
+            <ul class="space-y-3 mt-4">
                 ${(projectGoals || []).length > 0 
-                    ? (projectGoals || []).map(goal => `<li class="mb-2">✅ <strong>Objetivo proporcionado:</strong> ${goal}</li>`).join('\n                ')
-                    : '<li class="text-gray-500 italic">[Escribe aquí tu primer objetivo]</li>\n                <li class="text-gray-500 italic">[Escribe aquí tu segundo objetivo]</li>\n                <li class="text-gray-500 italic">[Escribe aquí tu tercer objetivo]</li>'
+                    ? (projectGoals || []).map(goal => `
+                        <li class="flex items-start gap-3 p-3 bg-white border border-slate-100 rounded-xl shadow-sm">
+                            <span class="text-green-500 font-bold">✓</span>
+                            <span class="text-slate-700">${goal}</span>
+                        </li>`).join('\n                ')
+                    : '<li class="text-slate-400 italic border-b border-slate-100 pb-2">Objetivo 1: ...</li>\n                <li class="text-slate-400 italic border-b border-slate-100 pb-2">Objetivo 2: ...</li>'
                 }
             </ul>
 
-            <h3 id="preguntas-clave">1.5. Preguntas Clave</h3>
-            <div class="callout callout-warning">
-                <p><strong>Formula 2-4 preguntas que tu proyecto resolverá:</strong></p>
-            </div>
-            <ol>
-                ${(keyQuestions || []).length > 0 
-                    ? (keyQuestions || []).map(question => `<li>${question}</li>`).join('\n                ')
-                    : '<li class="text-gray-500 italic">[Escribe aquí tu primera pregunta]</li>\n                <li class="text-gray-500 italic">[Escribe aquí tu segunda pregunta]</li>'
-                }
-            </ol>
-
-            <div class="callout callout-info mt-8">
-                <div class="callout-title">
-                    <span>📊</span>
-                    <span>Criterios de Evaluación</span>
-                </div>
-                <p class="text-sm">Esta sección se evaluará considerando:</p>
-                <ul class="text-sm">
-                    <li>✓ Claridad en la descripción del proyecto</li>
-                    <li>✓ Comprensión del contexto empresarial</li>
-                    <li>✓ Coherencia entre problemática y solución propuesta</li>
-                    <li>✓ Objetivos bien definidos y medibles</li>
-                    <li>✓ Redacción clara y sin faltas de ortografía</li>
+            <div class="mt-12 p-6 bg-slate-900 rounded-2xl text-white shadow-xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10 text-6xl rotate-12">🏆</div>
+                <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                    <span>⭐</span> Lista de verificación final
+                </h4>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li class="flex items-center gap-2"><input type="checkbox" class="rounded"> ¿Has explicado bien quién eres y qué haces?</li>
+                    <li class="flex items-center gap-2"><input type="checkbox" class="rounded"> ¿Se entiende el problema sin ser experto?</li>
+                    <li class="flex items-center gap-2"><input type="checkbox" class="rounded"> ¿Has puesto objetivos que se puedan medir?</li>
                 </ul>
             </div>
         </div>
@@ -163,10 +146,10 @@ export function generateIntroduccion(projectData) {
 }
 
 /**
- * Template vacío para que el agente LLM sepa qué datos debe generar
+ * Template vacío con datos estructurados
  */
 export const introduccionTemplate = {
-    description: '',
+    projectTitle: '',
     companyContext: '',
     problemStatement: '',
     currentSolution: '',
@@ -176,27 +159,31 @@ export const introduccionTemplate = {
 };
 
 /**
- * Prompt para el agente LLM
+ * Prompt pedagógico para el agente
  */
 export const introduccionPrompt = `
-Genera el contenido para la sección de INTRODUCCIÓN de un proyecto intermodular de {curso} curso de {ciclo}.
+Eres un tutor experto, empático y con mucha gracia que ayuda a alumnos con TDAH. 
+Tu misión es generar el contenido de la INTRODUCCIÓN de su proyecto intermodular.
 
-El proyecto trata sobre: {projectTheme}
+PROYECTO: {projectTheme}
+CURSO: {curso}
+CICLO: {ciclo}
 
-Contexto de la empresa: {companyContext}
+REGLAS DE ORO:
+1. Usa un lenguaje muy claro y visual.
+2. Divide el texto en párrafos cortos (máximo 4 líneas).
+3. Usa negritas para conceptos clave.
+4. Sé motivador, como un "coach" técnico.
+5. NO uses lenguaje aburrido de BOE o leyes.
 
-Debes incluir:
-1. Una descripción clara del proyecto (2-3 párrafos)
-2. El contexto empresarial donde se enmarca
-3. La problemática que se busca resolver
-4. Cómo se está solucionando actualmente
-5. Tu propuesta de mejora
-6. 3-5 objetivos principales del proyecto
-7. 2-4 preguntas clave que el proyecto resolverá
+CONTENIDO A GENERAR (en formato JSON para que lo use la plantilla):
+- projectTitle: Un título que mole.
+- companyContext: Descripción de la empresa ficticia (sector, tamaño, tecnología).
+- problemStatement: Qué les duele (por qué necesitan ayuda).
+- currentSolution: Cómo se apañan ahora (normalmente mal).
+- proposedSolution: Tu gran idea técnica.
+- projectGoals: Lista de 3-5 objetivos SMART.
+- keyQuestions: 2-3 dudas que el proyecto aclarará.
 
-IMPORTANTE:
-- Usa un tono profesional pero accesible
-- Evita lenguaje académico (no menciones RD, BOE, Resultados de Aprendizaje)
-- Enfócate en el valor de negocio y técnico
-- Longitud mínima: 500 palabras
+Asegúrate de que el contenido sea tan interesante que el alumno quiera empezar a leerlo ya mismo.
 `;

@@ -1,213 +1,120 @@
 /**
  * Sección: Conclusiones
  * 
- * Reflexiones sobre el trabajo realizado, logros, limitaciones y mejoras futuras.
+ * 🏁 ¡Meta alcanzada!
+ * Aquí reflexionamos sobre lo que hemos conseguido, lo que nos ha costado y lo que haríamos después.
  * 
- * Estructura esperada:
- * - Conclusiones sobre el trabajo realizado
- * - Conclusiones personales
- * - Posibles ampliaciones y mejoras
- * 
- * @param {Object} projectData - Datos del proyecto
- * @returns {String} HTML content
+ * ⏱️ Tiempo estimado: 60-75 minutos.
  */
+
+export const conclusionesIcon = '🏁';
+
 export function generateConclusiones(projectData) {
     const {
         projectConclusions,
         personalConclusions,
-        futureImprovements,
-        lessonsLearned
+        futureImprovements
     } = projectData;
 
     return `
-        <div class="prose">
-            <h3 id="conclusiones-trabajo">Conclusiones sobre el Trabajo Realizado</h3>
-            <p>
-                ${projectConclusions?.overview || 'Conclusiones generales del proyecto...'}
-            </p>
-
-            <h4 id="objetivos-alcanzados">Objetivos Alcanzados</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Objetivo</th>
-                        <th>Estado</th>
-                        <th>Grado de Cumplimiento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${(projectConclusions?.objectives || []).map(obj => `
-                        <tr>
-                            <td>${obj.name}</td>
-                            <td>
-                                <span class="px-2 py-1 rounded text-xs font-medium ${
-                                    obj.status === 'Completado' ? 'bg-green-100 text-green-800' :
-                                    obj.status === 'Parcial' ? 'bg-yellow-100 text-yellow-800' :
-                                    'bg-red-100 text-red-800'
-                                }">
-                                    ${obj.status}
-                                </span>
-                            </td>
-                            <td>${obj.completion}</td>
-                        </tr>
-                    `).join('\n                    ')}
-                </tbody>
-            </table>
-
-            <h4 id="logros-principales">Logros Principales</h4>
-            <ul>
-                ${(projectConclusions?.achievements || []).map(achievement => `<li>${achievement}</li>`).join('\n                ')}
-            </ul>
-
-            <h4 id="limitaciones">Limitaciones Encontradas</h4>
-            <div class="callout callout-warning">
-                ${(projectConclusions?.limitations || []).map(limitation => `
-                    <p><strong>${limitation.title}</strong></p>
-                    <p>${limitation.description}</p>
-                `).join('\n                ')}
+        <div class="prose max-w-none">
+            <div class="estimate-badge">
+                <span>⏱️</span> Tiempo estimado: 60-75 min.
             </div>
 
-            <h3 id="conclusiones-personales">Conclusiones Personales</h3>
-            <p>
-                ${personalConclusions?.overview || 'Reflexión personal sobre el proyecto...'}
-            </p>
-
-            ${(personalConclusions?.learnings || []).length > 0 ? `
-                <h4 id="aprendizajes">Aprendizajes Obtenidos</h4>
-                <ul>
-                    ${(personalConclusions.learnings || []).map(learning => `<li>${learning}</li>`).join('\n                    ')}
-                </ul>
-            ` : ''}
-
-            ${(personalConclusions?.challenges || []).length > 0 ? `
-                <h4 id="desafios">Desafíos Superados</h4>
-                <ol>
-                    ${(personalConclusions.challenges || []).map(challenge => `<li>${challenge}</li>`).join('\n                    ')}
-                </ol>
-            ` : ''}
-
-            <h3 id="lecciones-aprendidas">Lecciones Aprendidas</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
-                ${(lessonsLearned || []).map(lesson => `
-                    <div class="callout callout-info">
-                        <div class="callout-title">
-                            <span>💡</span>
-                            <span>${lesson.title}</span>
-                        </div>
-                        <p>${lesson.description}</p>
-                    </div>
-                `).join('\n                ')}
-            </div>
-
-            <h3 id="ampliaciones-mejoras">Posibles Ampliaciones y Mejoras</h3>
-            <p>
-                El proyecto puede ser ampliado y mejorado en múltiples direcciones:
-            </p>
-
-            <h4 id="mejoras-corto-plazo">Mejoras a Corto Plazo</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Mejora</th>
-                        <th>Descripción</th>
-                        <th>Esfuerzo Estimado</th>
-                        <th>Prioridad</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${(futureImprovements?.shortTerm || []).map(improvement => `
-                        <tr>
-                            <td>${improvement.name}</td>
-                            <td>${improvement.description}</td>
-                            <td>${improvement.effort}</td>
-                            <td>
-                                <span class="px-2 py-1 rounded text-xs font-medium ${
-                                    improvement.priority === 'Alta' ? 'bg-red-100 text-red-800' :
-                                    improvement.priority === 'Media' ? 'bg-yellow-100 text-yellow-800' :
-                                    'bg-green-100 text-green-800'
-                                }">
-                                    ${improvement.priority}
-                                </span>
-                            </td>
-                        </tr>
-                    `).join('\n                        ')}
-                </tbody>
-            </table>
-
-            <h4 id="mejoras-largo-plazo">Mejoras a Largo Plazo</h4>
-            <ul>
-                ${(futureImprovements?.longTerm || []).map(improvement => `<li>${improvement}</li>`).join('\n                ')}
-            </ul>
-
-            <h4 id="trabajos-futuros">Trabajos Futuros</h4>
-            <p>
-                ${futureImprovements?.futureWork || 'Descripción de posibles trabajos futuros...'}
-            </p>
-
-            <div class="callout callout-success mt-8">
+            <div class="callout callout-success mb-8">
                 <div class="callout-title">
-                    <span>✅</span>
-                    <span>Valoración Final</span>
+                    <span>🏆</span>
+                    <span>¡Lo has conseguido!</span>
                 </div>
                 <p>
-                    ${projectConclusions?.finalAssessment || 'Valoración final del proyecto...'}
+                    Es el momento de mirar atrás y ver todo el camino recorrido. 
+                    Resume tus logros y sé sincero/a con lo que has aprendido.
                 </p>
+                <div class="mt-4 p-3 bg-green-100/50 rounded-lg border border-green-200">
+                    <p class="text-xs font-bold mb-1">🚀 CONSEJO FINAL:</p>
+                    <p class="text-xs m-0">No digas solo que ha sido "divertido". Menciona problemas reales que has superado. Eso es lo que más valoran los profes.</p>
+                </div>
+            </div>
+
+            <h3 id="conclusiones-trabajo">9.1. Conclusiones del Trabajo</h3>
+            <p class="text-sm text-slate-600">${projectConclusions?.overview || 'Resume aquí los resultados técnicos de tu proyecto...'}</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                <div class="p-5 bg-blue-50 border border-blue-100 rounded-2xl">
+                    <h4 class="text-blue-700 font-bold m-0 mb-3 p-0 border-none flex items-center gap-2"><span>✅</span> Objetivos Logrados</h4>
+                    <ul class="text-xs m-0 pl-4 space-y-1">
+                        ${(projectConclusions?.objectives || []).map(obj => `<li>${obj.name}</li>`).join('')}
+                    </ul>
+                </div>
+                <div class="p-5 bg-amber-50 border border-amber-100 rounded-2xl">
+                    <h4 class="text-amber-700 font-bold m-0 mb-3 p-0 border-none flex items-center gap-2"><span>🚧</span> Limitaciones</h4>
+                    <ul class="text-xs m-0 pl-4 space-y-1">
+                        ${(projectConclusions?.limitations || []).map(lim => `<li>${lim.title}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+
+            <h3 id="conclusiones-personales">9.2. Reflexión Personal</h3>
+            <div class="callout callout-info">
+                <div class="callout-title"><span>🧠</span><span>¿Qué te llevas tú?</span></div>
+                <p>Más allá del código, ¿qué has aprendido sobre ti mismo o sobre cómo trabajar?</p>
+            </div>
+            <p class="text-sm italic text-slate-500 bg-slate-50 p-6 rounded-2xl border-l-4 border-slate-200">
+                ${personalConclusions?.overview || '[Escribe aquí tu reflexión personal]'}
+            </p>
+
+            <h3 id="mejoras-futuras">9.3. El Futuro del Proyecto</h3>
+            <div class="callout callout-warning">
+                <div class="callout-title"><span>🚀</span><span>¿Y si tuviéramos más tiempo?</span></div>
+                <p>Un buen proyecto nunca se termina del todo, se abandona. ¿Cómo lo seguirías mejorando?</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                ${(futureImprovements?.shortTerm || []).map(imp => `
+                    <div class="p-3 bg-white border border-slate-100 rounded-xl shadow-sm">
+                        <span class="text-[10px] font-bold text-blue-400 uppercase block mb-1">Próxima mejora</span>
+                        <span class="text-xs font-bold text-slate-700">${imp.name}</span>
+                    </div>
+                `).join('')}
+            </div>
+
+            <div class="mt-12 p-10 bg-gradient-to-br from-slate-900 to-blue-900 rounded-3xl text-white text-center shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">✨</div>
+                <h4 class="text-3xl font-extrabold mb-4 border-none">🎉 ¡ENHORABUENA! 🎉</h4>
+                <p class="text-blue-100 text-lg m-0">Has finalizado la documentación de tu proyecto intermodular.</p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <span class="px-4 py-2 bg-white/10 rounded-full text-xs font-bold border border-white/20">Esfuerzo</span>
+                    <span class="px-4 py-2 bg-white/10 rounded-full text-xs font-bold border border-white/20">Dedicación</span>
+                    <span class="px-4 py-2 bg-white/10 rounded-full text-xs font-bold border border-white/20">Éxito</span>
+                </div>
             </div>
         </div>
     `;
 }
 
 export const conclusionesTemplate = {
-    projectConclusions: {
-        overview: '',
-        objectives: [],
-        achievements: [],
-        limitations: [],
-        finalAssessment: ''
-    },
-    personalConclusions: {
-        overview: '',
-        learnings: [],
-        challenges: []
-    },
-    lessonsLearned: [],
-    futureImprovements: {
-        shortTerm: [],
-        longTerm: [],
-        futureWork: ''
-    }
+    projectConclusions: { overview: '', objectives: [], limitations: [] },
+    personalConclusions: { overview: '' },
+    futureImprovements: { shortTerm: [] }
 };
 
 export const conclusionesPrompt = `
-Genera el contenido para la sección de CONCLUSIONES de un proyecto intermodular de {curso} curso de {ciclo}.
+Eres un coach profesional y motivador. Genera la sección de CONCLUSIONES.
 
-El proyecto trata sobre: {projectTheme}
+PROYECTO: {projectTheme}
+CURSO: {curso}
+CICLO: {ciclo}
 
-Debes incluir:
-1. Conclusiones sobre el trabajo realizado:
-   - Visión general del trabajo completado (2-3 párrafos)
-   - Objetivos alcanzados (mínimo 4-5 objetivos con estado y grado de cumplimiento)
-   - Logros principales (mínimo 4-5)
-   - Limitaciones encontradas (mínimo 2-3 con descripción)
-   - Valoración final del proyecto
+INSTRUCCIONES:
+- Resume los logros técnicos alcanzados.
+- Lista los objetivos que se han cumplido con éxito.
+- Sé honesto/a con las limitaciones (qué no se pudo hacer por tiempo).
+- Escribe una reflexión personal que suene a alguien que ha crecido como profesional.
+- Propón 3-4 mejoras futuras interesantes.
+- El tono debe ser de victoria y satisfacción.
 
-2. Conclusiones personales:
-   - Reflexión personal sobre la experiencia (2-3 párrafos)
-   - Aprendizajes obtenidos (mínimo 4-5)
-   - Desafíos superados (mínimo 2-3)
-
-3. Lecciones aprendidas (mínimo 4-5):
-   - Título descriptivo
-   - Descripción de la lección
-
-4. Posibles ampliaciones y mejoras:
-   - Mejoras a corto plazo (mínimo 4-5 con descripción, esfuerzo y prioridad)
-   - Mejoras a largo plazo (mínimo 3-4)
-   - Descripción de trabajos futuros posibles
-
-IMPORTANTE:
-- Sé honesto sobre limitaciones y áreas de mejora
-- Las conclusiones personales deben sonar auténticas
-- Las mejoras deben ser realistas y específicas
-- Longitud mínima: 700 palabras
+DATOS (JSON):
+- projectConclusions: {overview, objectives: [{name}], limitations: [{title}]}
+- personalConclusions: {overview}
+- futureImprovements: {shortTerm: [{name}]}
 `;

@@ -1,18 +1,14 @@
 /**
  * Sección: Estado del Arte
  * 
- * Análisis de trabajos previos, tecnologías existentes y soluciones disponibles en el mercado.
+ * 🌐 ¿Qué está pasando en el mundo? 
+ * No vamos a inventar la rueda, vamos a ver cómo la usan otros y cómo la vamos a mejorar nosotros.
  * 
- * Estructura esperada:
- * - Análisis de tecnologías relacionadas
- * - Análisis de lenguajes y frameworks
- * - Estrategias o métodos existentes
- * - Análisis de la competencia
- * - Novedades que aporta este proyecto
- * 
- * @param {Object} projectData - Datos del proyecto
- * @returns {String} HTML content
+ * ⏱️ Tiempo estimado: 60-90 minutos.
  */
+
+export const estadoArteIcon = '🌐';
+
 export function generateEstadoArte(projectData) {
     const {
         relatedTechnologies,
@@ -23,67 +19,95 @@ export function generateEstadoArte(projectData) {
     } = projectData;
 
     return `
-        <div class="prose">
-            <h3 id="tecnologias-relacionadas">Tecnologías Relacionadas</h3>
-            <p>
-                A continuación se presenta un análisis de las tecnologías más relevantes 
-                en el ámbito del proyecto:
-            </p>
-            
-            ${(relatedTechnologies || []).map(tech => `
-                <div class="callout callout-info">
-                    <div class="callout-title">
-                        <span>🔧</span>
-                        <span>${tech.name}</span>
-                    </div>
-                    <p>${tech.description}</p>
-                    <p><strong>Ventajas:</strong> ${tech.advantages}</p>
-                    <p><strong>Limitaciones:</strong> ${tech.limitations}</p>
-                </div>
-            `).join('\n            ')}
+        <div class="prose max-w-none">
+            <div class="estimate-badge">
+                <span>⏱️</span> Tiempo estimado: 60-90 min.
+            </div>
 
-            <h3 id="soluciones-existentes">Soluciones Existentes</h3>
-            <p>
-                En el mercado actual existen diversas soluciones que abordan problemáticas similares:
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Solución</th>
-                        <th>Tipo</th>
-                        <th>Características Principales</th>
-                        <th>Limitaciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${(existingSolutions || []).map(solution => `
-                        <tr>
-                            <td>${solution.name}</td>
-                            <td>${solution.type}</td>
-                            <td>${solution.features}</td>
-                            <td>${solution.limitations}</td>
-                        </tr>
-                    `).join('\n                    ')}
-                </tbody>
-            </table>
-
-            <h3 id="analisis-mercado">Análisis del Mercado</h3>
-            <p>
-                ${marketAnalysis || 'Análisis del mercado...'}
-            </p>
-
-            <h3 id="analisis-competencia">Análisis de la Competencia</h3>
-            <p>
-                ${competitiveAnalysis || 'Análisis de la competencia...'}
-            </p>
-
-            <div class="callout callout-success">
+            <div class="callout callout-info mb-8">
                 <div class="callout-title">
                     <span>💡</span>
-                    <span>Aportaciones Innovadoras de este Proyecto</span>
+                    <span>¿Qué estamos haciendo aquí?</span>
                 </div>
-                <ul>
-                    ${(projectInnovations || []).map(innovation => `<li>${innovation}</li>`).join('\n                    ')}
+                <p>
+                    Aquí investigamos qué herramientas existen ya y qué están haciendo otras empresas. 
+                    Es como espiar a la competencia para aprender de sus aciertos y no cometer sus errores.
+                </p>
+                <div class="mt-4 p-3 bg-blue-100/50 rounded-lg border border-blue-200">
+                    <p class="text-xs font-bold mb-1">🚀 CONSEJO RÁPIDO:</p>
+                    <p class="text-xs m-0">No hace falta que seas un historiador. Céntrate en lo que se usa HOY y lo que vendrá MAÑANA.</p>
+                </div>
+            </div>
+
+            <h3 id="tecnologias-relacionadas">2.1. Tecnologías en el Mercado</h3>
+            <div class="callout callout-warning">
+                <div class="callout-title">
+                    <span>🔧</span>
+                    <span>¿Con qué herramientas juegan los demás?</span>
+                </div>
+                <p>Analiza 2 o 3 tecnologías que se usen para resolver problemas como el tuyo.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                ${(relatedTechnologies || []).map(tech => `
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                        <h4 class="text-blue-600 font-bold m-0 mb-2 p-0 border-none">${tech.name}</h4>
+                        <p class="text-xs text-slate-600 mb-2">${tech.description}</p>
+                        <div class="flex gap-2">
+                            <span class="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded font-bold">👍 Pros</span>
+                            <span class="text-[10px] bg-red-50 text-red-700 px-2 py-0.5 rounded font-bold">👎 Contras</span>
+                        </div>
+                    </div>
+                `).join('\n            ')}
+            </div>
+
+            <h3 id="soluciones-existentes">2.2. Soluciones Actuales</h3>
+            <div class="callout callout-info">
+                <div class="callout-title">
+                    <span>🏢</span>
+                    <span>¿Quién más lo hace?</span>
+                </div>
+                <p>Busca empresas o software que ya hagan algo parecido. ¡Compara!</p>
+            </div>
+
+            <div class="table-container shadow-sm border border-slate-200 rounded-2xl overflow-hidden my-6">
+                <table class="w-full text-sm">
+                    <thead class="bg-slate-50 border-b border-slate-200">
+                        <tr>
+                            <th class="px-4 py-3 text-left font-bold text-slate-500">Solución</th>
+                            <th class="px-4 py-3 text-left font-bold text-slate-500">Lo mejor</th>
+                            <th class="px-4 py-3 text-left font-bold text-slate-500">Lo peor</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        ${(existingSolutions || []).map(sol => `
+                            <tr>
+                                <td class="px-4 py-3 font-bold">${sol.name}</td>
+                                <td class="px-4 py-3 text-slate-600">${sol.features}</td>
+                                <td class="px-4 py-3 text-red-500">${sol.limitations}</td>
+                            </tr>
+                        `).join('\n                    ')}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-success my-8">
+                <div class="callout-title">
+                    <span>✨</span>
+                    <span>Tu Toque Especial</span>
+                </div>
+                <p>¿Qué vas a aportar tú que no tengan los demás? Esta es la parte donde brilla tu proyecto.</p>
+                <ul class="mt-2">
+                    ${(projectInnovations || []).map(inn => `<li>🚀 ${inn}</li>`).join('\n                    ')}
+                </ul>
+            </div>
+
+            <div class="mt-12 p-6 bg-slate-900 rounded-2xl text-white shadow-xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10 text-6xl">🌐</div>
+                <h4 class="text-white font-bold mb-4">🏆 Checklist de esta sección</h4>
+                <ul class="space-y-2 text-sm text-slate-300">
+                    <li class="flex items-center gap-2"><input type="checkbox" class="rounded"> ¿Has mencionado tecnologías reales y actuales?</li>
+                    <li class="flex items-center gap-2"><input type="checkbox" class="rounded"> ¿Has dejado claro por qué tu solución es necesaria?</li>
                 </ul>
             </div>
         </div>
@@ -99,23 +123,20 @@ export const estadoArteTemplate = {
 };
 
 export const estadoArtePrompt = `
-Genera el contenido para la sección de ESTADO DEL ARTE de un proyecto intermodular de {curso} curso de {ciclo}.
+Eres un investigador tecnológico con mucha chispa. Genera el ESTADO DEL ARTE.
 
-El proyecto trata sobre: {projectTheme}
+PROYECTO: {projectTheme}
+CURSO: {curso}
+CICLO: {ciclo}
 
-Debes incluir:
-1. Análisis de 3-5 tecnologías relacionadas con el proyecto
-   - Para cada tecnología: descripción, ventajas y limitaciones
-2. Análisis de 3-4 soluciones existentes en el mercado
-   - Nombre, tipo, características principales y limitaciones
-3. Análisis del mercado actual (tendencias, tamaño, crecimiento)
-4. Análisis de la competencia directa e indirecta
-5. 3-5 aportaciones innovadoras que este proyecto incorpora
+INSTRUCCIONES:
+- Analiza qué se usa hoy en día para este tipo de proyectos.
+- Compara soluciones reales (marcas, software libre, etc.).
+- Sé muy visual: usa listas y tablas.
+- Explica de forma sencilla por qué este proyecto es una mejora respecto a lo que hay.
 
-IMPORTANTE:
-- NO es un estudio de mercado exhaustivo
-- Enfócate en lo que ya está hecho sobre el tema del proyecto
-- Usa un tono técnico y profesional
-- Incluye referencias a tecnologías concretas (nombres, versiones)
-- Longitud mínima: 600 palabras
+DATOS (JSON):
+- relatedTechnologies: [{name, description, advantages, limitations}]
+- existingSolutions: [{name, features, limitations}]
+- projectInnovations: ["Innovación 1", "Innovación 2"]
 `;

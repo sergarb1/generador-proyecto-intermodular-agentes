@@ -1,242 +1,139 @@
 /**
  * Sección: Diseño
  * 
- * Planificación y estructura de cómo se llevará a cabo el proyecto.
+ * 🎨 ¡Aquí es donde dibujas los planos de tu obra maestra!
+ * ¿Cómo se conectan los servidores? ¿Cómo es la base de datos?
  * 
- * Estructura esperada (varía según ciclo):
- * Para ASIR:
- *   - Diseño de arquitectura de red
- *   - Diseño de topología de red
- *   - Soluciones de seguridad
- *   - Diagramas (despliegue, infraestructura, contenedores, cloud, integración)
- * 
- * Para DAM/DAW:
- *   - Diseño Conceptual Entidad Relación
- *   - Diseño Lógico Relacional
- *   - Diseño Físico
- *   - Orientación a objetos (clases, secuencias)
- *   - Diseño UX, Mockups
- * 
- * @param {Object} projectData - Datos del proyecto
- * @param {String} cycle - Ciclo formativo (ASIR, DAM, DAW)
- * @returns {String} HTML content
+ * ⏱️ Tiempo estimado: 120-180 minutos (¡Es la parte más divertida, disfruta!)
  */
-export function generateDiseno(projectData, cycle = 'ASIR') {
+
+export const disenoIcon = '🎨';
+
+export function generateDiseno(projectData) {
     const {
-        architectureDesign,
         networkTopology,
-        securitySolutions,
-        deploymentDiagram,
-        infrastructureDiagram,
-        containerDiagram,
-        cloudDiagram,
-        integrationDiagram,
-        entityRelationship,
-        relationalDesign,
-        physicalDesign,
-        classDiagram,
-        sequenceDiagram,
-        activityDiagram,
-        uxDesign,
-        mockups
+        databaseSchema,
+        systemArchitecture,
+        logicDesign,
+        uiDesign
     } = projectData;
 
-    // ASIR specific design
-    if (cycle === 'ASIR' || cycle === 'SMR') {
-        return `
-            <div class="prose">
-                <h3 id="arquitectura-red">Diseño de Arquitectura de Red</h3>
-                <p>
-                    ${architectureDesign || 'Descripción de la arquitectura de red...'}
-                </p>
-
-                <h3 id="topologia-red">Diseño de Topología de Red</h3>
-                <p>
-                    ${networkTopology || 'Descripción de la topología de red...'}
-                </p>
-
-                <h3 id="soluciones-seguridad">Soluciones de Seguridad</h3>
-                <p>
-                    ${securitySolutions || 'Descripción de las soluciones de seguridad...'}
-                </p>
-
-                <h3 id="diagrama-despliegue">Diagrama de Despliegue</h3>
-                <div class="callout callout-info">
-                    <p>${deploymentDiagram || 'Descripción del diagrama de despliegue...'}</p>
-                </div>
-
-                <h3 id="diagrama-infraestructura">Diagrama de Infraestructura</h3>
-                <div class="callout callout-info">
-                    <p>${infrastructureDiagram || 'Descripción del diagrama de infraestructura...'}</p>
-                </div>
-
-                ${(containerDiagram) ? `
-                    <h3 id="diagrama-contenedores">Diagrama de Contenedores</h3>
-                    <div class="callout callout-info">
-                        <p>${containerDiagram}</p>
-                    </div>
-                ` : ''}
-
-                ${(cloudDiagram) ? `
-                    <h3 id="diagrama-cloud">Diagrama de Cloud</h3>
-                    <div class="callout callout-info">
-                        <p>${cloudDiagram}</p>
-                    </div>
-                ` : ''}
-
-                ${(integrationDiagram) ? `
-                    <h3 id="diagrama-integracion">Diagrama de Integración</h3>
-                    <div class="callout callout-info">
-                        <p>${integrationDiagram}</p>
-                    </div>
-                ` : ''}
-            </div>
-        `;
-    }
-
-    // DAM/DAW specific design
     return `
-        <div class="prose">
-            <h3 id="diseno-conceptual">Diseño Conceptual (Entidad-Relación)</h3>
-            <p>
-                ${entityRelationship || 'Descripción del diseño conceptual...'}
-            </p>
+        <div class="prose max-w-none">
+            <div class="estimate-badge">
+                <span>⏱️</span> Tiempo estimado: 2-3 horas.
+            </div>
 
-            <h3 id="diseno-logico">Diseño Lógico Relacional</h3>
-            <p>
-                ${relationalDesign || 'Descripción del diseño lógico...'}
-            </p>
+            <div class="callout callout-info mb-8">
+                <div class="callout-title">
+                    <span>💡</span>
+                    <span>¿Qué estamos haciendo aquí?</span>
+                </div>
+                <p>
+                    El diseño es el mapa de tu tesoro. Si el diseño está bien hecho, 
+                    la implementación será como seguir las instrucciones de un mueble de IKEA (¡pero sin que sobren piezas!).
+                </p>
+                <div class="mt-4 p-3 bg-blue-100/50 rounded-lg border border-blue-200">
+                    <p class="text-xs font-bold mb-1">🚀 CONSEJO PARA ENFOCARSE:</p>
+                    <p class="text-xs m-0">No intentes dibujarlo todo a la vez. Empieza con un boceto en papel y luego pásalo a limpio con una herramienta como Draw.io o Figma.</p>
+                </div>
+            </div>
 
-            <h3 id="diseno-fisico">Diseño Físico</h3>
-            <p>
-                ${physicalDesign || 'Descripción del diseño físico...'}
-            </p>
+            <h3 id="arquitectura-sistema">5.1. Arquitectura del Sistema</h3>
+            <div class="callout callout-warning">
+                <div class="callout-title">
+                    <span>🏗️</span>
+                    <span>La estructura global</span>
+                </div>
+                <p>Explica qué modelo usas: ¿Cliente-Servidor? ¿Microservicios? ¿Cloud Híbrido? Pon un dibujo (diagrama) que lo resuma todo.</p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border-2 border-dashed border-slate-200 text-center mb-6">
+                <p class="text-slate-400 italic m-0">[Inserta aquí tu Diagrama de Arquitectura Global]</p>
+            </div>
 
-            <h3 id="tablas-campos">Descripción de Tablas y Campos</h3>
-            ${(projectData.tables || []).map(table => `
-                <div class="callout callout-info">
-                    <div class="callout-title">
-                        <span>📊</span>
-                        <span>${table.name}</span>
+            <h3 id="diseno-red">5.2. Diseño de Red / Topología</h3>
+            <div class="callout callout-info">
+                <div class="callout-title">
+                    <span>🌐</span>
+                    <span>¿Cómo se hablan las máquinas?</span>
+                </div>
+                <p>Dibuja cómo se conectan los routers, switches, servidores y clientes. No olvides las VLANs y las IPs.</p>
+            </div>
+            <p class="text-sm text-slate-600">${networkTopology || 'Describe aquí tu topología de red...'}</p>
+
+            <h3 id="diseno-datos">5.3. Diseño de Datos</h3>
+            <div class="callout callout-success">
+                <div class="callout-title">
+                    <span>📊</span>
+                    <span>El orden de la información</span>
+                </div>
+                <p>Si usas base de datos, pon el Diagrama Entidad-Relación. Si usas archivos, explica cómo se organizan.</p>
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border-2 border-dashed border-slate-200 text-center mb-6 font-mono text-xs text-slate-400">
+                ${databaseSchema || '-- Esperando Diagrama ER --'}
+            </div>
+
+            <h3 id="diseno-logico">5.4. Diseño Lógico</h3>
+            <div class="callout callout-warning">
+                <div class="callout-title">
+                    <span>🧠</span>
+                    <span>La inteligencia del sistema</span>
+                </div>
+                <p>¿Qué algoritmos usas? ¿Cómo fluye la información de una parte a otra? Un Diagrama de Flujo ayuda muchísimo aquí.</p>
+            </div>
+
+            <div class="mt-12 p-8 bg-indigo-900 rounded-3xl text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+                <h4 class="text-white font-bold mb-4 flex items-center gap-2">
+                    <span>🎨</span> Checklist de Diseño
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl">
+                        <input type="checkbox" class="accent-indigo-500">
+                        <span class="text-xs">¿Se entienden todos los diagramas?</span>
                     </div>
-                    <p>${table.description}</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Campo</th>
-                                <th>Tipo</th>
-                                <th>Restricciones</th>
-                                <th>Descripción</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${(table.fields || []).map(field => `
-                                <tr>
-                                    <td><code>${field.name}</code></td>
-                                    <td>${field.type}</td>
-                                    <td>${field.constraints}</td>
-                                    <td>${field.description}</td>
-                                </tr>
-                            `).join('\n                            ')}
-                        </tbody>
-                    </table>
+                    <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl">
+                        <input type="checkbox" class="accent-indigo-500">
+                        <span class="text-xs">¿He puesto una leyenda en los dibujos?</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl">
+                        <input type="checkbox" class="accent-indigo-500">
+                        <span class="text-xs">¿He justificado por qué he elegido esta arquitectura?</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl">
+                        <input type="checkbox" class="accent-indigo-500">
+                        <span class="text-xs">¿Es escalable mi diseño?</span>
+                    </div>
                 </div>
-            `).join('\n            ')}
-
-            <h3 id="orientacion-objetos">Orientación a Objetos</h3>
-            
-            <h4 id="diagrama-clases">Diagrama de Clases</h4>
-            <p>
-                ${classDiagram || 'Descripción del diagrama de clases...'}
-            </p>
-
-            ${(sequenceDiagram) ? `
-                <h4 id="diagrama-secuencias">Diagrama de Secuencias</h4>
-                <div class="callout callout-info">
-                    <p>${sequenceDiagram}</p>
-                </div>
-            ` : ''}
-
-            ${(activityDiagram) ? `
-                <h4 id="diagrama-actividad">Diagrama de Actividad</h4>
-                <div class="callout callout-info">
-                    <p>${activityDiagram}</p>
-                </div>
-            ` : ''}
-
-            <h3 id="diseno-ux">Diseño UX</h3>
-            <p>
-                ${uxDesign || 'Descripción del diseño UX...'}
-            </p>
-
-            <h3 id="mockups">Mockups</h3>
-            <p>
-                ${mockups || 'Descripción de los mockups...'}
-            </p>
+            </div>
         </div>
     `;
 }
 
 export const disenoTemplate = {
-    // ASIR
-    architectureDesign: '',
     networkTopology: '',
-    securitySolutions: '',
-    deploymentDiagram: '',
-    infrastructureDiagram: '',
-    containerDiagram: '',
-    cloudDiagram: '',
-    integrationDiagram: '',
-    
-    // DAM/DAW
-    entityRelationship: '',
-    relationalDesign: '',
-    physicalDesign: '',
-    tables: [],
-    classDiagram: '',
-    sequenceDiagram: '',
-    activityDiagram: '',
-    uxDesign: '',
-    mockups: ''
+    databaseSchema: '',
+    systemArchitecture: '',
+    logicDesign: '',
+    uiDesign: ''
 };
 
 export const disenoPrompt = `
-Genera el contenido para la sección de DISEÑO de un proyecto intermodular de {curso} curso de {ciclo}.
+Eres un arquitecto de sistemas visionario y motivador. 
+Genera el contenido para la sección de DISEÑO.
 
-El proyecto trata sobre: {projectTheme}
+PROYECTO: {projectTheme}
+CURSO: {curso}
+CICLO: {ciclo}
 
-{CYCLE_SPECIFIC_INSTRUCTIONS}
+INSTRUCCIONES CLAVE:
+- Propón una arquitectura técnica moderna (Cloud, On-premise, Híbrida).
+- Describe la topología de red recomendada.
+- Sugiere una estructura de base de datos o almacenamiento de archivos.
+- Explica el diseño lógico de forma que el alumno entienda el "cerebro" de su proyecto.
 
 IMPORTANTE:
-- El diseño debe ser coherente con los requisitos definidos anteriormente
-- Incluye descripciones detalladas de cada diagrama
-- Usa terminología técnica apropiada
-- Longitud mínima: 600 palabras
+- Usa analogías (ej: "La base de datos es como el almacén de una tienda").
+- Sé muy visual en las descripciones.
+- Enfócate en la escalabilidad y la seguridad.
 `;
-
-export const getDisenoPromptForCycle = (cycle) => {
-    if (cycle === 'ASIR' || cycle === 'SMR') {
-        return `
-Para proyectos de ${cycle}, debes incluir:
-1. Diseño de arquitectura de red (descripción detallada)
-2. Diseño de topología de red (elementos, conexiones, segmentación)
-3. Soluciones de seguridad (firewalls, VLANs, VPNs, etc.)
-4. Descripción del diagrama de despliegue
-5. Descripción del diagrama de infraestructura
-6. Si aplica: diagrama de contenedores (Docker, Kubernetes)
-7. Si aplica: diagrama de Cloud (AWS, Azure, GCP)
-8. Si aplica: diagrama de integración de sistemas`;
-    }
-    
-    return `
-Para proyectos de ${cycle}, debes incluir:
-1. Diseño Conceptual Entidad-Relación (descripción de entidades y relaciones)
-2. Diseño Lógico Relacional (paso a tablas)
-3. Diseño Físico (optimizaciones, índices)
-4. Descripción de al menos 3-4 tablas principales con sus campos
-5. Diagrama de Clases (descripción de clases y atributos principales)
-6. Diagrama de Secuencias (de los casos de uso más relevantes)
-7. Diagrama de Actividad (flujo principal)
-8. Diseño UX (principios de usabilidad aplicados)
-9. Mockups (descripción de las pantallas principales)`;
-};

@@ -1,193 +1,90 @@
 /**
  * Sección: Bibliografía
  * 
- * Fuentes utilizadas para elaborar el proyecto.
+ * 📚 Tus fuentes de sabiduría.
+ * Todo buen profesional se apoya en el trabajo de otros. Aquí damos crédito a quien lo merece.
  * 
- * Estructura esperada:
- * - Libros, artículos y apuntes
- * - Direcciones web
- * - Todas las fuentes deben estar comentadas
- * 
- * @param {Object} projectData - Datos del proyecto
- * @returns {String} HTML content
  */
+
+export const bibliografiaIcon = '📚';
+
 export function generateBibliografia(projectData) {
     const {
-        books,
-        articles,
-        notes,
         websites,
         documentation,
-        videos
+        books
     } = projectData;
 
     return `
-        <div class="prose">
-            <h3 id="libros-articulos">Libros, Artículos y Apuntes</h3>
-            
-            ${(books || []).length > 0 ? `
-                <h4 id="libros">Libros</h4>
-                <ul>
-                    ${(books || []).map(book => `
-                        <li>
-                            <strong>${book.title}</strong><br>
-                            <em>${book.author}</em><br>
-                            ${book.publisher}, ${book.year}<br>
-                            <span class="text-sm text-gray-600">${book.annotation}</span>
-                        </li>
-                    `).join('\n                    ')}
-                </ul>
-            ` : ''}
-
-            ${(articles || []).length > 0 ? `
-                <h4 id="articulos">Artículos</h4>
-                <ul>
-                    ${(articles || []).map(article => `
-                        <li>
-                            <strong>${article.title}</strong><br>
-                            <em>${article.author}</em><br>
-                            ${article.publication}, ${article.date}<br>
-                            <span class="text-sm text-gray-600">${article.annotation}</span>
-                        </li>
-                    `).join('\n                    ')}
-                </ul>
-            ` : ''}
-
-            ${(notes || []).length > 0 ? `
-                <h4 id="apuntes">Apuntes de Clase</h4>
-                <ul>
-                    ${(notes || []).map(note => `
-                        <li>
-                            <strong>${note.title}</strong><br>
-                            <em>${note.subject}</em><br>
-                            ${note.course}, ${note.academicYear}<br>
-                            <span class="text-sm text-gray-600">${note.annotation}</span>
-                        </li>
-                    `).join('\n                    ')}
-                </ul>
-            ` : ''}
-
-            <h3 id="direcciones-web">Direcciones Web</h3>
-            
-            ${(websites || []).map(website => `
-                <div class="callout callout-info">
-                    <div class="callout-title">
-                        <span>🌐</span>
-                        <span>${website.title}</span>
-                    </div>
-                    <p><strong>URL:</strong> <a href="${website.url}" target="_blank" rel="noopener">${website.url}</a></p>
-                    <p><strong>Fecha de consulta:</strong> ${website.accessDate}</p>
-                    <p>${website.annotation}</p>
-                </div>
-            `).join('\n            ')}
-
-            ${(documentation || []).length > 0 ? `
-                <h3 id="documentacion-oficial">Documentación Oficial</h3>
-                <ul>
-                    ${(documentation || []).map(doc => `
-                        <li>
-                            <strong>${doc.title}</strong><br>
-                            <em>${doc.organization}</em><br>
-                            ${doc.version || ''} ${doc.year || ''}<br>
-                            ${doc.url ? `<a href="${doc.url}" target="_blank" rel="noopener">Enlace</a><br>` : ''}
-                            <span class="text-sm text-gray-600">${doc.annotation}</span>
-                        </li>
-                    `).join('\n                    ')}
-                </ul>
-            ` : ''}
-
-            ${(videos || []).length > 0 ? `
-                <h3 id="videos-tutoriales">Videos y Tutoriales</h3>
-                <ul>
-                    ${(videos || []).map(video => `
-                        <li>
-                            <strong>${video.title}</strong><br>
-                            <em>${video.author || video.channel}</em><br>
-                            ${video.platform}, ${video.date}<br>
-                            ${video.url ? `<a href="${video.url}" target="_blank" rel="noopener">Enlace</a><br>` : ''}
-                            <span class="text-sm text-gray-600">${video.annotation}</span>
-                        </li>
-                    `).join('\n                    ')}
-                </ul>
-            ` : ''}
-
-            <div class="callout callout-warning mt-8">
+        <div class="prose max-w-none">
+            <div class="callout callout-info mb-8">
                 <div class="callout-title">
-                    <span>📚</span>
-                    <span>Nota sobre la Bibliografía</span>
+                    <span>💡</span>
+                    <span>¿Qué estamos haciendo aquí?</span>
                 </div>
                 <p>
-                    Todas las fuentes citadas han sido consultadas durante el desarrollo del proyecto 
-                    y han contribuido de manera significativa a la elaboración del mismo. Las anotaciones 
-                    incluidas describen la relevancia de cada fuente para el proyecto.
+                    Aquí listamos las webs, libros y manuales que has consultado. 
+                    Es importante para que el tribunal vea que has investigado y no te has inventado las cosas.
                 </p>
+                <div class="mt-4 p-3 bg-blue-100/50 rounded-lg border border-blue-200">
+                    <p class="text-xs font-bold mb-1">🚀 CONSEJO DE INVESTIGADOR:</p>
+                    <p class="text-xs m-0">No pongas solo el enlace de Google. Pon la web específica que te ayudó (ej: StackOverflow, Documentación oficial de Microsoft, etc.).</p>
+                </div>
+            </div>
+
+            <h3 id="direcciones-web">10.1. Recursos Web y Tutoriales</h3>
+            <div class="space-y-4 my-6">
+                ${(websites || []).map(site => `
+                    <div class="p-4 bg-white border border-slate-200 rounded-2xl shadow-sm hover:border-blue-300 transition-colors">
+                        <div class="flex items-start gap-3">
+                            <span class="text-xl">🌐</span>
+                            <div class="overflow-hidden">
+                                <h4 class="text-sm font-bold text-slate-800 m-0 p-0 border-none truncate">${site.title}</h4>
+                                <a href="${site.url}" target="_blank" class="text-[10px] text-blue-500 hover:underline block truncate mb-1">${site.url}</a>
+                                <p class="text-[10px] text-slate-500 m-0 italic">${site.annotation}</p>
+                            </div>
+                        </div>
+                    </div>
+                `).join('\n                ')}
+            </div>
+
+            <h3 id="documentacion">10.2. Documentación Oficial y Libros</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                ${(documentation || []).map(doc => `
+                    <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                        <h4 class="text-xs font-bold text-slate-700 m-0 mb-1 border-none">${doc.title}</h4>
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">${doc.organization}</span>
+                        <p class="text-[10px] text-slate-500 m-0 mt-2">${doc.annotation}</p>
+                    </div>
+                `).join('')}
+            </div>
+
+            <div class="mt-12 p-6 bg-slate-900 rounded-2xl text-white text-center">
+                <p class="text-xs text-slate-400 m-0">"Si he visto más lejos, es poniéndome sobre los hombros de gigantes" — Isaac Newton</p>
             </div>
         </div>
     `;
 }
 
 export const bibliografiaTemplate = {
-    books: [],
-    articles: [],
-    notes: [],
     websites: [],
-    documentation: [],
-    videos: []
+    documentation: []
 };
 
 export const bibliografiaPrompt = `
-Genera el contenido para la sección de BIBLIOGRAFÍA de un proyecto intermodular de {curso} curso de {ciclo}.
+Eres un bibliotecario tecnológico experto. Genera la sección de BIBLIOGRAFÍA.
 
-El proyecto trata sobre: {projectTheme}
+PROYECTO: {projectTheme}
+CURSO: {curso}
+CICLO: {ciclo}
 
-Debes incluir:
-1. Libros (mínimo 3-4):
-   - Título
-   - Autor/es
-   - Editorial
-   - Año
-   - Anotación (relevancia para el proyecto)
+INSTRUCCIONES:
+- Genera 8-10 fuentes web reales y relevantes (documentación, foros, tutoriales).
+- Incluye documentación oficial de las herramientas usadas.
+- Para cada fuente, añade una breve nota de por qué ha sido útil.
+- Usa un formato limpio y profesional.
 
-2. Artículos (mínimo 2-3):
-   - Título
-   - Autor/es
-   - Publicación
-   - Fecha
-   - Anotación
-
-3. Apuntes de clase (mínimo 2-3):
-   - Título/módulo
-   - Materia
-   - Curso
-   - Año académico
-   - Anotación
-
-4. Direcciones web (mínimo 8-10):
-   - Título del sitio
-   - URL completa
-   - Fecha de consulta
-   - Anotación (qué información se obtuvo)
-
-5. Documentación oficial (mínimo 3-4):
-   - Título de la documentación
-   - Organización/empresa
-   - Versión (si aplica)
-   - Año
-   - URL (si es online)
-   - Anotación
-
-6. Videos/Tutoriales (opcional, 2-3):
-   - Título
-   - Autor/canal
-   - Plataforma (YouTube, Vimeo, etc.)
-   - Fecha
-   - URL
-   - Anotación
-
-IMPORTANTE:
-- Todas las fuentes deben estar comentadas (explicar su relevancia)
-- Usa formato APA o similar para las referencias
-- Incluye fuentes variadas y de calidad
-- Las URLs deben ser reales y accesibles
-- Longitud mínima: 400 palabras (sin contar las referencias)
+DATOS (JSON):
+- websites: [{title, url, annotation}]
+- documentation: [{title, organization, annotation}]
 `;

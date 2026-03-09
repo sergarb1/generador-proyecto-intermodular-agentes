@@ -1,27 +1,14 @@
 /**
  * Sección: Implementación
  * 
- * Detalle de cómo se lleva a cabo la implementación del proyecto.
+ * 💻 ¡Llegó el momento de la verdad! 
+ * Aquí es donde manchamos el teclado de código y configuraciones.
  * 
- * Estructura esperada:
- * Para ASIR:
- *   - Instalación y configuración de dispositivos de red
- *   - Configuración de soluciones de seguridad
- *   - Configuración de virtualización
- *   - Configuración de almacenamiento en red
- *   - Configuración de copias de seguridad
- * 
- * Para DAM/DAW:
- *   - Tecnologías elegidas y justificación
- *   - Desarrollo de servicios/desarrollo multiplataforma
- *   - Documentación interna de código
- *   - Documentación externa
- *   - Manual del usuario
- * 
- * @param {Object} projectData - Datos del proyecto
- * @param {String} cycle - Ciclo formativo
- * @returns {String} HTML content
+ * ⏱️ Tiempo estimado: 240-480 minutos (¡Esta es la parte grande, respira!)
  */
+
+export const implementacionIcon = '💻';
+
 export function generateImplementacion(projectData, cycle = 'ASIR') {
     const {
         technologies,
@@ -31,116 +18,93 @@ export function generateImplementacion(projectData, cycle = 'ASIR') {
         storageConfig,
         backupConfig,
         serviceDevelopment,
-        multiplatformDevelopment,
-        codeDocumentation,
-        externalDocumentation,
-        userManual
+        multiplatformDevelopment
     } = projectData;
 
-    // ASIR specific implementation
-    if (cycle === 'ASIR' || cycle === 'SMR') {
-        return `
-            <div class="prose">
-                <h3 id="tecnologias-empleadas">Tecnologías Empleadas</h3>
+    const isAsir = cycle === 'ASIR' || cycle === 'SMR';
+
+    return `
+        <div class="prose max-w-none">
+            <div class="estimate-badge">
+                <span>⏱️</span> Tiempo estimado: Varias sesiones.
+            </div>
+
+            <div class="callout callout-info mb-8">
+                <div class="callout-title">
+                    <span>💡</span>
+                    <span>¿Qué estamos haciendo aquí?</span>
+                </div>
                 <p>
-                    Para la implementación de este proyecto se han seleccionado las siguientes tecnologías:
+                    Esta es la sección más importante de tu proyecto. Tienes que documentar CÓMO has montado todo. 
+                    Si es un servidor, qué comandos has usado. Si es código, cómo lo has estructurado.
                 </p>
+                <div class="mt-4 p-3 bg-blue-100/50 rounded-lg border border-blue-200">
+                    <p class="text-xs font-bold mb-1">🚀 CONSEJO DE DOCUMENTACIÓN:</p>
+                    <p class="text-xs m-0">No escribas un libro de texto. Escribe una guía de "cómo se hace". Usa capturas de pantalla y fragmentos de código.</p>
+                </div>
+            </div>
+
+            <h3 id="tecnologias">6.1. Herramientas del Proyecto</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
                 ${(technologies || []).map(tech => `
-                    <div class="callout callout-info">
-                        <div class="callout-title">
-                            <span>🔧</span>
-                            <span>${tech.name}</span>
+                    <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="p-1.5 bg-blue-50 rounded-lg text-blue-600">🛠️</span>
+                            <h4 class="font-bold m-0 p-0 border-none text-sm">${tech.name}</h4>
                         </div>
-                        <p>${tech.description}</p>
-                        <p><strong>Justificación:</strong> ${tech.justification}</p>
+                        <p class="text-[10px] text-slate-500 m-0">${tech.description}</p>
                     </div>
                 `).join('\n                ')}
-
-                <h3 id="instalacion-dispositivos">Instalación y Configuración de Dispositivos de Red</h3>
-                <p>
-                    ${networkDevicesConfig || 'Descripción de la instalación y configuración...'}
-                </p>
-
-                <h3 id="configuracion-seguridad">Configuración de Soluciones de Seguridad</h3>
-                <p>
-                    ${securityConfig || 'Descripción de la configuración de seguridad...'}
-                </p>
-
-                <h3 id="virtualizacion">Configuración de Soluciones de Virtualización</h3>
-                <p>
-                    ${virtualizationConfig || 'Descripción de la virtualización...'}
-                </p>
-
-                <h3 id="almacenamiento">Configuración de Almacenamiento en Red</h3>
-                <p>
-                    ${storageConfig || 'Descripción del almacenamiento en red...'}
-                </p>
-
-                <h3 id="copias-seguridad">Configuración de Copias de Seguridad</h3>
-                <p>
-                    ${backupConfig || 'Descripción del plan de copias de seguridad...'}
-                </p>
             </div>
-        `;
-    }
 
-    // DAM/DAW specific implementation
-    return `
-        <div class="prose">
-            <h3 id="tecnologias-elegidas">Tecnologías Elegidas y Justificación</h3>
-            <p>
-                A continuación se detallan las tecnologías seleccionadas para el desarrollo del proyecto:
-            </p>
-            
-            ${(technologies || []).map(tech => `
-                <div class="callout callout-info">
-                    <div class="callout-title">
-                        <span>🔧</span>
-                        <span>${tech.name}</span>
-                    </div>
-                    <p><strong>Tipo:</strong> ${tech.type}</p>
-                    <p>${tech.description}</p>
-                    <p><strong>Justificación:</strong> ${tech.justification}</p>
-                    <p><strong>Versión:</strong> ${tech.version}</p>
+            ${isAsir ? `
+                <h3 id="infraestructura">6.2. Montaje de la Infraestructura</h3>
+                <div class="callout callout-warning">
+                    <div class="callout-title"><span>⚙️</span><span>Configuración Técnica</span></div>
+                    <p>Documenta aquí los pasos clave de instalación y configuración.</p>
                 </div>
-            `).join('\n            ')}
+                
+                <div class="space-y-8">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <h4 class="text-blue-700 font-bold mb-2 border-none p-0 mt-0">🌐 Redes y Dispositivos</h4>
+                        <p class="text-sm">${networkDevicesConfig || 'Describe la configuración de switches, routers...'}</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <h4 class="text-red-700 font-bold mb-2 border-none p-0 mt-0">🛡️ Seguridad y Firewall</h4>
+                        <p class="text-sm">${securityConfig || 'Describe las reglas de firewall, VPNs...'}</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <h4 class="text-emerald-700 font-bold mb-2 border-none p-0 mt-0">☁️ Virtualización y Cloud</h4>
+                        <p class="text-sm">${virtualizationConfig || 'Describe el despliegue de VMs, contenedores...'}</p>
+                    </div>
+                </div>
+            ` : `
+                <h3 id="desarrollo">6.2. Desarrollo de la Solución</h3>
+                <div class="callout callout-warning">
+                    <div class="callout-title"><span>⌨️</span><span>Codificación</span></div>
+                    <p>Explica las partes más interesantes de tu código y cómo has resuelto los problemas.</p>
+                </div>
 
-            <h3 id="desarrollo-servicios">Desarrollo de Servicios</h3>
-            <h4 id="descripcion-general">Descripción General</h4>
-            <p>
-                ${serviceDevelopment?.overview || 'Descripción general del desarrollo de servicios...'}
-            </p>
+                <div class="space-y-8">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <h4 class="text-indigo-700 font-bold mb-2 border-none p-0 mt-0">🖥️ Backend y Servicios</h4>
+                        <p class="text-sm">${serviceDevelopment?.overview || 'Describe la lógica del servidor...'}</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <h4 class="text-pink-700 font-bold mb-2 border-none p-0 mt-0">📱 Frontend y Cliente</h4>
+                        <p class="text-sm">${multiplatformDevelopment?.overview || 'Describe la interfaz de usuario...'}</p>
+                    </div>
+                </div>
+            `}
 
-            <h4 id="seguridad-servicios">Seguridad</h4>
-            <p>
-                ${serviceDevelopment?.security || 'Medidas de seguridad implementadas...'}
-            </p>
-
-            <h3 id="desarrollo-multiplataforma">Desarrollo Multiplataforma</h3>
-            <h4 id="descripcion-general-cliente">Descripción General</h4>
-            <p>
-                ${multiplatformDevelopment?.overview || 'Descripción general del desarrollo multiplataforma...'}
-            </p>
-
-            <h4 id="compatibilidad-navegadores">Compatibilidad en Distintos Dispositivos</h4>
-            <p>
-                ${multiplatformDevelopment?.compatibility || 'Estrategias de compatibilidad...'}
-            </p>
-
-            <h3 id="documentacion-interna">Documentación Interna de Código</h3>
-            <p>
-                ${codeDocumentation || 'Descripción de la documentación interna...'}
-            </p>
-
-            <h3 id="documentacion-externa">Documentación Externa</h3>
-            <p>
-                ${externalDocumentation || 'Descripción de la documentación externa...'}
-            </p>
-
-            <h3 id="manual-usuario">Manual del Usuario</h3>
-            <p>
-                ${userManual || 'Descripción del manual de usuario...'}
-            </p>
+            <div class="mt-12 p-8 bg-slate-900 rounded-3xl text-white shadow-2xl">
+                <h4 class="text-white font-bold mb-4 flex items-center gap-2"><span>⭐</span> Tips de Calidad</h4>
+                <ul class="text-xs text-slate-400 space-y-2">
+                    <li>✓ Si pones código, añade comentarios explicando qué hace.</li>
+                    <li>✓ Si pones una configuración, di por qué has elegido esos valores.</li>
+                    <li>✓ Usa capturas de pantalla de lo que vas logrando.</li>
+                </ul>
+            </div>
         </div>
     `;
 }
@@ -150,63 +114,22 @@ export const implementacionTemplate = {
     networkDevicesConfig: '',
     securityConfig: '',
     virtualizationConfig: '',
-    storageConfig: '',
-    backupConfig: '',
-    serviceDevelopment: {
-        overview: '',
-        security: ''
-    },
-    multiplatformDevelopment: {
-        overview: '',
-        compatibility: ''
-    },
-    codeDocumentation: '',
-    externalDocumentation: '',
-    userManual: ''
+    serviceDevelopment: { overview: '' },
+    multiplatformDevelopment: { overview: '' }
 };
 
 export const implementacionPrompt = `
-Genera el contenido para la sección de IMPLEMENTACIÓN de un proyecto intermodular de {curso} curso de {ciclo}.
+Eres un ingeniero senior documentando una implementación magistral. Genera la sección de IMPLEMENTACIÓN.
 
-El proyecto trata sobre: {projectTheme}
+PROYECTO: {projectTheme}
+CURSO: {curso}
+CICLO: {ciclo}
 
 {CYCLE_SPECIFIC_INSTRUCTIONS}
 
-IMPORTANTE:
-- Describe procesos concretos y específicos
-- Incluye comandos, configuraciones o fragmentos de código relevantes
-- Explica el "por qué" de cada decisión técnica
-- Longitud mínima: 700 palabras
+INSTRUCCIONES ADICIONALES:
+- No hagas tutoriales genéricos de Internet. Céntrate en ESTE proyecto.
+- Si es ASIR, usa comandos de consola (Linux/Windows) y explica reglas de red.
+- Si es DAM/DAW, explica la arquitectura del código y pon fragmentos significativos.
+- El tono debe ser técnico, preciso y muy organizado.
 `;
-
-export const getImplementacionPromptForCycle = (cycle) => {
-    if (cycle === 'ASIR' || cycle === 'SMR') {
-        return `
-Para proyectos de ${cycle}, debes incluir:
-1. Lista de tecnologías empleadas (mínimo 5) con su justificación
-2. Instalación y configuración de dispositivos de red (routers, switches, firewalls, etc.)
-3. Configuración de soluciones de seguridad (reglas de firewall, políticas, etc.)
-4. Configuración de soluciones de virtualización (máquinas virtuales, redes virtuales)
-5. Configuración de almacenamiento en red (NAS, SAN, servidores de archivos)
-6. Configuración de copias de seguridad (plan, políticas de retención, herramientas)`;
-    }
-    
-    return `
-Para proyectos de ${cycle}, debes incluir:
-1. Tecnologías elegidas (mínimo 6-8) con su justificación:
-   - Lenguajes de programación
-   - Frameworks y bibliotecas
-   - Bases de datos
-   - Herramientas de desarrollo
-2. Desarrollo de servicios:
-   - Descripción general de la arquitectura backend
-   - Medidas de seguridad (inyección SQL, XSS, CSRF, etc.)
-3. Desarrollo multiplataforma:
-   - Descripción general del frontend
-   - Compatibilidad con navegadores y dispositivos
-4. Documentación interna de código:
-   - Ejemplos de comentarios
-   - Descripción de estructura de ficheros
-5. Documentación externa (API, despliegue, etc.)
-6. Manual del usuario (puntos principales)`;
-};

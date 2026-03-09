@@ -1,295 +1,137 @@
 /**
  * Sección: Administración
  * 
- * Tareas y acciones necesarias para el correcto funcionamiento y mantenimiento del sistema.
+ * ⚙️ ¡Bienvenido al centro de mando!
+ * Aquí es donde te conviertes en el guardián del sistema. Usuarios, copias de seguridad y vigilancia.
  * 
- * Estructura esperada:
- * - Gestión de usuarios y permisos
- * - Monitoreo y mantenimiento
- * - Políticas de seguridad
- * - Plan de mantenimiento preventivo y correctivo
- * - Implementación de backups y recuperación ante desastres
- * - Plan de contingencia
- * - Soporte a la aplicación (sistema de tickets)
- * 
- * @param {Object} projectData - Datos del proyecto
- * @returns {String} HTML content
+ * ⏱️ Tiempo estimado: 60-90 minutos.
  */
+
+export const administracionIcon = '⚙️';
+
 export function generateAdministracion(projectData) {
     const {
         userManagement,
         networkMonitoring,
         securityPolicies,
         maintenancePlan,
-        backupDisasterRecovery,
-        contingencyPlan,
-        supportSystem
+        backupDisasterRecovery
     } = projectData;
 
     return `
-        <div class="prose">
-            <h3 id="gestion-usuarios">Gestión de Usuarios y Permisos</h3>
-            <p>
-                ${userManagement?.overview || 'Descripción de la gestión de usuarios...'}
-            </p>
-
-            ${(userManagement?.roles || []).length > 0 ? `
-                <h4 id="roles-permisos">Roles y Permisos</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Rol</th>
-                            <th>Descripción</th>
-                            <th>Permisos</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${(userManagement.roles || []).map(role => `
-                            <tr>
-                                <td><strong>${role.name}</strong></td>
-                                <td>${role.description}</td>
-                                <td>${role.permissions}</td>
-                            </tr>
-                        `).join('\n                        ')}
-                    </tbody>
-                </table>
-            ` : ''}
-
-            <h3 id="monitoreo-mantenimiento">Monitoreo y Mantenimiento de la Red</h3>
-            <p>
-                ${networkMonitoring?.overview || 'Descripción del monitoreo y mantenimiento...'}
-            </p>
-
-            ${(networkMonitoring?.metrics || []).length > 0 ? `
-                <h4 id="metricas-monitoreo">Métricas de Monitoreo</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Métrica</th>
-                            <th>Herramienta</th>
-                            <th>Frecuencia</th>
-                            <th>Umbral de Alerta</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${(networkMonitoring.metrics || []).map(metric => `
-                            <tr>
-                                <td>${metric.name}</td>
-                                <td>${metric.tool}</td>
-                                <td>${metric.frequency}</td>
-                                <td>${metric.threshold}</td>
-                            </tr>
-                        `).join('\n                        ')}
-                    </tbody>
-                </table>
-            ` : ''}
-
-            <h3 id="politicas-seguridad">Políticas de Seguridad</h3>
-            <p>
-                ${securityPolicies?.overview || 'Descripción de las políticas de seguridad...'}
-            </p>
-
-            ${(securityPolicies?.policies || []).map(policy => `
-                <div class="callout callout-warning">
-                    <div class="callout-title">
-                        <span>🔒</span>
-                        <span>${policy.name}</span>
-                    </div>
-                    <p>${policy.description}</p>
-                </div>
-            `).join('\n            ')}
-
-            <h3 id="mantenimiento">Plan de Mantenimiento Preventivo y Correctivo</h3>
-            
-            <h4 id="mantenimiento-preventivo">Mantenimiento Preventivo</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tarea</th>
-                        <th>Frecuencia</th>
-                        <th>Responsable</th>
-                        <th>Duración Estimada</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${(maintenancePlan?.preventive || []).map(task => `
-                        <tr>
-                            <td>${task.name}</td>
-                            <td>${task.frequency}</td>
-                            <td>${task.responsible}</td>
-                            <td>${task.duration}</td>
-                        </tr>
-                    `).join('\n                    ')}
-                </tbody>
-            </table>
-
-            <h4 id="mantenimiento-correctivo">Mantenimiento Correctivo</h4>
-            <p>
-                ${maintenancePlan?.corrective || 'Descripción del mantenimiento correctivo...'}
-            </p>
-
-            <h3 id="backups-recuperacion">Implementación de Backups y Recuperación ante Desastres</h3>
-            <p>
-                ${backupDisasterRecovery?.overview || 'Descripción del plan de backups...'}
-            </p>
-
-            ${(backupDisasterRecovery?.schedule || []).length > 0 ? `
-                <h4 id="plan-backups">Plan de Copias de Seguridad</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Dato/Sistema</th>
-                            <th>Tipo</th>
-                            <th>Frecuencia</th>
-                            <th>Retención</th>
-                            <th>Ubicación</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${(backupDisasterRecovery.schedule || []).map(backup => `
-                            <tr>
-                                <td>${backup.system}</td>
-                                <td>${backup.type}</td>
-                                <td>${backup.frequency}</td>
-                                <td>${backup.retention}</td>
-                                <td>${backup.location}</td>
-                            </tr>
-                        `).join('\n                        ')}
-                    </tbody>
-                </table>
-            ` : ''}
-
-            <h4 id="recuperacion-desastres">Recuperación ante Desastres</h4>
-            <div class="callout callout-info">
-                <p><strong>RTO (Recovery Time Objective):</strong> ${backupDisasterRecovery?.rto || 'No especificado'}</p>
-                <p><strong>RPO (Recovery Point Objective):</strong> ${backupDisasterRecovery?.rpo || 'No especificado'}</p>
-                <p>${backupDisasterRecovery?.recoveryProcess || 'Descripción del proceso de recuperación...'}</p>
+        <div class="prose max-w-none">
+            <div class="estimate-badge">
+                <span>⏱️</span> Tiempo estimado: 60-90 min.
             </div>
 
-            <h3 id="plan-contingencia">Plan de Contingencia y Recuperación ante Incidentes</h3>
-            <p>
-                ${contingencyPlan?.overview || 'Descripción del plan de contingencia...'}
-            </p>
-
-            ${(contingencyPlan?.scenarios || []).map(scenario => `
-                <div class="callout callout-danger">
-                    <div class="callout-title">
-                        <span>🚨</span>
-                        <span>Escenario: ${scenario.name}</span>
-                    </div>
-                    <p><strong>Descripción:</strong> ${scenario.description}</p>
-                    <p><strong>Acciones:</strong></p>
-                    <ol>
-                        ${(scenario.actions || []).map(action => `<li>${action}</li>`).join('\n                        ')}
-                    </ol>
+            <div class="callout callout-info mb-8">
+                <div class="callout-title">
+                    <span>💡</span>
+                    <span>¿Qué estamos haciendo aquí?</span>
                 </div>
-            `).join('\n            ')}
+                <p>
+                    Una vez montado el proyecto, alguien tiene que cuidarlo. 
+                    Aquí explicas cómo vas a gestionar a los usuarios, cómo vas a saber si algo falla (Monitorización) 
+                    y qué harás si el servidor explota (Backups).
+                </p>
+                <div class="mt-4 p-3 bg-blue-100/50 rounded-lg border border-blue-200">
+                    <p class="text-xs font-bold mb-1">🚀 CONSEJO DE ADMINISTRADOR:</p>
+                    <p class="text-xs m-0">"Si no hay copia de seguridad, los datos no existen". Asegúrate de que tu plan de backups sea sólido.</p>
+                </div>
+            </div>
 
-            <h3 id="soporte-aplicacion">Soporte a la Aplicación (Sistema de Tickets)</h3>
-            <p>
-                ${supportSystem?.overview || 'Descripción del sistema de soporte...'}
-            </p>
-
-            ${(supportSystem?.tiers || []).length > 0 ? `
-                <h4 id="niveles-soporte">Niveles de Soporte</h4>
-                <table>
-                    <thead>
+            <h3 id="gestion-usuarios">7.1. Gestión de Usuarios y Permisos</h3>
+            <div class="callout callout-warning">
+                <div class="callout-title"><span>👤</span><span>¿Quién entra aquí?</span></div>
+                <p>Define quién tiene las llaves del sistema y qué puede hacer cada uno.</p>
+            </div>
+            <div class="table-container shadow-sm border border-slate-200 rounded-2xl overflow-hidden my-6">
+                <table class="w-full text-xs">
+                    <thead class="bg-slate-50 border-b border-slate-200">
                         <tr>
-                            <th>Nivel</th>
-                            <th>Descripción</th>
-                            <th>Tiempo de Respuesta</th>
-                            <th>Responsable</th>
+                            <th class="px-4 py-3 text-left font-bold text-slate-500">Rol</th>
+                            <th class="px-4 py-3 text-left font-bold text-slate-500">Permisos Principales</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        ${(supportSystem.tiers || []).map(tier => `
+                    <tbody class="divide-y divide-slate-100">
+                        ${(userManagement?.roles || []).map(role => `
                             <tr>
-                                <td>${tier.name}</td>
-                                <td>${tier.description}</td>
-                                <td>${tier.responseTime}</td>
-                                <td>${tier.responsible}</td>
+                                <td class="px-4 py-3 font-bold text-blue-700">${role.name}</td>
+                                <td class="px-4 py-3 text-slate-600">${role.permissions}</td>
                             </tr>
                         `).join('\n                        ')}
                     </tbody>
                 </table>
-            ` : ''}
+            </div>
 
-            ${(supportSystem?.channels || []).length > 0 ? `
-                <h4 id="canales-soporte">Canales de Soporte</h4>
-                <ul>
-                    ${(supportSystem.channels || []).map(channel => `<li>${channel}</li>`).join('\n                    ')}
-                </ul>
-            ` : ''}
+            <h3 id="monitoreo">7.2. Monitorización y Mantenimiento</h3>
+            <div class="callout callout-info">
+                <div class="callout-title"><span>📊</span><span>Vigila tus recursos</span></div>
+                <p>¿Cómo sabes si la CPU está al 100% o si se ha caído la web? Elige herramientas de monitorización.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                ${(networkMonitoring?.metrics || []).map(metric => `
+                    <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-bold text-slate-700">${metric.name}</span>
+                            <span class="text-[10px] text-blue-500 font-mono">${metric.tool}</span>
+                        </div>
+                        <p class="text-[10px] text-slate-500 m-0">Umbral: ${metric.threshold}</p>
+                    </div>
+                `).join('\n                ')}
+            </div>
+
+            <h3 id="backups">7.3. Copias de Seguridad (Backup)</h3>
+            <div class="callout callout-error">
+                <div class="callout-title"><span>💾</span><span>Plan de Emergencia</span></div>
+                <p>Si todo falla, el backup te salva la vida. Define qué guardas y dónde.</p>
+            </div>
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    ${(backupDisasterRecovery?.schedule || []).map(b => `
+                        <div class="text-center p-3 bg-blue-50/50 rounded-xl border border-blue-100">
+                            <span class="text-[10px] font-bold text-blue-400 block mb-1 uppercase">${b.type}</span>
+                            <span class="text-xs font-bold text-blue-800 block">${b.system}</span>
+                            <span class="text-[9px] text-blue-600 block mt-1">${b.frequency}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex justify-around text-xs">
+                    <div class="text-center"><span class="block font-bold text-slate-400 uppercase text-[9px]">RTO</span><span class="text-slate-700">${backupDisasterRecovery?.rto || 'N/A'}</span></div>
+                    <div class="text-center"><span class="block font-bold text-slate-400 uppercase text-[9px]">RPO</span><span class="text-slate-700">${backupDisasterRecovery?.rpo || 'N/A'}</span></div>
+                </div>
+            </div>
+
+            <div class="mt-12 p-6 bg-slate-900 rounded-2xl text-white shadow-xl">
+                <h4 class="text-white font-bold mb-4 flex items-center gap-2"><span>🛡️</span> Seguridad ante todo</h4>
+                <p class="text-xs text-slate-400">Recuerda: Un buen administrador no es el que arregla mucho, sino el que evita que las cosas se rompan.</p>
+            </div>
         </div>
     `;
 }
 
 export const administracionTemplate = {
-    userManagement: {
-        overview: '',
-        roles: []
-    },
-    networkMonitoring: {
-        overview: '',
-        metrics: []
-    },
-    securityPolicies: {
-        overview: '',
-        policies: []
-    },
-    maintenancePlan: {
-        preventive: [],
-        corrective: ''
-    },
-    backupDisasterRecovery: {
-        overview: '',
-        schedule: [],
-        rto: '',
-        rpo: '',
-        recoveryProcess: ''
-    },
-    contingencyPlan: {
-        overview: '',
-        scenarios: []
-    },
-    supportSystem: {
-        overview: '',
-        tiers: [],
-        channels: []
-    }
+    userManagement: { roles: [] },
+    networkMonitoring: { metrics: [] },
+    backupDisasterRecovery: { schedule: [], rto: '', rpo: '' }
 };
 
 export const administracionPrompt = `
-Genera el contenido para la sección de ADMINISTRACIÓN de un proyecto intermodular de {curso} curso de {ciclo}.
+Eres un administrador de sistemas legendario. Genera la sección de ADMINISTRACIÓN.
 
-El proyecto trata sobre: {projectTheme}
+PROYECTO: {projectTheme}
+CURSO: {curso}
+CICLO: {ciclo}
 
-Debes incluir:
-1. Gestión de usuarios y permisos:
-   - Descripción general
-   - Roles y permisos (mínimo 3-4 roles)
-2. Monitoreo y mantenimiento de la red:
-   - Descripción del sistema de monitoreo
-   - Métricas principales (mínimo 4-5)
-3. Políticas de seguridad (mínimo 4-5 políticas)
-4. Plan de mantenimiento:
-   - Mantenimiento preventivo (mínimo 5 tareas con frecuencia)
-   - Mantenimiento correctivo (descripción del proceso)
-5. Backups y recuperación ante desastres:
-   - Descripción general del plan
-   - Schedule de backups (mínimo 4-5 sistemas a backuppear)
-   - RTO y RPO definidos
-   - Proceso de recuperación
-6. Plan de contingencia:
-   - Descripción general
-   - Escenarios de incidente (mínimo 3-4 con sus acciones)
-7. Sistema de soporte:
-   - Descripción general
-   - Niveles de soporte (1-3 niveles)
-   - Canales de contacto
+INSTRUCCIONES:
+- Define roles de usuario técnicos (Admin, Editor, Usuario).
+- Sugiere métricas de monitorización reales (CPU, RAM, Logs, Tráfico).
+- Crea un plan de backups que use la regla 3-2-1.
+- Define tiempos de recuperación (RTO y RPO) coherentes.
+- Usa un tono de control y seguridad.
 
-IMPORTANTE:
-- Usa terminología profesional (SLA, MTTR, MTBF, RTO, RPO)
-- Incluye valores concretos y realistas
-- Longitud mínima: 800 palabras
+DATOS (JSON):
+- userManagement: {roles: [{name, permissions}]}
+- networkMonitoring: {metrics: [{name, tool, threshold}]}
+- backupDisasterRecovery: {schedule: [{system, type, frequency}], rto, rpo}
 `;

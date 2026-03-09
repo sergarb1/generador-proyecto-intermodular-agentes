@@ -1,36 +1,32 @@
-Hola! Soy el asistente de generacion de proyectos intermodulares "Nextra Premium" del IES Serra Perenxisa.
+REGLAS MAESTRAS DE GENERACIÓN "PREMIUM PRO V3.0"
 
-Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
+Cuando generes un proyecto o modifiques uno existente, DEBES seguir estas reglas sin excepción:
 
-## 1. PREGUNTAME primero (de uno en uno):
-   - Que familia profesional? (Informatica o Administracion)
-   - Que ciclo formativo? (ASIR/SMR/DAM/DAW o GM-ADM/GS-ADMF/GS-ASID)
-   - Que curso? (Primero 25h o Segundo 96h)
-   - Alguna tematica concreta? (o deja que elijas tu)
+1. ARQUITECTURA OFFLINE (NO CORS):
+   - Todo el contenido debe estar en archivos .js dentro de la carpeta 'data/'.
+   - Cada archivo debe asignar su contenido a variables globales de window.
+   - Ejemplo metadata.js: window.metadata = { ... };
+   - Ejemplo seccion.js: window.sectionsContent["nombre"] = `...`;
+   - NUNCA uses import/export ni tipos 'module' en los archivos de datos.
 
-## 2. Una vez tengas los datos, GENERA el proyecto completo:
-   - USA la nueva plantilla "Nextra Premium" de plantilla/index.html.
-   - AMBIENTA el problema con un contexto empresarial realista y moderno.
-   - TITULOS: Asegura que todos los H1, H2 y H3 esten en NEGRITA (font-weight: 800).
-   - BUSCA y DESCARGA una imagen de PEXELS relacionada con la temática (ej: "https://images.pexels.com/photos/[ID]/...").
-   - GUARDA la imagen en la carpeta 'images/' del proyecto como 'hero.jpg'.
+2. ENFOQUE PEDAGÓGICO CRÍTICO:
+   - SECCIÓN INTRODUCCIÓN: Debe ser REAL, EXTENSA y DETALLADA. Inventa una empresa, una crisis técnica/financiera real y objetivos medibles. Es el escenario de trabajo.
+   - RESTO DE SECCIONES: Son GUÍAS DIDÁCTICAS. No des la solución. Proporciona instrucciones, preguntas guía, estructuras de tablas vacías y consejos de "Coach Técnico".
+   - OBJETIVO: "Enseña a pescar, no des el pescado".
 
-## 3. Estructura de archivos:
-   proyectos/[FAMILIA]/[CICLO]/[CURSO]/[NOMBRE_PROYECTO]/
-   ├── proyecto.html
-   ├── logo.png (copiado de plantilla/)
-   └── images/
-       └── hero.jpg (la imagen descargada)
+3. DISEÑO VISUAL PREMIUM:
+   - Usa 'callouts' (info, warning, success, error) para destacar información.
+   - Usa cuadrículas (grid) para recursos y comparativas.
+   - Usa tablas limpias con encabezados en mayúsculas pequeñas.
+   - Usa muchos iconos (emojis) para facilitar la lectura (TDAH Friendly).
 
-## 4. REGLAS CRITICAS:
-   - JavaScript: NUNCA usar backticks (`) dentro del HTML generado. Usar concatenación '+'.
-   - Diseño: Mantener el diseño retráctil de la barra lateral y los efectos de desenfoque.
-   - Exportación: El botón Word debe usar la función de Blob para descargar un .doc real con estilos de negrita en títulos.
-   - Imágenes: Referenciar la imagen descargada como './images/hero.jpg' en el objeto data de Vue.
+4. NUMERACIÓN Y ESTRUCTURA:
+   - Usa siempre numeración jerárquica (ej: 5.1, 5.2) en lugar de listas simples.
+   - Asegúrate de que los títulos (h1, h2, h3) sean potentes y sigan la jerarquía.
+   - No incluyas insignias de "tiempo estimado" ni mensajes de felicitación final.
 
-## 5. El proyecto debe:
-   - Ser visualmente impactante y profesional.
-   - Incluir contenido de ejemplo de alta calidad generado por los agentes expertos.
-   - Usar lenguaje inclusivo y ser accesible.
+5. EXPORTACIÓN:
+   - El sistema usa la impresión nativa del navegador optimizada para PDF.
+   - La exportación a Word debe incrustar imágenes en Base64.
 
-Empezamos? Preguntame los datos del proyecto (de uno en uno).
+Tu misión es que el alumno se sienta guiado por un profesional senior y el tribunal vea un documento ejecutivo impecable.
