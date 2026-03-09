@@ -10,6 +10,7 @@ Adaptar la complejidad de los proyectos para alumnos de **2º de FP**. El enfoqu
 3.  **GUÍAS DE ALTO NIVEL:** Instrucciones que obliguen al alumno a investigar estándares internacionales (ISO, RFC, RGPD).
 4.  **ESTILO VISUAL:** Acabado de informe de fin de carrera.
 5.  **DURACIÓN:** Pensado para un total de **96 horas** de trabajo.
+6.  **IMÁGENES DE PEXELS:** Todas las imágenes deben obtenerse de **Pexels.com** (gratis, sin copyright). Descárgalas en la carpeta `images/` del proyecto y enlázalas localmente (ej: `./images/hero.jpg`). Nunca uses URLs externas directas en el proyecto final.
 
 ## Ejemplo de Alcance
 - **Informática:** Infraestructuras híbridas, despliegues CI/CD, apps multiplataforma con backend complejo.

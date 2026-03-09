@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Proyectos Intermodulares - IES Serra Perenxisa</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            opacity: 0.4;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(20px, -20px) scale(1.1); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white relative overflow-hidden">
+        <div class="blob bg-purple-400 w-96 h-96 rounded-full top-0 left-0"></div>
+        <div class="blob bg-blue-400 w-80 h-80 rounded-full bottom-0 right-0" style="animation-delay: 2s;"></div>
+        
+        <nav class="container mx-auto px-6 py-4 relative z-10">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                        <span class="text-2xl">🎓</span>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg">IES Serra Perenxisa</h1>
+                        <p class="text-xs text-blue-100">Proyectos Intermodulares</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center gap-6 text-sm">
+                    <a href="#como-funciona" class="hover:text-blue-200 transition">Cómo Funciona</a>
+                    <a href="#demo" class="hover:text-blue-200 transition">Demos</a>
+                    <a href="#agentes" class="hover:text-blue-200 transition">Agentes</a>
+                    <a href="https://github.com/sergarb1/generador-proyecto-intermodular-agentes" target="_blank" class="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/30 transition">
+                        <span>📦</span> GitHub
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-6">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    Generador con IA para Ciclos Formativos
+                </div>
+                
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    Generador de Proyectos<br/>Intermodulares
+                </h2>
+                
+                <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+                    Herramienta impulsada por agentes de IA para crear proyectos pedagógicos 
+                    para Ciclos Formativos de Informática y Administración.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#demo" class="bg-white text-blue-600 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition shadow-lg">
+                        Ver Proyectos de Ejemplo
+                    </a>
+                    <a href="#como-funciona" class="bg-white/20 backdrop-blur-sm text-white font-bold px-8 py-4 rounded-xl hover:bg-white/30 transition">
+                        Saber Más
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex items-center justify-center gap-2 text-sm text-blue-200">
+                    <span>🌐</span>
+                    <span>Disponible en:</span>
+                    <a href="https://sergarb1.github.io/generador-proyecto-intermodular-agentes/" target="_blank" class="underline hover:text-white transition font-semibold">
+                        sergarb1.github.io/generador-proyecto-intermodular-agentes/
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Qué Es Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="text-4xl mb-4 block">📚</span>
+                    <h3 class="text-3xl font-bold text-slate-800 mb-4">¿Qué es este proyecto?</h3>
+                    <p class="text-lg text-slate-600">
+                        Un sistema de generación de proyectos intermodulares asistido por IA 
+                        para el IES Serra Perenxisa.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                        <div class="text-3xl mb-4">🎯</div>
+                        <h4 class="font-bold text-lg text-slate-800 mb-3">Objetivo</h4>
+                        <p class="text-slate-600">
+                            Facilitar la creación de proyectos intermodulares completos y pedagógicamente 
+                            sólidos para el alumnado de Ciclos Formativos, sirviendo como guía y ejemplo.
+                        </p>
+                    </div>
+                    
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                        <div class="text-3xl mb-4">🤖</div>
+                        <h4 class="font-bold text-lg text-slate-800 mb-3">Tecnología</h4>
+                        <p class="text-slate-600">
+                            Utiliza agentes de IA especializados (orquestador, experto en informática, 
+                            experto en administración) para generar contenido adaptado a cada ciclo.
+                        </p>
+                    </div>
+                    
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                        <div class="text-3xl mb-4">📁</div>
+                        <h4 class="font-bold text-lg text-slate-800 mb-3">Formato</h4>
+                        <p class="text-slate-600">
+                            Los proyectos se generan como HTML interactivo con navegación lateral, 
+                            totalmente visualizables en navegador y exportables a Word/PDF.
+                        </p>
+                    </div>
+                    
+                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+                        <div class="text-3xl mb-4">✨</div>
+                        <h4 class="font-bold text-lg text-slate-800 mb-3">Enfoque</h4>
+                        <p class="text-slate-600">
+                            La introducción es detallada y realista, mientras que el resto de secciones 
+                            son guías didácticas para que el alumnado complete la información.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Funciona Section -->
+    <section id="como-funciona" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 block">⚙️</span>
+                <h3 class="text-3xl font-bold text-slate-800 mb-4">¿Cómo Funciona?</h3>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    El proceso de generación sigue un flujo estructurado con agentes especializados.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Línea conectora -->
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-green-500 hidden md:block"></div>
+                    
+                    <!-- Paso 1 -->
+                    <div class="relative flex gap-6 mb-12">
+                        <div class="flex-shrink-0 w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg">1</div>
+                        <div class="flex-1 bg-white rounded-2xl p-6 shadow-md">
+                            <h4 class="font-bold text-lg text-slate-800 mb-2">Recopilación de Datos</h4>
+                            <p class="text-slate-600 mb-3">El sistema pregunta al usuario:</p>
+                            <ul class="text-sm text-slate-500 space-y-1">
+                                <li>• Familia profesional (Informática / Administración)</li>
+                                <li>• Ciclo formativo (ASIR, DAM, DAW, SMR, GM-ADM, GS-ADMF, GS-ASID)</li>
+                                <li>• Curso (Primero 25h / Segundo 96h)</li>
+                                <li>• Temática concreta (opcional)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 2 -->
+                    <div class="relative flex gap-6 mb-12">
+                        <div class="flex-shrink-0 w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg">2</div>
+                        <div class="flex-1 bg-white rounded-2xl p-6 shadow-md">
+                            <h4 class="font-bold text-lg text-slate-800 mb-2">Selección de Agentes</h4>
+                            <p class="text-slate-600 mb-3">Según la familia, se activan los agentes especializados:</p>
+                            <div class="grid sm:grid-cols-2 gap-3">
+                                <div class="p-3 bg-blue-50 rounded-lg">
+                                    <p class="font-semibold text-blue-800">Informática</p>
+                                    <p class="text-xs text-blue-600">Experto Proyectos + Experto Informática + Curso</p>
+                                </div>
+                                <div class="p-3 bg-green-50 rounded-lg">
+                                    <p class="font-semibold text-green-800">Administración</p>
+                                    <p class="text-xs text-green-600">Experto Proyectos + Experto Administración + Curso</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 3 -->
+                    <div class="relative flex gap-6 mb-12">
+                        <div class="flex-shrink-0 w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg">3</div>
+                        <div class="flex-1 bg-white rounded-2xl p-6 shadow-md">
+                            <h4 class="font-bold text-lg text-slate-800 mb-2">Generación del Proyecto</h4>
+                            <p class="text-slate-600 mb-3">Se crea la estructura completa:</p>
+                            <ul class="text-sm text-slate-500 space-y-1">
+                                <li>• <strong>Introducción:</strong> Contexto empresarial/técnico detallado</li>
+                                <li>• <strong>Resto de secciones:</strong> Guías didácticas para completar</li>
+                                <li>• <strong>Archivos de datos:</strong> 12 archivos JavaScript con el contenido</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Paso 4 -->
+                    <div class="relative flex gap-6">
+                        <div class="flex-shrink-0 w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg">4</div>
+                        <div class="flex-1 bg-white rounded-2xl p-6 shadow-md">
+                            <h4 class="font-bold text-lg text-slate-800 mb-2">Guardado y Visualización</h4>
+                            <p class="text-slate-600 mb-3">El proyecto se guarda en:</p>
+                            <code class="block bg-slate-100 p-3 rounded-lg text-sm overflow-x-auto">
+                                proyectos/[FAMILIA]/[CICLO]/[CURSO]/[NOMBRE_PROYECTO]/
+                            </code>
+                            <p class="text-sm text-slate-500 mt-3">
+                                Incluye: proyecto.html, logo.png, carpeta data/, carpeta images/
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agentes Section -->
+    <section id="agentes" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 block">🤖</span>
+                <h3 class="text-3xl font-bold text-slate-800 mb-4">Agentes de IA</h3>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Cada agente tiene una especialización concreta para generar contenido de calidad.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Agente 1 -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 border-2 border-blue-200 card-hover">
+                    <div class="w-14 h-14 bg-blue-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">🎯</div>
+                    <h4 class="font-bold text-xl text-blue-800 mb-2">Orquestador</h4>
+                    <p class="text-sm text-blue-600 mb-4">agents/00-orchestrator.md</p>
+                    <p class="text-slate-600 text-sm">
+                        Coordina todo el proceso, selecciona los agentes adecuados y valida 
+                        que el proyecto cumpla los estándares de calidad.
+                    </p>
+                </div>
+                
+                <!-- Agente 2 -->
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border-2 border-green-200 card-hover">
+                    <div class="w-14 h-14 bg-green-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">💼</div>
+                    <h4 class="font-bold text-xl text-green-800 mb-2">Experto Proyectos</h4>
+                    <p class="text-sm text-green-600 mb-4">agents/01-experto-proyectos.md</p>
+                    <p class="text-slate-600 text-sm">
+                        Diseña el contexto empresarial, la problemática y los objetivos 
+                        del proyecto. Asegura que sea realista y pedagógico.
+                    </p>
+                </div>
+                
+                <!-- Agente 3 -->
+                <div class="bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-6 border-2 border-purple-200 card-hover">
+                    <div class="w-14 h-14 bg-purple-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">💻</div>
+                    <h4 class="font-bold text-xl text-purple-800 mb-2">Experto Informática</h4>
+                    <p class="text-sm text-purple-600 mb-4">agents/02-experto-informatica.md</p>
+                    <p class="text-slate-600 text-sm">
+                        Define arquitecturas técnicas, tecnologías, implementación 
+                        y mejores prácticas para proyectos IT.
+                    </p>
+                </div>
+                
+                <!-- Agente 4 -->
+                <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-6 border-2 border-orange-200 card-hover">
+                    <div class="w-14 h-14 bg-orange-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">📊</div>
+                    <h4 class="font-bold text-xl text-orange-800 mb-2">Experto Administración</h4>
+                    <p class="text-sm text-orange-600 mb-4">agents/05-experto-administracion.md</p>
+                    <p class="text-slate-600 text-sm">
+                        Especializado en planes de empresa, análisis financiero, 
+                        trámites legales y gestión empresarial.
+                    </p>
+                </div>
+                
+                <!-- Agente 5 -->
+                <div class="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6 border-2 border-red-200 card-hover">
+                    <div class="w-14 h-14 bg-red-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">📚</div>
+                    <h4 class="font-bold text-xl text-red-800 mb-2">Agentes por Curso</h4>
+                    <p class="text-sm text-red-600 mb-4">agents/03-primer-curso.md, 04-segundo-curso.md</p>
+                    <p class="text-slate-600 text-sm">
+                        Adaptan el contenido al nivel del curso (Primero 25h o Segundo 96h) 
+                        ajustando la complejidad y profundidad.
+                    </p>
+                </div>
+                
+                <!-- Agente 6 -->
+                <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-6 border-2 border-teal-200 card-hover">
+                    <div class="w-14 h-14 bg-teal-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">🎨</div>
+                    <h4 class="font-bold text-xl text-teal-800 mb-2">Plantilla Premium</h4>
+                    <p class="text-sm text-teal-600 mb-4">plantilla/index.html</p>
+                    <p class="text-slate-600 text-sm">
+                        Diseño visual profesional con Vue.js, Tailwind CSS, 
+                        callouts, grids y tablas premium.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 block">🚀</span>
+                <h3 class="text-3xl font-bold text-slate-800 mb-4">Proyectos de Ejemplo</h3>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Explora los proyectos generados con el sistema. Haz clic para verlos en acción.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Proyecto 1 -->
+                <a href="./proyectos/02-Administracion/GS-ASID/Segundo/SEGUNDO-ASID-PLAN-EMPRESA-STARTUP-TORRENT/proyecto.html" 
+                   target="_blank"
+                   class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+                    <div class="h-40 bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                        <span class="text-6xl opacity-80 group-hover:opacity-100 transition">💼</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">Administración</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full">GS-ASID</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-slate-800 mb-2 group-hover:text-blue-600 transition">
+                            Plan de Empresa: Startup de Torrent
+                        </h4>
+                        <p class="text-sm text-slate-600 mb-4">
+                            Plan de empresa completo para Turia Innovation Labs S.L., 
+                            una startup de consultoría tecnológica.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-slate-500">
+                            <span>Segundo Curso (96h)</span>
+                            <span class="flex items-center gap-1 text-blue-600 font-semibold">
+                                Ver proyecto <span>→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Proyecto 2 -->
+                <a href="./proyectos/01-Informatica/ASIR/Segundo/SEGUNDO-ASIR-TELEMEDICINA-CLOUD/proyecto.html" 
+                   target="_blank"
+                   class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+                    <div class="h-40 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                        <span class="text-6xl opacity-80 group-hover:opacity-100 transition">☁️</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full">Informática</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-700 text-xs font-semibold rounded-full">ASIR</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-slate-800 mb-2 group-hover:text-blue-600 transition">
+                            Telemedicina en la Nube
+                        </h4>
+                        <p class="text-sm text-slate-600 mb-4">
+                            Plataforma cloud para consultas médicas telemáticas 
+                            con infraestructura AWS/Azure.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-slate-500">
+                            <span>Segundo Curso (96h)</span>
+                            <span class="flex items-center gap-1 text-blue-600 font-semibold">
+                                Ver proyecto <span>→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Proyecto 3 -->
+                <a href="./proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-APP-CITAS-MEDICAS/proyecto.html" 
+                   target="_blank"
+                   class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+                    <div class="h-40 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+                        <span class="text-6xl opacity-80 group-hover:opacity-100 transition">📱</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full">Informática</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full">DAM</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-slate-800 mb-2 group-hover:text-blue-600 transition">
+                            App de Citas Médicas
+                        </h4>
+                        <p class="text-sm text-slate-600 mb-4">
+                            Aplicación móvil para gestión de citas médicas 
+                            con backend REST y base de datos.
+                        </p>
+                        <div class="flex items-center justify-between text-xs text-slate-500">
+                            <span>Segundo Curso (96h)</span>
+                            <span class="flex items-center gap-1 text-blue-600 font-semibold">
+                                Ver proyecto <span>→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Más proyectos próximamente -->
+            <div class="text-center mt-12">
+                <p class="text-slate-500">
+                    ¿Quieres ver más ejemplos? Genera tu propio proyecto o contacta con el profesorado.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+                            <span class="text-xl">🎓</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">IES Serra Perenxisa</h4>
+                            <p class="text-xs text-slate-400">Torrent, Valencia</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400">
+                        Proyecto educativo para la generación asistida de 
+                        proyectos intermodulares.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#como-funciona" class="hover:text-white transition">Cómo Funciona</a></li>
+                        <li><a href="#demo" class="hover:text-white transition">Proyectos Demo</a></li>
+                        <li><a href="#agentes" class="hover:text-white transition">Agentes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Recursos</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="./README.md" class="hover:text-white transition">Documentación</a></li>
+                        <li><a href="./QUICKSTART.md" class="hover:text-white transition">Guía Rápida</a></li>
+                        <li><a href="https://github.com/sergarb1/generador-proyecto-intermodular-agentes" target="_blank" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-700 mt-8 pt-8 text-center text-sm text-slate-400">
+                <div class="flex items-center justify-center gap-4 mb-4">
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license" class="hover:opacity-80 transition">
+                        <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" alt="CC BY-SA 4.0 License" class="h-8 inline-block">
+                    </a>
+                </div>
+                <p class="mb-2">&copy; 2026 IES Serra Perenxisa. Proyecto educativo de código abierto.</p>
+                <p>
+                    Este trabajo está bajo licencia 
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license" class="text-blue-400 hover:text-blue-300 transition underline">
+                        Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional
+                    </a>
+                </p>
+                <p class="mt-2 text-xs">
+                    Eres libre de compartir y adaptar este material, incluso con fines comerciales, 
+                    siempre que des atribución y compartas bajo la misma licencia.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

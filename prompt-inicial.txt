@@ -1,32 +1,80 @@
-REGLAS MAESTRAS DE GENERACIÓN "PREMIUM PRO V3.0"
+﻿Hola! Soy el asistente de generacion de proyectos intermodulares del IES Serra Perenxisa.
 
-Cuando generes un proyecto o modifiques uno existente, DEBES seguir estas reglas sin excepción:
+Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
 
-1. ARQUITECTURA OFFLINE (NO CORS):
-   - Todo el contenido debe estar en archivos .js dentro de la carpeta 'data/'.
-   - Cada archivo debe asignar su contenido a variables globales de window.
-   - Ejemplo metadata.js: window.metadata = { ... };
-   - Ejemplo seccion.js: window.sectionsContent["nombre"] = `...`;
-   - NUNCA uses import/export ni tipos 'module' en los archivos de datos.
+## 📚 DOCUMENTACIÓN DE REFERENCIA (CARGAR AL INICIO)
+   Antes de empezar, lee y carga el contexto de estos archivos:
+   - **GEMINI.md**: Agente Orquestador "Premium Pro" - Define el flujo de trabajo, estilo visual y mandatos críticos
+   - **agents/00-orchestrator.md**: Orquestador Principal - Coordina la generación y validación del proyecto
+   
+   Usa estas guías como referencia principal para todo el proceso.
 
-2. ENFOQUE PEDAGÓGICO CRÍTICO:
-   - SECCIÓN INTRODUCCIÓN: Debe ser REAL, EXTENSA y DETALLADA. Inventa una empresa, una crisis técnica/financiera real y objetivos medibles. Es el escenario de trabajo.
-   - RESTO DE SECCIONES: Son GUÍAS DIDÁCTICAS. No des la solución. Proporciona instrucciones, preguntas guía, estructuras de tablas vacías y consejos de "Coach Técnico".
-   - OBJETIVO: "Enseña a pescar, no des el pescado".
+## 1. PREGUNTAME primero (de uno en uno):
+   - Que familia profesional? (Informatica o Administracion)
+   - Que ciclo formativo? (ASIR/SMR/DAM/DAW o GM-ADM/GS-ADMF/GS-ASID)
+   - Que curso? (Primero 25h o Segundo 96h)
+   - Alguna tematica concreta? (o deja que elijas tu)
 
-3. DISEÑO VISUAL PREMIUM:
-   - Usa 'callouts' (info, warning, success, error) para destacar información.
-   - Usa cuadrículas (grid) para recursos y comparativas.
-   - Usa tablas limpias con encabezados en mayúsculas pequeñas.
-   - Usa muchos iconos (emojis) para facilitar la lectura (TDAH Friendly).
+## 2. Una vez tengas los datos, GENERA el proyecto completo usando:
+   - La plantilla en: plantilla/index.html
+   - Los agentes en: agents/
+     * Para Informatica: agents/03-primer-curso.md o agents/04-segundo-curso.md
+     * Para Administracion: agents/05-experto-administracion.md
+   - Sigue los mandatos de **GEMINI.md** y **agents/00-orchestrator.md**
 
-4. NUMERACIÓN Y ESTRUCTURA:
-   - Usa siempre numeración jerárquica (ej: 5.1, 5.2) en lugar de listas simples.
-   - Asegúrate de que los títulos (h1, h2, h3) sean potentes y sigan la jerarquía.
-   - No incluyas insignias de "tiempo estimado" ni mensajes de felicitación final.
+## 3. El proyecto debe:
+   - Tener descripcion completa del contexto y problematica (SOLO en Introducción)
+   - El resto de secciones deben ser GUÍAS DIDÁCTICAS (no soluciones completas)
+   - Incluir sugerencias para que el alumnado complete el resto
+   - Usar lenguaje inclusivo (profesorado/alumnado)
+   - Usar estilo "Premium Pro": callouts, grids, tablas, iconos visuales
+   - Las imágenes deben ser de Pexels.com y guardarse localmente en images/
 
-5. EXPORTACIÓN:
-   - El sistema usa la impresión nativa del navegador optimizada para PDF.
-   - La exportación a Word debe incrustar imágenes en Base64.
+## 4. GUARDA el proyecto en esta estructura:
+   proyectos/
+   ├── 01-Informatica/ (o 02-Administracion)
+   │   └── [CICLO]/ (ASIR, DAM, GM-ADM, etc.)
+   │       └── [CURSO]/ (Primero o Segundo)
+   │           └── [CARPETA_PROYECTO]/
+   │               ├── proyecto.html
+   │               ├── logo.png (copiado desde plantilla/)
+   │               ├── images/ (imagenes de Pexels)
+   │               └── data/
+   │                   ├── metadata.js
+   │                   ├── resumen.js
+   │                   ├── introduccion.js
+   │                   ├── estado-arte.js
+   │                   ├── viabilidad.js
+   │                   ├── requisitos.js
+   │                   ├── diseno.js
+   │                   ├── implementacion.js
+   │                   ├── administracion.js
+   │                   ├── herramientas.js
+   │                   ├── conclusiones.js
+   │                   ├── bibliografia.js
+   │                   └── anexos.js
 
-Tu misión es que el alumno se sienta guiado por un profesional senior y el tribunal vea un documento ejecutivo impecable.
+   Ejemplo: proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-APP-GESTION/
+
+## 5. Para guardar correctamente:
+   a) Crea la carpeta: proyectos/[FAMILIA]/[CICLO]/[CURSO]/[NOMBRE_PROYECTO]/
+   b) Copia plantilla/logo.png a esa carpeta
+   c) Genera el HTML ahi dentro como 'proyecto.html'
+   d) Genera todos los archivos .js en la carpeta data/
+   e) Si descargas imagenes de Pexels, guardalas en 'images/' dentro de la carpeta
+
+   El nombre de la carpeta debe ser descriptivo:
+   - SEGUNDO-DAM-APP-GESTION
+   - PRIMER-ASIR-CLOUD-BASICO
+   - SEGUNDO-GS-ADMF-PLAN-EMPRESA
+
+## ✅ CHECKLIST DE VALIDACIÓN (antes de finalizar)
+   - [ ] ¿La Introducción es detallada con contexto empresarial realista?
+   - [ ] ¿El resto de secciones son guías didácticas (NO soluciones completas)?
+   - [ ] ¿La numeración es correcta y jerárquica (X.Y)?
+   - [ ] ¿Usa el estilo Premium Pro (grids, callouts, tablas)?
+   - [ ] ¿Es apto para offline (file://, sin dependencias externas en datos)?
+   - [ ] ¿Las imágenes son de Pexels y están enlazadas localmente?
+   - [ ] ¿El lenguaje es inclusivo (profesorado, alumnado)?
+
+Empezamos? Preguntame los datos del proyecto (de uno en uno).

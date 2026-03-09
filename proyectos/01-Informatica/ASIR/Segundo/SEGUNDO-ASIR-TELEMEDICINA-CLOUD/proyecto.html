@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cargando Proyecto...</title>
-    
+    <title>Proyecto Intermodular - IES Serra Perenxisa</title>
+
+    <!-- Librerías Externas (CDNs) -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <!-- Tipografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+
     <style>
+        /* Ocultar contenido hasta que Vue se cargue */
+        [v-cloak] { display: none; }
+        
         :root {
             --primary: #2563eb;
             --primary-hover: #1d4ed8;
@@ -39,6 +45,7 @@
             overflow-x: hidden;
         }
 
+        /* Tipografía Pro */
         h1, h2, h3, h4, h5, h6 { font-weight: 800 !important; color: #0f172a; letter-spacing: -0.02em; }
         h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 2rem; }
         h2 { font-size: 2rem; margin-top: 5rem; margin-bottom: 1.5rem; border-bottom: 2px solid #f1f5f9; padding-bottom: 1rem; color: var(--primary); }
@@ -47,6 +54,7 @@
         
         p { margin-bottom: 1.5rem; color: #475569; text-align: justify; }
 
+        /* Callouts Premium */
         .callout {
             padding: 1.5rem;
             border-radius: 1rem;
@@ -67,6 +75,7 @@
         .callout-success { background-color: #f0fdf4; border-color: #bbf7d0; color: #166534; }
         .callout-error { background-color: #fef2f2; border-color: #fecaca; color: #991b1b; }
 
+        /* Sidebar */
         .sidebar {
             width: var(--sidebar-width);
             background: var(--bg-subtle);
@@ -97,6 +106,7 @@
         .nav-item:hover { background-color: #f1f5f9; color: var(--text-main); transform: translateX(4px); }
         .nav-item.active { background-color: white; color: var(--primary); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
 
+        /* Main Container */
         .main-container {
             margin-left: var(--sidebar-width);
             transition: margin-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -138,31 +148,12 @@
         .btn-secondary { background: white; color: var(--text-main); border-color: var(--border); }
         .btn-secondary:hover { background: var(--bg-subtle); }
 
+        /* Content Area */
         .content-area {
             max-width: 900px;
             margin: 0 auto;
             padding: 4rem 2rem;
         }
-
-        .logo-box {
-            width: 48px;
-            height: 48px;
-            background: white;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            padding: 6px;
-        }
-
-        .toggle-btn {
-            padding: 0.5rem;
-            border-radius: 0.5rem;
-            color: var(--text-muted);
-            transition: all 0.2s;
-        }
-        .toggle-btn:hover { background: #f1f5f9; color: var(--primary); }
 
         /* Print Improvements */
         @media print {
@@ -240,10 +231,32 @@
                 page-break-after: always;
             }
         }
+
+        /* Logo Pro */
+        .logo-box {
+            width: 48px;
+            height: 48px;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 6px;
+        }
+
+        /* Toggle Sidebar Button */
+        .toggle-btn {
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            color: var(--text-muted);
+            transition: all 0.2s;
+        }
+        .toggle-btn:hover { background: #f1f5f9; color: var(--primary); }
     </style>
 </head>
 <body>
-    <div id="app">
+    <div id="app" v-cloak>
         <!-- Sidebar -->
         <aside class="sidebar no-print" :class="{ 'sidebar-collapsed': !sidebarOpen }">
             <div class="h-20 flex items-center px-8 border-b border-slate-200 bg-white">
@@ -289,7 +302,7 @@
                         <svg v-if="sidebarOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19l-7-7 7-7m8 14l-7-7 7-7"/></svg>
                         <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/></svg>
                     </button>
-                    <h1 class="text-lg font-bold m-0 border-none truncate max-w-md">{{ projectTitle }}</h1>
+                    <h1 class="text-lg font-bold m-0 border-none truncate max-w-md" :title="projectTitle">{{ projectTitle || 'Proyecto Intermodular' }}</h1>
                 </div>
                 <div class="flex gap-3">
                     <button @click="printProject" class="btn btn-secondary text-slate-600">
@@ -377,6 +390,7 @@
         </div>
     </div>
 
+    <!-- CARGA DE DATOS OFFLINE (window.metadata y window.sectionsContent) -->
     <script src="./data/metadata.js"></script>
     <script src="./data/resumen.js"></script>
     <script src="./data/introduccion.js"></script>
@@ -399,14 +413,14 @@
                 return {
                     activeSection: 'inicio',
                     sidebarOpen: true,
-                    projectTitle: window.metadata?.projectTitle || 'Cargando...',
+                    projectTitle: window.metadata?.projectTitle || 'Proyecto Intermodular',
                     studentName: window.metadata?.studentName || '',
                     tutorName: window.metadata?.tutorName || '',
                     cycle: window.metadata?.cycle || '',
                     cycleName: window.metadata?.cycleName || '',
                     cycleLevel: window.metadata?.cycleLevel || '',
                     courseYear: window.metadata?.courseYear || '',
-                    projectImage: window.metadata?.projectImage || null,
+                    projectImage: window.metadata?.projectImage || 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80',
                     currentDate: new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }),
                     logoUrl: './logo.png',
                     sections: [
@@ -433,71 +447,22 @@
                     return icons[id] || '📄';
                 },
                 getSectionContent(id) {
-                    return this.sectionsContent[id] || '<div class="callout callout-warning">Contenido no encontrado</div>';
+                    return this.sectionsContent[id] || '<div class="callout callout-warning">Contenido no encontrado en data/' + id + '.js</div>';
                 },
                 printProject() {
                     window.print();
                 },
-                async exportPDF() {
-                    const element = document.getElementById('export-content');
-                    const opt = {
-                        margin: [15, 15, 15, 15],
-                        filename: this.projectTitle.replace(/ /g, '_') + '.pdf',
-                        image: { type: 'jpeg', quality: 0.98 },
-                        html2canvas: { 
-                            scale: 2, 
-                            useCORS: true, 
-                            allowTaint: true,
-                            letterRendering: true,
-                            logging: false,
-                            backgroundColor: '#ffffff'
-                        },
-                        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-                        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-                    };
-                    try {
-                        const images = element.getElementsByTagName('img');
-                        await Promise.all(Array.from(images).map(img => {
-                            if (img.complete) return Promise.resolve();
-                            return new Promise(resolve => { img.onload = resolve; img.onerror = resolve; });
-                        }));
-                        await html2pdf().set(opt).from(element).save();
-                    } catch (e) {
-                        console.error('Error PDF:', e);
-                        alert('Error al generar PDF. Es posible que el navegador bloquee la operación en modo offline. Prueba a imprimir (Ctrl+P) y seleccionar "Guardar como PDF".');
-                    }
-                },
                 async exportWord() {
                     const element = document.getElementById('export-content');
-                    
-                    const getBase64Image = (img) => {
-                        try {
-                            const canvas = document.createElement("canvas");
-                            canvas.width = img.naturalWidth;
-                            canvas.height = img.naturalHeight;
-                            const ctx = canvas.getContext("2d");
-                            ctx.drawImage(img, 0, 0);
-                            return canvas.toDataURL("image/png");
-                        } catch (e) {
-                            return img.src;
-                        }
-                    };
-
                     const clone = element.cloneNode(true);
                     const imgs = clone.getElementsByTagName('img');
                     for (let img of imgs) {
-                        const originalImg = element.querySelector('img[src="' + img.getAttribute('src') + '"]');
-                        if (originalImg) {
-                            img.src = getBase64Image(originalImg);
-                            img.style.maxWidth = '100%';
-                        }
+                        img.style.maxWidth = '100%';
                     }
-
-                    const styles = '<style>body { font-family: "Segoe UI", sans-serif; padding: 20px; } h1, h2, h3 { color: #2563eb; } .callout { padding: 15px; border: 1px solid #e2e8f0; border-radius: 10px; background: #f8fafc; margin: 20px 0; } .grid { display: block; } .grid > div { margin-bottom: 15px; padding: 10px; border: 1px solid #eee; }</style>';
+                    const styles = '<style>body { font-family: "Segoe UI", sans-serif; padding: 20px; } h1, h2, h3 { color: #2563eb; } .callout { padding: 15px; border: 1px solid #e2e8f0; border-radius: 10px; background: #f8fafc; margin: 20px 0; }</style>';
                     const header = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8">' + styles + '</head><body>';
                     const footer = '</body></html>';
                     const sourceHTML = header + clone.innerHTML + footer;
-                    
                     const blob = new Blob(['\ufeff', sourceHTML], { type: 'application/msword' });
                     const url = URL.createObjectURL(blob);
                     const link = document.createElement('a');
@@ -509,6 +474,13 @@
                 }
             },
             mounted() {
+                // Actualizar título de la página una vez cargado
+                if (window.metadata?.projectTitle) {
+                    this.projectTitle = window.metadata.projectTitle;
+                    document.title = window.metadata.projectTitle + ' - IES Serra Perenxisa';
+                }
+                
+                // Inicializar observador de secciones
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) this.activeSection = entry.target.id;

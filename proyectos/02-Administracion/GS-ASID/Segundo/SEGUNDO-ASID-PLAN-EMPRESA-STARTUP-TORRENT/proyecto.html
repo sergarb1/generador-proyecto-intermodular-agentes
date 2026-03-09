@@ -18,7 +18,7 @@
     <style>
         /* Ocultar contenido hasta que Vue se cargue */
         [v-cloak] { display: none; }
-        
+
         :root {
             --primary: #2563eb;
             --primary-hover: #1d4ed8;
@@ -51,7 +51,7 @@
         h2 { font-size: 2rem; margin-top: 5rem; margin-bottom: 1.5rem; border-bottom: 2px solid #f1f5f9; padding-bottom: 1rem; color: var(--primary); }
         h3 { font-size: 1.5rem; margin-top: 3rem; margin-bottom: 1.25rem; color: #1e293b; display: flex; align-items: center; gap: 0.75rem; }
         h3::before { content: ''; width: 4px; height: 1.5rem; background: var(--primary); border-radius: 4px; display: inline-block; }
-        
+
         p { margin-bottom: 1.5rem; color: #475569; text-align: justify; }
 
         /* Callouts Premium */
@@ -86,11 +86,11 @@
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             left: 0;
         }
-        
+
         .sidebar-collapsed {
             transform: translateX(-100%);
         }
-        
+
         .nav-item {
             display: flex;
             align-items: center;
@@ -161,23 +161,23 @@
                 margin: 2cm;
                 size: a4;
             }
-            
+
             .sidebar, header, .btn, .no-print, .toggle-btn { display: none !important; }
-            
-            .main-container { 
-                margin-left: 0 !important; 
+
+            .main-container {
+                margin-left: 0 !important;
                 padding: 0 !important;
             }
-            
-            .content-area { 
-                max-width: 100% !important; 
+
+            .content-area {
+                max-width: 100% !important;
                 width: 100% !important;
-                padding: 0 !important; 
-                margin: 0 !important; 
+                padding: 0 !important;
+                margin: 0 !important;
             }
-            
-            body { 
-                background: white !important; 
+
+            body {
+                background: white !important;
                 font-size: 11pt;
             }
 
@@ -188,40 +188,40 @@
             }
 
             h1 { font-size: 28pt; margin-bottom: 3rem; page-break-after: avoid; }
-            h2 { 
-                font-size: 20pt; 
-                page-break-before: always; 
-                margin-top: 0; 
-                padding-top: 1cm; 
+            h2 {
+                font-size: 20pt;
+                page-break-before: always;
+                margin-top: 0;
+                padding-top: 1cm;
                 border-bottom: 2px solid #eee !important;
                 page-break-after: avoid;
             }
             h3 { font-size: 16pt; margin-top: 2rem; page-break-after: avoid; }
-            
+
             p, li { orphans: 3; widows: 3; }
-            
-            .callout { 
-                break-inside: avoid; 
+
+            .callout {
+                break-inside: avoid;
                 border: 1px solid #e2e8f0 !important;
                 background-color: #f8fafc !important;
                 margin: 1.5rem 0;
             }
-            
-            img { 
-                max-width: 100% !important; 
+
+            img {
+                max-width: 100% !important;
                 height: auto !important;
                 border-radius: 1rem !important;
                 page-break-inside: avoid;
             }
 
-            table { 
+            table {
                 width: 100% !important;
-                break-inside: auto; 
+                break-inside: auto;
                 border-collapse: collapse !important;
             }
             tr { break-inside: avoid; break-after: auto; }
             thead { display: table-header-group; }
-            
+
             /* Portada específica */
             #inicio {
                 min-height: 100% !important;
@@ -280,7 +280,7 @@
                 <div class="my-6 border-t border-slate-100 mx-6"></div>
                 <div v-for="section in sections" :key="section.id">
                     <a :href="'#' + section.id" class="nav-item" :class="{ active: activeSection === section.id }" @click="activeSection = section.id">
-                        <span class="text-lg">{{ getSectionIcon(section.id) }}</span> 
+                        <span class="text-lg">{{ getSectionIcon(section.id) }}</span>
                         <span class="ml-3">{{ section.title }}</span>
                     </a>
                 </div>
@@ -325,7 +325,7 @@
                     <p class="text-2xl text-slate-400 font-medium max-w-3xl mx-auto italic mb-16">
                         Proyecto Intermodular Final de Ciclo Formativo de {{ cycleLevel }} en {{ cycleName }}
                     </p>
-                    
+
                     <div v-if="projectImage" class="relative max-w-5xl mx-auto mb-20 group">
                         <div class="absolute -inset-4 bg-gradient-to-tr from-blue-100 to-indigo-100 rounded-[2rem] blur-2xl opacity-50"></div>
                         <img :src="projectImage" alt="Hero" class="relative rounded-[1.5rem] shadow-2xl w-full border border-slate-100">
@@ -479,7 +479,7 @@
                     this.projectTitle = window.metadata.projectTitle;
                     document.title = window.metadata.projectTitle + ' - IES Serra Perenxisa';
                 }
-                
+
                 // Inicializar observador de secciones
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
