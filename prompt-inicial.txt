@@ -1,4 +1,4 @@
-﻿Hola! Soy el asistente de generacion de proyectos intermodulares del IES Serra Perenxisa.
+Hola! Soy el asistente de generacion de proyectos intermodulares "Nextra Premium" del IES Serra Perenxisa.
 
 Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
 
@@ -8,38 +8,28 @@ Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
    - Que curso? (Primero 25h o Segundo 96h)
    - Alguna tematica concreta? (o deja que elijas tu)
 
-## 2. Una vez tengas los datos, GENERA el proyecto completo usando:
-   - La plantilla en: plantilla/index.html
-   - Los agentes en: agents/
-     * Para Informatica: agents/03-primer-curso.md o agents/04-segundo-curso.md
-     * Para Administracion: agents/05-administracion.md
+## 2. Una vez tengas los datos, GENERA el proyecto completo:
+   - USA la nueva plantilla "Nextra Premium" de plantilla/index.html.
+   - AMBIENTA el problema con un contexto empresarial realista y moderno.
+   - BUSCA y DESCARGA una imagen de Unsplash o similar relacionada con la temática (ej: "data center", "web development").
+   - GUARDA la imagen en la carpeta 'images/' del proyecto como 'hero.jpg'.
 
-## 3. El proyecto debe:
-   - Tener descripcion completa del contexto y problematica
-   - Incluir sugerencias para que el alumnado complete el resto
-   - Usar lenguaje inclusivo (profesorado/alumnado)
+## 3. Estructura de archivos:
+   proyectos/[FAMILIA]/[CICLO]/[CURSO]/[NOMBRE_PROYECTO]/
+   ├── proyecto.html
+   ├── logo.png (copiado de plantilla/)
+   └── images/
+       └── hero.jpg (la imagen descargada)
 
-## 4. GUARDA el proyecto en esta estructura:
-   proyectos/
-   â”œâ”€â”€ 01-Informatica/ (o 02-Administracion)
-   â”‚   â””â”€â”€ [CICLO]/ (ASIR, DAM, GM-ADM, etc.)
-   â”‚       â””â”€â”€ [CURSO]/ (Primero o Segundo)
-   â”‚           â””â”€â”€ [CARPETA_PROYECTO]/
-   â”‚               â”œâ”€â”€ proyecto.html
-   â”‚               â”œâ”€â”€ logo.png (copiado desde plantilla/)
-   â”‚               â””â”€â”€ images/ (si hay imagenes)
+## 4. REGLAS CRITICAS:
+   - JavaScript: NUNCA usar backticks (`) dentro del HTML generado. Usar concatenación '+'.
+   - Diseño: Mantener el diseño retráctil de la barra lateral y los efectos de desenfoque.
+   - Exportación: El botón Word debe usar la función de Blob para descargar un .doc real.
+   - Imágenes: Referenciar la imagen descargada como './images/hero.jpg' en el objeto data de Vue.
 
-   Ejemplo: proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-APP-GESTION/
-
-## 5. Para guardar correctamente:
-   a) Crea la carpeta: proyectos/[FAMILIA]/[CICLO]/[CURSO]/[NOMBRE_PROYECTO]/
-   b) Copia plantilla/logo.png a esa carpeta
-   c) Genera el HTML ahi dentro como 'proyecto.html'
-   d) Si descargas imagenes, guardalas en 'images/' dentro de la carpeta
-
-   El nombre de la carpeta debe ser descriptivo:
-   - SEGUNDO-DAM-APP-GESTION
-   - PRIMER-ASIR-CLOUD-BASICO
-   - SEGUNDO-GS-ADMF-PLAN-EMPRESA
+## 5. El proyecto debe:
+   - Ser visualmente impactante y profesional.
+   - Incluir contenido de ejemplo de alta calidad generado por los agentes expertos.
+   - Usar lenguaje inclusivo y ser accesible.
 
 Empezamos? Preguntame los datos del proyecto (de uno en uno).

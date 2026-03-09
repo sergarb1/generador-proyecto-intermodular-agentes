@@ -2,6 +2,27 @@
 
 Plantilla HTML/CSS/JS para generar proyectos intermodulares con estilo **Nextra** utilizando **Vue.js 3** y **Tailwind CSS**.
 
+## ⚠️ IMPORTANTE: Generación de Código
+
+Al generar contenido para esta plantilla, seguir estrictamente las reglas en `../scripts/INSTRUCCIONES-AGENTES.md`.
+
+**Reglas críticas:**
+
+1. **NUNCA usar template literals con backticks (`` ` ``)** en el JavaScript incrustado en HTML
+2. **Usar concatenación de cadenas** con `+` en lugar de `${}`
+3. **No incluir** la librería `html-to-docx` (da problemas de compatibilidad)
+4. **Usar Vue.js production build**: `vue.global.prod.js`
+
+❌ **INCORRECTO**:
+```javascript
+const header = `<div>${this.projectTitle}</div>`;
+```
+
+✅ **CORRECTO**:
+```javascript
+const header = '<div>' + this.projectTitle + '</div>';
+```
+
 ## 📁 Estructura del Directorio
 
 ```
@@ -36,9 +57,12 @@ plantilla/
 - Totalmente responsive
 
 ### Tecnología
-- **Vue.js 3** - Reactividad y componentes
-- **Tailwind CSS** - Estilos utilitarios
-- **JavaScript ES6+** - Módulos nativos
+- **Vue.js 3 (production)** - Reactividad y componentes (`vue.global.prod.js`)
+- **Tailwind CSS** - Estilos utilitarios (vía CDN)
+- **html2pdf.js** - Exportación a PDF
+- **JavaScript ES6+** - Módulos nativos (solo para scripts de Node.js)
+
+**NOTA:** La exportación a DOCX se realiza mediante impresión del navegador debido a problemas de compatibilidad con librerías externas.
 
 ### Secciones Incluidas
 

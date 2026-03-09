@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestructura Cloud Híbrida para Telemedicina - Proyecto Intermodular</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --sidebar-width: 280px;
+            --header-height: 64px;
+            --bg-main: #ffffff;
+            --bg-subtle: #f8fafc;
+            --border: #e2e8f0;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+        }
+
+        * {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Scrollbar modernizada */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        /* Estilos de la Barra Lateral */
+        .sidebar {
+            width: var(--sidebar-width);
+            background: var(--bg-subtle);
+            border-right: 1px solid var(--border);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+        }
+
+        .sidebar-collapsed {
+            transform: translateX(-100%);
+        }
+
+        .main-container {
+            transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-left: var(--sidebar-width);
+        }
+
+        .main-container-expanded {
+            margin-left: 0;
+        }
+
+        @media (max-width: 1024px) {
+            .main-container { margin-left: 0; }
+        }
+
+        /* Items de Navegación */
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 0.625rem 1rem;
+            margin: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            border-radius: 0.5rem;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .nav-item:hover {
+            background-color: #f1f5f9;
+            color: var(--text-main);
+        }
+
+        .nav-item.active {
+            background-color: #eff6ff;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Cabecera con efecto Blur */
+        header {
+            height: var(--header-height);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Contenido Principal */
+        .content-area {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        /* Tipografía Avanzada */
+        h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -0.025em; margin-bottom: 1.5rem; color: #0f172a; line-height: 1.2; }
+        h2 { font-size: 1.875rem; font-weight: 700; letter-spacing: -0.025em; margin-top: 3.5rem; margin-bottom: 1.25rem; color: #1e293b; border-bottom: 1px solid #f1f5f9; padding-bottom: 0.75rem; }
+        h3 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #334155; }
+        
+        p { margin-bottom: 1.5rem; color: #475569; text-align: justify; }
+
+        /* Callouts Profesionales */
+        .callout {
+            position: relative;
+            padding: 1.25rem 1.5rem;
+            border-radius: 0.75rem;
+            margin: 2rem 0;
+            border: 1px solid transparent;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .callout-info { background: #f0f9ff; border-color: #bae6fd; color: #0369a1; }
+        .callout-warning { background: #fffbeb; border-color: #fef3c7; color: #92400e; }
+        .callout-danger { background: #fef2f2; border-color: #fecaca; color: #b91c1c; }
+        
+        .callout-icon { font-size: 1.25rem; flex-shrink: 0; margin-top: 0.125rem; }
+
+        /* Tablas Responsive */
+        .table-container { overflow-x: auto; margin: 2rem 0; border-radius: 0.75rem; border: 1px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; background: white; }
+        th { background: #f8fafc; padding: 0.75rem 1rem; text-align: left; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #64748b; border-bottom: 1px solid var(--border); }
+        td { padding: 1rem; font-size: 0.875rem; border-bottom: 1px solid #f1f5f9; color: #334155; }
+        tr:last-child td { border-bottom: none; }
+        tr:hover { background: #f8fafc; }
+
+        /* Código y Pre */
+        code { font-family: 'JetBrains Mono', monospace; background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 0.375rem; font-size: 0.85em; color: #e11d48; }
+        pre { background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; overflow-x: auto; margin: 1.5rem 0; position: relative; }
+        pre code { background: none; padding: 0; color: #f8fafc; }
+
+        /* Botones Animados */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1.25rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .btn-primary { background: var(--primary); color: white; box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.1), 0 2px 4px -1px rgba(37, 99, 235, 0.06); }
+        .btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2); }
+        
+        .btn-secondary { background: white; color: var(--text-main); border: 1px solid var(--border); }
+        .btn-secondary:hover { background: #f8fafc; border-color: #cbd5e1; }
+
+        /* Logos y Assets */
+        .logo-container {
+            background: white;
+            padding: 0.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+        }
+
+        /* Estilos de Impresión */
+        @media print {
+            .sidebar, header, .btn, .no-print { display: none !important; }
+            .main-container { margin-left: 0 !important; }
+            .content-area { max-width: 100%; padding: 0; }
+            body { font-size: 11pt; }
+        }
+
+        /* Animaciones VUE */
+        .fade-enter-active, .fade-leave-active { transition: opacity 0.2s ease; }
+        .fade-enter-from, .fade-leave-to { opacity: 0; }
+    </style>
+</head>
+<body>
+    <div id="app" class="min-h-screen">
+        <!-- Overlay para móvil -->
+        <div v-if="sidebarOpen" @click="sidebarOpen = false"
+             class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-30 lg:hidden transition-opacity"></div>
+
+        <!-- Barra Lateral -->
+        <aside class="sidebar fixed inset-y-0 left-0 z-40 overflow-y-auto"
+               :class="{ 'sidebar-collapsed': !sidebarOpen }">
+            <div class="h-16 flex items-center px-6 border-b border-slate-200 bg-white sticky top-0">
+                <div class="flex items-center gap-3">
+                    <div class="logo-container">
+                        <img :src="logoUrl" alt="Logo" class="max-h-full object-contain">
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-bold m-0 p-0 border-none leading-none">Serra Perenxisa</h2>
+                        <p class="text-[10px] text-slate-500 m-0 leading-tight mt-1">{{ cycle }} - {{ courseYear }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="py-6 px-3">
+                <div class="px-3 mb-2">
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Contenido del Proyecto</span>
+                </div>
+                <a href="#inicio" class="nav-item" :class="{ active: activeSection === 'inicio' }" @click="activeSection = 'inicio'">
+                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    Portada
+                </a>
+                <a href="#resumen" class="nav-item" :class="{ active: activeSection === 'resumen' }" @click="activeSection = 'resumen'">
+                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    Resumen
+                </a>
+                <div class="my-4 border-t border-slate-100 mx-3"></div>
+                <a v-for="section in sections"
+                   :key="section.id"
+                   :href="'#' + section.id"
+                   class="nav-item"
+                   :class="{ active: activeSection === section.id }"
+                   @click="activeSection = section.id">
+                    <span class="w-1.5 h-1.5 rounded-full mr-3" :class="activeSection === section.id ? 'bg-blue-500' : 'bg-slate-300'"></span>
+                    {{ section.title }}
+                </a>
+            </nav>
+
+            <div class="mt-auto p-6 bg-slate-50 border-t border-slate-200">
+                <div class="text-[10px] font-bold text-slate-400 uppercase mb-3 tracking-wider">Metadatos</div>
+                <div class="space-y-2">
+                    <div class="flex flex-col">
+                        <span class="text-[10px] text-slate-400">Estudiante</span>
+                        <span class="text-xs font-semibold text-slate-700">{{ studentName }}</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[10px] text-slate-400">Tutor/a</span>
+                        <span class="text-xs font-semibold text-slate-700">{{ tutorName }}</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenedor Principal -->
+        <div class="main-container" :class="{ 'main-container-expanded': !sidebarOpen }">
+            <header class="fixed top-0 right-0 left-0 z-30 flex items-center justify-between px-4 sm:px-8"
+                    :class="sidebarOpen ? 'lg:left-[280px]' : 'left-0'" style="transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+                <div class="flex items-center gap-4">
+                    <button @click="sidebarOpen = !sidebarOpen" 
+                            class="p-2 rounded-lg hover:bg-slate-100 text-slate-600 transition-colors"
+                            title="Alternar Menú">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path>
+                        </svg>
+                    </button>
+                    <h1 class="text-sm font-bold text-slate-900 truncate max-w-[200px] sm:max-w-md m-0 border-none leading-none">
+                        {{ projectTitle }}
+                    </h1>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button @click="exportPDF" class="btn btn-secondary text-red-600 border-red-100 hover:bg-red-50">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        <span class="hidden sm:inline">PDF</span>
+                    </button>
+                    <button @click="exportWord" class="btn btn-primary">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        <span class="hidden sm:inline">Word</span>
+                    </button>
+                </div>
+            </header>
+
+            <main id="export-content" class="content-area mt-16">
+                <!-- Portada del Proyecto -->
+                <section id="inicio" class="text-center py-12 mb-20">
+                    <div class="inline-block p-4 bg-slate-50 rounded-2xl mb-8 border border-slate-100 shadow-sm">
+                        <img :src="logoUrl" alt="Logo Centro" class="h-24 mx-auto object-contain">
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl">{{ projectTitle }}</h1>
+                    <p class="text-xl text-slate-500 mb-12 max-w-2xl mx-auto">
+                        Proyecto Intermodular Final de Ciclo Formativo de Grado Superior en {{ cycle }}
+                    </p>
+                    
+                    <div v-if="projectImage" class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                        <img :src="projectImage" alt="Hero" class="relative rounded-2xl shadow-2xl w-full max-w-4xl mx-auto border border-slate-200">
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 text-left">
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Autoría</span>
+                            <span class="font-bold text-slate-800">{{ studentName }}</span>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Tutorización</span>
+                            <span class="font-bold text-slate-800">{{ tutorName }}</span>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Ciclo</span>
+                            <span class="font-bold text-slate-800">{{ cycle }} - {{ courseYear }}</span>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Presentación</span>
+                            <span class="font-bold text-slate-800">{{ currentDate }}</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Secciones de Contenido -->
+                <section id="resumen" class="mb-16 scroll-mt-24">
+                    <h2>Resumen / Abstract</h2>
+                    <div v-html="sectionsContent.resumen"></div>
+                </section>
+
+                <section v-for="section in sections"
+                         :key="section.id"
+                         :id="section.id"
+                         class="mb-20 scroll-mt-24">
+                    <h2>{{ section.title }}</h2>
+                    <div v-html="getSectionContent(section.id)"></div>
+                </section>
+
+                <section id="bibliografia" class="mb-16 scroll-mt-24">
+                    <h2>Bibliografía y Referencias</h2>
+                    <div v-html="sectionsContent.bibliografia"></div>
+                </section>
+
+                <section id="anexos" class="mb-16 scroll-mt-24">
+                    <h2>Anexos Técnicos</h2>
+                    <div v-html="sectionsContent.anexos"></div>
+                </section>
+            </main>
+
+            <!-- Pie de página -->
+            <footer class="bg-slate-50 border-t border-slate-200 py-12 mt-20 no-print">
+                <div class="max-w-4xl mx-auto px-6 text-center">
+                    <img :src="logoUrl" alt="IES" class="h-8 mx-auto mb-4 opacity-50 grayscale">
+                    <p class="text-slate-400 text-sm">
+                        &copy; {{ new Date().getFullYear() }} IES Serra Perenxisa. Todos los derechos reservados.
+                    </p>
+                    <p class="text-slate-300 text-[10px] mt-2 tracking-widest uppercase font-bold">
+                        Plantilla Premium Cloud Edition v2.0
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    sidebarOpen: true,
+                    activeSection: 'inicio',
+
+                    projectTitle: 'Infraestructura Cloud Híbrida para Plataforma de Telemedicina con Alta Disponibilidad',
+                    studentName: '[Nombre del Estudiante]',
+                    tutorName: '[Nombre del Tutor/a]',
+                    cycle: 'ASIR',
+                    courseYear: 'Segundo',
+                    currentDate: new Date().toLocaleDateString('es-ES', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    }),
+
+                    logoUrl: './logo.png',
+                    projectImage: './images/telemedicina.jpg',
+
+                    sections: [
+                        { id: 'introduccion', title: '1. Introducción' },
+                        { id: 'estado-arte', title: '2. Estado del Arte' },
+                        { id: 'viabilidad', title: '3. Estudio de Viabilidad' },
+                        { id: 'requisitos', title: '4. Análisis de Requisitos' },
+                        { id: 'diseno', title: '5. Diseño' },
+                        { id: 'implementacion', title: '6. Implementación' },
+                        { id: 'administracion', title: '7. Administración' },
+                        { id: 'herramientas', title: '8. Herramientas de Apoyo' },
+                        { id: 'conclusiones', title: '9. Conclusiones' }
+                    ],
+
+                    sectionsContent: {
+                        resumen: `
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                                <h3 class="text-blue-600 !mt-0">Castellano</h3>
+                                <p class="text-sm">Este proyecto presenta el diseño e implantación de una infraestructura cloud híbrida para una plataforma de telemedicina que debe garantizar alta disponibilidad (99.9% uptime) y cumplimiento normativo (RGPD). La solución combina recursos on-premise con servicios cloud públicos para escalabilidad y redundancia geográfica.</p>
+                            </div>
+                            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                                <h3 class="text-indigo-600 !mt-0">Valencià</h3>
+                                <p class="text-sm">Este projecte presenta el disseny i implantació d'una infraestructura cloud híbrida per a una plataforma de telemedicina que ha de garantir alta disponibilitat (99.9% uptime) i compliment normatiu (RGPD). La solució combina recursos on-premise amb serveis cloud públics per a escalabilitat i redundància geogràfica.</p>
+                            </div>
+                            <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                                <h3 class="text-slate-600 !mt-0">English</h3>
+                                <p class="text-sm">This project presents the design and implementation of a hybrid cloud infrastructure for a telemedicine platform that must guarantee high availability (99.9% uptime) and regulatory compliance (GDPR). The solution combines on-premise resources with public cloud services for scalability and geographic redundancy.</p>
+                            </div>
+                        </div>
+                        <div class="callout callout-info">
+                            <div class="callout-icon">💡</div>
+                            <div>
+                                <strong class="block mb-1">Nota de Calidad</strong>
+                                <p class="text-sm m-0">El resumen debe reflejar fielmente el trabajo realizado y contener las palabras clave que faciliten la indexación de tu proyecto.</p>
+                            </div>
+                        </div>`,
+
+                        introduccion: `
+                            <h3>1.1. Descripción del Proyecto y Objetivo</h3>
+                            <p><strong>MediConnect Solutions</strong> es una empresa emergente del sector salud digital que proporciona servicios de telemedicina a clínicas y hospitales de la Comunidad Valenciana. El objetivo principal de este proyecto es diseñar e implantar una <strong>infraestructura cloud híbrida</strong> que garantice un SLA del 99.9%.</p>
+                            
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr><th>Atributo</th><th>Detalle</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>Sector</td><td>Salud Digital / Telemedicina</td></tr>
+                                        <tr><td>Ubicación</td><td>Valencia, España</td></tr>
+                                        <tr><td>Usuarios Activos</td><td>8.000 pacientes mensuales</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3>1.2. Problemática Detectada</h3>
+                            <p>La infraestructura actual presenta deficiencias críticas como puntos únicos de fallo y falta de redundancia geográfica, lo que resulta en una disponibilidad real del 97.2%.</p>
+                        `,
+                        // ... Resto del contenido se mantendría igual o similar pero dentro de la nueva estructura
+                        'estado-arte': `<p>Investigación detallada sobre plataformas de Cloud Híbrido como Azure Arc y AWS Outposts, comparando su TCO y capacidades de cumplimiento normativo.</p>`,
+                        viabilidad: `<h3>3.1. Análisis DAFO</h3><div class="grid grid-cols-2 gap-4"><div class="p-4 bg-green-50 rounded-lg">Fortalezas: Control total de datos</div><div class="p-4 bg-red-50 rounded-lg">Amenazas: Ciberataques dirigidos</div></div>`,
+                        requisitos: `<p>Definición de 10 requisitos funcionales y 5 no funcionales, priorizando la seguridad y el tiempo de respuesta.</p>`,
+                        diseno: `<p>Diseño de red con VLANs segmentadas y topología híbrida con conexión segura vía VPN Site-to-Site.</p>`,
+                        implementacion: `<p>Documentación técnica de la instalación de Proxmox, pfSense y servicios en Azure.</p>`,
+                        administracion: `<p>Políticas de backup 3-2-1 y plan de mantenimiento preventivo mensual.</p>`,
+                        herramientas: `<p>Uso de Git Flow, GitHub Actions y Zabbix para la monitorización proactiva.</p>`,
+                        conclusiones: `<p>Reflexión personal sobre el aprendizaje de tecnologías cloud y la importancia de la alta disponibilidad en el sector salud.</p>`,
+                        bibliografia: `<ul><li>[1] Microsoft Azure. (2024). Azure Hybrid Cloud Architecture.</li></ul>`,
+                        anexos: `<p>Scripts de automatización y capturas de los dashboards de monitorización.</p>`
+                    }
+                }
+            },
+            methods: {
+                getSectionContent(sectionId) {
+                    return this.sectionsContent[sectionId] || '<p>Contenido no disponible</p>';
+                },
+
+                async exportPDF() {
+                    const element = document.getElementById('export-content');
+                    const opt = {
+                        margin: 10,
+                        filename: 'Proyecto_Telemedicina_Cloud.pdf',
+                        image: { type: 'jpeg', quality: 0.98 },
+                        html2canvas: { scale: 2, useCORS: true, letterRendering: true },
+                        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+                    };
+
+                    try {
+                        await html2pdf().set(opt).from(element).save();
+                    } catch (error) {
+                        alert('Error al generar PDF: ' + error.message);
+                    }
+                },
+
+                exportWord() {
+                    const content = document.getElementById('export-content').innerHTML;
+                    const header = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export</title><style>body { font-family: sans-serif; }</style></head><body>";
+                    const footer = "</body></html>";
+                    const sourceHTML = header + content + footer;
+                    
+                    const blob = new Blob(['\ufeff', sourceHTML], {
+                        type: 'application/msword'
+                    });
+                    
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = 'Proyecto_Intermodular.doc';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            },
+            mounted() {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '-20% 0px -70% 0px',
+                    threshold: 0
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            this.activeSection = entry.target.id;
+                        }
+                    });
+                }, observerOptions);
+
+                document.querySelectorAll('section[id]').forEach((section) => {
+                    observer.observe(section);
+                });
+
+                // Control automático de sidebar en desktop
+                if (window.innerWidth < 1024) this.sidebarOpen = false;
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

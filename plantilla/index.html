@@ -4,627 +4,308 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ projectTitle }} - Proyecto Intermodular</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script src="https://unpkg.com/html-to-docx@1.2.4/dist/html-to-docx.umd.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --nextra-primary: #0066CC;
-            --nextra-bg: #ffffff;
-            --nextra-bg-subtle: #f9fafb;
-            --nextra-border: #e5e7eb;
-            --nextra-text: #111827;
-            --nextra-text-muted: #6b7280;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --sidebar-width: 280px;
+            --header-height: 64px;
+            --bg-main: #ffffff;
+            --bg-subtle: #f8fafc;
+            --border: #e2e8f0;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
         }
 
         * {
             scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--nextra-bg);
-            color: var(--nextra-text);
-            line-height: 1.7;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        /* Nextra-style Sidebar */
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        /* Sidebar Styles */
         .sidebar {
-            background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
-            border-right: 1px solid var(--nextra-border);
+            width: var(--sidebar-width);
+            background: var(--bg-subtle);
+            border-right: 1px solid var(--border);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
         }
 
-        .sidebar-item {
-            @apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors;
+        .sidebar-collapsed { transform: translateX(-100%); }
+
+        .main-container {
+            transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-left: var(--sidebar-width);
         }
 
-        .sidebar-item.active {
-            @apply bg-blue-50 text-blue-700 font-medium;
+        .main-container-expanded { margin-left: 0; }
+
+        @media (max-width: 1024px) {
+            .main-container { margin-left: 0; }
         }
 
-        /* Main Content */
-        .main-content {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        /* Typography - Nextra Style */
-        h1 {
-            font-size: 2.25rem;
-            font-weight: 700;
-            letter-spacing: -0.025em;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: #111827;
-        }
-
-        h2 {
-            font-size: 1.875rem;
-            font-weight: 600;
-            letter-spacing: -0.025em;
-            margin-top: 2.5rem;
-            margin-bottom: 0.75rem;
-            color: #111827;
-            border-bottom: 1px solid var(--nextra-border);
-            padding-bottom: 0.5rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-top: 2rem;
-            margin-bottom: 0.5rem;
-            color: #374151;
-        }
-
-        h4 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: #4b5563;
-        }
-
-        p {
-            margin-bottom: 1.25rem;
-            text-align: justify;
-        }
-
-        ul, ol {
-            margin-bottom: 1.25rem;
-            padding-left: 1.5rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Code Blocks */
-        code {
-            font-family: 'JetBrains Mono', monospace;
-            background-color: #f3f4f6;
-            padding: 0.125rem 0.375rem;
-            border-radius: 0.25rem;
-            font-size: 0.875em;
-        }
-
-        pre {
-            background-color: #1f2937;
-            color: #f9fafb;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            overflow-x: auto;
-            margin-bottom: 1.25rem;
-        }
-
-        pre code {
-            background: none;
-            padding: 0;
-        }
-
-        /* Tables */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 1.5rem;
-        }
-
-        th, td {
-            border: 1px solid var(--nextra-border);
-            padding: 0.75rem 1rem;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f9fafb;
-            font-weight: 600;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-
-        /* Callouts / Admonitions */
-        .callout {
-            padding: 1rem 1.25rem;
-            border-radius: 0.5rem;
-            margin: 1.5rem 0;
-            border-left: 4px solid;
-        }
-
-        .callout-info {
-            background-color: #eff6ff;
-            border-color: #3b82f6;
-        }
-
-        .callout-warning {
-            background-color: #fef3c7;
-            border-color: #f59e0b;
-        }
-
-        .callout-danger {
-            background-color: #fee2e2;
-            border-color: #ef4444;
-        }
-
-        .callout-success {
-            background-color: #d1fae5;
-            border-color: #10b981;
-        }
-
-        .callout-title {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+        /* Nav Items */
+        .nav-item {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-        }
-
-        /* Images */
-        img {
-            max-width: 100%;
-            height: auto;
+            padding: 0.625rem 1rem;
+            margin: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-muted);
             border-radius: 0.5rem;
-            margin: 1.5rem 0;
-        }
-
-        /* Links */
-        a {
-            color: var(--nextra-primary);
+            transition: all 0.2s;
             text-decoration: none;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .nav-item:hover { background-color: #f1f5f9; color: var(--text-main); }
+        .nav-item.active { background-color: #eff6ff; color: var(--primary); font-weight: 600; }
+
+        /* Header */
+        header {
+            height: var(--header-height);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
         }
 
-        /* Blockquotes */
-        blockquote {
-            border-left: 4px solid var(--nextra-border);
-            padding-left: 1rem;
-            margin: 1.5rem 0;
-            color: var(--nextra-text-muted);
-            font-style: italic;
-        }
+        /* Typography */
+        h1 { font-size: 2.5rem; font-weight: 800; letter-spacing: -0.025em; margin-bottom: 1.5rem; color: #0f172a; line-height: 1.2; }
+        h2 { font-size: 1.875rem; font-weight: 700; letter-spacing: -0.025em; margin-top: 3.5rem; margin-bottom: 1.25rem; color: #1e293b; border-bottom: 1px solid #f1f5f9; padding-bottom: 0.75rem; }
+        h3 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #334155; }
+        p { margin-bottom: 1.5rem; color: #475569; text-align: justify; }
 
-        /* HR */
-        hr {
-            border: none;
-            border-top: 1px solid var(--nextra-border);
+        /* Callouts */
+        .callout {
+            position: relative;
+            padding: 1.25rem 1.5rem;
+            border-radius: 0.75rem;
             margin: 2rem 0;
+            border: 1px solid transparent;
+            display: flex;
+            gap: 1rem;
         }
+        .callout-info { background: #f0f9ff; border-color: #bae6fd; color: #0369a1; }
+        .callout-warning { background: #fffbeb; border-color: #fef3c7; color: #92400e; }
+        .callout-danger { background: #fef2f2; border-color: #fecaca; color: #b91c1c; }
+        .callout-icon { font-size: 1.25rem; flex-shrink: 0; margin-top: 0.125rem; }
 
-        /* Animations */
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
+        /* Tables */
+        .table-container { overflow-x: auto; margin: 2rem 0; border-radius: 0.75rem; border: 1px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; background: white; }
+        th { background: #f8fafc; padding: 0.75rem 1rem; text-align: left; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #64748b; border-bottom: 1px solid var(--border); }
+        td { padding: 1rem; font-size: 0.875rem; border-bottom: 1px solid #f1f5f9; color: #334155; }
+        tr:last-child td { border-bottom: none; }
+        tr:hover { background: #f8fafc; }
 
-        .animate-spin {
-            animation: spin 1s linear infinite;
-        }
+        /* Code */
+        code { font-family: 'JetBrains Mono', monospace; background: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 0.375rem; font-size: 0.85em; color: #e11d48; }
+        pre { background: #0f172a; padding: 1.5rem; border-radius: 0.75rem; overflow-x: auto; margin: 1.5rem 0; position: relative; }
+        pre code { background: none; padding: 0; color: #f8fafc; }
 
-        /* Print Styles */
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.625rem 1.25rem; border-radius: 0.5rem; font-weight: 600; font-size: 0.875rem; transition: all 0.2s; cursor: pointer; }
+        .btn-primary { background: var(--primary); color: white; box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.1); }
+        .btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2); }
+        .btn-secondary { background: white; color: var(--text-main); border: 1px solid var(--border); }
+        .btn-secondary:hover { background: #f8fafc; border-color: #cbd5e1; }
+
+        /* Logo */
+        .logo-container { background: white; padding: 0.5rem; border-radius: 0.75rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; }
+
         @media print {
-            .sidebar, header button, [v-if="sidebarOpen"] {
-                display: none !important;
-            }
-
-            .main-content {
-                max-width: 100%;
-                margin: 0;
-                padding: 0;
-            }
-
-            header {
-                position: static;
-                border: none;
-                box-shadow: none;
-            }
-
-            body {
-                font-size: 11pt;
-                line-height: 1.5;
-            }
-
-            h1 { font-size: 18pt; }
-            h2 { font-size: 14pt; }
-            h3 { font-size: 12pt; }
-
-            a {
-                color: #000;
-                text-decoration: none;
-            }
-
-            .callout {
-                break-inside: avoid;
-            }
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .sidebar {
-                display: none;
-            }
-
-            .main-content {
-                padding: 1rem;
-            }
-
-            h1 { font-size: 1.75rem; }
-            h2 { font-size: 1.5rem; }
-            h3 { font-size: 1.25rem; }
+            .sidebar, header, .btn, .no-print { display: none !important; }
+            .main-container { margin-left: 0 !important; }
+            .content-area { max-width: 100%; padding: 0; }
+            body { font-size: 11pt; }
         }
     </style>
 </head>
 <body>
-    <div id="app" class="flex min-h-screen">
-        <!-- Overlay para móvil -->
-        <div v-if="sidebarOpen" @click="sidebarOpen = false" 
-             class="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"></div>
-        
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar w-64 fixed h-full overflow-y-auto transition-transform duration-300 z-40 lg:translate-x-0 lg:block"
-               :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full'">
-            <div class="p-4 border-b border-gray-200">
+    <div id="app" class="min-h-screen">
+        <!-- Overlay -->
+        <div v-if="sidebarOpen" @click="sidebarOpen = false"
+             class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-30 lg:hidden transition-opacity"></div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar fixed inset-y-0 left-0 z-40 overflow-y-auto"
+               :class="{ 'sidebar-collapsed': !sidebarOpen }">
+            <div class="h-16 flex items-center px-6 border-b border-slate-200 bg-white sticky top-0">
                 <div class="flex items-center gap-3">
-                    <img :src="logoUrl" class="w-10 h-10 rounded-lg" alt="Logo">
+                    <div class="logo-container">
+                        <img :src="logoUrl" alt="Logo" class="max-h-full object-contain">
+                    </div>
                     <div>
-                        <h2 class="font-bold text-sm">IES Serra Perenxisa</h2>
-                        <p class="text-xs text-gray-500">{{ cycle }} - {{ courseYear }}</p>
+                        <h2 class="text-sm font-bold m-0 p-0 border-none leading-none">Serra Perenxisa</h2>
+                        <p class="text-[10px] text-slate-500 m-0 leading-tight mt-1">{{ cycle }} - {{ courseYear }}</p>
                     </div>
                 </div>
             </div>
 
-            <nav class="p-4 space-y-1">
-                <a v-for="section in sections" 
-                   :key="section.id"
-                   :href="'#' + section.id"
-                   class="sidebar-item"
-                   :class="{ active: activeSection === section.id }">
+            <nav class="py-6 px-3">
+                <div class="px-3 mb-2">
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Contenido</span>
+                </div>
+                <a href="#inicio" class="nav-item" :class="{ active: activeSection === 'inicio' }" @click="activeSection = 'inicio'">
+                    Portada
+                </a>
+                <a href="#resumen" class="nav-item" :class="{ active: activeSection === 'resumen' }" @click="activeSection = 'resumen'">
+                    Resumen
+                </a>
+                <div class="my-4 border-t border-slate-100 mx-3"></div>
+                <a v-for="section in sections" :key="section.id" :href="'#' + section.id" class="nav-item" :class="{ active: activeSection === section.id }" @click="activeSection = section.id">
                     {{ section.title }}
                 </a>
             </nav>
-
-            <div class="p-4 mt-4 border-t border-gray-200">
-                <div class="text-xs text-gray-500">
-                    <p><strong>Estudiante:</strong> {{ studentName }}</p>
-                    <p><strong>Tutor:</strong> {{ tutorName }}</p>
-                    <p><strong>Fecha:</strong> {{ currentDate }}</p>
-                </div>
-            </div>
         </aside>
 
-        <!-- Main Content Area -->
-        <main class="flex-1 lg:ml-64 transition-all duration-300" :class="{ 'lg:ml-0': !sidebarOpen }">
-            <!-- Header -->
-            <header class="border-b border-gray-200 bg-white sticky top-0 z-20 shadow-sm">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center gap-3">
-                            <!-- Toggle Sidebar Button -->
-                            <button @click="toggleSidebar" class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors" title="Mostrar/Ocultar menú">
-                                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                                </svg>
-                            </button>
-                            
-                            <!-- Project Title -->
-                            <div>
-                                <h1 class="text-lg font-bold text-gray-900">{{ projectTitle }}</h1>
-                                <p class="text-xs text-gray-500 hidden sm:block">{{ cycle }} - {{ courseYear }} Curso</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Export Buttons -->
-                        <div class="flex items-center gap-2">
-                            <button @click="exportPDF" 
-                                    class="inline-flex items-center gap-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white text-sm font-medium rounded-lg transition-colors shadow-sm"
-                                    title="Exportar a PDF">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                                </svg>
-                                <span class="hidden sm:inline">PDF</span>
-                            </button>
-                            
-                            <button @click="exportDOCX" 
-                                    class="inline-flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium rounded-lg transition-colors shadow-sm"
-                                    title="Exportar a Word">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                </svg>
-                                <span class="hidden sm:inline">Word</span>
-                            </button>
-                        </div>
-                    </div>
+        <!-- Main Container -->
+        <div class="main-container" :class="{ 'main-container-expanded': !sidebarOpen }">
+            <header class="fixed top-0 right-0 left-0 z-30 flex items-center justify-between px-4 sm:px-8"
+                    :class="sidebarOpen ? 'lg:left-[280px]' : 'left-0'" style="transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+                <div class="flex items-center gap-4">
+                    <button @click="sidebarOpen = !sidebarOpen" class="p-2 rounded-lg hover:bg-slate-100 text-slate-600 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                    </button>
+                    <h1 class="text-sm font-bold text-slate-900 truncate max-w-[200px] sm:max-w-md m-0 border-none leading-none">{{ projectTitle }}</h1>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button @click="exportPDF" class="btn btn-secondary text-red-600 border-red-100 hover:bg-red-50">PDF</button>
+                    <button @click="exportWord" class="btn btn-primary">Word</button>
                 </div>
             </header>
 
-            <!-- Document Content -->
-            <div class="main-content">
+            <main id="export-content" class="max-w-[840px] mx-auto px-6 py-20">
                 <!-- Portada -->
-                <div class="text-center py-16 mb-12">
-                    <img :src="logoUrl" class="w-24 h-24 mx-auto mb-6 rounded-xl" alt="Logo IES Serra Perenxisa">
-                    <h1 class="text-4xl font-bold mb-4">{{ projectTitle }}</h1>
-                    <p class="text-xl text-gray-600 mb-8">Proyecto Intermodular {{ courseYear }} Curso</p>
-                    
-                    <!-- Project Image -->
-                    <div v-if="projectImage" class="my-8">
-                        <img :src="projectImage" class="max-w-2xl mx-auto rounded-lg shadow-md border border-gray-200" alt="Imagen del proyecto">
-                        <p class="text-sm text-gray-500 mt-2 italic">Imagen representativa del proyecto</p>
+                <section id="inicio" class="text-center py-12 mb-20">
+                    <div class="inline-block p-4 bg-slate-50 rounded-2xl mb-8 border border-slate-100 shadow-sm">
+                        <img :src="logoUrl" alt="Logo Centro" class="h-24 mx-auto object-contain">
                     </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl">{{ projectTitle }}</h1>
+                    <p class="text-xl text-slate-500 mb-12 max-w-2xl mx-auto">Proyecto Intermodular Final de Ciclo Formativo de Grado Superior en {{ cycle }}</p>
                     
-                    <div class="mt-12 space-y-4 text-left max-w-md mx-auto">
-                        <div>
-                            <label class="text-sm text-gray-500">Estudiante</label>
-                            <p class="font-medium">{{ studentName }}</p>
-                        </div>
-                        <div>
-                            <label class="text-sm text-gray-500">Ciclo Formativo</label>
-                            <p class="font-medium">{{ cycle }}</p>
-                        </div>
-                        <div>
-                            <label class="text-sm text-gray-500">Tutor/a</label>
-                            <p class="font-medium">{{ tutorName }}</p>
-                        </div>
-                        <div>
-                            <label class="text-sm text-gray-500">Fecha</label>
-                            <p class="font-medium">{{ currentDate }}</p>
-                        </div>
+                    <div v-if="projectImage" class="relative group">
+                        <img :src="projectImage" alt="Hero" class="relative rounded-2xl shadow-2xl w-full max-w-4xl mx-auto border border-slate-200">
                     </div>
-                </div>
 
-                <!-- Resumen -->
-                <section id="resumen" class="mb-12">
-                    <h2>Resumen</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 text-left">
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Autoría</span>
+                            <span class="font-bold text-slate-800">{{ studentName }}</span>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Tutorización</span>
+                            <span class="font-bold text-slate-800">{{ tutorName }}</span>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Ciclo</span>
+                            <span class="font-bold text-slate-800">{{ cycle }} - {{ courseYear }}</span>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Fecha</span>
+                            <span class="font-bold text-slate-800">{{ currentDate }}</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="resumen" class="mb-16 scroll-mt-24">
+                    <h2>Resumen / Abstract</h2>
                     <div v-html="sectionsContent.resumen"></div>
                 </section>
 
-                <!-- Dynamic Sections -->
-                <section v-for="section in sections" 
-                         :key="section.id"
-                         :id="section.id"
-                         class="mb-12 scroll-mt-20">
+                <section v-for="section in sections" :key="section.id" :id="section.id" class="mb-20 scroll-mt-24">
                     <h2>{{ section.title }}</h2>
                     <div v-html="getSectionContent(section.id)"></div>
                 </section>
 
-                <!-- Bibliografía -->
-                <section id="bibliografia" class="mb-12">
-                    <h2>Bibliografía</h2>
-                    <div v-html="sectionsContent.bibliografia"></div>
-                </section>
+                <section id="bibliografia" class="mb-16 scroll-mt-24"><h2>Bibliografía</h2><div v-html="sectionsContent.bibliografia"></div></section>
+                <section id="anexos" class="mb-16 scroll-mt-24"><h2>Anexos</h2><div v-html="sectionsContent.anexos"></div></section>
+            </main>
 
-                <!-- Anexos -->
-                <section id="anexos" class="mb-12">
-                    <h2>Anexos</h2>
-                    <div v-html="sectionsContent.anexos"></div>
-                </section>
-            </div>
-
-            <!-- Footer -->
-            <footer class="border-t border-gray-200 bg-gray-50 mt-12">
-                <div class="main-content py-6 text-center text-sm text-gray-500">
-                    <p>Proyecto Intermodular {{ courseYear }} - {{ cycle }} - IES Serra Perenxisa</p>
-                    <p class="mt-2">Generado con Plantilla Nextra Style v1.0</p>
+            <footer class="bg-slate-50 border-t border-slate-200 py-12 mt-20 no-print">
+                <div class="max-w-4xl mx-auto px-6 text-center text-slate-400 text-sm">
+                    <p>&copy; {{ new Date().getFullYear() }} IES Serra Perenxisa. Todos los derechos reservados.</p>
                 </div>
             </footer>
-        </main>
+        </div>
     </div>
 
     <script>
         const { createApp } = Vue;
-
         createApp({
             data() {
                 return {
-                    // UI State
-                    sidebarOpen: false,
-                    activeSection: '',
-                    
-                    // Project Metadata
+                    sidebarOpen: true,
+                    activeSection: 'inicio',
                     projectTitle: 'Título del Proyecto',
-                    studentName: 'Nombre del Estudiante',
-                    tutorName: 'Nombre del Tutor',
-                    cycle: 'ASIR',
+                    studentName: 'Estudiante',
+                    tutorName: 'Tutor/a',
+                    cycle: 'CICLO',
                     courseYear: 'Segundo',
-                    currentDate: new Date().toLocaleDateString('es-ES', { 
-                        year: 'numeric', 
-                        month: 'long', 
-                        day: 'numeric' 
-                    }),
-                    
-                    // Logo (base64 placeholder)
+                    currentDate: new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' }),
                     logoUrl: './logo.png',
-                    
-                    // Project-related image (downloaded based on theme)
-                    projectImage: null,
-                    
-                    // Sections Configuration
+                    projectImage: './images/hero.jpg',
                     sections: [
-                        { id: 'introduccion', title: 'Introducción' },
-                        { id: 'estado-arte', title: 'Estado del Arte' },
-                        { id: 'viabilidad', title: 'Estudio de Viabilidad' },
-                        { id: 'requisitos', title: 'Análisis de Requisitos' },
-                        { id: 'diseno', title: 'Diseño' },
-                        { id: 'implementacion', title: 'Implementación' },
-                        { id: 'administracion', title: 'Administración' },
-                        { id: 'herramientas', title: 'Herramientas de Apoyo' },
-                        { id: 'conclusiones', title: 'Conclusiones' }
+                        { id: 'introduccion', title: '1. Introducción' },
+                        { id: 'estado-arte', title: '2. Estado del Arte' },
+                        { id: 'viabilidad', title: '3. Estudio de Viabilidad' },
+                        { id: 'requisitos', title: '4. Análisis de Requisitos' },
+                        { id: 'diseno', title: '5. Diseño' },
+                        { id: 'implementacion', title: '6. Implementación' },
+                        { id: 'administracion', title: '7. Administración' },
+                        { id: 'herramientas', title: '8. Herramientas de Apoyo' },
+                        { id: 'conclusiones', title: '9. Conclusiones' }
                     ],
-                    
-                    // Section Content (to be populated by LLM agents)
                     sectionsContent: {
-                        resumen: '<p class="text-gray-500 italic">[El alumno debe completar el resumen aquí. Debe tener mínimo 50 palabras y reflejar la idea principal del proyecto. Incluye también versión en valenciano e inglés.]</p>',
-                        introduccion: '<p class="text-gray-500 italic">[El alumno debe completar esta sección con la introducción del proyecto]</p>',
-                        'estado-arte': '<p class="text-gray-500 italic">[El alumno debe completar esta sección con el estado del arte]</p>',
-                        viabilidad: '<p class="text-gray-500 italic">[El alumno debe completar esta sección con el estudio de viabilidad]</p>',
-                        requisitos: '<p class="text-gray-500 italic">[El alumno debe completar esta sección con el análisis de requisitos]</p>',
-                        diseno: '<p class="text-gray-500 italic">[El alumno debe completar esta sección con el diseño del proyecto]</p>',
-                        implementacion: '<p class="text-gray-500 italic">[El alumno debe completar esta sección con la implementación]</p>',
-                        administracion: '<p class="text-gray-500 italic">[El alumno debe completar esta sección con la administración]</p>',
-                        herramientas: '<p class="text-gray-500 italic">[El alumno debe completar esta sección con las herramientas de apoyo]</p>',
-                        conclusiones: '<p class="text-gray-500 italic">[El alumno debe completar esta sección con las conclusiones]</p>',
-                        bibliografia: '<p class="text-gray-500 italic">[El alumno debe completar esta sección con la bibliografía comentada]</p>',
-                        anexos: '<p class="text-gray-500 italic">[El alumno puede completar esta sección con anexos opcionales]</p>'
-                    },
-                    
-                    // UI State
-                    sidebarOpen: false
+                        resumen: '', introduccion: '', 'estado-arte': '', viabilidad: '', requisitos: '', diseno: '', implementacion: '', administracion: '', herramientas: '', conclusiones: '', bibliografia: '', anexos: ''
+                    }
                 }
             },
             methods: {
-                getSectionContent(sectionId) {
-                    return this.sectionsContent[sectionId] || '<p>Contenido no disponible</p>';
-                },
-                
-                toggleSidebar() {
-                    this.sidebarOpen = !this.sidebarOpen;
-                },
-                
+                getSectionContent(sectionId) { return this.sectionsContent[sectionId] || '<p>Contenido no disponible</p>'; },
                 async exportPDF() {
-                    const element = document.querySelector('.main-content');
-                    const opt = {
-                        margin: [10, 10, 10, 10],
-                        filename: `${this.projectTitle.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.pdf`,
-                        image: { type: 'jpeg', quality: 0.98 },
-                        html2canvas: { scale: 2, useCORS: true },
-                        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-                    };
-                    
-                    // Show loading state
-                    const originalText = event.target.innerHTML;
-                    event.target.innerHTML = '<span class="flex items-center gap-2"><svg class="animate-spin h-4 w-4" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Generando...</span>';
-                    event.target.disabled = true;
-                    
-                    try {
-                        await html2pdf().set(opt).from(element).save();
-                    } catch (error) {
-                        alert('Error al generar PDF: ' + error.message);
-                    } finally {
-                        event.target.innerHTML = originalText;
-                        event.target.disabled = false;
-                    }
+                    const element = document.getElementById('export-content');
+                    const opt = { margin: 10, filename: 'Proyecto.pdf', image: { type: 'jpeg', quality: 0.98 }, html2canvas: { scale: 2 }, jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' } };
+                    await html2pdf().set(opt).from(element).save();
                 },
-                
-                async exportDOCX() {
-                    const { htmlToDocx } = window.htmlToDocx;
-                    
-                    // Show loading state
-                    const originalText = event.target.innerHTML;
-                    event.target.innerHTML = '<span class="flex items-center gap-2"><svg class="animate-spin h-4 w-4" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Generando...</span>';
-                    event.target.disabled = true;
-                    
-                    try {
-                        // Get the content
-                        const content = document.querySelector('.main-content').innerHTML;
-                        
-                        // Create header and footer
-                        const header = `
-                            <div style="text-align: center; padding-bottom: 10px; border-bottom: 1px solid #ccc;">
-                                <h1 style="font-size: 18pt; color: #0066CC;">${this.projectTitle}</h1>
-                                <p style="font-size: 10pt; color: #666;">${this.studentName} - ${this.cycle} ${this.courseYear} Curso</p>
-                            </div>
-                        `;
-                        
-                        const footer = `
-                            <div style="text-align: center; padding-top: 10px; border-top: 1px solid #ccc; font-size: 9pt; color: #999;">
-                                ${this.cycle} ${this.courseYear} Curso - IES Serra Perenxisa - Página {PAGE} de {NUMPAGES}
-                            </div>
-                        `;
-                        
-                        // Convert to DOCX
-                        const docxBuffer = await htmlToDocx(
-                            header + content + footer,
-                            {
-                                title: this.projectTitle,
-                                creator: 'IES Serra Perenxisa',
-                                margins: {
-                                    top: 1440,
-                                    bottom: 1440,
-                                    left: 1440,
-                                    right: 1440
-                                }
-                            }
-                        );
-                        
-                        // Download file
-                        const blob = new Blob([docxBuffer], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
-                        const url = URL.createObjectURL(blob);
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.download = `${this.projectTitle.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.docx`;
-                        document.body.appendChild(a);
-                        a.click();
-                        document.body.removeChild(a);
-                        URL.revokeObjectURL(url);
-                        
-                    } catch (error) {
-                        alert('Error al generar Word: ' + error.message);
-                        console.error('DOCX Export Error:', error);
-                    } finally {
-                        event.target.innerHTML = originalText;
-                        event.target.disabled = false;
-                    }
-                },
-                
-                printDocument() {
-                    window.print();
-                },
-                loadSection(sectionId) {
-                    // This function would be called by LLM agents to load content
-                    // Example: loadSection('introduccion', '<p>Generated content...</p>')
-                    console.log(`Loading section: ${sectionId}`);
+                exportWord() {
+                    const content = document.getElementById('export-content').innerHTML;
+                    const header = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><style>body { font-family: sans-serif; }</style></head><body>";
+                    const footer = "</body></html>";
+                    const blob = new Blob(['\ufeff', header + content + footer], { type: 'application/msword' });
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url; link.download = 'Proyecto.doc'; link.click();
                 }
             },
             mounted() {
-                // Track active section on scroll
-                window.addEventListener('scroll', () => {
-                    const sections = document.querySelectorAll('section[id]');
-                    let current = '';
-                    
-                    sections.forEach(section => {
-                        const sectionTop = section.offsetTop;
-                        const sectionHeight = section.clientHeight;
-                        if (window.pageYOffset >= sectionTop - 100) {
-                            current = section.getAttribute('id');
-                        }
-                    });
-                    
-                    this.activeSection = current;
-                });
-                
-                // Close sidebar on route change (mobile)
-                this.$watch('activeSection', () => {
-                    if (window.innerWidth < 1024) {
-                        this.sidebarOpen = false;
-                    }
-                });
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => { if (entry.isIntersecting) this.activeSection = entry.target.id; });
+                }, { rootMargin: '-20% 0px -70% 0px' });
+                document.querySelectorAll('section[id]').forEach((section) => observer.observe(section));
+                if (window.innerWidth < 1024) this.sidebarOpen = false;
             }
         }).mount('#app');
     </script>
