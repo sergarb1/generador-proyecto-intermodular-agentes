@@ -8,28 +8,74 @@ window.sectionsContent.administracion = `
     <p class="mb-0">En esta sección aplicarás conocimientos específicos de gestión económica, fiscal y de recursos humanos.</p>
 </div>
 
-## 7.1. Gestión Económica y Presupuestaria 💰
+<h3>7.1. Gestión Económica y Presupuestaria 💰</h3>
 
-### Control Presupuestario Detallado
+<h4>Control Presupuestario Detallado</h4>
 
-Como futuro técnico en Servicios Administrativos, debes dominar el **control presupuestario**. Esta es tu oportunidad práctica.
+<p>Como futuro técnico en Servicios Administrativos, debes dominar el <strong>control presupuestario</strong>. Esta es tu oportunidad práctica.</p>
 
-#### Libro de Caja del Evento
+<h4 style="margin-top:0; color:#1e40af;">Libro de Caja del Evento</h4>
 
-| Fecha | Concepto | Ingreso (€) | Gasto (€) | Saldo (€) | Justificante |
-|-------|----------|-------------|-----------|-----------|--------------|
-| 01/04 | Saldo inicial | 0,00 | 0,00 | 0,00 | - |
-| 05/04 | Pago familia García | 15,00 | - | 15,00 | Bizum #001 |
-| 10/04 | Reserva fotógrafo | - | 50,00 | -35,00 | Contrato #001 |
-| ... | ... | ... | ... | ... | ... |
-| **TOTAL** | | **___€** | **___€** | **___€** | |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Fecha</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Concepto</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Ingreso (€)</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Gasto (€)</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Saldo (€)</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Justificante</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">01/04</td>
+            <td class="border border-slate-300 px-4 py-2">Saldo inicial</td>
+            <td class="border border-slate-300 px-4 py-2">0,00</td>
+            <td class="border border-slate-300 px-4 py-2">0,00</td>
+            <td class="border border-slate-300 px-4 py-2">0,00</td>
+            <td class="border border-slate-300 px-4 py-2">-</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">05/04</td>
+            <td class="border border-slate-300 px-4 py-2">Pago familia García</td>
+            <td class="border border-slate-300 px-4 py-2">15,00</td>
+            <td class="border border-slate-300 px-4 py-2">-</td>
+            <td class="border border-slate-300 px-4 py-2">15,00</td>
+            <td class="border border-slate-300 px-4 py-2">Bizum #001</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">10/04</td>
+            <td class="border border-slate-300 px-4 py-2">Reserva fotógrafo</td>
+            <td class="border border-slate-300 px-4 py-2">-</td>
+            <td class="border border-slate-300 px-4 py-2">50,00</td>
+            <td class="border border-slate-300 px-4 py-2">-35,00</td>
+            <td class="border border-slate-300 px-4 py-2">Contrato #001</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+        </tr>
+        <tr class="font-bold bg-slate-100">
+            <td class="border border-slate-300 px-4 py-2" colspan="2">TOTAL</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2"></td>
+        </tr>
+    </tbody>
+</table>
 
 <div class="callout callout-warning">
     <div class="callout-title">
         <span>⚠️</span>
         <span>Reglas de Oro del Control de Caja</span>
     </div>
-    <ul style="margin: 0.5rem 0 0 1.25rem;">
+    <ul class="my-4 space-y-2">
         <li><strong>Todo pago debe tener justificante</strong> (factura, ticket, resguardo)</li>
         <li><strong>Todo ingreso debe registrarse</strong> inmediatamente</li>
         <li><strong>El saldo nunca debe ser negativo</strong> sin aprobación previa</li>
@@ -37,37 +83,130 @@ Como futuro técnico en Servicios Administrativos, debes dominar el **control pr
     </ul>
 </div>
 
-### Análisis de Desviaciones Presupuestarias
+<h4>Análisis de Desviaciones Presupuestarias</h4>
 
-Compara el presupuesto inicial con el ejecutado:
+<p>Compara el presupuesto inicial con el ejecutado:</p>
 
-| Concepto | Presupuesto Inicial | Gasto Real | Desviación (€) | Desviación (%) | Causa |
-|----------|--------------------|------------|----------------|----------------|-------|
-| Birretes y estolas | 640€ | ___€ | ___€ | ___% | |
-| Fotógrafo | 200€ | ___€ | ___€ | ___% | |
-| Decoración | 150€ | ___€ | ___€ | ___% | |
-| Sonido | 100€ | ___€ | ___€ | ___% | |
-| Diplomas | 160€ | ___€ | ___€ | ___% | |
-| Imprevistos | 100€ | ___€ | ___€ | ___% | |
-| **TOTAL** | **___€** | **___€** | **___€** | **___%** | |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Concepto</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Presupuesto Inicial</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Gasto Real</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Desviación (€)</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Desviación (%)</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Causa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Birretes y estolas</td>
+            <td class="border border-slate-300 px-4 py-2">640€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___%</td>
+            <td class="border border-slate-300 px-4 py-2"></td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Fotógrafo</td>
+            <td class="border border-slate-300 px-4 py-2">200€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___%</td>
+            <td class="border border-slate-300 px-4 py-2"></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Decoración</td>
+            <td class="border border-slate-300 px-4 py-2">150€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___%</td>
+            <td class="border border-slate-300 px-4 py-2"></td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Sonido</td>
+            <td class="border border-slate-300 px-4 py-2">100€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___%</td>
+            <td class="border border-slate-300 px-4 py-2"></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Diplomas</td>
+            <td class="border border-slate-300 px-4 py-2">160€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___%</td>
+            <td class="border border-slate-300 px-4 py-2"></td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Imprevistos</td>
+            <td class="border border-slate-300 px-4 py-2">100€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___%</td>
+            <td class="border border-slate-300 px-4 py-2"></td>
+        </tr>
+        <tr class="font-bold bg-slate-100">
+            <td class="border border-slate-300 px-4 py-2">TOTAL</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___€</td>
+            <td class="border border-slate-300 px-4 py-2">___%</td>
+            <td class="border border-slate-300 px-4 py-2"></td>
+        </tr>
+    </tbody>
+</table>
 
-**Interpretación:**
-* **Desviación positiva**: Gastaste menos de lo previsto ✅
-* **Desviación negativa**: Gastaste más de lo previsto ⚠️
-* **Desviación > 10%**: Requiere justificación escrita
+<p><strong>Interpretación:</strong></p>
+<ul class="my-4 space-y-2">
+    <li><strong>Desviación positiva</strong>: Gastaste menos de lo previsto ✅</li>
+    <li><strong>Desviación negativa</strong>: Gastaste más de lo previsto ⚠️</li>
+    <li><strong>Desviación &gt; 10%</strong>: Requiere justificación escrita</li>
+</ul>
 
-## 7.2. Gestión de Facturas y Pagos 📄
+<h3>7.2. Gestión de Facturas y Pagos 📄</h3>
 
-### Tipos de Justificantes
+<h4>Tipos de Justificantes</h4>
 
-| Tipo | ¿Cuándo se usa? | ¿Quién lo emite? | Validez |
-|------|----------------|------------------|---------|
-| **Factura** | Compras > 30€ | Proveedor (autónomo/empresa) | ✅ Completa |
-| **Ticket** | Compras < 30€ | Comercio | ✅ Parcial |
-| **Recibo** | Pagos entre particulares | Particular | ⚠️ Limitada |
-| **Albarán** | Entrega de mercancía | Proveedor | ❌ No justifica pago |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Tipo</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Cuándo se usa?</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Quién lo emite?</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Validez</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>Factura</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Compras &gt; 30€</td>
+            <td class="border border-slate-300 px-4 py-2">Proveedor (autónomo/empresa)</td>
+            <td class="border border-slate-300 px-4 py-2">✅ Completa</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Ticket</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Compras &lt; 30€</td>
+            <td class="border border-slate-300 px-4 py-2">Comercio</td>
+            <td class="border border-slate-300 px-4 py-2">✅ Parcial</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>Recibo</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Pagos entre particulares</td>
+            <td class="border border-slate-300 px-4 py-2">Particular</td>
+            <td class="border border-slate-300 px-4 py-2">⚠️ Limitada</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Albarán</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Entrega de mercancía</td>
+            <td class="border border-slate-300 px-4 py-2">Proveedor</td>
+            <td class="border border-slate-300 px-4 py-2">❌ No justifica pago</td>
+        </tr>
+    </tbody>
+</table>
 
-### Modelo de Solicitud de Pago
+<h4>Modelo de Solicitud de Pago</h4>
 
 <div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap; overflow-x: auto;">
 SOLICITUD DE PAGO - GRADUACIÓN 2026
@@ -104,22 +243,52 @@ Firma del Coordinador/a: __________________________
     <p>Para pagos a profesionales (fotógrafo, catering), asegúrate de que emiten <strong>factura con IVA</strong>. El centro podría necesitar deducírselo.</p>
 </div>
 
-## 7.3. Obligaciones Fiscales Básicas 📊
+<h3>7.3. Obligaciones Fiscales Básicas 📊</h3>
 
-### Impuestos a Considerar
+<h4>Impuestos a Considerar</h4>
 
-Aunque el evento lo organiza el centro educativo, es importante que conozcas los impuestos que normalmente afectan a eventos:
+<p>Aunque el evento lo organiza el centro educativo, es importante que conozcas los impuestos que normalmente afectan a eventos:</p>
 
-| Impuesto | Tipo | ¿Aplica en este caso? | Explicación |
-|----------|------|----------------------|-------------|
-| **IVA** | 21% (general) | ⚠️ Depende | Proveedores deben añadir IVA a sus facturas |
-| **IRPF** | 15-19% | ⚠️ Depende | Si hay profesionales autónomos, retención en factura |
-| **IAE** | - | ❌ No | El centro educativo está exento del IAE |
-| **Impuesto Sociedades** | 25% | ❌ No | Centros públicos no tributan |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Impuesto</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Tipo</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Aplica en este caso?</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Explicación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>IVA</strong></td>
+            <td class="border border-slate-300 px-4 py-2">21% (general)</td>
+            <td class="border border-slate-300 px-4 py-2">⚠️ Depende</td>
+            <td class="border border-slate-300 px-4 py-2">Proveedores deben añadir IVA a sus facturas</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>IRPF</strong></td>
+            <td class="border border-slate-300 px-4 py-2">15-19%</td>
+            <td class="border border-slate-300 px-4 py-2">⚠️ Depende</td>
+            <td class="border border-slate-300 px-4 py-2">Si hay profesionales autónomos, retención en factura</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>IAE</strong></td>
+            <td class="border border-slate-300 px-4 py-2">-</td>
+            <td class="border border-slate-300 px-4 py-2">❌ No</td>
+            <td class="border border-slate-300 px-4 py-2">El centro educativo está exento del IAE</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Impuesto Sociedades</strong></td>
+            <td class="border border-slate-300 px-4 py-2">25%</td>
+            <td class="border border-slate-300 px-4 py-2">❌ No</td>
+            <td class="border border-slate-300 px-4 py-2">Centros públicos no tributan</td>
+        </tr>
+    </tbody>
+</table>
 
-### Retenciones de IRPF
+<h4>Retenciones de IRPF</h4>
 
-Si contratas a un profesional autónomo (ej: fotógrafo):
+<p>Si contratas a un profesional autónomo (ej: fotógrafo):</p>
 
 <div class="callout callout-success" style="font-family: monospace; font-size: 0.85rem;">
 BASE IMPONIBLE:           200,00euro
@@ -138,39 +307,93 @@ tú ingresas 170euro y los 30euro de retención a Hacienda.
     <p>Las retenciones de IRPF solo aplican si el pago lo hace una empresa o autónomo. Al ser un centro público, consultad con Secretaría si debéis aplicar retenciones.</p>
 </div>
 
-## 7.4. Gestión de Recursos Humanos 👥
+<h3>7.4. Gestión de Recursos Humanos 👥</h3>
 
-### Control de Horas del Equipo
+<h4>Control de Horas del Equipo</h4>
 
-Aunque es un proyecto escolar, es buena práctica llevar un registro del tiempo dedicado:
+<p>Aunque es un proyecto escolar, es buena práctica llevar un registro del tiempo dedicado:</p>
 
-#### Registro de Horas - Equipo Organizador
+<h4 style="margin-top:0; color:#1e40af;">Registro de Horas - Equipo Organizador</h4>
 
-| Nombre | Semana | Horas Trabajadas | Actividad Principal | Firma |
-|--------|--------|-----------------|--------------------|-------|
-| [Nombre] | 1 (1-7 Mar) | 4h | Investigación y presupuestos | _______ |
-| [Nombre] | 2 (8-14 Mar) | 5h | Diseño de material | _______ |
-| ... | ... | ... | ... | ... |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Nombre</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Semana</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Horas Trabajadas</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Actividad Principal</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Firma</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">[Nombre]</td>
+            <td class="border border-slate-300 px-4 py-2">1 (1-7 Mar)</td>
+            <td class="border border-slate-300 px-4 py-2">4h</td>
+            <td class="border border-slate-300 px-4 py-2">Investigación y presupuestos</td>
+            <td class="border border-slate-300 px-4 py-2">_______</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">[Nombre]</td>
+            <td class="border border-slate-300 px-4 py-2">2 (8-14 Mar)</td>
+            <td class="border border-slate-300 px-4 py-2">5h</td>
+            <td class="border border-slate-300 px-4 py-2">Diseño de material</td>
+            <td class="border border-slate-300 px-4 py-2">_______</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+        </tr>
+    </tbody>
+</table>
 
-### Prevención de Riesgos Laborales (PRL) ⚠️
+<h4>Prevención de Riesgos Laborales (PRL) ⚠️</h4>
 
-Aunque no hay relación laboral, aplicad principios de PRL:
+<p>Aunque no hay relación laboral, aplicad principios de PRL:</p>
 
-#### Checklist de Seguridad
+<h4 style="margin-top:0; color:#1e40af;">Checklist de Seguridad</h4>
 
-| Riesgo | Medidas Preventivas | Responsable |
-|--------|--------------------|-------------|
-| **Caídas** (montaje/desmontaje) | Usar calzado adecuado, no subir a sillas | Logística |
-| **Sobreesfuerzo** (mover mobiliario) | Pedir ayuda, levantar con piernas | Todos |
-| **Eléctrico** (equipos de sonido) | Revisar cables, no sobrecargar enchufes | Técnico sonido |
-| **Estrés/Fatiga** | Planificar descansos, rotar tareas | Coordinador/a |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Riesgo</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Medidas Preventivas</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Responsable</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>Caídas</strong> (montaje/desmontaje)</td>
+            <td class="border border-slate-300 px-4 py-2">Usar calzado adecuado, no subir a sillas</td>
+            <td class="border border-slate-300 px-4 py-2">Logística</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Sobreesfuerzo</strong> (mover mobiliario)</td>
+            <td class="border border-slate-300 px-4 py-2">Pedir ayuda, levantar con piernas</td>
+            <td class="border border-slate-300 px-4 py-2">Todos</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>Eléctrico</strong> (equipos de sonido)</td>
+            <td class="border border-slate-300 px-4 py-2">Revisar cables, no sobrecargar enchufes</td>
+            <td class="border border-slate-300 px-4 py-2">Técnico sonido</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Estrés/Fatiga</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Planificar descansos, rotar tareas</td>
+            <td class="border border-slate-300 px-4 py-2">Coordinador/a</td>
+        </tr>
+    </tbody>
+</table>
 
 <div class="callout callout-success">
     <div class="callout-title">
         <span>✅</span>
         <span>Buenas Prácticas PRL</span>
     </div>
-    <ul style="margin: 0.5rem 0 0 1.25rem;">
+    <ul class="my-4 space-y-2">
         <li>Nunca trabajéis solos/as en el montaje</li>
         <li>Mantened pasillos libres de cables y obstáculos</li>
         <li>Tened un botiquín básico accesible</li>
@@ -178,46 +401,79 @@ Aunque no hay relación laboral, aplicad principios de PRL:
     </ul>
 </div>
 
-## 7.5. Atención al Público y Protocolo 🎩
+<h3>7.5. Atención al Público y Protocolo 🎩</h3>
 
-### Protocolo de Atención a Familias
+<h4>Protocolo de Atención a Familias</h4>
 
-El día del evento, la **atención a las familias** es crucial:
+<p>El día del evento, la <strong>atención a las familias</strong> es crucial:</p>
 
-#### Guión de Acogida
+<h4 style="margin-top:0; color:#1e40af;">Guión de Acogida</h4>
 
 <div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem;">
 1. SALUDO INICIAL
    "¡Buenas tardes! Bienvenidos a la Graduación 2026"
-   
+
 2. VERIFICACIÓN
    "¿Podrían indicarme su nombre y el del graduando?"
-   
+
 3. INFORMACIÓN
    "Los asientos de familiares están en las filas 3-10"
    "El acto comenzará a las 17:30 en punto"
-   
+
 4. DESPEDIDA
    "Que disfruten del acto. Cualquier cosa, estamos aquí"
 </div>
 
-### Protocolo de Entrega de Diplomas
+<h4>Protocolo de Entrega de Diplomas</h4>
 
-| Paso | Acción | Responsable |
-|------|--------|-------------|
-| 1 | Anunciar nombre del graduando | Maestro/a de Ceremonias |
-| 2 | Graduando sube al escenario | Protocolo (guía) |
-| 3 | Entrega de diploma | Director/a + Tutor/a |
-| 4 | Foto oficial | Fotógrafo |
-| 5 | Bajada del escenario | Protocolo (guía) |
-| 6 | Siguiente graduando | - |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Paso</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Acción</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Responsable</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">1</td>
+            <td class="border border-slate-300 px-4 py-2">Anunciar nombre del graduando</td>
+            <td class="border border-slate-300 px-4 py-2">Maestro/a de Ceremonias</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">2</td>
+            <td class="border border-slate-300 px-4 py-2">Graduando sube al escenario</td>
+            <td class="border border-slate-300 px-4 py-2">Protocolo (guía)</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">3</td>
+            <td class="border border-slate-300 px-4 py-2">Entrega de diploma</td>
+            <td class="border border-slate-300 px-4 py-2">Director/a + Tutor/a</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">4</td>
+            <td class="border border-slate-300 px-4 py-2">Foto oficial</td>
+            <td class="border border-slate-300 px-4 py-2">Fotógrafo</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">5</td>
+            <td class="border border-slate-300 px-4 py-2">Bajada del escenario</td>
+            <td class="border border-slate-300 px-4 py-2">Protocolo (guía)</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">6</td>
+            <td class="border border-slate-300 px-4 py-2">Siguiente graduando</td>
+            <td class="border border-slate-300 px-4 py-2">-</td>
+        </tr>
+    </tbody>
+</table>
 
 <div class="callout callout-info">
     <div class="callout-title">
         <span>🎓</span>
         <span>Consejos de Protocolo</span>
     </div>
-    <ul style="margin: 0.5rem 0 0 1.25rem;">
+    <ul class="my-4 space-y-2">
         <li>El orden de entrega suele ser <strong>alfabético</strong></li>
         <li>Las <strong>autoridades</strong> (director, concejal si viene) entregan diplomas</li>
         <li>El <strong>tiempo por graduando</strong> no debe superar 30 segundos</li>
@@ -225,11 +481,11 @@ El día del evento, la **atención a las familias** es crucial:
     </ul>
 </div>
 
-## 7.6. Archivo y Documentación 📁
+<h3>7.6. Archivo y Documentación 📁</h3>
 
-### Sistema de Archivo del Proyecto
+<h4>Sistema de Archivo del Proyecto</h4>
 
-Organiza la documentación siguiendo un criterio lógico:
+<p>Organiza la documentación siguiendo un criterio lógico:</p>
 
 <div class="callout callout-warning" style="font-family: monospace; font-size: 0.8rem;">
 📁 GRADUACION-2026/
@@ -274,16 +530,18 @@ Organiza la documentación siguiendo un criterio lógico:
     <p>La documentación con datos personales (autorizaciones, listas) debe guardarse de forma <strong>segura y confidencial</strong>. Solo el equipo organizador debe tener acceso.</p>
 </div>
 
-## 7.7. Checklist de Administración ✅
+<h3>7.7. Checklist de Administración ✅</h3>
 
-- [ ] Libro de caja actualizado diariamente
-- [ ] Todas las facturas archivadas y numeradas
-- [ ] Presupuesto comparado con desviaciones analizadas
-- [ ] Retenciones de IRPF aplicadas (si procede)
-- [ ] Registro de horas del equipo completado
-- [ ] Checklist PRL revisada
-- [ ] Protocolo de atención definido
-- [ ] Sistema de archivo implementado
+<ul class="my-4 space-y-2">
+    <li>Libro de caja actualizado diariamente</li>
+    <li>Todas las facturas archivadas y numeradas</li>
+    <li>Presupuesto comparado con desviaciones analizadas</li>
+    <li>Retenciones de IRPF aplicadas (si procede)</li>
+    <li>Registro de horas del equipo completado</li>
+    <li>Checklist PRL revisada</li>
+    <li>Protocolo de atención definido</li>
+    <li>Sistema de archivo implementado</li>
+</ul>
 
 <div class="callout callout-info">
     <div class="callout-title">

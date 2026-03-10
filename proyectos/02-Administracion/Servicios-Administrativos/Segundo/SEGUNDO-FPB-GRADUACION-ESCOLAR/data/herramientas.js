@@ -8,18 +8,51 @@ window.sectionsContent.herramientas = `
     <p class="mb-0">En esta sección descubrirás herramientas digitales y recursos que facilitarán tu trabajo.</p>
 </div>
 
-## 8.1. Herramientas de Gestión y Organización 💻
+<h3>8.1. Herramientas de Gestión y Organización 💻</h3>
 
-### Suite de Google (Google Workspace)
+<h4>Suite de Google (Google Workspace)</h4>
 
-| Herramienta | Uso en el Proyecto | Enlace |
-|-------------|-------------------|--------|
-| **Google Docs** | Redacción de documentos, actas, cartas | docs.google.com |
-| **Google Sheets** | Presupuestos, listas, control de caja | sheets.google.com |
-| **Google Forms** | Encuestas a familias, inscripciones | forms.google.com |
-| **Google Drive** | Almacenamiento compartido de archivos | drive.google.com |
-| **Google Calendar** | Calendario de reuniones y plazos | calendar.google.com |
-| **Google Meet** | Reuniones online del equipo | meet.google.com |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Herramienta</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Uso en el Proyecto</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Enlace</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>Google Docs</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Redacción de documentos, actas, cartas</td>
+            <td class="border border-slate-300 px-4 py-2">docs.google.com</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Google Sheets</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Presupuestos, listas, control de caja</td>
+            <td class="border border-slate-300 px-4 py-2">sheets.google.com</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>Google Forms</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Encuestas a familias, inscripciones</td>
+            <td class="border border-slate-300 px-4 py-2">forms.google.com</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Google Drive</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Almacenamiento compartido de archivos</td>
+            <td class="border border-slate-300 px-4 py-2">drive.google.com</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>Google Calendar</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Calendario de reuniones y plazos</td>
+            <td class="border border-slate-300 px-4 py-2">calendar.google.com</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Google Meet</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Reuniones online del equipo</td>
+            <td class="border border-slate-300 px-4 py-2">meet.google.com</td>
+        </tr>
+    </tbody>
+</table>
 
 <div class="callout callout-success">
     <div class="callout-title">
@@ -29,58 +62,110 @@ window.sectionsContent.herramientas = `
     <p>Todo el equipo puede trabajar en los mismos documentos <strong>simultáneamente</strong> y los cambios se guardan automáticamente.</p>
 </div>
 
-### Microsoft 365 (Alternativa)
+<h4>Microsoft 365 (Alternativa)</h4>
 
-| Herramienta | Uso en el Proyecto | Enlace |
-|-------------|-------------------|--------|
-| **Word Online** | Procesador de textos | office.com |
-| **Excel Online** | Hojas de cálculo | office.com |
-| **OneDrive** | Almacenamiento en la nube | onedrive.live.com |
-| **Teams** | Comunicación del equipo | teams.microsoft.com |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Herramienta</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Uso en el Proyecto</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Enlace</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>Word Online</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Procesador de textos</td>
+            <td class="border border-slate-300 px-4 py-2">office.com</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Excel Online</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Hojas de cálculo</td>
+            <td class="border border-slate-300 px-4 py-2">office.com</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>OneDrive</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Almacenamiento en la nube</td>
+            <td class="border border-slate-300 px-4 py-2">onedrive.live.com</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Teams</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Comunicación del equipo</td>
+            <td class="border border-slate-300 px-4 py-2">teams.microsoft.com</td>
+        </tr>
+    </tbody>
+</table>
 
-## 8.2. Herramientas de Diseño Gráfico 🎨
+<h3>8.2. Herramientas de Diseño Gráfico 🎨</h3>
 
-### Canva (Recomendado ⭐)
+<h4>Canva (Recomendado ⭐)</h4>
 
-**Para qué sirve:** Diseño de invitaciones, diplomas, programas, decoración
+<p><strong>Para qué sirve:</strong> Diseño de invitaciones, diplomas, programas, decoración</p>
 
-**Ventajas:**
-* ✅ Gratuito para educación
-* ✅ Plantillas predefinidas
-* ✅ Muy fácil de usar
-* ✅ Exporta en PDF, PNG, JPG
+<p><strong>Ventajas:</strong></p>
+<ul class="my-4 space-y-2">
+    <li>✅ Gratuito para educación</li>
+    <li>✅ Plantillas predefinidas</li>
+    <li>✅ Muy fácil de usar</li>
+    <li>✅ Exporta en PDF, PNG, JPG</li>
+</ul>
 
-**Enlace:** canva.com
+<p><strong>Enlace:</strong> canva.com</p>
 
-#### Plantillas Recomendadas en Canva
+<h4 style="margin-top:0; color:#1e40af;">Plantillas Recomendadas en Canva</h4>
 
-| Material | Búsqueda Recomendada |
-|----------|---------------------|
-| Invitaciones | "Graduation invitation elegant" |
-| Diplomas | "Certificate of achievement" |
-| Programas | "Event program minimalist" |
-| Photocall | "Graduation photo backdrop" |
-| Decoración | "Graduation banner" |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Material</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Búsqueda Recomendada</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Invitaciones</td>
+            <td class="border border-slate-300 px-4 py-2">"Graduation invitation elegant"</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Diplomas</td>
+            <td class="border border-slate-300 px-4 py-2">"Certificate of achievement"</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Programas</td>
+            <td class="border border-slate-300 px-4 py-2">"Event program minimalist"</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Photocall</td>
+            <td class="border border-slate-300 px-4 py-2">"Graduation photo backdrop"</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Decoración</td>
+            <td class="border border-slate-300 px-4 py-2">"Graduation banner"</td>
+        </tr>
+    </tbody>
+</table>
 
-### Adobe Express (Alternativa)
+<h4>Adobe Express (Alternativa)</h4>
 
-**Para qué sirve:** Similar a Canva, con integración Adobe
+<p><strong>Para qué sirve:</strong> Similar a Canva, con integración Adobe</p>
 
-**Enlace:** adobe.com/express
+<p><strong>Enlace:</strong> adobe.com/express</p>
 
-## 8.3. Herramientas de Gestión de Proyectos 📋
+<h3>8.3. Herramientas de Gestión de Proyectos 📋</h3>
 
-### Trello
+<h4>Trello</h4>
 
-**Para qué sirve:** Organizar tareas del equipo con sistema Kanban
+<p><strong>Para qué sirve:</strong> Organizar tareas del equipo con sistema Kanban</p>
 
-**Cómo usarlo:**
-1. Crea un tablero "Graduación 2026"
-2. Crea listas: "Por hacer", "En progreso", "Hecho"
-3. Añade tarjetas para cada tarea
-4. Asigna miembros y fechas límite
+<p><strong>Cómo usarlo:</strong></p>
+<ol class="my-4 space-y-1 list-decimal list-inside">
+    <li>Crea un tablero "Graduación 2026"</li>
+    <li>Crea listas: "Por hacer", "En progreso", "Hecho"</li>
+    <li>Añade tarjetas para cada tarea</li>
+    <li>Asigna miembros y fechas límite</li>
+</ol>
 
-**Enlace:** trello.com
+<p><strong>Enlace:</strong> trello.com</p>
 
 <div class="callout callout-info">
     <div class="callout-title">
@@ -90,40 +175,44 @@ window.sectionsContent.herramientas = `
     <p>Descarga la app de Trello para recibir notificaciones cuando te asignen tareas o se acerquen fechas límite.</p>
 </div>
 
-### Notion (Alternativa Avanzada)
+<h4>Notion (Alternativa Avanzada)</h4>
 
-**Para qué sirve:** Wiki del proyecto, base de conocimientos, tareas
+<p><strong>Para qué sirve:</strong> Wiki del proyecto, base de conocimientos, tareas</p>
 
-**Enlace:** notion.so
+<p><strong>Enlace:</strong> notion.so</p>
 
-## 8.4. Herramientas de Comunicación 📱
+<h3>8.4. Herramientas de Comunicación 📱</h3>
 
-### WhatsApp Business
+<h4>WhatsApp Business</h4>
 
-**Para qué sirve:** Comunicación profesional con proveedores y familias
+<p><strong>Para qué sirve:</strong> Comunicación profesional con proveedores y familias</p>
 
-**Ventajas:**
-* ✅ Perfil de empresa con información
-* ✅ Mensajes automáticos de bienvenida
-* ✅ Catálogo de servicios (para compartir información)
-* ✅ Etiquetas para organizar conversaciones
+<p><strong>Ventajas:</strong></p>
+<ul class="my-4 space-y-2">
+    <li>✅ Perfil de empresa con información</li>
+    <li>✅ Mensajes automáticos de bienvenida</li>
+    <li>✅ Catálogo de servicios (para compartir información)</li>
+    <li>✅ Etiquetas para organizar conversaciones</li>
+</ul>
 
-### Telegram
+<h4>Telegram</h4>
 
-**Para qué sirve:** Grupos grandes de comunicación
+<p><strong>Para qué sirve:</strong> Grupos grandes de comunicación</p>
 
-**Ventajas:**
-* ✅ Grupos de hasta 200.000 personas
-* ✅ Canales de broadcast (solo administradores escriben)
-* ✅ Bots para automatizar respuestas
+<p><strong>Ventajas:</strong></p>
+<ul class="my-4 space-y-2">
+    <li>✅ Grupos de hasta 200.000 personas</li>
+    <li>✅ Canales de broadcast (solo administradores escriben)</li>
+    <li>✅ Bots para automatizar respuestas</li>
+</ul>
 
-## 8.5. Herramientas de Encuestas y Feedback 📊
+<h3>8.5. Herramientas de Encuestas y Feedback 📊</h3>
 
-### Google Forms
+<h4>Google Forms</h4>
 
-**Para qué sirve:** Encuestas a familias, inscripciones, evaluación
+<p><strong>Para qué sirve:</strong> Encuestas a familias, inscripciones, evaluación</p>
 
-#### Ejemplo de Formulario de Inscripción
+<h4 style="margin-top:0; color:#1e40af;">Ejemplo de Formulario de Inscripción</h4>
 
 <div class="callout callout-info" style="font-size: 0.85rem;">
 <strong>FORMULARIO DE INSCRIPCIÓN - GRADUACIÓN 2026</strong>
@@ -141,6 +230,7 @@ window.sectionsContent.herramientas = `
 3. Asistencia
    - ¿Asistirá al acto? [ ] Sí [ ] No
    - Número de invitados: _______________
+   (máximo recomendado: 4 por graduando)
 
 4. Pagos
    - ¿Forma de pago preferida?
@@ -153,107 +243,121 @@ window.sectionsContent.herramientas = `
 [ENVIAR]
 </div>
 
-### Typeform (Alternativa Premium)
+<h4>Typeform (Alternativa Premium)</h4>
 
-**Para qué sirve:** Formularios más visuales y atractivos
+<p><strong>Para qué sirve:</strong> Formularios más visuales y atractivos</p>
 
-**Enlace:** typeform.com
+<p><strong>Enlace:</strong> typeform.com</p>
 
-## 8.6. Herramientas de Diagramas y Esquemas 📊
+<h3>8.6. Herramientas de Diagramas y Esquemas 📊</h3>
 
-### Draw.io (Diagrams.net)
+<h4>Draw.io (Diagrams.net)</h4>
 
-**Para qué sirve:** Crear organigramas, flujogramas, planos
+<p><strong>Para qué sirve:</strong> Crear organigramas, flujogramas, planos</p>
 
-**Ventajas:**
-* ✅ Gratuito
-* ✅ No requiere registro
-* ✅ Exporta en PNG, PDF, SVG
+<p><strong>Ventajas:</strong></p>
+<ul class="my-4 space-y-2">
+    <li>✅ Gratuito</li>
+    <li>✅ No requiere registro</li>
+    <li>✅ Exporta en PNG, PDF, SVG</li>
+</ul>
 
-**Enlace:** app.diagrams.net
+<p><strong>Enlace:</strong> app.diagrams.net</p>
 
-### Miro (Pizarra Colaborativa)
+<h4>Miro (Pizarra Colaborativa)</h4>
 
-**Para qué sirve:** Lluvia de ideas online, planificación visual
+<p><strong>Para qué sirve:</strong> Lluvia de ideas online, planificación visual</p>
 
-**Enlace:** miro.com
+<p><strong>Enlace:</strong> miro.com</p>
 
-## 8.7. Herramientas de Edición de Vídeo 🎬
+<h3>8.7. Herramientas de Edición de Vídeo 🎬</h3>
 
-### CapCut
+<h4>CapCut</h4>
 
-**Para qué sirve:** Editar vídeo conmemorativo del evento
+<p><strong>Para qué sirve:</strong> Editar vídeo conmemorativo del evento</p>
 
-**Ventajas:**
-* ✅ Gratuito
-* ✅ Muy intuitivo
-* ✅ Efectos y transiciones incluidas
+<p><strong>Ventajas:</strong></p>
+<ul class="my-4 space-y-2">
+    <li>✅ Gratuito</li>
+    <li>✅ Muy intuitivo</li>
+    <li>✅ Efectos y transiciones incluidas</li>
+</ul>
 
-**Disponible:** iOS, Android, Desktop
+<p><strong>Disponible:</strong> iOS, Android, Desktop</p>
 
-### Canva Video (Alternativa)
+<h4>Canva Video (Alternativa)</h4>
 
-**Para qué sirve:** Vídeos sencillos con plantillas
+<p><strong>Para qué sirve:</strong> Vídeos sencillos con plantillas</p>
 
-**Enlace:** canva.com/video-editor
+<p><strong>Enlace:</strong> canva.com/video-editor</p>
 
-## 8.8. Herramientas de Música y Audio 🎵
+<h3>8.8. Herramientas de Música y Audio 🎵</h3>
 
-### YouTube Audio Library
+<h4>YouTube Audio Library</h4>
 
-**Para qué sirve:** Música sin copyright para el evento
+<p><strong>Para qué sirve:</strong> Música sin copyright para el evento</p>
 
-**Ventajas:**
-* ✅ Gratuita
-* ✅ Sin problemas de derechos
-* ✅ Variedad de estilos
+<p><strong>Ventajas:</strong></p>
+<ul class="my-4 space-y-2">
+    <li>✅ Gratuita</li>
+    <li>✅ Sin problemas de derechos</li>
+    <li>✅ Variedad de estilos</li>
+</ul>
 
-**Enlace:** youtube.com/audiolibrary
+<p><strong>Enlace:</strong> youtube.com/audiolibrary</p>
 
-### Audacity
+<h4>Audacity</h4>
 
-**Para qué sirve:** Editar audio, mezclar pistas
+<p><strong>Para qué sirve:</strong> Editar audio, mezclar pistas</p>
 
-**Enlace:** audacityteam.org
+<p><strong>Enlace:</strong> audacityteam.org</p>
 
-## 8.9. Recursos de Imágenes Gratuitas 📷
+<h3>8.9. Recursos de Imágenes Gratuitas 📷</h3>
 
-### Pexels
+<h4>Pexels</h4>
 
-**Para qué sirve:** Imágenes libres de derechos para decoración, programas
+<p><strong>Para qué sirve:</strong> Imágenes libres de derechos para decoración, programas</p>
 
-**Enlace:** pexels.com
+<p><strong>Enlace:</strong> pexels.com</p>
 
-### Unsplash
+<h4>Unsplash</h4>
 
-**Para qué sirve:** Fotografías de alta calidad
+<p><strong>Para qué sirve:</strong> Fotografías de alta calidad</p>
 
-**Enlace:** unsplash.com
+<p><strong>Enlace:</strong> unsplash.com</p>
 
-## 8.10. Checklist de Herramientas ✅
+<h3>8.10. Checklist de Herramientas ✅</h3>
 
-Marca las herramientas que vais a usar:
+<p>Marca las herramientas que vais a usar:</p>
 
-### Gestión
-- [ ] Google Drive/OneDrive (almacenamiento)
-- [ ] Google Sheets/Excel (presupuesto)
-- [ ] Trello/Notion (gestión de tareas)
-- [ ] Google Calendar (calendario)
+<h4 style="margin-top:0; color:#1e40af;">Gestión</h4>
+<ul class="my-4 space-y-2">
+    <li>Google Drive/OneDrive (almacenamiento)</li>
+    <li>Google Sheets/Excel (presupuesto)</li>
+    <li>Trello/Notion (gestión de tareas)</li>
+    <li>Google Calendar (calendario)</li>
+</ul>
 
-### Comunicación
-- [ ] WhatsApp/Telegram (comunicación rápida)
-- [ ] Email (comunicación formal)
-- [ ] Google Forms (encuestas)
+<h4 style="margin-top:0; color:#1e40af;">Comunicación</h4>
+<ul class="my-4 space-y-2">
+    <li>WhatsApp/Telegram (comunicación rápida)</li>
+    <li>Email (comunicación formal)</li>
+    <li>Google Forms (encuestas)</li>
+</ul>
 
-### Diseño
-- [ ] Canva (diseño gráfico)
-- [ ] Draw.io (diagramas)
-- [ ] CapCut (vídeo)
+<h4 style="margin-top:0; color:#1e40af;">Diseño</h4>
+<ul class="my-4 space-y-2">
+    <li>Canva (diseño gráfico)</li>
+    <li>Draw.io (diagramas)</li>
+    <li>CapCut (vídeo)</li>
+</ul>
 
-### Evento
-- [ ] YouTube Audio Library (música)
-- [ ] Pexels/Unsplash (imágenes)
-- [ ] Equipo de sonido del centro / alquiler
+<h4 style="margin-top:0; color:#1e40af;">Evento</h4>
+<ul class="my-4 space-y-2">
+    <li>YouTube Audio Library (música)</li>
+    <li>Pexels/Unsplash (imágenes)</li>
+    <li>Equipo de sonido del centro / alquiler</li>
+</ul>
 
 <div class="callout callout-warning">
     <div class="callout-title">
@@ -263,29 +367,39 @@ Marca las herramientas que vais a usar:
     <p>Cuando uséis herramientas online, <strong>nunca subáis datos personales sensibles</strong> (DNI, direcciones, teléfonos) a servicios no autorizados por el centro. Usad solo herramientas aprobadas por la Consejería de Educación.</p>
 </div>
 
-## 8.11. Tutorial Rápido: Crear Invitación en Canva 🎨
+<h3>8.11. Tutorial Rápido: Crear Invitación en Canva 🎨</h3>
 
-### Paso a Paso
+<h4>Paso a Paso</h4>
 
-1. **Regístrate** en canva.com (usa email educativo para versión Pro gratis)
-
-2. **Busca plantilla:**
-   * Escribe "Graduation invitation" en el buscador
-   * Filtra por "Gratis" si no quieres elementos premium
-
-3. **Personaliza:**
-   * Cambia el texto con los datos de tu evento
-   * Ajusta colores a tu imagen corporativa
-   * Añade el logo del centro si tienes
-
-4. **Descarga:**
-   * Haz clic en "Compartir" → "Descargar"
-   * Elige "PDF para impresión" (máxima calidad)
-   * O "PNG" para enviar por WhatsApp/email
-
-5. **Imprime:**
-   * En casa (si tienes impresora buena)
-   * En copistería (más profesional)
+<ol class="my-4 space-y-3 list-decimal list-inside">
+    <li><strong>Regístrate</strong> en canva.com (usa email educativo para versión Pro gratis)</li>
+    <li><strong>Busca plantilla:</strong>
+        <ul class="ml-6 mt-1 space-y-1 list-disc">
+            <li>Escribe "Graduation invitation" en el buscador</li>
+            <li>Filtra por "Gratis" si no quieres elementos premium</li>
+        </ul>
+    </li>
+    <li><strong>Personaliza:</strong>
+        <ul class="ml-6 mt-1 space-y-1 list-disc">
+            <li>Cambia el texto con los datos de tu evento</li>
+            <li>Ajusta colores a tu imagen corporativa</li>
+            <li>Añade el logo del centro si tienes</li>
+        </ul>
+    </li>
+    <li><strong>Descarga:</strong>
+        <ul class="ml-6 mt-1 space-y-1 list-disc">
+            <li>Haz clic en "Compartir" → "Descargar"</li>
+            <li>Elige "PDF para impresión" (máxima calidad)</li>
+            <li>O "PNG" para enviar por WhatsApp/email</li>
+        </ul>
+    </li>
+    <li><strong>Imprime:</strong>
+        <ul class="ml-6 mt-1 space-y-1 list-disc">
+            <li>En casa (si tienes impresora buena)</li>
+            <li>En copistería (más profesional)</li>
+        </ul>
+    </li>
+</ol>
 
 <div class="callout callout-success">
     <div class="callout-title">

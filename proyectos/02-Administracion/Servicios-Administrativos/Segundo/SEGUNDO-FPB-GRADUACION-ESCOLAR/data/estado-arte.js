@@ -8,32 +8,62 @@ window.sectionsContent["estado-arte"] = `
     <p class="mb-0">En esta sección investigarás cómo se organizan eventos similares en otros centros y qué herramientas existen.</p>
 </div>
 
-## 2.1. Análisis de Eventos de Graduación en Otros Centros 🏫
+<h3>2.1. Análisis de Eventos de Graduación en Otros Centros 🏫</h3>
 
-### Investigación de Referentes
+<h4>Investigación de Referentes</h4>
 
-Tu primera tarea será **investigar cómo organizan sus graduaciones otros centros educativos**. Esto te dará ideas y te ayudará a evitar errores comunes.
+<p>Tu primera tarea será <strong>investigar cómo organizan sus graduaciones otros centros educativos</strong>. Esto te dará ideas y te ayudará a evitar errores comunes.</p>
 
 <div class="callout callout-warning">
     <div class="callout-title">
         <span>📝</span>
         <span>Tarea de Investigación</span>
     </div>
-    <p>Investiga al menos **3 centros educativos** de la Comunidad Valenciana y completa la siguiente ficha:</p>
+    <p>Investiga al menos <strong>3 centros educativos</strong> de la Comunidad Valenciana y completa la siguiente ficha:</p>
 </div>
 
-#### Ficha de Análisis de Centros
+<h4 style="margin-top:0; color:#1e40af;">Ficha de Análisis de Centros</h4>
 
-| Centro Educativo | Localidad | Tipo de Graduación | Aspectos Destacables |
-|-----------------|-----------|-------------------|---------------------|
-| Ej: IES XYZ | Valencia | Cena + Entrega de diplomas | Orador invitado, vídeo conmemorativo |
-| ... | ... | ... | ... |
-| ... | ... | ... | ... |
-| ... | ... | ... | ... |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Centro Educativo</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Localidad</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Tipo de Graduación</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Aspectos Destacables</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Ej: IES XYZ</td>
+            <td class="border border-slate-300 px-4 py-2">Valencia</td>
+            <td class="border border-slate-300 px-4 py-2">Cena + Entrega de diplomas</td>
+            <td class="border border-slate-300 px-4 py-2">Orador invitado, vídeo conmemorativo</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+            <td class="border border-slate-300 px-4 py-2">...</td>
+        </tr>
+    </tbody>
+</table>
 
-### Elementos Comunes en Graduaciones Escolares
+<h4>Elementos Comunes en Graduaciones Escolares</h4>
 
-Tras tu investigación, deberías identificar los siguientes **elementos habituales**:
+<p>Tras tu investigación, deberías identificar los siguientes <strong>elementos habituales</strong>:</p>
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
     <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 text-center">
@@ -62,20 +92,45 @@ Tras tu investigación, deberías identificar los siguientes **elementos habitua
     </div>
 </div>
 
-## 2.2. Tendencias Actuales en Organización de Eventos 📈
+<h3>2.2. Tendencias Actuales en Organización de Eventos 📈</h3>
 
-### Eventos Sostenibles y Responsables
+<h4>Eventos Sostenibles y Responsables</h4>
 
-Cada vez más, los eventos educativos incorporan prácticas **sostenibles**:
+<p>Cada vez más, los eventos educativos incorporan prácticas <strong>sostenibles</strong>:</p>
 
-| Tendencia | Descripción | Aplicación a tu Graduación |
-|-----------|-------------|---------------------------|
-| 🌱 **Zero Waste** | Minimizar residuos | Usar materiales reciclables, evitar plásticos |
-| 💚 **Digital First** | Reducir papel | Invitaciones digitales, programa en QR |
-| 🚌 **Movilidad Sostenible** | Fomentar transporte público | Indicar opciones de transporte público |
-| ♿ **Accesibilidad** | Eventos inclusivos | Asegurar acceso para personas con movilidad reducida |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Tendencia</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Descripción</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Aplicación a tu Graduación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">🌱 <strong>Zero Waste</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Minimizar residuos</td>
+            <td class="border border-slate-300 px-4 py-2">Usar materiales reciclables, evitar plásticos</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">💚 <strong>Digital First</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Reducir papel</td>
+            <td class="border border-slate-300 px-4 py-2">Invitaciones digitales, programa en QR</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">🚌 <strong>Movilidad Sostenible</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Fomentar transporte público</td>
+            <td class="border border-slate-300 px-4 py-2">Indicar opciones de transporte público</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">♿ <strong>Accesibilidad</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Eventos inclusivos</td>
+            <td class="border border-slate-300 px-4 py-2">Asegurar acceso para personas con movilidad reducida</td>
+        </tr>
+    </tbody>
+</table>
 
-### Tecnología Aplicada a Eventos
+<h4>Tecnología Aplicada a Eventos</h4>
 
 <div class="callout callout-info">
     <div class="callout-title">
@@ -83,7 +138,7 @@ Cada vez más, los eventos educativos incorporan prácticas **sostenibles**:
         <span>Herramientas Digitales para Eventos</span>
     </div>
     <p>Investiga las siguientes herramientas y decide cuáles podríais usar:</p>
-    <ul style="margin: 0.5rem 0 0 1.25rem;">
+    <ul class="my-4 space-y-2">
         <li><strong>Google Forms</strong> - Para encuestas a familias y RSVP</li>
         <li><strong>Canva</strong> - Para diseño de invitaciones y material gráfico</li>
         <li><strong>WhatsApp Business</strong> - Para comunicación rápida con proveedores</li>
@@ -92,29 +147,63 @@ Cada vez más, los eventos educativos incorporan prácticas **sostenibles**:
     </ul>
 </div>
 
-## 2.3. Marco Legal de Eventos Escolares ⚖️
+<h3>2.3. Marco Legal de Eventos Escolares ⚖️</h3>
 
-### Normativa a Considerar
+<h4>Normativa a Considerar</h4>
 
-Para organizar un evento escolar, debes conocer la normativa aplicable:
+<p>Para organizar un evento escolar, debes conocer la normativa aplicable:</p>
 
-#### 1. Ley de Protección de Datos (RGPD)
+<h4 style="margin-top:0; color:#1e40af;">1. Ley de Protección de Datos (RGPD)</h4>
 
-| Aspecto | Qué debes hacer |
-|---------|----------------|
-| 📷 **Imágenes** | Obtener autorización firmada para fotos/vídeos |
-| 📧 **Contactos** | Usar emails de familias solo para información del evento |
-| 🔒 **Datos** | No compartir información personal sin consentimiento |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Aspecto</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Qué debes hacer</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">📷 <strong>Imágenes</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Obtener autorización firmada para fotos/vídeos</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">📧 <strong>Contactos</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Usar emails de familias solo para información del evento</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">🔒 <strong>Datos</strong></td>
+            <td class="border border-slate-300 px-4 py-2">No compartir información personal sin consentimiento</td>
+        </tr>
+    </tbody>
+</table>
 
-#### 2. Normativa de Seguridad
+<h4 style="margin-top:0; color:#1e40af;">2. Normativa de Seguridad</h4>
 
-| Requisito | Descripción |
-|-----------|-------------|
-| 🚪 **Aforos** | Respetar capacidad máxima del espacio |
-| 🧯 **Emergencias** | Conocer salidas de emergencia y protocolos |
-| ⚠️ **Seguros** | Verificar cobertura del seguro escolar |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Requisito</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">🚪 <strong>Aforos</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Respetar capacidad máxima del espacio</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">🧯 <strong>Emergencias</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Conocer salidas de emergencia y protocolos</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">⚠️ <strong>Seguros</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Verificar cobertura del seguro escolar</td>
+        </tr>
+    </tbody>
+</table>
 
-#### 3. Autorizaciones Necesarias
+<h4 style="margin-top:0; color:#1e40af;">3. Autorizaciones Necesarias</h4>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
     <div class="p-4 bg-yellow-50 rounded-lg border border-yellow-200">
@@ -135,38 +224,80 @@ Para organizar un evento escolar, debes conocer la normativa aplicable:
     </div>
 </div>
 
-## 2.4. Proveedores y Servicios Habituales 🤝
+<h3>2.4. Proveedores y Servicios Habituales 🤝</h3>
 
-### Tipos de Proveedores a Considerar
+<h4>Tipos de Proveedores a Considerar</h4>
 
-| Proveedor | Servicio | ¿Necesario? | Alternativa Low-Cost |
-|-----------|----------|-------------|---------------------|
-| 📷 Fotógrafo profesional | Fotos y vídeo | Opcional | Alumnado con buenas cámaras |
-| 🎤 Técnico de sonido | Equipo de audio | Recomendable | Equipo del centro |
-| 🌸 Floristería | Decoración | Opcional | Decoración hecha por alumnado |
-| 🍽️ Catering | Merienda/Brindis | Opcional | Cada familia trae algo |
-| 🎓 Tienda especializada | Birretes y estolas | Recomendable | Compra conjunta online |
-| 🖨️ Imprenta | Diplomas y programas | Necesario | Diseño e impresión en centro |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Proveedor</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Servicio</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Necesario?</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Alternativa Low-Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">📷 Fotógrafo profesional</td>
+            <td class="border border-slate-300 px-4 py-2">Fotos y vídeo</td>
+            <td class="border border-slate-300 px-4 py-2">Opcional</td>
+            <td class="border border-slate-300 px-4 py-2">Alumnado con buenas cámaras</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">🎤 Técnico de sonido</td>
+            <td class="border border-slate-300 px-4 py-2">Equipo de audio</td>
+            <td class="border border-slate-300 px-4 py-2">Recomendable</td>
+            <td class="border border-slate-300 px-4 py-2">Equipo del centro</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">🌸 Floristería</td>
+            <td class="border border-slate-300 px-4 py-2">Decoración</td>
+            <td class="border border-slate-300 px-4 py-2">Opcional</td>
+            <td class="border border-slate-300 px-4 py-2">Decoración hecha por alumnado</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">🍽️ Catering</td>
+            <td class="border border-slate-300 px-4 py-2">Merienda/Brindis</td>
+            <td class="border border-slate-300 px-4 py-2">Opcional</td>
+            <td class="border border-slate-300 px-4 py-2">Cada familia trae algo</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">🎓 Tienda especializada</td>
+            <td class="border border-slate-300 px-4 py-2">Birretes y estolas</td>
+            <td class="border border-slate-300 px-4 py-2">Recomendable</td>
+            <td class="border border-slate-300 px-4 py-2">Compra conjunta online</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">🖨️ Imprenta</td>
+            <td class="border border-slate-300 px-4 py-2">Diplomas y programas</td>
+            <td class="border border-slate-300 px-4 py-2">Necesario</td>
+            <td class="border border-slate-300 px-4 py-2">Diseño e impresión en centro</td>
+        </tr>
+    </tbody>
+</table>
 
 <div class="callout callout-success">
     <div class="callout-title">
         <span>💰</span>
         <span>Consejo de Ahorro</span>
     </div>
-    <p class="mb-0">Pedid **presupuestos a varios proveedores** y negociad descuentos por ser centro educativo. Muchos hacen precios especiales para eventos escolares.</p>
+    <p class="mb-0">Pedid <strong>presupuestos a varios proveedores</strong> y negociad descuentos por ser centro educativo. Muchos hacen precios especiales para eventos escolares.</p>
 </div>
 
-## 2.5. Checklist de Investigación 📝
+<h3>2.5. Checklist de Investigación 📝</h3>
 
-Completa esta checklist antes de pasar a la siguiente sección:
+<p>Completa esta checklist antes de pasar a la siguiente sección:</p>
 
-- [ ] He investigado al menos 3 centros educativos
-- [ ] Conozco los elementos habituales de una graduación
-- [ ] He identificado tendencias sostenibles aplicables
-- [ ] Sé qué herramientas digitales puedo usar
-- [ ] Conozco la normativa de protección de datos
-- [ ] Tengo lista de proveedores potenciales
-- [ ] He pedido al menos 2 presupuestos por servicio
+<ul class="my-4 space-y-2">
+    <li>He investigado al menos 3 centros educativos</li>
+    <li>Conozco los elementos habituales de una graduación</li>
+    <li>He identificado tendencias sostenibles aplicables</li>
+    <li>Sé qué herramientas digitales puedo usar</li>
+    <li>Conozco la normativa de protección de datos</li>
+    <li>Tengo lista de proveedores potenciales</li>
+    <li>He pedido al menos 2 presupuestos por servicio</li>
+</ul>
 
 <div class="callout callout-warning">
     <div class="callout-title">

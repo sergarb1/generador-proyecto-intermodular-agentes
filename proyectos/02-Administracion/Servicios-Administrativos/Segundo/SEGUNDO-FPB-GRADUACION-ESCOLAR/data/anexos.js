@@ -8,7 +8,7 @@ window.sectionsContent.anexos = `
     <p class="mb-0">Modelos de documentos, plantillas y materiales complementarios para el proyecto.</p>
 </div>
 
-## Anexo 1: Modelo de Autorización de Participación 📝
+<h3>Anexo 1: Modelo de Autorización de Participación 📝</h3>
 
 <div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 AUTORIZACIÓN PARA PARTICIPACIÓN EN ACTO DE GRADUACIÓN 2026
@@ -44,9 +44,9 @@ Firma del padre/madre/tutor:
 _____________________________
 </div>
 
----
+<hr class="my-8">
 
-## Anexo 2: Modelo de Autorización de Uso de Imagen 📸
+<h3>Anexo 2: Modelo de Autorización de Uso de Imagen 📸</h3>
 
 <div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 CONSENTIMIENTO PARA EL USO DE IMAGEN
@@ -98,9 +98,9 @@ Teléfono de contacto: _________________
 Email: _______________________________
 </div>
 
----
+<hr class="my-8">
 
-## Anexo 3: Modelo de Confirmación de Asistencia (RSVP) ✉️
+<h3>Anexo 3: Modelo de Confirmación de Asistencia (RSVP) ✉️</h3>
 
 <div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 CONFIRMACIÓN DE ASISTENCIA - GRADUACIÓN 2026
@@ -141,9 +141,9 @@ Formas de envío:
 ¡Gracias por su colaboración!
 </div>
 
----
+<hr class="my-8">
 
-## Anexo 4: Modelo de Presupuesto para Familias 💰
+<h3>Anexo 4: Modelo de Presupuesto para Familias 💰</h3>
 
 <div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 PRESUPUESTO GRADUACIÓN 2026
@@ -193,9 +193,9 @@ IMPORTANTE:
 Para dudas o incidencias: graduacion2026@iesserraperenxisa.es
 </div>
 
----
+<hr class="my-8">
 
-## Anexo 5: Modelo de Contrato con Proveedor 🤝
+<h3>Anexo 5: Modelo de Contrato con Proveedor 🤝</h3>
 
 <div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 CONTRATO DE PRESTACIÓN DE SERVICIOS
@@ -272,9 +272,9 @@ _______________________                 _______________________
 El Director/a                            El Representante
 </div>
 
----
+<hr class="my-8">
 
-## Anexo 6: Guión del Acto de Graduación 🎓
+<h3>Anexo 6: Guión del Acto de Graduación 🎓</h3>
 
 <div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 GUION DEL ACTO DE GRADUACIÓN 2026
@@ -380,9 +380,9 @@ MC-1 y MC-2 (al unísono): "¡Enhorabuena, promoción 2026!"
 ─────────────────────────────────────────────────────────────
 </div>
 
----
+<hr class="my-8">
 
-## Anexo 7: Checklist de Organización 📋
+<h3>Anexo 7: Checklist de Organización 📋</h3>
 
 <div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 CHECKLIST DE ORGANIZACIÓN - GRADUACIÓN 2026
@@ -419,9 +419,9 @@ JUNIO (Semana 13-14)
 □ Informe de evaluación
 </div>
 
----
+<hr class="my-8">
 
-## Anexo 8: Plano del Espacio 🏛️
+<h3>Anexo 8: Plano del Espacio 🏛️</h3>
 
 <div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
                     PLANO DEL SALÓN DE ACTOS
@@ -465,7 +465,7 @@ JUNIO (Semana 13-14)
     🍽️ = Zona de brindis
 </div>
 
----
+<hr class="my-8">
 
 <div class="callout callout-info">
     <div class="callout-title">

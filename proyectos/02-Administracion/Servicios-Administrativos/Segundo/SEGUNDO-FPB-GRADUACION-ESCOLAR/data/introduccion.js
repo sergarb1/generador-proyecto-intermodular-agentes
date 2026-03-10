@@ -8,16 +8,22 @@ window.sectionsContent.introduccion = `
     <p class="mb-0">Esta sección te presenta el contexto real del proyecto y la problemática que vas a resolver.</p>
 </div>
 
-## 1.1. Contexto del Proyecto 🏫
+<h3>1.1. Contexto del Proyecto 🏫</h3>
 
-### El Centro Educativo
+<h4>El Centro Educativo</h4>
 
-Imagina que tu centro educativo, el **IES Serra Perenxisa**, va a celebrar la **graduación conjunta** del alumnado que finaliza sus estudios de:
+<p>
+    Imagina que tu centro educativo, el <strong>IES Serra Perenxisa</strong>, va a celebrar la <strong>graduación conjunta</strong> del alumnado que finaliza sus estudios de:
+</p>
 
-* **4º de Educación Secundaria Obligatoria (ESO)**
-* **2º de FP Básica en Servicios Administrativos**
+<ul>
+    <li><strong>4º de Educación Secundaria Obligatoria (ESO)</strong></li>
+    <li><strong>2º de FP Básica en Servicios Administrativos</strong></li>
+</ul>
 
-Este evento representa un momento muy especial en la vida académica del alumnado, ya que marca el **fin de una etapa** y el comienzo de nuevos caminos profesionales y académicos.
+<p>
+    Este evento representa un momento muy especial en la vida académica del alumnado, ya que marca el <strong>fin de una etapa</strong> y el comienzo de nuevos caminos profesionales y académicos.
+</p>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
     <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl border border-blue-200">
@@ -37,18 +43,20 @@ Este evento representa un momento muy especial en la vida académica del alumnad
     </div>
 </div>
 
-### El Reto Organizativo
+<h4>El Reto Organizativo</h4>
 
-Organizar una graduación escolar no es una tarea sencilla. Requiere:
+<p>Organizar una graduación escolar no es una tarea sencilla. Requiere:</p>
 
-* **Coordinación entre múltiples grupos**: alumnado, profesorado, familias, equipo directivo
-* **Gestión de recursos económicos limitados**: hay que optimizar cada euro
-* **Cumplimiento de trámites administrativos**: permisos, autorizaciones, contratos
-* **Atención al detalle**: el protocolo y la imagen del evento deben ser impecables
+<ul>
+    <li><strong>Coordinación entre múltiples grupos</strong>: alumnado, profesorado, familias, equipo directivo</li>
+    <li><strong>Gestión de recursos económicos limitados</strong>: hay que optimizar cada euro</li>
+    <li><strong>Cumplimiento de trámites administrativos</strong>: permisos, autorizaciones, contratos</li>
+    <li><strong>Atención al detalle</strong>: el protocolo y la imagen del evento deben ser impecables</li>
+</ul>
 
-## 1.2. Problemática Detectada ⚠️
+<h3>1.2. Problemática Detectada ⚠️</h3>
 
-En ediciones anteriores, la organización de la graduación ha presentado los siguientes **problemas**:
+<p>En ediciones anteriores, la organización de la graduación ha presentado los siguientes <strong>problemas</strong>:</p>
 
 <div class="callout callout-error">
     <div class="callout-title">
@@ -56,7 +64,7 @@ En ediciones anteriores, la organización de la graduación ha presentado los si
         <span>Problemas Habituales en Graduaciones Anteriores</span>
     </div>
     <ul style="margin: 0; padding-left: 1.5rem;">
-        <li style="margin-bottom: 0.5rem;"><strong>Desorganización general:</strong> Falta de planificación temprana导致 decisiones de última hora</li>
+        <li style="margin-bottom: 0.5rem;"><strong>Desorganización general:</strong> Falta de planificación temprana → decisiones de última hora</li>
         <li style="margin-bottom: 0.5rem;"><strong>Descontrol presupuestario:</strong> Gastos no previstos que superan el presupuesto inicial</li>
         <li style="margin-bottom: 0.5rem;"><strong>Comunicación deficiente:</strong> Información que no llega a tiempo a las familias</li>
         <li style="margin-bottom: 0.5rem;"><strong>Documentación incompleta:</strong> Autorizaciones y permisos gestionados tarde</li>
@@ -64,23 +72,54 @@ En ediciones anteriores, la organización de la graduación ha presentado los si
     </ul>
 </div>
 
-### Consecuencias de una Mala Organización
+<h4>Consecuencias de una Mala Organización</h4>
 
-| Problema | Consecuencia | Impacto |
-|----------|--------------|---------|
-| Falta de planificación | Estrés y prisas de última hora | 😰 Alto |
-| Descontrol económico | Gastos excesivos para las familias | 💸 Alto |
-| Mala comunicación | Familias mal informadas | 📢 Medio |
-| Trámites incompletos | Problemas legales o de seguridad | ⚖️ Muy Alto |
-| Coordinación deficiente | Evento poco profesional | 🎭 Alto |
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+    <thead>
+        <tr style="background: #f1f5f9; border-bottom: 2px solid #e2e8f0;">
+            <th style="padding: 0.75rem; text-align: left; color: #1e293b;">Problema</th>
+            <th style="padding: 0.75rem; text-align: left; color: #1e293b;">Consecuencia</th>
+            <th style="padding: 0.75rem; text-align: left; color: #1e293b;">Impacto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 0.75rem;">Falta de planificación</td>
+            <td style="padding: 0.75rem;">Estrés y prisas de última hora</td>
+            <td style="padding: 0.75rem;">😰 Alto</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+            <td style="padding: 0.75rem;">Descontrol económico</td>
+            <td style="padding: 0.75rem;">Gastos excesivos para las familias</td>
+            <td style="padding: 0.75rem;">💸 Alto</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 0.75rem;">Mala comunicación</td>
+            <td style="padding: 0.75rem;">Familias mal informadas</td>
+            <td style="padding: 0.75rem;">📢 Medio</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+            <td style="padding: 0.75rem;">Trámites incompletos</td>
+            <td style="padding: 0.75rem;">Problemas legales o de seguridad</td>
+            <td style="padding: 0.75rem;">⚖️ Muy Alto</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 0.75rem;">Coordinación deficiente</td>
+            <td style="padding: 0.75rem;">Evento poco profesional</td>
+            <td style="padding: 0.75rem;">🎭 Alto</td>
+        </tr>
+    </tbody>
+</table>
 
-## 1.3. Propuesta de Solución 💡
+<h3>1.3. Propuesta de Solución 💡</h3>
 
-### El Proyecto "Graduación Escolar 2026"
+<h4>El Proyecto "Graduación Escolar 2026"</h4>
 
-Como alumnado de **2º de FP Básica en Servicios Administrativos**, vais a convertir este reto en una **oportunidad de aprendizaje real**, aplicando todos los conocimientos administrativos que habéis adquirido.
+<p>
+    Como alumnado de <strong>2º de FP Básica en Servicios Administrativos</strong>, vais a convertir este reto en una <strong>oportunidad de aprendizaje real</strong>, aplicando todos los conocimientos administrativos que habéis adquirido.
+</p>
 
-Vuestra misión será crear una **"Comisión Organizadora de Graduación"** que se encargue de:
+<p>Vuestra misión será crear una <strong>"Comisión Organizadora de Graduación"</strong> que se encargue de:</p>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
     <div class="p-5 bg-blue-50 rounded-xl border border-blue-100">
@@ -121,16 +160,16 @@ Vuestra misión será crear una **"Comisión Organizadora de Graduación"** que 
     </div>
 </div>
 
-## 1.4. Objetivos SMART 🎯
+<h3>1.4. Objetivos SMART 🎯</h3>
 
-Para asegurar el éxito del proyecto, establecemos los siguientes objetivos según la metodología **SMART**:
+<p>Para asegurar el éxito del proyecto, establecemos los siguientes objetivos según la metodología <strong>SMART</strong>:</p>
 
 <div class="callout callout-success">
     <div class="callout-title">
         <span>✅</span>
         <span>Objetivos del Proyecto</span>
     </div>
-    <table style="width: 100%; margin-top: 1rem;">
+    <table style="width: 100%; margin-top: 1rem; border-collapse: collapse;">
         <thead>
             <tr style="background: #f0fdf4; border-bottom: 2px solid #bbf7d0;">
                 <th style="padding: 0.75rem; text-align: left; color: #166534;">Criterio</th>
@@ -162,17 +201,40 @@ Para asegurar el éxito del proyecto, establecemos los siguientes objetivos seg�
     </table>
 </div>
 
-## 1.5. Módulos Implicados 🔗
+<h3>1.5. Módulos Implicados 🔗</h3>
 
-Este proyecto integra contenidos de todos los módulos del ciclo:
+<p>Este proyecto integra contenidos de todos los módulos del ciclo:</p>
 
-| Módulo | Aportación al Proyecto |
-|--------|----------------------|
-| **Operaciones administrativas** | Elaboración de documentos, archivos, trámites |
-| **Gestión económica y tributaria** | Presupuesto, facturas, impuestos básicos |
-| **Comunicación y atención al cliente** | Atención a familias, proveedores, protocolo |
-| **Organización y archivo de documentos** | Gestión documental del evento |
-| **Formación y Orientación Laboral** | Trabajo en equipo, prevención de riesgos |
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+    <thead>
+        <tr style="background: #f1f5f9; border-bottom: 2px solid #e2e8f0;">
+            <th style="padding: 0.75rem; text-align: left; color: #1e293b;">Módulo</th>
+            <th style="padding: 0.75rem; text-align: left; color: #1e293b;">Aportación al Proyecto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 0.75rem;"><strong>Operaciones administrativas</strong></td>
+            <td style="padding: 0.75rem;">Elaboración de documentos, archivos, trámites</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+            <td style="padding: 0.75rem;"><strong>Gestión económica y tributaria</strong></td>
+            <td style="padding: 0.75rem;">Presupuesto, facturas, impuestos básicos</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 0.75rem;"><strong>Comunicación y atención al cliente</strong></td>
+            <td style="padding: 0.75rem;">Atención a familias, proveedores, protocolo</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+            <td style="padding: 0.75rem;"><strong>Organización y archivo de documentos</strong></td>
+            <td style="padding: 0.75rem;">Gestión documental del evento</td>
+        </tr>
+        <tr>
+            <td style="padding: 0.75rem;"><strong>Formación y Orientación Laboral</strong></td>
+            <td style="padding: 0.75rem;">Trabajo en equipo, prevención de riesgos</td>
+        </tr>
+    </tbody>
+</table>
 
 <div class="callout callout-info">
     <div class="callout-title">

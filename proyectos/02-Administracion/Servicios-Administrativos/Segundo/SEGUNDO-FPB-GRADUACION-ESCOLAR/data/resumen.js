@@ -8,11 +8,11 @@ window.sectionsContent.resumen = `
     <p class="mb-0">Este proyecto te guiará paso a paso para organizar y gestionar un evento de graduación escolar, aplicando conocimientos administrativos reales.</p>
 </div>
 
-## 📋 Descripción del Proyecto
+<h3>📋 Descripción del Proyecto</h3>
 
-Este proyecto intermodular tiene como objetivo principal que el **alumnado de FP Básica en Servicios Administrativos** aplique los conocimientos adquiridos durante el ciclo formativo para **organizar, planificar y gestionar la graduación escolar** de su promoción y la del alumnado de 4º de ESO.
+<p>Este proyecto intermodular tiene como objetivo principal que el <strong>alumnado de FP Básica en Servicios Administrativos</strong> aplique los conocimientos adquiridos durante el ciclo formativo para <strong>organizar, planificar y gestionar la graduación escolar</strong> de su promoción y la del alumnado de 4º de ESO.</p>
 
-A través de este proyecto, trabajarás de forma práctica en:
+<p>A través de este proyecto, trabajarás de forma práctica en:</p>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
     <div class="p-6 bg-blue-50 rounded-xl border border-blue-100">
@@ -33,42 +33,69 @@ A través de este proyecto, trabajarás de forma práctica en:
     </div>
 </div>
 
-## 🎯 Objetivos de Aprendizizaje
+<h3>🎯 Objetivos de Aprendizizaje</h3>
 
-Al finalizar este proyecto, serás capaz de:
+<p>Al finalizar este proyecto, serás capaz de:</p>
 
-| Objetivo | Competencia Trabajada |
-|----------|----------------------|
-| Elaborar documentos administrativos oficiales | Operaciones administrativas |
-| Calcular y controlar presupuestos básicos | Gestión económica y tributaria |
-| Aplicar técnicas de comunicación empresarial | Comunicación y atención al cliente |
-| Organizar eventos siguiendo protocolos | Organización y archivo de documentos |
-| Trabajar en equipo de forma colaborativa | Competencias transversales |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Objetivo</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Competencia Trabajada</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Elaborar documentos administrativos oficiales</td>
+            <td class="border border-slate-300 px-4 py-2">Operaciones administrativas</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Calcular y controlar presupuestos básicos</td>
+            <td class="border border-slate-300 px-4 py-2">Gestión económica y tributaria</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Aplicar técnicas de comunicación empresarial</td>
+            <td class="border border-slate-300 px-4 py-2">Comunicación y atención al cliente</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Organizar eventos siguiendo protocolos</td>
+            <td class="border border-slate-300 px-4 py-2">Organización y archivo de documentos</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Trabajar en equipo de forma colaborativa</td>
+            <td class="border border-slate-300 px-4 py-2">Competencias transversales</td>
+        </tr>
+    </tbody>
+</table>
 
-## 👥 Destinatarios del Proyecto
+<h3>👥 Destinatarios del Proyecto</h3>
 
-Este proyecto está diseñado para:
+<p>Este proyecto está diseñado para:</p>
 
-* **Alumnado de 2º de FP Básica en Servicios Administrativos** (organizadores principales)
-* **Alumnado de 4º de ESO** (co-organizadores y destinatarios del evento)
-* **Equipo directivo del centro educativo** (supervisores institucionales)
-* **Familias del alumnado** (participantes en el evento)
+<ul class="my-4 space-y-2">
+    <li><strong>Alumnado de 2º de FP Básica en Servicios Administrativos</strong> (organizadores principales)</li>
+    <li><strong>Alumnado de 4º de ESO</strong> (co-organizadores y destinatarios del evento)</li>
+    <li><strong>Equipo directivo del centro educativo</strong> (supervisores institucionales)</li>
+    <li><strong>Familias del alumnado</strong> (participantes en el evento)</li>
+</ul>
 
-## 📊 Resultados Esperados
+<h3>📊 Resultados Esperados</h3>
 
-Al completar este proyecto, el alumnado habrá desarrollado:
+<p>Al completar este proyecto, el alumnado habrá desarrollado:</p>
 
-1. ✅ Un **expediente administrativo completo** del evento
-2. ✅ Un **plan de gestión económica** con presupuesto detallado
-3. ✅ Un **plan de comunicación y marketing** del evento
-4. ✅ Un **protocolo de actuación** para el día de la graduación
-5. ✅ Un **informe de evaluación** post-evento
+<ol class="my-4 space-y-2 list-decimal list-inside">
+    <li>Un <strong>expediente administrativo completo</strong> del evento</li>
+    <li>Un <strong>plan de gestión económica</strong> con presupuesto detallado</li>
+    <li>Un <strong>plan de comunicación y marketing</strong> del evento</li>
+    <li>Un <strong>protocolo de actuación</strong> para el día de la graduación</li>
+    <li>Un <strong>informe de evaluación</strong> post-evento</li>
+</ol>
 
 <div class="callout callout-warning">
     <div class="callout-title">
         <span>⚠️</span>
         <span>Importante para el Alumnado</span>
     </div>
-    <p class="mb-0">Este proyecto es una **guía didáctica**. Deberás investigar, completar los datos reales de tu centro educativo y adaptar las propuestas a tu situación concreta. ¡Tu creatividad y iniciativa son clave!</p>
+    <p class="mb-0">Este proyecto es una <strong>guía didáctica</strong>. Deberás investigar, completar los datos reales de tu centro educativo y adaptar las propuestas a tu situación concreta. ¡Tu creatividad y iniciativa son clave!</p>
 </div>
 `;

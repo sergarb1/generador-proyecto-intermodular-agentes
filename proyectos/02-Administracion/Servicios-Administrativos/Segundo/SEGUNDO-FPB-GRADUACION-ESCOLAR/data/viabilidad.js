@@ -8,16 +8,18 @@ window.sectionsContent.viabilidad = `
     <p class="mb-0">En esta sección analizarás si el proyecto es realista y sostenible desde todos los puntos de vista.</p>
 </div>
 
-## 3.1. Análisis DAFO 🎯
+<h3>3.1. Análisis DAFO 🎯</h3>
 
-### ¿Qué es un DAFO?
+<h4>¿Qué es un DAFO?</h4>
 
-El **análisis DAFO** es una herramienta que te permite identificar:
+<p>El <strong>análisis DAFO</strong> es una herramienta que te permite identificar:</p>
 
-* **D**ebilidades - Factores internos negativos
-* **A**menazas - Factores externos negativos  
-* **F**ortalezas - Factores internos positivos
-* **O**portunidades - Factores externos positivos
+<ul class="my-4 space-y-2">
+    <li><strong>D</strong>ebilidades - Factores internos negativos</li>
+    <li><strong>A</strong>menazas - Factores externos negativos</li>
+    <li><strong>F</strong>ortalezas - Factores internos positivos</li>
+    <li><strong>O</strong>portunidades - Factores externos positivos</li>
+</ul>
 
 <div class="callout callout-warning">
     <div class="callout-title">
@@ -27,7 +29,7 @@ El **análisis DAFO** es una herramienta que te permite identificar:
     <p>Completa el siguiente DAFO para tu proyecto de graduación:</p>
 </div>
 
-#### Matriz DAFO - Graduación Escolar 2026
+<h4 style="margin-top:0; color:#1e40af;">Matriz DAFO - Graduación Escolar 2026</h4>
 
 <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
     <thead>
@@ -48,7 +50,7 @@ El **análisis DAFO** es una herramienta que te permite identificar:
             </td>
             <td style="padding: 1rem; border: 2px solid #ef4444; vertical-align: top; min-height: 150px;">
                 <ul style="margin: 0; padding-left: 1.25rem;">
-                    <li>Posibles cambios de fecha por imprevistos</li>
+                    <li>Possibles cambios de fecha por imprevistos</li>
                     <li>Subida de precios de proveedores</li>
                     <li>Baja participación de familias</li>
                     <li>[Añade más...]</li>
@@ -71,7 +73,7 @@ El **análisis DAFO** es una herramienta que te permite identificar:
             <td style="padding: 1rem; border: 2px solid #10b981; vertical-align: top; min-height: 150px;">
                 <ul style="margin: 0; padding-left: 1.25rem;">
                     <li>Colaboración con empresas locales</li>
-                    <li>Posibles patrocinios de comercios</li>
+                    <li>Possibles patrocinios de comercios</li>
                     <li>Redes sociales para difusión gratuita</li>
                     <li>[Añade más...]</li>
                 </ul>
@@ -80,48 +82,159 @@ El **análisis DAFO** es una herramienta que te permite identificar:
     </tbody>
 </table>
 
-### Estrategias DAFO
+<h4>Estrategias DAFO</h4>
 
-Una vez completado el DAFO, define estrategias:
+<p>Una vez completado el DAFO, define estrategias:</p>
 
-| Tipo | Estrategia | Ejemplo |
-|------|------------|---------|
-| **FO** (Fortalezas + Oportunidades) | Usar fortalezas para aprovechar oportunidades | Usar motivación del alumnado para buscar patrocinios |
-| **DO** (Debilidades + Oportunidades) | Superar debilidades usando oportunidades | Pedir ayuda a empresas para compensar falta de experiencia |
-| **FA** (Fortalezas + Amenazas) | Usar fortalezas para evitar amenazas | Usar apoyo del profesorado para anticipar imprevistos |
-| **DA** (Debilidades + Amenazas) | Minimizar debilidades y evitar amenazas | Empezar pronto para compensar tiempo limitado |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Tipo</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Estrategia</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Ejemplo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>FO</strong> (Fortalezas + Oportunidades)</td>
+            <td class="border border-slate-300 px-4 py-2">Usar fortalezas para aprovechar oportunidades</td>
+            <td class="border border-slate-300 px-4 py-2">Usar motivación del alumnado para buscar patrocinios</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>DO</strong> (Debilidades + Oportunidades)</td>
+            <td class="border border-slate-300 px-4 py-2">Superar debilidades usando oportunidades</td>
+            <td class="border border-slate-300 px-4 py-2">Pedir ayuda a empresas para compensar falta de experiencia</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>FA</strong> (Fortalezas + Amenazas)</td>
+            <td class="border border-slate-300 px-4 py-2">Usar fortalezas para evitar amenazas</td>
+            <td class="border border-slate-300 px-4 py-2">Usar apoyo del profesorado para anticipar imprevistos</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>DA</strong> (Debilidades + Amenazas)</td>
+            <td class="border border-slate-300 px-4 py-2">Minimizar debilidades y evitar amenazas</td>
+            <td class="border border-slate-300 px-4 py-2">Empezar pronto para compensar tiempo limitado</td>
+        </tr>
+    </tbody>
+</table>
 
-## 3.2. Viabilidad Económica 💰
+<h3>3.2. Viabilidad Económica 💰</h3>
 
-### Estructura de Costes Estimada
+<h4>Estructura de Costes Estimada</h4>
 
-A continuación, una **plantilla de presupuesto** que deberás completar con datos reales:
+<p>A continuación, una <strong>plantilla de presupuesto</strong> que deberás completar con datos reales:</p>
 
-#### Presupuesto de Ingresos
+<h4 style="margin-top:0; color:#1e40af;">Presupuesto de Ingresos</h4>
 
-| Concepto | Cantidad | Precio Unitario | Total |
-|----------|----------|-----------------|-------|
-| Aportación familias (graduandos ESO) | ~60 | 15€ | 900€ |
-| Aportación familias (graduandos FPB) | ~20 | 15€ | 300€ |
-| Patrocinios/Donaciones | - | - | [Investigar] |
-| Venta de entradas (familiares) | ~150 | 5€ | 750€ |
-| **TOTAL INGRESOS** | | | **_______€** |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Concepto</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Cantidad</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Precio Unitario</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Aportación familias (graduandos ESO)</td>
+            <td class="border border-slate-300 px-4 py-2">~60</td>
+            <td class="border border-slate-300 px-4 py-2">15€</td>
+            <td class="border border-slate-300 px-4 py-2">900€</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Aportación familias (graduandos FPB)</td>
+            <td class="border border-slate-300 px-4 py-2">~20</td>
+            <td class="border border-slate-300 px-4 py-2">15€</td>
+            <td class="border border-slate-300 px-4 py-2">300€</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Patrocinios/Donaciones</td>
+            <td class="border border-slate-300 px-4 py-2">-</td>
+            <td class="border border-slate-300 px-4 py-2">-</td>
+            <td class="border border-slate-300 px-4 py-2">[Investigar]</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Venta de entradas (familiares)</td>
+            <td class="border border-slate-300 px-4 py-2">~150</td>
+            <td class="border border-slate-300 px-4 py-2">5€</td>
+            <td class="border border-slate-300 px-4 py-2">750€</td>
+        </tr>
+        <tr class="font-bold bg-slate-100">
+            <td class="border border-slate-300 px-4 py-2" colspan="3">TOTAL INGRESOS</td>
+            <td class="border border-slate-300 px-4 py-2">_______€</td>
+        </tr>
+    </tbody>
+</table>
 
-#### Presupuesto de Gastos
+<h4 style="margin-top:0; color:#1e40af;">Presupuesto de Gastos</h4>
 
-| Concepto | Cantidad | Precio Unitario | Total |
-|----------|----------|-----------------|-------|
-| Alquiler de birretes y estolas | 80 | 8€ | 640€ |
-| Impresión de diplomas | 80 | 2€ | 160€ |
-| Decoración del espacio | 1 | 150€ | 150€ |
-| Equipamiento de sonido | 1 | 100€ | 100€ |
-| Fotógrafo profesional | 1 | 200€ | 200€ |
-| Merienda/Brindis | 150 | 3€ | 450€ |
-| Invitaciones y programas | 150 | 0,50€ | 75€ |
-| Imprevistos (10%) | - | - | [Calcular] |
-| **TOTAL GASTOS** | | | **_______€** |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Concepto</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Cantidad</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Precio Unitario</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Alquiler de birretes y estolas</td>
+            <td class="border border-slate-300 px-4 py-2">80</td>
+            <td class="border border-slate-300 px-4 py-2">8€</td>
+            <td class="border border-slate-300 px-4 py-2">640€</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Impresión de diplomas</td>
+            <td class="border border-slate-300 px-4 py-2">80</td>
+            <td class="border border-slate-300 px-4 py-2">2€</td>
+            <td class="border border-slate-300 px-4 py-2">160€</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Decoración del espacio</td>
+            <td class="border border-slate-300 px-4 py-2">1</td>
+            <td class="border border-slate-300 px-4 py-2">150€</td>
+            <td class="border border-slate-300 px-4 py-2">150€</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Equipamiento de sonido</td>
+            <td class="border border-slate-300 px-4 py-2">1</td>
+            <td class="border border-slate-300 px-4 py-2">100€</td>
+            <td class="border border-slate-300 px-4 py-2">100€</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Fotógrafo profesional</td>
+            <td class="border border-slate-300 px-4 py-2">1</td>
+            <td class="border border-slate-300 px-4 py-2">200€</td>
+            <td class="border border-slate-300 px-4 py-2">200€</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Merienda/Brindis</td>
+            <td class="border border-slate-300 px-4 py-2">150</td>
+            <td class="border border-slate-300 px-4 py-2">3€</td>
+            <td class="border border-slate-300 px-4 py-2">450€</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Invitaciones y programas</td>
+            <td class="border border-slate-300 px-4 py-2">150</td>
+            <td class="border border-slate-300 px-4 py-2">0,50€</td>
+            <td class="border border-slate-300 px-4 py-2">75€</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Imprevistos (10%)</td>
+            <td class="border border-slate-300 px-4 py-2">-</td>
+            <td class="border border-slate-300 px-4 py-2">-</td>
+            <td class="border border-slate-300 px-4 py-2">[Calcular]</td>
+        </tr>
+        <tr class="font-bold bg-slate-100">
+            <td class="border border-slate-300 px-4 py-2" colspan="3">TOTAL GASTOS</td>
+            <td class="border border-slate-300 px-4 py-2">_______€</td>
+        </tr>
+    </tbody>
+</table>
 
-#### Balance Final
+<h4 style="margin-top:0; color:#1e40af;">Balance Final</h4>
 
 <div class="grid grid-cols-3 gap-4 my-8">
     <div class="p-6 bg-blue-50 rounded-xl border border-blue-200 text-center">
@@ -146,107 +259,233 @@ A continuación, una **plantilla de presupuesto** que deberás completar con dat
     <p class="mb-0"><strong>Los ingresos deben ser ≥ que los gastos.</strong> Si hay déficit, debéis: (1) reducir gastos, (2) aumentar ingresos, o (3) buscar financiación adicional.</p>
 </div>
 
-### Indicadores de Viabilidad Económica
+<h4>Indicadores de Viabilidad Económica</h4>
 
-| Indicador | Fórmula | Valor Objetivo |
-|-----------|---------|----------------|
-| **Superávit/Déficit** | Ingresos - Gastos | ≥ 0€ |
-| **Coste por Graduando** | Gastos Totales / Nº Graduandos | < 20€ |
-| **Margen de Seguridad** | (Ingresos - Gastos) / Ingresos × 100 | > 10% |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Indicador</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Fórmula</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Valor Objetivo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>Superávit/Déficit</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Ingresos - Gastos</td>
+            <td class="border border-slate-300 px-4 py-2">≥ 0€</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2"><strong>Coste por Graduando</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Gastos Totales / Nº Graduandos</td>
+            <td class="border border-slate-300 px-4 py-2">&lt; 20€</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2"><strong>Margen de Seguridad</strong></td>
+            <td class="border border-slate-300 px-4 py-2">(Ingresos - Gastos) / Ingresos × 100</td>
+            <td class="border border-slate-300 px-4 py-2">&gt; 10%</td>
+        </tr>
+    </tbody>
+</table>
 
-## 3.3. Viabilidad Técnica y Organizativa ⚙️
+<h3>3.3. Viabilidad Técnica y Organizativa ⚙️</h3>
 
-### Recursos Disponibles
+<h4>Recursos Disponibles</h4>
 
-Completa el siguiente inventario:
+<p>Completa el siguiente inventario:</p>
 
-#### Recursos Humanos
+<h4 style="margin-top:0; color:#1e40af;">Recursos Humanos</h4>
 
-| Rol | ¿Quién? | ¿Disponibilidad? |
-|-----|---------|------------------|
-| Coordinador/a del proyecto | Profesor/a tutor/a | [Confirmar] |
-| Equipo organizador (alumnado) | 2º FPB Servicios Administrativos | [Nº personas] |
-| Colaboradores (4º ESO) | Alumnado 4º ESO | [Nº personas] |
-| Voluntarios (familias) | AMPA / Familias | [Confirmar] |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Rol</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Quién?</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Disponibilidad?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Coordinador/a del proyecto</td>
+            <td class="border border-slate-300 px-4 py-2">Profesor/a tutor/a</td>
+            <td class="border border-slate-300 px-4 py-2">[Confirmar]</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Equipo organizador (alumnado)</td>
+            <td class="border border-slate-300 px-4 py-2">2º FPB Servicios Administrativos</td>
+            <td class="border border-slate-300 px-4 py-2">[Nº personas]</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Colaboradores (4º ESO)</td>
+            <td class="border border-slate-300 px-4 py-2">Alumnado 4º ESO</td>
+            <td class="border border-slate-300 px-4 py-2">[Nº personas]</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Voluntarios (familias)</td>
+            <td class="border border-slate-300 px-4 py-2">AMPA / Familias</td>
+            <td class="border border-slate-300 px-4 py-2">[Confirmar]</td>
+        </tr>
+    </tbody>
+</table>
 
-#### Recursos Materiales
+<h4 style="margin-top:0; color:#1e40af;">Recursos Materiales</h4>
 
-| Recurso | ¿Disponible en el centro? | ¿Necesita reserva? |
-|---------|--------------------------|-------------------|
-| Salón de Actos / Gimnasio | [Sí/No] | [Sí/No] |
-| Equipo de sonido | [Sí/No] | [Sí/No] |
-| Proyector/Pantalla | [Sí/No] | [Sí/No] |
-| Sillas y mesas | [Sí/No] | [Sí/No] |
-| Ordenadores/Impresora | [Sí/No] | [Sí/No] |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Recurso</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Disponible en el centro?</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Necesita reserva?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Salón de Actos / Gimnasio</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Equipo de sonido</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Proyector/Pantalla</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Sillas y mesas</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Ordenadores/Impresora</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
+        </tr>
+    </tbody>
+</table>
 
-#### Recursos Temporales
+<h4 style="margin-top:0; color:#1e40af;">Recursos Temporales</h4>
 
 <div class="callout callout-info">
     <div class="callout-title">
         <span>📅</span>
         <span>Cronograma Recomendado</span>
     </div>
-    <table style="width: 100%; margin-top: 1rem;">
+    <table class="w-full mt-4">
         <thead>
-            <tr style="background: #eff6ff;">
-                <th style="padding: 0.75rem; text-align: left; color: #1e40af;">Mes</th>
-                <th style="padding: 0.75rem; text-align: left; color: #1e40af;">Tareas Principales</th>
+            <tr class="bg-blue-50">
+                <th class="px-4 py-2 text-left text-blue-900">Mes</th>
+                <th class="px-4 py-2 text-left text-blue-900">Tareas Principales</th>
             </tr>
         </thead>
         <tbody>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-                <td style="padding: 0.75rem; font-weight: 600;">Marzo</td>
-                <td style="padding: 0.75rem;">Constitución del equipo, investigación, primeros presupuestos</td>
+            <tr class="border-b border-slate-200">
+                <td class="px-4 py-2 font-semibold">Marzo</td>
+                <td class="px-4 py-2">Constitución del equipo, investigación, primeros presupuestos</td>
             </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-                <td style="padding: 0.75rem; font-weight: 600;">Abril</td>
-                <td style="padding: 0.75rem;">Confirmar fecha y espacio, abrir reservas, pedir autorizaciones</td>
+            <tr class="border-b border-slate-200 bg-slate-50">
+                <td class="px-4 py-2 font-semibold">Abril</td>
+                <td class="px-4 py-2">Confirmar fecha y espacio, abrir reservas, pedir autorizaciones</td>
             </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-                <td style="padding: 0.75rem; font-weight: 600;">Mayo</td>
-                <td style="padding: 0.75rem;">Cerrar proveedores, diseñar invitaciones, confirmar asistentes</td>
+            <tr class="border-b border-slate-200">
+                <td class="px-4 py-2 font-semibold">Mayo</td>
+                <td class="px-4 py-2">Cerrar proveedores, diseñar invitaciones, confirmar asistentes</td>
             </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
-                <td style="padding: 0.75rem; font-weight: 600;">Junio</td>
-                <td style="padding: 0.75rem;">Preparación final, ensayo general, celebración del evento</td>
+            <tr class="border-b border-slate-200 bg-slate-50">
+                <td class="px-4 py-2 font-semibold">Junio</td>
+                <td class="px-4 py-2">Preparación final, ensayo general, celebración del evento</td>
             </tr>
         </tbody>
     </table>
 </div>
 
-## 3.4. Evaluación de Riesgos ⚠️
+<h3>3.4. Evaluación de Riesgos ⚠️</h3>
 
-### Matriz de Riesgos
+<h4>Matriz de Riesgos</h4>
 
-Identifica y valora los posibles riesgos del proyecto:
+<p>Identifica y valora los posibles riesgos del proyecto:</p>
 
-| Riesgo | Probabilidad (1-5) | Impacto (1-5) | Puntuación | Medidas Preventivas |
-|--------|-------------------|---------------|------------|---------------------|
-| Lluia (si es al aire libre) | 2 | 5 | 10 | Tener espacio interior alternativo |
-| Baja asistencia de familias | 3 | 4 | 12 | Recordatorios múltiples, RSVP obligatorio |
-| Proveedor no se presenta | 2 | 5 | 10 | Tener proveedor de respaldo |
-| Exceso de presupuesto | 3 | 4 | 12 | Control semanal de gastos, 10% colchón |
-| Problemas técnicos (sonido) | 3 | 3 | 9 | Ensayo previo, tener equipo de reserva |
-| Conflicto con otra actividad del centro | 2 | 4 | 8 | Coordinar con secretaría del centro |
+<table class="w-full border-collapse border border-slate-300 my-6">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-2 text-left">Riesgo</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Probabilidad (1-5)</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Impacto (1-5)</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Puntuación</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Medidas Preventivas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Lluvia (si es al aire libre)</td>
+            <td class="border border-slate-300 px-4 py-2">2</td>
+            <td class="border border-slate-300 px-4 py-2">5</td>
+            <td class="border border-slate-300 px-4 py-2">10</td>
+            <td class="border border-slate-300 px-4 py-2">Tener espacio interior alternativo</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Baja asistencia de familias</td>
+            <td class="border border-slate-300 px-4 py-2">3</td>
+            <td class="border border-slate-300 px-4 py-2">4</td>
+            <td class="border border-slate-300 px-4 py-2">12</td>
+            <td class="border border-slate-300 px-4 py-2">Recordatorios múltiples, RSVP obligatorio</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Proveedor no se presenta</td>
+            <td class="border border-slate-300 px-4 py-2">2</td>
+            <td class="border border-slate-300 px-4 py-2">5</td>
+            <td class="border border-slate-300 px-4 py-2">10</td>
+            <td class="border border-slate-300 px-4 py-2">Tener proveedor de respaldo</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Exceso de presupuesto</td>
+            <td class="border border-slate-300 px-4 py-2">3</td>
+            <td class="border border-slate-300 px-4 py-2">4</td>
+            <td class="border border-slate-300 px-4 py-2">12</td>
+            <td class="border border-slate-300 px-4 py-2">Control semanal de gastos, 10% colchón</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-2">Problemas técnicos (sonido)</td>
+            <td class="border border-slate-300 px-4 py-2">3</td>
+            <td class="border border-slate-300 px-4 py-2">3</td>
+            <td class="border border-slate-300 px-4 py-2">9</td>
+            <td class="border border-slate-300 px-4 py-2">Ensayo previo, tener equipo de reserva</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Conflicto con otra actividad del centro</td>
+            <td class="border border-slate-300 px-4 py-2">2</td>
+            <td class="border border-slate-300 px-4 py-2">4</td>
+            <td class="border border-slate-300 px-4 py-2">8</td>
+            <td class="border border-slate-300 px-4 py-2">Coordinar con secretaría del centro</td>
+        </tr>
+    </tbody>
+</table>
 
-**Escala de Probabilidad e Impacto:**
-* 1 = Muy bajo/a
-* 2 = Bajo/a
-* 3 = Medio
-* 4 = Alto
-* 5 = Muy alto/a
+<p><strong>Escala de Probabilidad e Impacto:</strong></p>
+<ul class="my-4 space-y-1">
+    <li>1 = Muy bajo/a</li>
+    <li>2 = Bajo/a</li>
+    <li>3 = Medio</li>
+    <li>4 = Alto</li>
+    <li>5 = Muy alto/a</li>
+</ul>
 
-**Puntuación = Probabilidad × Impacto**
+<p><strong>Puntuación = Probabilidad × Impacto</strong></p>
 
-* **15-25 puntos**: Riesgo crítico - Acción inmediata requerida
-* **8-14 puntos**: Riesgo moderado - Plan de contingencia recomendado
-* **1-7 puntos**: Riesgo bajo - Monitorizar
+<ul class="my-4 space-y-1">
+    <li><strong>15-25 puntos</strong>: Riesgo crítico - Acción inmediata requerida</li>
+    <li><strong>8-14 puntos</strong>: Riesgo moderado - Plan de contingencia recomendado</li>
+    <li><strong>1-7 puntos</strong>: Riesgo bajo - Monitorizar</li>
+</ul>
 
 <div class="callout callout-success">
     <div class="callout-title">
         <span>✅</span>
         <span>Conclusión de Viabilidad</span>
     </div>
-    <p class="mb-0">Tras completar este análisis, redacta una conclusión de **máximo 10 líneas** indicando si consideras que el proyecto es viable y qué condiciones deben cumplirse para asegurar su éxito.</p>
+    <p class="mb-0">Tras completar este análisis, redacta una conclusión de <strong>máximo 10 líneas</strong> indicando si consideras que el proyecto es viable y qué condiciones deben cumplirse para asegurar su éxito.</p>
 </div>
 `;
