@@ -1,0 +1,40 @@
+<!-- 
+  IMAGEN HERO PARA EL PROYECTO
+  
+  Esta es una imagen de marcador de posición.
+  
+  INSTRUCCIONES PARA AÑADIR UNA IMAGEN REAL:
+  
+  1. Ve a https://www.pexels.com/es-es/
+  2. Busca: "graduation", "graduación escolar", "diploma", "students"
+  3. Elige una imagen gratuita de calidad
+  4. Descárgala en tamaño grande (al menos 1200px de ancho)
+  5. Guárdala como "hero.jpg" en esta carpeta images/
+  6. Sobrescribe este archivo placeholder
+  
+  IMÁGENES RECOMENDADAS DE PEXELS:
+  - Graduandos con birretes
+  - Entrega de diplomas
+  - Estudiantes celebrando
+  - Ambiente académico/formal
+  
+  Dimensiones recomendadas: 1200x600 px o similar (formato panorámico)
+-->
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#grad)"/>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">GRADUACIÓN 2026</text>
+  <text x="600" y="330" font-family="Arial, sans-serif" font-size="36" fill="white" text-anchor="middle">IES Serra Perenxisa</text>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="24" fill="#bfdbfe" text-anchor="middle">FP Básica - Servicios Administrativos</text>
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="20" fill="#93c5fd" text-anchor="middle">🎓 Organización y Gestión de Graduación Escolar 🎓</text>
+  <g transform="translate(550, 480)">
+    <text x="0" y="0" font-family="Arial" font-size="80" fill="white" opacity="0.3">🎓</text>
+    <text x="60" y="0" font-family="Arial" font-size="80" fill="white" opacity="0.3">📜</text>
+    <text x="120" y="0" font-family="Arial" font-size="80" fill="white" opacity="0.3">🎉</text>
+  </g>
+</svg>
