@@ -85,7 +85,7 @@
                 
                 <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
                     Herramienta impulsada por agentes de IA para crear proyectos pedagógicos 
-                    para Ciclos Formativos de Informática y Administración.
+                    para Ciclos Formativos de Informática, Administración y Comercio.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -185,9 +185,9 @@
                             <h4 class="font-bold text-lg text-slate-800 mb-2">Recopilación de Datos</h4>
                             <p class="text-slate-600 mb-3">El sistema pregunta al usuario:</p>
                             <ul class="text-sm text-slate-500 space-y-1">
-                                <li>• Familia profesional (Informática / Administración)</li>
-                                <li>• Ciclo formativo (ASIR, DAM, DAW, SMR, GM-ADM, GS-ADMF, GS-ASID)</li>
-                                <li>• Curso (Primero 25h / Segundo 96h)</li>
+                                <li>• Familia profesional (Informática / Administración / Comercio)</li>
+                                <li>• Ciclo formativo (ASIR, DAM, DAW, SMR, GM-ADM, GS-ASID, Comercio...)</li>
+                                <li>• Curso (Primero / Segundo)</li>
                                 <li>• Temática concreta (opcional)</li>
                             </ul>
                         </div>
@@ -199,14 +199,18 @@
                         <div class="flex-1 bg-white rounded-2xl p-6 shadow-md">
                             <h4 class="font-bold text-lg text-slate-800 mb-2">Selección de Agentes</h4>
                             <p class="text-slate-600 mb-3">Según la familia, se activan los agentes especializados:</p>
-                            <div class="grid sm:grid-cols-2 gap-3">
+                            <div class="grid sm:grid-cols-3 gap-3">
                                 <div class="p-3 bg-blue-50 rounded-lg">
                                     <p class="font-semibold text-blue-800">Informática</p>
-                                    <p class="text-xs text-blue-600">Experto Proyectos + Experto Informática + Curso</p>
+                                    <p class="text-xs text-blue-600">Experto Proyectos + Informática + Curso</p>
                                 </div>
                                 <div class="p-3 bg-green-50 rounded-lg">
                                     <p class="font-semibold text-green-800">Administración</p>
-                                    <p class="text-xs text-green-600">Experto Proyectos + Experto Administración + Curso</p>
+                                    <p class="text-xs text-green-600">Experto Proyectos + Administración + Curso</p>
+                                </div>
+                                <div class="p-3 bg-orange-50 rounded-lg">
+                                    <p class="font-semibold text-orange-800">Comercio</p>
+                                    <p class="text-xs text-orange-600">Experto Proyectos + Comercio + Curso</p>
                                 </div>
                             </div>
                         </div>
@@ -300,19 +304,30 @@
                         trámites legales y gestión empresarial.
                     </p>
                 </div>
+
+                <!-- Agente 5 (Comercio) -->
+                <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-6 border-2 border-amber-200 card-hover">
+                    <div class="w-14 h-14 bg-amber-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">🛒</div>
+                    <h4 class="font-bold text-xl text-amber-800 mb-2">Experto Comercio</h4>
+                    <p class="text-sm text-amber-600 mb-4">agents/06-experto-comercio.md</p>
+                    <p class="text-slate-600 text-sm">
+                        Especialista en e-commerce, marketing digital, 
+                        logística y atención al cliente online.
+                    </p>
+                </div>
                 
-                <!-- Agente 5 -->
+                <!-- Agente 6 -->
                 <div class="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-6 border-2 border-red-200 card-hover">
                     <div class="w-14 h-14 bg-red-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">📚</div>
                     <h4 class="font-bold text-xl text-red-800 mb-2">Agentes por Curso</h4>
                     <p class="text-sm text-red-600 mb-4">agents/03-primer-curso.md, 04-segundo-curso.md</p>
                     <p class="text-slate-600 text-sm">
-                        Adaptan el contenido al nivel del curso (Primero 25h o Segundo 96h) 
+                        Adaptan el contenido al nivel del curso (Primero o Segundo) 
                         ajustando la complejidad y profundidad.
                     </p>
                 </div>
                 
-                <!-- Agente 6 -->
+                <!-- Agente 7 -->
                 <div class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl p-6 border-2 border-teal-200 card-hover">
                     <div class="w-14 h-14 bg-teal-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">🎨</div>
                     <h4 class="font-bold text-xl text-teal-800 mb-2">Plantilla Premium</h4>
@@ -358,7 +373,7 @@
                             una startup de consultoría tecnológica.
                         </p>
                         <div class="flex items-center justify-between text-xs text-slate-500">
-                            <span>Segundo Curso (96h)</span>
+                            <span>Segundo Curso</span>
                             <span class="flex items-center gap-1 text-blue-600 font-semibold">
                                 Ver proyecto <span>→</span>
                             </span>
@@ -386,7 +401,7 @@
                             con infraestructura AWS/Azure.
                         </p>
                         <div class="flex items-center justify-between text-xs text-slate-500">
-                            <span>Segundo Curso (96h)</span>
+                            <span>Segundo Curso</span>
                             <span class="flex items-center gap-1 text-blue-600 font-semibold">
                                 Ver proyecto <span>→</span>
                             </span>
@@ -414,7 +429,7 @@
                             con backend REST y base de datos.
                         </p>
                         <div class="flex items-center justify-between text-xs text-slate-500">
-                            <span>Segundo Curso (96h)</span>
+                            <span>Segundo Curso</span>
                             <span class="flex items-center gap-1 text-blue-600 font-semibold">
                                 Ver proyecto <span>→</span>
                             </span>
@@ -442,7 +457,7 @@
                             400+ equipos del centro educativo.
                         </p>
                         <div class="flex items-center justify-between text-xs text-slate-500">
-                            <span>Segundo Curso (96h)</span>
+                            <span>Segundo Curso</span>
                             <span class="flex items-center gap-1 text-blue-600 font-semibold">
                                 Ver proyecto <span>→</span>
                             </span>
@@ -470,7 +485,7 @@
                             venta de entradas, check-in QR y dashboard en tiempo real.
                         </p>
                         <div class="flex items-center justify-between text-xs text-slate-500">
-                            <span>Segundo Curso (96h)</span>
+                            <span>Segundo Curso</span>
                             <span class="flex items-center gap-1 text-blue-600 font-semibold">
                                 Ver proyecto <span>→</span>
                             </span>
@@ -498,7 +513,7 @@
                             administrativos, contables y fiscales para autónomos y pymes.
                         </p>
                         <div class="flex items-center justify-between text-xs text-slate-500">
-                            <span>Segundo Curso (96h)</span>
+                            <span>Segundo Curso</span>
                             <span class="flex items-center gap-1 text-blue-600 font-semibold">
                                 Ver proyecto <span>→</span>
                             </span>
@@ -526,7 +541,7 @@
                             Digitalización del comercio local con WooCommerce.
                         </p>
                         <div class="flex items-center justify-between text-xs text-slate-500">
-                            <span>Segundo Curso (96h)</span>
+                            <span>Segundo Curso</span>
                             <span class="flex items-center gap-1 text-blue-600 font-semibold">
                                 Ver proyecto <span>→</span>
                             </span>

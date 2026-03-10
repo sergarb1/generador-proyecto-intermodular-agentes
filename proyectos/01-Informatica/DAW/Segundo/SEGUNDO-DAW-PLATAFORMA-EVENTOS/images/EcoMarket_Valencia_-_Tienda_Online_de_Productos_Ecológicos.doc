@@ -1,0 +1,1837 @@
+﻿<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><style>body { font-family: "Segoe UI", sans-serif; padding: 20px; } h1, h2, h3 { color: #2563eb; } .callout { padding: 15px; border: 1px solid #e2e8f0; border-radius: 10px; background: #f8fafc; margin: 20px 0; }</style></head><body><section id="inicio" class="text-center py-20 mb-32 min-h-[85vh] flex flex-col justify-center"><div class="mb-12"><img src="./logo.png" alt="Logo Centro" class="h-24 mx-auto drop-shadow-sm" style="max-width: 100%;"></div><h1 class="text-6xl text-slate-900 leading-tight mb-8">EcoMarket Valencia - Tienda Online de Productos Ecológicos</h1><p class="text-2xl text-slate-400 font-medium max-w-3xl mx-auto italic mb-16"> Proyecto Intermodular Final de Ciclo Formativo de FP Básica en Servicios Comerciales</p><div class="relative max-w-5xl mx-auto mb-20 group"><div class="absolute -inset-4 bg-gradient-to-tr from-blue-100 to-indigo-100 rounded-[2rem] blur-2xl opacity-50"></div><img src="./images/hero.jpg" alt="Hero" class="relative rounded-[1.5rem] shadow-2xl w-full border border-slate-100" style="max-width: 100%;"></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left mt-12"><div class="p-6 bg-slate-50 rounded-2xl border border-slate-100"><span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Autoría</span><span class="text-lg font-bold text-slate-800">Nombre del Estudiante</span></div><div class="p-6 bg-slate-50 rounded-2xl border border-slate-100"><span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Tutorización</span><span class="text-lg font-bold text-slate-800">Nombre del Tutor/a</span></div><div class="p-6 bg-slate-50 rounded-2xl border border-slate-100"><span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Ciclo / Curso</span><span class="text-lg font-bold text-slate-800">SERVICIOS COMERCIALES - Segundo</span></div><div class="p-6 bg-slate-50 rounded-2xl border border-slate-100"><span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Fecha</span><span class="text-lg font-bold text-slate-800">10 de marzo de 2026</span></div></div></section><section id="resumen" class="mb-32"><h2>Resumen / Abstract</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>💡</span><span>¿Qué es el Resumen?</span></div>
+        <p class="text-sm">Es una síntesis de todo tu trabajo. Debe permitir al lector entender qué has hecho sin leer todo el proyecto.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
+        <div class="p-8 bg-blue-50/50 rounded-3xl border border-blue-100 shadow-sm">
+            <h3 class="text-blue-600 !mt-0 !border-none !p-0 mb-4">Castellano</h3>
+            <p class="text-xs leading-relaxed text-slate-500 italic">
+                Este proyecto presenta la creación de <strong>EcoMarket Valencia</strong>, una tienda online especializada en productos ecológicos y de proximidad. 
+                El objetivo es digitalizar el comercio local y ofrecer una alternativa sostenible a la población valenciana.
+            </p>
+        </div>
+        <div class="p-8 bg-indigo-50/50 rounded-3xl border border-indigo-100 shadow-sm">
+            <h3 class="text-indigo-600 !mt-0 !border-none !p-0 mb-4">Valencià</h3>
+            <p class="text-xs leading-relaxed text-slate-500 italic">
+                Este projecte presenta la creació de <strong>EcoMarket Valencia</strong>, una tenda online especialitzada en productes ecològics i de proximitat.
+                L'objectiu és digitalitzar el comerç local i oferir una alternativa sostenible a la població valenciana.
+            </p>
+        </div>
+        <div class="p-8 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 class="text-slate-600 !mt-0 !border-none !p-0 mb-4">English</h3>
+            <p class="text-xs leading-relaxed text-slate-500 italic">
+                This project presents the creation of <strong>EcoMarket Valencia</strong>, an online store specialized in organic and local products.
+                The goal is to digitize local commerce and offer a sustainable alternative to the Valencian population.
+            </p>
+        </div>
+    </div>
+
+    <h3>📋 Estructura del Resumen</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="p-6 bg-white rounded-2xl border border-slate-200">
+            <h4 class="!mt-0 !text-blue-600">🎯 Contexto</h4>
+            <p class="text-sm text-slate-600 mb-0">Empresa familiar valenciana que quiere dar el salto al comercio electrónico.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-slate-200">
+            <h4 class="!mt-0 !text-orange-600">⚠️ Problema</h4>
+            <p class="text-sm text-slate-600 mb-0">Falta de presencia online y pérdida de oportunidades de venta digital.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-slate-200">
+            <h4 class="!mt-0 !text-green-600">✅ Solución</h4>
+            <p class="text-sm text-slate-600 mb-0">Tienda online con catálogo de productos ecológicos y sistema de pedidos.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-slate-200">
+            <h4 class="!mt-0 !text-purple-600">📊 Resultado</h4>
+            <p class="text-sm text-slate-600 mb-0">Plataforma funcional lista para comercializar productos de proximidad.</p>
+        </div>
+    </div>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>📝</span><span>Tu Tarea</span></div>
+        <p class="text-sm mb-0">Completa este resumen con tus propias palabras, indicando claramente qué has investigado y qué propuestas has desarrollado.</p>
+    </div>
+</div></section><div><section id="introduccion" class="mb-32 scroll-mt-24"><h2>1. Introducción</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>🎯</span><span>Objetivo de esta Sección</span></div>
+        <p class="text-sm">Presentar el contexto empresarial real y la problemática que justifica este proyecto de comercio electrónico.</p>
+    </div>
+
+    <h3>1.1. 🏢 Presentación de EcoMarket Valencia</h3>
+    
+    <p>
+        <strong>EcoMarket Valencia</strong> es una empresa familiar ubicada en la Comunidad Valenciana, dedicada a la comercialización de productos ecológicos 
+        y de proximidad. Fundada en 2018, la empresa ha trabajado tradicionalmente mediante venta física en mercados locales y mediante pedidos telefónicos.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <div class="text-3xl mb-3">📍</div>
+            <h4 class="!mt-0 !text-blue-700 !text-sm">Ubicación</h4>
+            <p class="text-sm text-slate-600 mb-0">Valencia capital y área metropolitana</p>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <div class="text-3xl mb-3">👥</div>
+            <h4 class="!mt-0 !text-green-700 !text-sm">Plantilla</h4>
+            <p class="text-sm text-slate-600 mb-0">5 personas trabajadoras</p>
+        </div>
+        <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100">
+            <div class="text-3xl mb-3">🛒</div>
+            <h4 class="!mt-0 !text-orange-700 !text-sm">Productos</h4>
+            <p class="text-sm text-slate-600 mb-0">Más de 200 referencias ecológicas</p>
+        </div>
+    </div>
+
+    <h3>1.2. ⚠️ Problemática Detectada</h3>
+
+    <p>
+        La empresa enfrenta los siguientes desafíos que justifican la creación de una tienda online:
+    </p>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>📉</span><span>Problemas Actuales</span></div>
+        <ul class="space-y-2 text-sm mb-0">
+            <li class="flex gap-2"><span class="text-red-500">❌</span> <span><strong>Ventas estancadas:</strong> Las ventas físicas no crecen desde 2022.</span></li>
+            <li class="flex gap-2"><span class="text-red-500">❌</span> <span><strong>Competencia online:</strong> Grandes plataformas captan clientes jóvenes.</span></li>
+            <li class="flex gap-2"><span class="text-red-500">❌</span> <span><strong>Procesos manuales:</strong> Pedidos por teléfono generan errores y pérdida de tiempo.</span></li>
+            <li class="flex gap-2"><span class="text-red-500">❌</span> <span><strong>Falta de visibilidad:</strong> Ausencia en canales digitales limita el crecimiento.</span></li>
+        </ul>
+    </div>
+
+    <h3>1.3. 🚀 Propuesta del Proyecto</h3>
+
+    <p>
+        Este proyecto propone el diseño e implementación de una <strong>tienda online de comercio electrónico</strong> que permita a EcoMarket Valencia:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-200">
+            <h4 class="!mt-0 !text-blue-700">🎯 Objetivo General</h4>
+            <p class="text-sm text-slate-600 mb-0">Digitalizar el proceso de venta mediante una plataforma e-commerce accesible, segura y fácil de usar.</p>
+        </div>
+        <div class="p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-200">
+            <h4 class="!mt-0 !text-green-700">📈 Objetivos Específicos</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Aumentar ventas un 30% en 6 meses</li>
+                <li>• Reducir errores de pedidos un 80%</li>
+                <li>• Alcanzar 1000 visitantes mensuales</li>
+                <li>• Fidelizar mediante programa de puntos</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>1.4. 📚 Módulos Implicados</h3>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200">
+                    <th class="text-left py-3 px-4 bg-slate-50 font-bold text-slate-700">Módulo Profesional</th>
+                    <th class="text-left py-3 px-4 bg-slate-50 font-bold text-slate-700">Aplicación en el Proyecto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">📦 Venta y Atención al Cliente</td>
+                    <td class="py-3 px-4 text-slate-600">Técnicas de venta online, fidelización y atención postventa</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">💻 Aplicaciones de Gestión Comercial</td>
+                    <td class="py-3 px-4 text-slate-600">Software de gestión de pedidos, stock y facturación</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">📊 Marketing en el Punto de Venta</td>
+                    <td class="py-3 px-4 text-slate-600">Estrategias de merchandising digital y promoción online</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">📱 Operaciones de Venta</td>
+                    <td class="py-3 px-4 text-slate-600">Procesos de cobro, entrega y gestión de devoluciones</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4">🔒 Prevención y Seguridad</td>
+                    <td class="py-3 px-4 text-slate-600">Seguridad en transacciones y protección de datos</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="callout callout-success">
+        <div class="callout-title"><span>💼</span><span>Conexión Profesional</span></div>
+        <p class="text-sm mb-0">Este proyecto simula un encargo real que podrías recibir como técnico comercial en una consultora de digitalización para pymes.</p>
+    </div>
+</div></section></div><div><section id="estado-arte" class="mb-32 scroll-mt-24"><h2>2. Estado del Arte</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>🌐</span><span>¿Qué es el Estado del Arte?</span></div>
+        <p class="text-sm">Analizamos las tendencias actuales en comercio electrónico y las soluciones que ya existen en el mercado.</p>
+    </div>
+
+    <h3>2.1. 📊 El Comercio Electrónico en España</h3>
+
+    <p>
+        El e-commerce en España ha experimentado un crecimiento exponencial en los últimos años. A continuación, presentamos datos clave que debes investigar y actualizar:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-8">
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 text-center">
+            <div class="text-4xl font-bold text-blue-600 mb-2">+15%</div>
+            <p class="text-sm text-slate-600 mb-0">Crecimiento anual del e-commerce</p>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100 text-center">
+            <div class="text-4xl font-bold text-green-600 mb-2">80%</div>
+            <p class="text-sm text-slate-600 mb-0">Internautas que compran online</p>
+        </div>
+        <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100 text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">€8.500M</div>
+            <p class="text-sm text-slate-600 mb-0">Facturación anual en España</p>
+        </div>
+        <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100 text-center">
+            <div class="text-4xl font-bold text-orange-600 mb-2">+25%</div>
+            <p class="text-sm text-slate-600 mb-0">Productos ecológicos online</p>
+        </div>
+    </div>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>🔍</span><span>Tu Investigación</span></div>
+        <p class="text-sm mb-0">Busca datos actualizados en fuentes como: <strong>INE, CNMC, Informe de la Sociedad de la Información</strong>. Actualiza estas cifras con información real de 2024-2025.</p>
+    </div>
+
+    <h3>2.2. 🛒 Plataformas de E-commerce Disponibles</h3>
+
+    <p>
+        Existen múltiples soluciones para crear una tienda online. Cada una tiene ventajas e inconvenientes que debes analizar:
+    </p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Plataforma</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Tipo</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Ventajas</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Inconvenientes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">🟣 Shopify</td>
+                    <td class="py-3 px-4 text-slate-600">SaaS (pago mensual)</td>
+                    <td class="py-3 px-4 text-slate-600">Fácil uso, todo incluido, plantillas profesionales</td>
+                    <td class="py-3 px-4 text-slate-600">Comisiones por venta, menos personalizable</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">🟢 WooCommerce</td>
+                    <td class="py-3 px-4 text-slate-600">WordPress (gratis)</td>
+                    <td class="py-3 px-4 text-slate-600">Flexible, gran comunidad, muchos plugins</td>
+                    <td class="py-3 px-4 text-slate-600">Requiere hosting, mantenimiento técnico</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">🔵 PrestaShop</td>
+                    <td class="py-3 px-4 text-slate-600">Open Source</td>
+                    <td class="py-3 px-4 text-slate-600">Especializado en e-commerce, multilenguaje</td>
+                    <td class="py-3 px-4 text-slate-600">Curva de aprendizaje, módulos de pago</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 font-medium">🟠 Tiendanube</td>
+                    <td class="py-3 px-4 text-slate-600">SaaS (pago mensual)</td>
+                    <td class="py-3 px-4 text-slate-600">Soporte en español, integración con mercados locales</td>
+                    <td class="py-3 px-4 text-slate-600">Menos conocido en Europa, funcionalidades limitadas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>2.3. 🌱 Tendencias en Productos Ecológicos Online</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <div class="text-3xl mb-3">🥗</div>
+            <h4 class="!mt-0 !text-green-700 !text-sm">Alimentación Bio</h4>
+            <p class="text-sm text-slate-600 mb-0">Frutas, verduras y productos procesados con certificación ecológica.</p>
+        </div>
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <div class="text-3xl mb-3">🧴</div>
+            <h4 class="!mt-0 !text-blue-700 !text-sm">Cosmética Natural</h4>
+            <p class="text-sm text-slate-600 mb-0">Productos de cuidado personal sin químicos agresivos.</p>
+        </div>
+        <div class="p-6 bg-amber-50 rounded-2xl border border-amber-100">
+            <div class="text-3xl mb-3">🏠</div>
+            <h4 class="!mt-0 !text-amber-700 !text-sm">Hogar Sostenible</h4>
+            <p class="text-sm text-slate-600 mb-0">Productos de limpieza ecológicos y reutilizables.</p>
+        </div>
+    </div>
+
+    <h3>2.4. 🔎 Análisis de la Competencia</h3>
+
+    <p>
+        Para posicionar EcoMarket Valencia, es esencial estudiar qué hacen otras tiendas similares. Completa la siguiente tabla investigando 3-5 competidores reales:
+    </p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Competidor</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Web</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Puntos Fuertes</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Puntos Débiles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-400 italic">[Investiga 1]</td>
+                    <td class="py-3 px-4 text-slate-400 italic">[URL]</td>
+                    <td class="py-3 px-4 text-slate-400 italic">[Fortalezas]</td>
+                    <td class="py-3 px-4 text-slate-400 italic">[Debilidades]</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-400 italic">[Investiga 2]</td>
+                    <td class="py-3 px-4 text-slate-400 italic">[URL]</td>
+                    <td class="py-3 px-4 text-slate-400 italic">[Fortalezas]</td>
+                    <td class="py-3 px-4 text-slate-400 italic">[Debilidades]</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 text-slate-400 italic">[Investiga 3]</td>
+                    <td class="py-3 px-4 text-slate-400 italic">[URL]</td>
+                    <td class="py-3 px-4 text-slate-400 italic">[Fortalezas]</td>
+                    <td class="py-3 px-4 text-slate-400 italic">[Debilidades]</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="callout callout-success">
+        <div class="callout-title"><span>💡</span><span>Consejo de Experto</span></div>
+        <p class="text-sm mb-0">Visita las webs de la competencia como si fueras un cliente. Prueba el proceso de compra, revisa los tiempos de entrega y analiza su atención al cliente.</p>
+    </div>
+</div></section></div><div><section id="viabilidad" class="mb-32 scroll-mt-24"><h2>3. Estudio de Viabilidad</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>📈</span><span>¿Qué es el Estudio de Viabilidad?</span></div>
+        <p class="text-sm">Analizamos si el proyecto es viable desde diferentes perspectivas: económica, técnica y temporal.</p>
+    </div>
+
+    <h3>3.1. 💰 Viabilidad Económica</h3>
+
+    <p>
+        Estimamos los costes necesarios para poner en marcha la tienda online de EcoMarket Valencia:
+    </p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Concepto</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Coste Inicial</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Coste Mensual</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">🌐 Dominio (ec marketvalencia.es)</td>
+                    <td class="py-3 px-4 font-medium">15€</td>
+                    <td class="py-3 px-4 text-slate-400">-</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">🖥️ Hosting profesional</td>
+                    <td class="py-3 px-4 text-slate-400">-</td>
+                    <td class="py-3 px-4 font-medium">15€/mes</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">🛒 Plataforma e-commerce</td>
+                    <td class="py-3 px-4 text-slate-400">0€ (WooCommerce)</td>
+                    <td class="py-3 px-4 text-slate-400">-</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">🎨 Plantilla premium</td>
+                    <td class="py-3 px-4 font-medium">60€</td>
+                    <td class="py-3 px-4 text-slate-400">-</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">📸 Fotografía de productos</td>
+                    <td class="py-3 px-4 font-medium">200€</td>
+                    <td class="py-3 px-4 text-slate-400">-</td>
+                </tr>
+                <tr class="border-b border-slate-100 bg-green-50">
+                    <td class="py-3 px-4 font-bold text-green-700">TOTAL ESTIMADO</td>
+                    <td class="py-3 px-4 font-bold text-green-700">275€</td>
+                    <td class="py-3 px-4 font-bold text-green-700">15€/mes</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="callout callout-success">
+        <div class="callout-title"><span>✅</span><span>Conclusión Económica</span></div>
+        <p class="text-sm mb-0">El proyecto es <strong>viable económicamente</strong> con una inversión inicial inferior a 300€, al alcance de una pequeña empresa familiar.</p>
+    </div>
+
+    <h3>3.2. 🔧 Viabilidad Técnica</h3>
+
+    <p>
+        Analizamos los recursos técnicos necesarios y la capacidad para implementarlos:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <h4 class="!mt-0 !text-blue-700">📋 Recursos Necesarios</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Ordenador con conexión a internet</li>
+                <li>• Navegador web actualizado</li>
+                <li>• Cuenta de correo empresarial</li>
+                <li>• Teléfono móvil para verificación</li>
+                <li>• Cámara de fotos o smartphone</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <h4 class="!mt-0 !text-green-700">✅ Competencias Requeridas</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Manejo básico de ordenador</li>
+                <li>• Navegación web</li>
+                <li>• Redacción de textos comerciales</li>
+                <li>• Fotografía básica con móvil</li>
+                <li>• Atención al cliente</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>🎓</span><span>Formación Necesaria</span></div>
+        <p class="text-sm mb-0">El alumnado de FPB en Servicios Comerciales ya posee las competencias básicas. Se recomienda un taller de 4 horas sobre gestión de tiendas online.</p>
+    </div>
+
+    <h3>3.3. ⏱️ Viabilidad Temporal</h3>
+
+    <p>
+        Estimación del tiempo necesario para completar el proyecto:
+    </p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Fase</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Duración</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Horas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">1. Investigación y planificación</td>
+                    <td class="py-3 px-4 text-slate-600">2 semanas</td>
+                    <td class="py-3 px-4 font-medium">20h</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">2. Configuración de la plataforma</td>
+                    <td class="py-3 px-4 text-slate-600">2 semanas</td>
+                    <td class="py-3 px-4 font-medium">24h</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">3. Carga de productos y contenidos</td>
+                    <td class="py-3 px-4 text-slate-600">3 semanas</td>
+                    <td class="py-3 px-4 font-medium">32h</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">4. Pruebas y puesta en marcha</td>
+                    <td class="py-3 px-4 text-slate-600">1 semana</td>
+                    <td class="py-3 px-4 font-medium">12h</td>
+                </tr>
+                <tr class="bg-blue-50">
+                    <td class="py-3 px-4 font-bold text-blue-700">TOTAL</td>
+                    <td class="py-3 px-4 font-bold text-blue-700">8 semanas</td>
+                    <td class="py-3 px-4 font-bold text-blue-700">88h</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>⚠️</span><span>Consideraciones</span></div>
+        <p class="text-sm mb-0">Las horas estimadas pueden variar según la experiencia previa del alumnado. Se recomienda dedicar 2-3 horas semanales durante el segundo trimestre.</p>
+    </div>
+
+    <h3>3.4. 📊 Análisis DAFO</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <h4 class="!mt-0 !text-green-700">💪 Fortalezas (Internas)</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Productos de calidad y ecológicos</li>
+                <li>• Atención personalizada</li>
+                <li>• Conocimiento del mercado local</li>
+                <li>• Precios competitivos</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100">
+            <h4 class="!mt-0 !text-orange-700">🌟 Oportunidades (Externas)</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Crecimiento del e-commerce</li>
+                <li>• Tendencia hacia productos bio</li>
+                <li>• Consumidores más conscientes</li>
+                <li>• Apoyos a la digitalización</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-red-50 rounded-2xl border border-red-100">
+            <h4 class="!mt-0 !text-red-700">😓 Debilidades (Internas)</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Poco conocimiento técnico</li>
+                <li>• Recursos limitados</li>
+                <li>• Marca poco conocida</li>
+                <li>• Sin experiencia en ventas online</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <h4 class="!mt-0 !text-blue-700">⚠️ Amenazas (Externas)</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Competencia de grandes plataformas</li>
+                <li>• Cambios en algoritmos de búsqueda</li>
+                <li>• Incremento de costes de publicidad</li>
+                <li>• Regulaciones cambiantes</li>
+            </ul>
+        </div>
+    </div>
+</div></section></div><div><section id="requisitos" class="mb-32 scroll-mt-24"><h2>4. Análisis de Requisitos</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>📋</span><span>¿Qué son los Requisitos?</span></div>
+        <p class="text-sm">Definimos qué debe hacer la tienda online y qué necesita el cliente para que funcione correctamente.</p>
+    </div>
+
+    <h3>4.1. 🎯 Requisitos Funcionales</h3>
+
+    <p>
+        Los requisitos funcionales describen las funciones que debe ofrecer la tienda online:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <h4 class="!mt-0 !text-blue-700">🛒 Gestión de Productos</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Catálogo con fotos y descripciones</li>
+                <li>• Clasificación por categorías</li>
+                <li>• Control de stock disponible</li>
+                <li>• Precios con IVA incluido</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <h4 class="!mt-0 !text-green-700">👤 Gestión de Clientes</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Registro de nuevos usuarios</li>
+                <li>• Inicio de sesión seguro</li>
+                <li>• Historial de pedidos</li>
+                <li>• Datos de envío guardados</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100">
+            <h4 class="!mt-0 !text-purple-700">💳 Procesos de Compra</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Carrito de la compra</li>
+                <li>• Múltiples formas de pago</li>
+                <li>• Cálculo de gastos de envío</li>
+                <li>• Confirmación por email</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100">
+            <h4 class="!mt-0 !text-orange-700">📞 Atención al Cliente</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Formulario de contacto</li>
+                <li>• Preguntas frecuentes (FAQ)</li>
+                <li>• Política de devoluciones</li>
+                <li>• Chat de soporte (opcional)</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>4.2. 🔒 Requisitos No Funcionales</h3>
+
+    <p>
+        Los requisitos no funcionionales describen cómo debe comportarse el sistema:
+    </p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Característica</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Requisito</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Prioridad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">🔐 Seguridad</td>
+                    <td class="py-3 px-4 text-slate-600">Certificado SSL, pagos encriptados</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">ALTA</span></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">⚡ Rendimiento</td>
+                    <td class="py-3 px-4 text-slate-600">Carga de páginas en menos de 3 segundos</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold">MEDIA</span></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">📱 Adaptabilidad</td>
+                    <td class="py-3 px-4 text-slate-600">Diseño responsive (móvil, tablet, desktop)</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">ALTA</span></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4">🌐 Disponibilidad</td>
+                    <td class="py-3 px-4 text-slate-600">Accesible 24/7, excepto mantenimiento</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold">MEDIA</span></td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4">♿ Accesibilidad</td>
+                    <td class="py-3 px-4 text-slate-600">Navegación sencilla, textos legibles</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold">BAJA</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>4.3. 📦 Catálogo de Productos Inicial</h3>
+
+    <p>
+        EcoMarket Valencia contará con las siguientes categorías de productos. Completa con al menos 5 productos por categoría:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <div class="text-3xl mb-3">🥗</div>
+            <h4 class="!mt-0 !text-green-700 !text-sm">Alimentación</h4>
+            <ul class="text-sm text-slate-600 space-y-1 mb-0">
+                <li>• [Producto 1]</li>
+                <li>• [Producto 2]</li>
+                <li>• [Producto 3]</li>
+                <li>• [Producto 4]</li>
+                <li>• [Producto 5]</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <div class="text-3xl mb-3">🧴</div>
+            <h4 class="!mt-0 !text-blue-700 !text-sm">Cosmética</h4>
+            <ul class="text-sm text-slate-600 space-y-1 mb-0">
+                <li>• [Producto 1]</li>
+                <li>• [Producto 2]</li>
+                <li>• [Producto 3]</li>
+                <li>• [Producto 4]</li>
+                <li>• [Producto 5]</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-amber-50 rounded-2xl border border-amber-100">
+            <div class="text-3xl mb-3">🏠</div>
+            <h4 class="!mt-0 !text-amber-700 !text-sm">Hogar</h4>
+            <ul class="text-sm text-slate-600 space-y-1 mb-0">
+                <li>• [Producto 1]</li>
+                <li>• [Producto 2]</li>
+                <li>• [Producto 3]</li>
+                <li>• [Producto 4]</li>
+                <li>• [Producto 5]</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>📝</span><span>Tu Tarea</span></div>
+        <p class="text-sm mb-0">Investiga productos ecológicos reales que se puedan comercializar. Incluye nombre, precio aproximado y proveedor potencial.</p>
+    </div>
+
+    <h3>4.4. 🔐 Protección de Datos (RGPD)</h3>
+
+    <p>
+        La tienda online debe cumplir con la normativa de protección de datos europea:
+    </p>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>📜</span><span>Documentos Obligatorios</span></div>
+        <ul class="text-sm space-y-2 mb-0">
+            <li>• <strong>Política de Privacidad:</strong> Informa cómo se tratan los datos personales</li>
+            <li>• <strong>Política de Cookies:</strong> Explica qué cookies se usan y por qué</li>
+            <li>• <strong>Términos y Condiciones:</strong> Establece las reglas de compra y uso</li>
+            <li>• <strong>Política de Devoluciones:</strong> Describe el proceso de devoluciones (14 días por ley)</li>
+        </ul>
+    </div>
+
+    <div class="callout callout-success">
+        <div class="callout-title"><span>✅</span><span>Checklist RGPD</span></div>
+        <ul class="text-sm space-y-2 mb-0">
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Casillas de aceptación explícita (no premarcadas)</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Posibilidad de descargar datos personales</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Opción de eliminar cuenta y datos</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Conexión segura HTTPS en todo el sitio</li>
+        </ul>
+    </div>
+</div></section></div><div><section id="diseno" class="mb-32 scroll-mt-24"><h2>5. Diseño</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>🎨</span><span>¿Qué es el Diseño?</span></div>
+        <p class="text-sm">Definimos la estructura visual, la navegación y la experiencia de usuario de la tienda online.</p>
+    </div>
+
+    <h3>5.1. ️ Arquitectura de la Información</h3>
+
+    <p>
+        La estructura de navegación debe ser clara y sencilla para que los clientes encuentren fácilmente lo que buscan:
+    </p>
+
+    <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8 my-8">
+        <div class="text-center">
+            <div class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-bold mb-4">🏠 Inicio</div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-4">
+            <div class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium">🥗 Alimentación</div>
+            <div class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium">🧴 Cosmética</div>
+            <div class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium">🏠 Hogar</div>
+            <div class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium">📦 Packs</div>
+            <div class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium">📞 Contacto</div>
+        </div>
+        <div class="text-center text-sm text-slate-500 mt-4">
+            + Carrito | Mi Cuenta | Buscar
+        </div>
+    </div>
+
+    <h3>5.2. 🎨 Identidad Visual</h3>
+
+    <p>
+        La identidad visual debe transmitir los valores de la marca: ecología, salud y proximidad:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-200">
+            <h4 class="!mt-0 !text-green-700 !text-sm">🎨 Paleta de Colores</h4>
+            <div class="flex gap-2 mb-3">
+                <div class="w-12 h-12 rounded-lg bg-green-600 shadow"></div>
+                <div class="w-12 h-12 rounded-lg bg-green-400 shadow"></div>
+                <div class="w-12 h-12 rounded-lg bg-amber-400 shadow"></div>
+                <div class="w-12 h-12 rounded-lg bg-slate-800 shadow"></div>
+            </div>
+            <p class="text-xs text-slate-600 mb-0">Verde (naturaleza), Ámbar (calidez), Gris (profesionalidad)</p>
+        </div>
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-200">
+            <h4 class="!mt-0 !text-blue-700 !text-sm">📝 Tipografía</h4>
+            <div class="space-y-2">
+                <div class="text-2xl font-bold">Plus Jakarta Sans</div>
+                <div class="text-sm text-slate-600">Títulos y textos principales</div>
+            </div>
+            <p class="text-xs text-slate-600 mt-3 mb-0">Moderna, legible y profesional</p>
+        </div>
+        <div class="p-6 bg-purple-50 rounded-2xl border border-purple-200">
+            <h4 class="!mt-0 !text-purple-700 !text-sm">🖼️ Estilo de Imágenes</h4>
+            <p class="text-xs text-slate-600 mb-2">Fotografías naturales con:</p>
+            <ul class="text-xs text-slate-600 space-y-1 mb-0">
+                <li>• Luz natural</li>
+                <li>• Fondos limpios</li>
+                <li>• Productos en contexto</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>5.3. 📐 Wireframes (Bocetos)</h3>
+
+    <p>
+        Los wireframes son bocetos que muestran la disposición de los elementos en cada página:
+    </p>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>📝</span><span>Tu Tarea de Diseño</span></div>
+        <p class="text-sm mb-0">Dibuja en papel o usando herramientas digitales (Figma, Canva) el diseño de las siguientes páginas:</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="p-6 bg-white rounded-2xl border-2 border-dashed border-slate-300">
+            <h4 class="!mt-0 !text-slate-700">🏠 Página de Inicio</h4>
+            <div class="bg-slate-100 rounded-lg p-4 h-48 flex items-center justify-center text-slate-400 text-sm">
+                [Dibuja aquí tu boceto]<br>
+                - Logo y menú<br>
+                - Banner principal<br>
+                - Productos destacados<br>
+                - Footer
+            </div>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border-2 border-dashed border-slate-300">
+            <h4 class="!mt-0 !text-slate-700">📦 Página de Producto</h4>
+            <div class="bg-slate-100 rounded-lg p-4 h-48 flex items-center justify-center text-slate-400 text-sm">
+                [Dibuja aquí tu boceto]<br>
+                - Foto del producto<br>
+                - Nombre y precio<br>
+                - Descripción<br>
+                - Botón "Añadir"
+            </div>
+        </div>
+    </div>
+
+    <h3>5.4. 🛒 Proceso de Compra (User Journey)</h3>
+
+    <p>
+        El proceso de compra debe ser lo más sencillo posible para reducir el abandono del carrito:
+    </p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Paso</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Acción del Usuario</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Elementos Necesarios</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-bold text-blue-600">1</td>
+                    <td class="py-3 px-4 text-slate-600">Explora el catálogo</td>
+                    <td class="py-3 px-4 text-slate-600">Buscador, filtros, categorías</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-bold text-blue-600">2</td>
+                    <td class="py-3 px-4 text-slate-600">Selecciona productos</td>
+                    <td class="py-3 px-4 text-slate-600">Ficha de producto, botón "Añadir"</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-bold text-blue-600">3</td>
+                    <td class="py-3 px-4 text-slate-600">Revisa el carrito</td>
+                    <td class="py-3 px-4 text-slate-600">Resumen, cantidades, total</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-bold text-blue-600">4</td>
+                    <td class="py-3 px-4 text-slate-600">Introduce datos de envío</td>
+                    <td class="py-3 px-4 text-slate-600">Formulario, validación</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-bold text-blue-600">5</td>
+                    <td class="py-3 px-4 text-slate-600">Selecciona forma de pago</td>
+                    <td class="py-3 px-4 text-slate-600">Tarjeta, PayPal, transferencia</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 font-bold text-blue-600">6</td>
+                    <td class="py-3 px-4 text-slate-600">Confirma el pedido</td>
+                    <td class="py-3 px-4 text-slate-600">Resumen final, email de confirmación</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="callout callout-success">
+        <div class="callout-title"><span>💡</span><span>Consejo de Experto</span></div>
+        <p class="text-sm mb-0">Permite la compra como "invitado" sin obligar a registrarse. Esto reduce el abandono del carrito hasta un 30%.</p>
+    </div>
+</div></section></div><div><section id="implementacion" class="mb-32 scroll-mt-24"><h2>6. Implementación</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>💻</span><span>¿Qué es la Implementación?</span></div>
+        <p class="text-sm">Guía paso a paso para crear y configurar la tienda online usando WooCommerce.</p>
+    </div>
+
+    <h3>6.1. 📋 Planificación de la Implementación</h3>
+
+    <p>
+        Seguimos una metodología estructurada en fases para asegurar que todos los pasos se completan correctamente:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 my-8">
+        <div class="p-4 bg-blue-50 rounded-xl border border-blue-100 text-center">
+            <div class="text-2xl font-bold text-blue-600 mb-1">Fase 1</div>
+            <p class="text-xs text-slate-600 mb-0">Configuración</p>
+        </div>
+        <div class="p-4 bg-green-50 rounded-xl border border-green-100 text-center">
+            <div class="text-2xl font-bold text-green-600 mb-1">Fase 2</div>
+            <p class="text-xs text-slate-600 mb-0">Productos</p>
+        </div>
+        <div class="p-4 bg-purple-50 rounded-xl border border-purple-100 text-center">
+            <div class="text-2xl font-bold text-purple-600 mb-1">Fase 3</div>
+            <p class="text-xs text-slate-600 mb-0">Pagos</p>
+        </div>
+        <div class="p-4 bg-orange-50 rounded-xl border border-orange-100 text-center">
+            <div class="text-2xl font-bold text-orange-600 mb-1">Fase 4</div>
+            <p class="text-xs text-slate-600 mb-0">Lanzamiento</p>
+        </div>
+    </div>
+
+    <h3>6.2. 🔧 Fase 1: Configuración Inicial</h3>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>📦</span><span>Paso 1.1 - Contratar Hosting y Dominio</span></div>
+        <ul class="text-sm space-y-2 mb-0">
+            <li>• Elige un proveedor de hosting (SiteGround, Webempresa, Raiola...)</li>
+            <li>• Registra el dominio <strong>ec omarketvalencia.es</strong> (o similar)</li>
+            <li>• Instala WordPress desde el panel de control del hosting</li>
+            <li>• Accede al panel de administración: <code>tudominio.es/wp-admin</code></li>
+        </ul>
+    </div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>🛒</span><span>Paso 1.2 - Instalar WooCommerce</span></div>
+        <ul class="text-sm space-y-2 mb-0">
+            <li>• Ve a <strong>Plugins → Añadir nuevo</strong></li>
+            <li>• Busca "WooCommerce"</li>
+            <li>• Haz clic en "Instalar ahora" y luego "Activar"</li>
+            <li>• Completa el asistente de configuración inicial</li>
+        </ul>
+    </div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>🎨</span><span>Paso 1.3 - Elegir e Instalar Tema</span></div>
+        <ul class="text-sm space-y-2 mb-0">
+            <li>• Ve a <strong>Apariencia → Temas → Añadir nuevo</strong></li>
+            <li>• Busca temas gratuitos como "Astra", "OceanWP" o "Storefront"</li>
+            <li>• Instala y activa el tema elegido</li>
+            <li>• Personaliza colores y logo en <strong>Apariencia → Personalizar</strong></li>
+        </ul>
+    </div>
+
+    <h3>6.3. 📦 Fase 2: Carga de Productos</h3>
+
+    <p>
+        Cada producto debe tener información completa y atractiva para el cliente:
+    </p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Campo</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Descripción</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">Nombre</td>
+                    <td class="py-3 px-4 text-slate-600">Título claro y descriptivo</td>
+                    <td class="py-3 px-4 text-slate-600">"Aceite de Oliva Virgen Extra 500ml"</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">Descripción</td>
+                    <td class="py-3 px-4 text-slate-600">Detalles del producto, beneficios</td>
+                    <td class="py-3 px-4 text-slate-600">"Aceite 100% ecológico de..."</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">Precio</td>
+                    <td class="py-3 px-4 text-slate-600">Precio final con IVA</td>
+                    <td class="py-3 px-4 text-slate-600">8,95€</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">Imágenes</td>
+                    <td class="py-3 px-4 text-slate-600">Fotos de calidad del producto</td>
+                    <td class="py-3 px-4 text-slate-600">Mínimo 3 fotos</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">Categoría</td>
+                    <td class="py-3 px-4 text-slate-600">Sección donde se clasifica</td>
+                    <td class="py-3 px-4 text-slate-600">Alimentación → Aceites</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 font-medium">Stock</td>
+                    <td class="py-3 px-4 text-slate-600">Cantidad disponible</td>
+                    <td class="py-3 px-4 text-slate-600">50 unidades</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>📸</span><span>Consejos para las Fotos</span></div>
+        <ul class="text-sm space-y-2 mb-0">
+            <li>• Usa luz natural, nunca flash directo</li>
+            <li>• Fondo blanco o neutro para productos</li>
+            <li>• Muestra el producto desde varios ángulos</li>
+            <li>• Incluye una foto del producto en uso/contexto</li>
+            <li>• Tamaño recomendado: mínimo 800x800 píxeles</li>
+        </ul>
+    </div>
+
+    <h3>6.4. 💳 Fase 3: Configuración de Pagos y Envíos</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <h4 class="!mt-0 !text-blue-700">💳 Métodos de Pago</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• <strong>Transferencia bancaria:</strong> Sin comisiones, pero más lento</li>
+                <li>• <strong>Contra reembolso:</strong> Popular en España, coste adicional</li>
+                <li>• <strong>Tarjeta (Stripe):</strong> Rápido y seguro, ~1.4% + 0.25€</li>
+                <li>• <strong>PayPal:</strong> Muy usado, ~3.4% + 0.35€</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <h4 class="!mt-0 !text-green-700">📦 Métodos de Envío</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• <strong>Recogida en tienda:</strong> Gratis</li>
+                <li>• <strong>Envío estándar (24-48h):</strong> 4,95€</li>
+                <li>• <strong>Envío urgente (24h):</strong> 7,95€</li>
+                <li>• <strong>Envío gratis:</strong> Pedidos superiores a 50€</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>6.5. 🚀 Fase 4: Pruebas y Lanzamiento</h3>
+
+    <p>
+        Antes de abrir la tienda al público, realiza pruebas exhaustivas:
+    </p>
+
+    <div class="callout callout-success">
+        <div class="callout-title"><span>✅</span><span>Checklist de Lanzamiento</span></div>
+        <ul class="text-sm space-y-2 mb-0">
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Todos los productos cargados con fotos</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Precios y stocks correctos</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Formas de pago configuradas y probadas</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Gastos de envío correctamente calculados</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Emails de confirmación se envían</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Web se ve bien en móvil y tablet</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Páginas legales (privacidad, cookies) creadas</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1"> Formulario de contacto funciona</li>
+        </ul>
+    </div>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>🧪</span><span>Prueba Real de Compra</span></div>
+        <p class="text-sm mb-0">Realiza un pedido de prueba completo (puedes usar el modo sandbox de PayPal o una transferencia real pequeña) para verificar que todo funciona correctamente.</p>
+    </div>
+</div></section></div><div><section id="administracion" class="mb-32 scroll-mt-24"><h2>7. Administración</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>⚙️</span><span>¿Qué es la Administración del Proyecto?</span></div>
+        <p class="text-sm">Describimos cómo se gestionará la tienda online una vez esté en funcionamiento.</p>
+    </div>
+
+    <h3>7.1. 📊 Gestión Diaria de la Tienda</h3>
+
+    <p>
+        El mantenimiento diario de la tienda online requiere dedicar tiempo a las siguientes tareas:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <div class="text-3xl mb-3">📦</div>
+            <h4 class="!mt-0 !text-blue-700 !text-sm">Gestión de Pedidos</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Revisar nuevos pedidos</li>
+                <li>• Preparar envíos</li>
+                <li>• Generar etiquetas</li>
+                <li>• Enviar confirmaciones</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <div class="text-3xl mb-3">📞</div>
+            <h4 class="!mt-0 !text-green-700 !text-sm">Atención al Cliente</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Responder emails</li>
+                <li>• Gestionar consultas</li>
+                <li>• Resolver incidencias</li>
+                <li>• Procesar devoluciones</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100">
+            <div class="text-3xl mb-3">📈</div>
+            <h4 class="!mt-0 !text-purple-700 !text-sm">Actualización</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• Actualizar stock</li>
+                <li>• Añadir nuevos productos</li>
+                <li>• Revisar precios</li>
+                <li>• Crear ofertas</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>7.2. 📅 Calendario de Tareas</h3>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Frecuencia</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Tarea</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Responsable</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Tiempo Estimado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">Diaria</span></td>
+                    <td class="py-3 px-4 text-slate-600">Revisar y procesar pedidos</td>
+                    <td class="py-3 px-4 text-slate-600">Personal de tienda</td>
+                    <td class="py-3 px-4 text-slate-600">30 min</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">Diaria</span></td>
+                    <td class="py-3 px-4 text-slate-600">Responder emails y consultas</td>
+                    <td class="py-3 px-4 text-slate-600">Atención al cliente</td>
+                    <td class="py-3 px-4 text-slate-600">1 hora</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold">Semanal</span></td>
+                    <td class="py-3 px-4 text-slate-600">Actualizar stock y productos</td>
+                    <td class="py-3 px-4 text-slate-600">Responsable e-commerce</td>
+                    <td class="py-3 px-4 text-slate-600">2 horas</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold">Semanal</span></td>
+                    <td class="py-3 px-4 text-slate-600">Publicar en redes sociales</td>
+                    <td class="py-3 px-4 text-slate-600">Community Manager</td>
+                    <td class="py-3 px-4 text-slate-600">1 hora</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">Mensual</span></td>
+                    <td class="py-3 px-4 text-slate-600">Análisis de ventas y KPIs</td>
+                    <td class="py-3 px-4 text-slate-600">Dirección</td>
+                    <td class="py-3 px-4 text-slate-600">3 horas</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">Mensual</span></td>
+                    <td class="py-3 px-4 text-slate-600">Backup y actualizaciones de seguridad</td>
+                    <td class="py-3 px-4 text-slate-600">Técnico/Hosting</td>
+                    <td class="py-3 px-4 text-slate-600">1 hora</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>7.3. 📈 Indicadores de Rendimiento (KPIs)</h3>
+
+    <p>
+        Para medir el éxito de la tienda online, seguimos estos indicadores clave:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-8">
+        <div class="p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl border border-blue-100">
+            <div class="text-3xl font-bold text-blue-600 mb-2">🛒</div>
+            <h4 class="!mt-0 !text-blue-700 !text-sm">Tasa de Conversión</h4>
+            <p class="text-xs text-slate-600 mb-2">Porcentaje de visitantes que compran</p>
+            <div class="text-lg font-bold text-slate-700">Objetivo: 2-3%</div>
+        </div>
+        <div class="p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border border-green-100">
+            <div class="text-3xl font-bold text-green-600 mb-2">💶</div>
+            <h4 class="!mt-0 !text-green-700 !text-sm">Ticket Medio</h4>
+            <p class="text-xs text-slate-600 mb-2">Gasto promedio por pedido</p>
+            <div class="text-lg font-bold text-slate-700">Objetivo: 35-45€</div>
+        </div>
+        <div class="p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl border border-purple-100">
+            <div class="text-3xl font-bold text-purple-600 mb-2">🔄</div>
+            <h4 class="!mt-0 !text-purple-700 !text-sm">Tasa de Repetición</h4>
+            <p class="text-xs text-slate-600 mb-2">Clientes que vuelven a comprar</p>
+            <div class="text-lg font-bold text-slate-700">Objetivo: 30%</div>
+        </div>
+        <div class="p-6 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-orange-100">
+            <div class="text-3xl font-bold text-orange-600 mb-2">⭐</div>
+            <h4 class="!mt-0 !text-orange-700 !text-sm">Satisfacción (NPS)</h4>
+            <p class="text-xs text-slate-600 mb-2">Net Promoter Score</p>
+            <div class="text-lg font-bold text-slate-700">Objetivo: +50</div>
+        </div>
+    </div>
+
+    <h3>7.4. 🔧 Mantenimiento Técnico</h3>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>⚠️</span><span>Tareas de Mantenimiento</span></div>
+        <ul class="text-sm space-y-2 mb-0">
+            <li>• <strong>Actualizaciones:</strong> Mantener WordPress, WooCommerce y plugins actualizados</li>
+            <li>• <strong>Copias de seguridad:</strong> Realizar backups semanales automáticos</li>
+            <li>• <strong>Seguridad:</strong> Revisar logs de acceso y actividad sospechosa</li>
+            <li>• <strong>Rendimiento:</strong> Optimizar imágenes y limpiar base de datos mensualmente</li>
+            <li>• <strong>SSL:</strong> Verificar que el certificado de seguridad está activo</li>
+        </ul>
+    </div>
+
+    <h3>7.5. 📞 Gestión de Incidencias</h3>
+
+    <p>
+        Protocolo para manejar problemas comunes:
+    </p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Incidencia</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Acción</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Plazo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Producto agotado</td>
+                    <td class="py-3 px-4 text-slate-600">Ofrecer alternativa o reembolso</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">24h</span></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Error en el pago</td>
+                    <td class="py-3 px-4 text-slate-600">Verificar con pasarela, contactar cliente</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">24h</span></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Pedido no recibido</td>
+                    <td class="py-3 px-4 text-slate-600">Contactar con transportista, informar cliente</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold">48h</span></td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 text-slate-600">Producto dañado</td>
+                    <td class="py-3 px-4 text-slate-600">Enviar reposición o reembolsar</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold">48h</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div></section></div><div><section id="herramientas" class="mb-32 scroll-mt-24"><h2>8. Herramientas de Apoyo</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>🛠️</span><span>¿Qué son las Herramientas de Apoyo?</span></div>
+        <p class="text-sm">Listado de software, plataformas y recursos utilizados para desarrollar el proyecto.</p>
+    </div>
+
+    <h3>8.1. 💻 Herramientas Principales</h3>
+
+    <p>
+        Estas son las herramientas esenciales para crear y gestionar la tienda online:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="text-3xl">🌐</div>
+                <div>
+                    <h4 class="!mt-0 !text-purple-700 !text-sm !mb-1">WordPress</h4>
+                    <p class="text-xs text-slate-500 mb-0">Gestor de contenidos (CMS)</p>
+                </div>
+            </div>
+            <p class="text-sm text-slate-600 mb-3">Plataforma gratuita para crear sitios web. Fácil de usar y con gran comunidad de soporte.</p>
+            <a href="https://wordpress.org" target="_blank" class="text-xs text-purple-600 font-medium hover:underline">wordpress.org →</a>
+        </div>
+
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="text-3xl">🛒</div>
+                <div>
+                    <h4 class="!mt-0 !text-green-700 !text-sm !mb-1">WooCommerce</h4>
+                    <p class="text-xs text-slate-500 mb-0">Plugin de e-commerce</p>
+                </div>
+            </div>
+            <p class="text-sm text-slate-600 mb-3">Convierte WordPress en una tienda online completa. Gratuito y muy flexible.</p>
+            <a href="https://woocommerce.com" target="_blank" class="text-xs text-green-600 font-medium hover:underline">woocommerce.com →</a>
+        </div>
+
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="text-3xl">🎨</div>
+                <div>
+                    <h4 class="!mt-0 !text-blue-700 !text-sm !mb-1">Canva</h4>
+                    <p class="text-xs text-slate-500 mb-0">Diseño gráfico online</p>
+                </div>
+            </div>
+            <p class="text-sm text-slate-600 mb-3">Herramienta gratuita para crear banners, logos y gráficos para la web y redes sociales.</p>
+            <a href="https://canva.com" target="_blank" class="text-xs text-blue-600 font-medium hover:underline">canva.com →</a>
+        </div>
+
+        <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="text-3xl">📸</div>
+                <div>
+                    <h4 class="!mt-0 !text-orange-700 !text-sm !mb-1">TinyPNG</h4>
+                    <p class="text-xs text-slate-500 mb-0">Optimización de imágenes</p>
+                </div>
+            </div>
+            <p class="text-sm text-slate-600 mb-3">Comprime imágenes sin perder calidad para que la web cargue más rápido.</p>
+            <a href="https://tinypng.com" target="_blank" class="text-xs text-orange-600 font-medium hover:underline">tinypng.com →</a>
+        </div>
+    </div>
+
+    <h3>8.2. 💳 Pasarelas de Pago</h3>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Plataforma</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Tipo</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Comisiones</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Ventajas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">💙 Stripe</td>
+                    <td class="py-3 px-4 text-slate-600">Tarjeta</td>
+                    <td class="py-3 px-4 text-slate-600">1.4% + 0.25€</td>
+                    <td class="py-3 px-4 text-slate-600">Fácil integración, seguro</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">🅿️ PayPal</td>
+                    <td class="py-3 px-4 text-slate-600">Monedero digital</td>
+                    <td class="py-3 px-4 text-slate-600">3.4% + 0.35€</td>
+                    <td class="py-3 px-4 text-slate-600">Muy conocido, confianza</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">🏦 Transferencia</td>
+                    <td class="py-3 px-4 text-slate-600">Bancaria</td>
+                    <td class="py-3 px-4 text-slate-600">0€</td>
+                    <td class="py-3 px-4 text-slate-600">Sin comisiones, pero lento</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 font-medium">💵 Contra reembolso</td>
+                    <td class="py-3 px-4 text-slate-600">Efectivo</td>
+                    <td class="py-3 px-4 text-slate-600">~2€ por envío</td>
+                    <td class="py-3 px-4 text-slate-600">Popular en España</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>8.3. 📊 Herramientas de Análisis</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <div class="text-3xl mb-3">📈</div>
+            <h4 class="!mt-0 !text-blue-700 !text-sm">Google Analytics</h4>
+            <p class="text-xs text-slate-600 mb-3">Analiza el tráfico de tu web: visitantes, páginas vistas, origen del tráfico...</p>
+            <a href="https://analytics.google.com" target="_blank" class="text-xs text-blue-600 font-medium hover:underline">analytics.google.com →</a>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <div class="text-3xl mb-3">🔍</div>
+            <h4 class="!mt-0 !text-green-700 !text-sm">Google Search Console</h4>
+            <p class="text-xs text-slate-600 mb-3">Monitoriza el posicionamiento en Google y errores de indexación.</p>
+            <a href="https://search.google.com/search-console" target="_blank" class="text-xs text-green-600 font-medium hover:underline">search.google.com →</a>
+        </div>
+        <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100">
+            <div class="text-3xl mb-3">🔥</div>
+            <h4 class="!mt-0 !text-purple-700 !text-sm">Hotjar (Opcional)</h4>
+            <p class="text-xs text-slate-600 mb-3">Mapas de calor para ver cómo interactúan los usuarios con tu web.</p>
+            <a href="https://hotjar.com" target="_blank" class="text-xs text-purple-600 font-medium hover:underline">hotjar.com →</a>
+        </div>
+    </div>
+
+    <h3>8.4. 📱 Redes Sociales y Marketing</h3>
+
+    <p>
+        Herramientas para promocionar la tienda online:
+    </p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Herramienta</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Uso</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">📷 Instagram</td>
+                    <td class="py-3 px-4 text-slate-600">Mostrar productos, stories, reels</td>
+                    <td class="py-3 px-4 text-slate-600">Gratis</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">📘 Facebook</td>
+                    <td class="py-3 px-4 text-slate-600">Página de empresa, anuncios</td>
+                    <td class="py-3 px-4 text-slate-600">Gratis (ads de pago)</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">📌 Pinterest</td>
+                    <td class="py-3 px-4 text-slate-600">Inspiración, productos visuales</td>
+                    <td class="py-3 px-4 text-slate-600">Gratis</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 font-medium">📧 Mailchimp</td>
+                    <td class="py-3 px-4 text-slate-600">Email marketing, newsletters</td>
+                    <td class="py-3 px-4 text-slate-600">Gratis hasta 500 contactos</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="callout callout-success">
+        <div class="callout-title"><span>💡</span><span>Consejo de Experto</span></div>
+        <p class="text-sm mb-0">No necesitas usar todas las herramientas a la vez. Empieza con lo básico (WordPress + WooCommerce + Instagram) y ve añadiendo según crezca tu negocio.</p>
+    </div>
+</div></section></div><div><section id="conclusiones" class="mb-32 scroll-mt-24"><h2>9. Conclusiones</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>🏁</span><span>¿Qué son las Conclusiones?</span></div>
+        <p class="text-sm">Reflexión final sobre el trabajo realizado, los aprendizajes obtenidos y las mejoras futuras.</p>
+    </div>
+
+    <h3>9.1. 📝 Conclusiones del Proyecto</h3>
+
+    <p>
+        Tras completar el desarrollo de la tienda online <strong>EcoMarket Valencia</strong>, podemos extraer las siguientes conclusiones:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <h4 class="!mt-0 !text-green-700">✅ Aspectos Positivos</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• <strong>Baja inversión inicial:</strong> Menos de 300€ para poner en marcha la tienda</li>
+                <li>• <strong>Tecnología accesible:</strong> Herramientas gratuitas y fáciles de usar</li>
+                <li>• <strong>Mercado en crecimiento:</strong> El e-commerce ecológico tiene gran potencial</li>
+                <li>• <strong>Aprendizaje integral:</strong> Se trabajan competencias comerciales y digitales</li>
+                <li>• <strong>Proyecto realista:</strong> Aplicable a negocios reales de la comunidad</li>
+            </ul>
+        </div>
+        <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100">
+            <h4 class="!mt-0 !text-orange-700">⚠️ Dificultades Encontradas</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• <strong>Curva de aprendizaje:</strong> WordPress requiere tiempo para dominarlo</li>
+                <li>• <strong>Gestión de imágenes:</strong> Optimizar fotos lleva más tiempo del esperado</li>
+                <li>• <strong>Competencia online:</strong> Posicionarse requiere estrategia de marketing</li>
+                <li>• <strong>Atención al cliente 24/7:</strong> Los clientes esperan respuesta rápida</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>9.2. 🎓 Aprendizajes Obtenidos</h3>
+
+    <p>
+        Este proyecto intermodular permite desarrollar las siguientes competencias profesionales:
+    </p>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Competencia</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Módulos Relacionados</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Nivel Alcanzado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600"> Venta online</td>
+                    <td class="py-3 px-4 text-slate-600">Venta y Atención al Cliente, Operaciones de Venta</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold">Avanzado</span></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">💻 Competencia digital</td>
+                    <td class="py-3 px-4 text-slate-600">Aplicaciones de Gestión Comercial</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold">Avanzado</span></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">📊 Marketing digital</td>
+                    <td class="py-3 px-4 text-slate-600">Marketing en el Punto de Venta</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-bold">Intermedio</span></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">📞 Atención al cliente</td>
+                    <td class="py-3 px-4 text-slate-600">Venta y Atención al Cliente</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold">Avanzado</span></td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 text-slate-600">📈 Análisis de datos</td>
+                    <td class="py-3 px-4 text-slate-600">Aplicaciones de Gestión Comercial</td>
+                    <td class="py-3 px-4"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">Básico</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>9.3. 🚀 Mejoras Futuras</h3>
+
+    <p>
+        Si el proyecto continuara desarrollándose, estas serían las mejoras a implementar:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <div class="text-3xl mb-3"></div>
+            <h4 class="!mt-0 !text-blue-700 !text-sm">App Móvil</h4>
+            <p class="text-xs text-slate-600 mb-0">Desarrollar una aplicación nativa para iOS y Android con notificaciones push.</p>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <div class="text-3xl mb-3">🤖</div>
+            <h4 class="!mt-0 !text-green-700 !text-sm">Chatbot IA</h4>
+            <p class="text-xs text-slate-600 mb-0">Asistente virtual para responder preguntas frecuentes 24/7.</p>
+        </div>
+        <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100">
+            <div class="text-3xl mb-3">🎁</div>
+            <h4 class="!mt-0 !text-purple-700 !text-sm">Programa de Fidelización</h4>
+            <p class="text-xs text-slate-600 mb-0">Sistema de puntos y recompensas para clientes recurrentes.</p>
+        </div>
+        <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100">
+            <div class="text-3xl mb-3">🌍</div>
+            <h4 class="!mt-0 !text-orange-700 !text-sm">Internacionalización</h4>
+            <p class="text-xs text-slate-600 mb-0">Versión en inglés y envío a otros países de la UE.</p>
+        </div>
+        <div class="p-6 bg-pink-50 rounded-2xl border border-pink-100">
+            <div class="text-3xl mb-3">📦</div>
+            <h4 class="!mt-0 !text-pink-700 !text-sm">Suscripciones</h4>
+            <p class="text-xs text-slate-600 mb-0">Cajas mensuales de productos ecológicos seleccionados.</p>
+        </div>
+        <div class="p-6 bg-indigo-50 rounded-2xl border border-indigo-100">
+            <div class="text-3xl mb-3">♻️</div>
+            <h4 class="!mt-0 !text-indigo-700 !text-sm">Sostenibilidad</h4>
+            <p class="text-xs text-slate-600 mb-0">Envases 100% reciclables y opción de entrega sin plástico.</p>
+        </div>
+    </div>
+
+    <h3>9.4. 💭 Reflexión Personal</h3>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>✏️</span><span>Tu Reflexión</span></div>
+        <p class="text-sm mb-3">Completa este apartado con tu opinión personal sobre el proyecto:</p>
+        <div class="bg-white rounded-xl border border-slate-200 p-6 space-y-4">
+            <div class="text-sm text-slate-400 italic">
+                <p>¿Qué es lo que más te ha gustado del proyecto?</p>
+                <p class="mt-2">[Escribe aquí tu respuesta...]</p>
+            </div>
+            <div class="text-sm text-slate-400 italic">
+                <p>¿Qué ha sido lo más difícil?</p>
+                <p class="mt-2">[Escribe aquí tu respuesta...]</p>
+            </div>
+            <div class="text-sm text-slate-400 italic">
+                <p>¿Recomendarías este proyecto a otros compañeros?</p>
+                <p class="mt-2">[Escribe aquí tu respuesta...]</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="callout callout-success">
+        <div class="callout-title"><span>🎉</span><span>¡Felicidades!</span></div>
+        <p class="text-sm mb-0">Has completado el proyecto intermodular de Comercio Electrónico. Este trabajo demuestra tus competencias profesionales y te servirá como portfolio para tu futuro laboral.</p>
+    </div>
+</div></section></div><section id="bibliografia" class="mb-32"><h2>Bibliografía</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>📚</span><span>¿Qué es la Bibliografía?</span></div>
+        <p class="text-sm">Listado de fuentes, documentos y recursos consultados para desarrollar el proyecto.</p>
+    </div>
+
+    <h3>10.1. 📖 Libros y Manuales</h3>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Título</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Autor/Editorial</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Año</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Comercio Electrónico</td>
+                    <td class="py-3 px-4 text-slate-600">VV.AA. - Editorial Paraninfo</td>
+                    <td class="py-3 px-4 text-slate-600">2023</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Marketing Digital para E-commerce</td>
+                    <td class="py-3 px-4 text-slate-600">Various - Editorial Anaya</td>
+                    <td class="py-3 px-4 text-slate-600">2023</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">WordPress y WooCommerce: Guía Práctica</td>
+                    <td class="py-3 px-4 text-slate-600">Autores varios - Editorial RA-MA</td>
+                    <td class="py-3 px-4 text-slate-600">2024</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 text-slate-600">Atención al Cliente en Entornos Digitales</td>
+                    <td class="py-3 px-4 text-slate-600">Editorial IC Editorial</td>
+                    <td class="py-3 px-4 text-slate-600">2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>10.2. 🌐 Recursos Web</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+            <h4 class="!mt-0 !text-blue-700 !text-sm">🏛️ Instituciones Oficiales</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• <a href="https://www.ine.es" target="_blank" class="text-blue-600 hover:underline">INE - Instituto Nacional de Estadística</a></li>
+                <li>• <a href="https://www.cnmc.es" target="_blank" class="text-blue-600 hover:underline">CNMC - Comisión Nacional de Mercados</a></li>
+                <li>• <a href="https://www.agpd.es" target="_blank" class="text-blue-600 hover:underline">AEPD - Agencia Española de Protección de Datos</a></li>
+                <li>• <a href="https://www.camara.es" target="_blank" class="text-blue-600 hover:underline">Cámara de Comercio de España</a></li>
+            </ul>
+        </div>
+        <div class="p-6 bg-green-50 rounded-2xl border border-green-100">
+            <h4 class="!mt-0 !text-green-700 !text-sm">💻 Plataformas Técnicas</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• <a href="https://wordpress.org" target="_blank" class="text-green-600 hover:underline">WordPress.org - Documentación oficial</a></li>
+                <li>• <a href="https://woocommerce.com" target="_blank" class="text-green-600 hover:underline">WooCommerce - Guía de usuario</a></li>
+                <li>• <a href="https://yoast.com" target="_blank" class="text-green-600 hover:underline">Yoast SEO - Blog de posicionamiento</a></li>
+                <li>• <a href="https://developers.google.com" target="_blank" class="text-green-600 hover:underline">Google Developers</a></li>
+            </ul>
+        </div>
+        <div class="p-6 bg-purple-50 rounded-2xl border border-purple-100">
+            <h4 class="!mt-0 !text-purple-700 !text-sm">📊 Informes de Sector</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• <a href="https://www.observatoriocomic.es" target="_blank" class="text-purple-600 hover:underline">Observatorio Nacional de Comercio</a></li>
+                <li>• <a href="https://www.ibe.org" target="_blank" class="text-purple-600 hover:underline">Informe de E-commerce en España</a></li>
+                <li>• <a href="https://www.statista.com" target="_blank" class="text-purple-600 hover:underline">Statista - Estadísticas de mercado</a></li>
+            </ul>
+        </div>
+        <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100">
+            <h4 class="!mt-0 !text-orange-700 !text-sm">🌱 Productos Ecológicos</h4>
+            <ul class="text-sm text-slate-600 space-y-2 mb-0">
+                <li>• <a href="https://www.mapa.gob.es" target="_blank" class="text-orange-600 hover:underline">Ministerio de Agricultura - Producción Ecológica</a></li>
+                <li>• <a href="https://www.seae.es" target="_blank" class="text-orange-600 hover:underline">SEAE - Sociedad Española de Agricultura Ecológica</a></li>
+                <li>• <a href="https://www.ecocert.es" target="_blank" class="text-orange-600 hover:underline">Ecocert - Certificación ecológica</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>10.3. 📺 Tutoriales y Cursos Online</h3>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Plataforma</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Curso/Recurso</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">🎓 YouTube</td>
+                    <td class="py-3 px-4 text-slate-600">Tutoriales WordPress y WooCommerce</td>
+                    <td class="py-3 px-4 text-slate-600">Gratis</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">🎓 Coursera</td>
+                    <td class="py-3 px-4 text-slate-600">Marketing Digital y E-commerce</td>
+                    <td class="py-3 px-4 text-slate-600">Pago/Certificado</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">🎓 Udemy</td>
+                    <td class="py-3 px-4 text-slate-600">Curso completo de WooCommerce</td>
+                    <td class="py-3 px-4 text-slate-600">Pago único</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 font-medium">🎓 LinkedIn Learning</td>
+                    <td class="py-3 px-4 text-slate-600">Fundamentos de Comercio Electrónico</td>
+                    <td class="py-3 px-4 text-slate-600">Suscripción</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 font-medium">🎓 Google Actívate</td>
+                    <td class="py-3 px-4 text-slate-600">Fundamentos de Marketing Digital</td>
+                    <td class="py-3 px-4 text-slate-600">Gratis con certificado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>10.4. 📰 Artículos y Blogs de Referencia</h3>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>📝</span><span>Blogs Recomendados</span></div>
+        <ul class="text-sm space-y-2 mb-0">
+            <li>• <strong>Blog de Shopify España:</strong> Consejos para tiendas online</li>
+            <li>• <strong>Blog de WooCommerce:</strong> Novedades y tutoriales</li>
+            <li>• <strong>Entrepreneur España:</strong> Artículos sobre emprendimiento</li>
+            <li>• <strong>Puro Marketing:</strong> Tendencias de marketing digital</li>
+            <li>• <strong>Ecommerce News:</strong> Actualidad del sector e-commerce</li>
+        </ul>
+    </div>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>⚠️</span><span>Importante</span></div>
+        <p class="text-sm mb-0">Recuerda citar correctamente todas las fuentes que utilices en tu proyecto. Usa un formato consistente (APA, MLA, etc.) para las referencias bibliográficas.</p>
+    </div>
+</div></section><section id="anexos" class="mb-32"><h2>Anexos Técnicos</h2><div>
+
+    <div class="callout callout-info">
+        <div class="callout-title"><span>📎</span><span>¿Qué son los Anexos?</span></div>
+        <p class="text-sm">Documentación adicional, plantillas y materiales complementarios del proyecto.</p>
+    </div>
+
+    <h3>11.1. 📄 Anexo A: Plantilla de Ficha de Producto</h3>
+
+    <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 my-8">
+        <h4 class="!mt-0 !text-slate-700 !text-sm mb-4">Plantilla para registrar cada producto</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+            <div>
+                <label class="block text-slate-600 mb-1"><strong>Nombre del producto:</strong></label>
+                <div class="border-b border-slate-300 pb-2 text-slate-400 italic">[Escribe aquí]</div>
+            </div>
+            <div>
+                <label class="block text-slate-600 mb-1"><strong>Categoría:</strong></label>
+                <div class="border-b border-slate-300 pb-2 text-slate-400 italic">[Alimentación / Cosmética / Hogar]</div>
+            </div>
+            <div>
+                <label class="block text-slate-600 mb-1"><strong>Precio (con IVA):</strong></label>
+                <div class="border-b border-slate-300 pb-2 text-slate-400 italic">[00,00€]</div>
+            </div>
+            <div>
+                <label class="block text-slate-600 mb-1"><strong>Stock inicial:</strong></label>
+                <div class="border-b border-slate-300 pb-2 text-slate-400 italic">[Unidades]</div>
+            </div>
+            <div class="md:col-span-2">
+                <label class="block text-slate-600 mb-1"><strong>Descripción corta:</strong></label>
+                <div class="border-b border-slate-300 pb-2 text-slate-400 italic">[Máximo 150 caracteres]</div>
+            </div>
+            <div class="md:col-span-2">
+                <label class="block text-slate-600 mb-1"><strong>Descripción completa:</strong></label>
+                <div class="border border-slate-300 rounded-lg p-3 h-24 text-slate-400 italic">[Detalles del producto, ingredientes, origen, beneficios...]</div>
+            </div>
+        </div>
+    </div>
+
+    <h3>11.2. 📋 Anexo B: Checklist de Lanzamiento</h3>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Tarea</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Responsable</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">✅ Dominio y hosting contratados</td>
+                    <td class="py-3 px-4 text-slate-600">Responsable proyecto</td>
+                    <td class="py-3 px-4"><input type="checkbox"></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">✅ WordPress instalado</td>
+                    <td class="py-3 px-4 text-slate-600">Responsable técnico</td>
+                    <td class="py-3 px-4"><input type="checkbox"></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">✅ WooCommerce configurado</td>
+                    <td class="py-3 px-4 text-slate-600">Responsable técnico</td>
+                    <td class="py-3 px-4"><input type="checkbox"></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">✅ Tema instalado y personalizado</td>
+                    <td class="py-3 px-4 text-slate-600">Diseñador</td>
+                    <td class="py-3 px-4"><input type="checkbox"></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">✅ Productos cargados (mínimo 20)</td>
+                    <td class="py-3 px-4 text-slate-600">Equipo comercial</td>
+                    <td class="py-3 px-4"><input type="checkbox"></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">✅ Pasarelas de pago activadas</td>
+                    <td class="py-3 px-4 text-slate-600">Responsable técnico</td>
+                    <td class="py-3 px-4"><input type="checkbox"></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">✅ Gastos de envío configurados</td>
+                    <td class="py-3 px-4 text-slate-600">Responsable logística</td>
+                    <td class="py-3 px-4"><input type="checkbox"></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">✅ Páginas legales creadas</td>
+                    <td class="py-3 px-4 text-slate-600">Responsable legal</td>
+                    <td class="py-3 px-4"><input type="checkbox"></td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">✅ Pedido de prueba realizado</td>
+                    <td class="py-3 px-4 text-slate-600">Equipo completo</td>
+                    <td class="py-3 px-4"><input type="checkbox"></td>
+                </tr>
+                <tr class="bg-green-50">
+                    <td class="py-3 px-4 font-bold text-green-700">🚀 LANZAMIENTO OFICIAL</td>
+                    <td class="py-3 px-4 text-slate-600">Todos</td>
+                    <td class="py-3 px-4"><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>11.3. 📧 Anexo C: Modelos de Emails</h3>
+
+    <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 my-8">
+        <h4 class="!mt-0 !text-slate-700 !text-sm mb-4">Email de Confirmación de Pedido</h4>
+        <div class="bg-white rounded-lg border border-slate-200 p-4 text-sm font-mono">
+            <p class="text-slate-600 mb-2"><strong>Asunto:</strong> ¡Gracias por tu compra en EcoMarket Valencia! 🌿</p>
+            <p class="text-slate-600 mb-2">Hola [Nombre del cliente],</p>
+            <p class="text-slate-600 mb-2">Gracias por confiar en EcoMarket Valencia. Tu pedido #[Número] ha sido confirmado.</p>
+            <p class="text-slate-600 mb-2"><strong>Resumen del pedido:</strong></p>
+            <ul class="text-slate-600 mb-4 ml-4">
+                <li>• [Producto 1] x [Cantidad] = [Precio]</li>
+                <li>• [Producto 2] x [Cantidad] = [Precio]</li>
+                <li><strong>Total: [Total]€</strong></li>
+            </ul>
+            <p class="text-slate-600 mb-2">Te enviaremos otro email cuando tu pedido sea enviado.</p>
+            <p class="text-slate-600 mb-4">¡Que disfrutes de tus productos ecológicos!</p>
+            <p class="text-slate-600">Equipo de EcoMarket Valencia</p>
+        </div>
+    </div>
+
+    <h3>11.4. 📊 Anexo D: Presupuesto Detallado</h3>
+
+    <div class="overflow-x-auto my-8">
+        <table class="w-full text-sm">
+            <thead>
+                <tr class="border-b-2 border-slate-200 bg-slate-50">
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Concepto</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Cantidad</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Precio Unit.</th>
+                    <th class="text-left py-3 px-4 font-bold text-slate-700">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Dominio .es (anual)</td>
+                    <td class="py-3 px-4 text-slate-600">1</td>
+                    <td class="py-3 px-4 text-slate-600">15,00€</td>
+                    <td class="py-3 px-4 font-medium text-slate-700">15,00€</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Hosting anual</td>
+                    <td class="py-3 px-4 text-slate-600">1</td>
+                    <td class="py-3 px-4 text-slate-600">180,00€</td>
+                    <td class="py-3 px-4 font-medium text-slate-700">180,00€</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Plantilla premium</td>
+                    <td class="py-3 px-4 text-slate-600">1</td>
+                    <td class="py-3 px-4 text-slate-600">60,00€</td>
+                    <td class="py-3 px-4 font-medium text-slate-700">60,00€</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Sesión de fotos</td>
+                    <td class="py-3 px-4 text-slate-600">1</td>
+                    <td class="py-3 px-4 text-slate-600">200,00€</td>
+                    <td class="py-3 px-4 font-medium text-slate-700">200,00€</td>
+                </tr>
+                <tr class="border-b border-slate-100">
+                    <td class="py-3 px-4 text-slate-600">Plugins premium (opcional)</td>
+                    <td class="py-3 px-4 text-slate-600">3</td>
+                    <td class="py-3 px-4 text-slate-600">50,00€</td>
+                    <td class="py-3 px-4 font-medium text-slate-700">150,00€</td>
+                </tr>
+                <tr class="bg-blue-50">
+                    <td class="py-3 px-4 font-bold text-blue-700">TOTAL INVERSIÓN INICIAL</td>
+                    <td class="py-3 px-4 text-slate-600">-</td>
+                    <td class="py-3 px-4 text-slate-600">-</td>
+                    <td class="py-3 px-4 font-bold text-blue-700">605,00€</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>11.5. 📱 Anexo E: Capturas de Pantalla</h3>
+
+    <div class="callout callout-warning">
+        <div class="callout-title"><span>📸</span><span>Instrucciones</span></div>
+        <p class="text-sm mb-3">Añade capturas de pantalla de tu tienda online en las siguientes páginas:</p>
+        <ul class="text-sm space-y-2 mb-0">
+            <li>• Página de inicio completa</li>
+            <li>• Página de producto individual</li>
+            <li>• Carrito de la compra</li>
+            <li>• Proceso de checkout</li>
+            <li>• Panel de administración de WooCommerce</li>
+            <li>• Email de confirmación recibido</li>
+        </ul>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="bg-slate-100 rounded-2xl border-2 border-dashed border-slate-300 p-8 text-center">
+            <div class="text-4xl mb-4">📷</div>
+            <p class="text-sm text-slate-500 mb-0">[Inserta aquí captura de la Página de Inicio]</p>
+        </div>
+        <div class="bg-slate-100 rounded-2xl border-2 border-dashed border-slate-300 p-8 text-center">
+            <div class="text-4xl mb-4">📷</div>
+            <p class="text-sm text-slate-500 mb-0">[Inserta aquí captura de Ficha de Producto]</p>
+        </div>
+    </div>
+
+    <div class="callout callout-success">
+        <div class="callout-title"><span>🎉</span><span>¡Proyecto Completado!</span></div>
+        <p class="text-sm mb-0">Este documento forma parte de tu portfolio profesional. Guárdalo y úsalo para mostrar tus competencias en futuras entrevistas de trabajo.</p>
+    </div>
+</div></section></body></html>
