@@ -5,21 +5,21 @@ window.sectionsContent.resumen = `
         <span>📌</span>
         <span>Resumen Ejecutivo</span>
     </div>
-    <p>Este proyecto intermodular presenta la organización integral de una <strong>Feria del Libro</strong> en la ciudad de Valencia, diseñada para fomentar la lectura y dinamizar el sector cultural local.</p>
+    <p>Este proyecto intermodular presenta la organización integral de una <strong>Feria del Libro</strong> en el IES Serra Perenxisa (Torrent), diseñada para fomentar la lectura y dinamizar el sector cultural local.</p>
 </div>
 
 <h3>📖 Contexto del Proyecto</h3>
-<p>La <strong>Feria del Libro de Valencia</strong> surge como respuesta a la necesidad de promover el hábito lector en una sociedad cada vez más digitalizada. El proyecto integra la organización de un evento presencial de 5 días de duración, con actividades accesorias, difusión previa, invitación a escritores y autoridades, selección de libros y gestión de stands.</p>
+<p>La <strong>Feria del Libro del IES Serra Perenxisa</strong> surge como respuesta a la necesidad de promover el hábito lector en una sociedad cada vez más digitalizada. El proyecto integra la organización de un evento presencial de 5 días de duración, con actividades accesorias, difusión previa, invitación a escritores y autoridades, selección de libros y gestión de stands.</p>
 
 <h3>🎯 Objetivos Principales</h3>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
     <div class="p-6 bg-blue-50 rounded-xl border border-blue-100">
         <h4 class="font-bold text-blue-800 mb-2">📚 Fomento Lector</h4>
-        <p class="text-sm text-blue-700">Incrementar el interés por la lectura en un 25% entre los asistentes mediante actividades interactivas.</p>
+        <p class="text-sm text-blue-700">Incrementar el interés por la lectura entre la comunidad educativa del IES Serra Perenxisa mediante actividades interactivas.</p>
     </div>
     <div class="p-6 bg-green-50 rounded-xl border border-green-100">
         <h4 class="font-bold text-green-800 mb-2">🤝 Dinamización Cultural</h4>
-        <p class="text-sm text-green-700">Crear un punto de encuentro entre autores, editores y lectores del territorio valenciano.</p>
+        <p class="text-sm text-green-700">Crear un punto de encuentro entre autores, editores y lectores de Torrent y alrededores.</p>
     </div>
     <div class="p-6 bg-purple-50 rounded-xl border border-purple-100">
         <h4 class="font-bold text-purple-800 mb-2">💼 Apoyo al Sector</h4>
@@ -27,7 +27,7 @@ window.sectionsContent.resumen = `
     </div>
     <div class="p-6 bg-orange-50 rounded-xl border border-orange-100">
         <h4 class="font-bold text-orange-800 mb-2">🌟 Visibilidad Institucional</h4>
-        <p class="text-sm text-orange-700">Posicionar a Valencia como referente cultural en el ámbito del libro y la lectura.</p>
+        <p class="text-sm text-orange-700">Posicionar al IES Serra Perenxisa como referente cultural en el ámbito del libro y la lectura.</p>
     </div>
 </div>
 
@@ -36,29 +36,29 @@ window.sectionsContent.resumen = `
     <thead>
         <tr class="bg-slate-100">
             <th class="border border-slate-300 px-4 py-3 text-left">Concepto</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Valor Estimado</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Valor a Completar</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="border border-slate-300 px-4 py-3">Duración</td>
-            <td class="border border-slate-300 px-4 py-3">5 días</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar: ¿Cuántos días son recomendables?]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3">Visitantes esperados</td>
-            <td class="border border-slate-300 px-4 py-3">15.000 - 20.000 personas</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Estimar según aforo del IES Serra Perenxisa]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3">Stands previstos</td>
-            <td class="border border-slate-300 px-4 py-3">40-50 stands</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar capacidad del recinto]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3">Actividades programadas</td>
-            <td class="border border-slate-300 px-4 py-3">60+ presentaciones y talleres</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Diseñar programa de actividades]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3">Autores invitados</td>
-            <td class="border border-slate-300 px-4 py-3">30-40 escritores</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar autores locales/regionales]</em></td>
         </tr>
     </tbody>
 </table>

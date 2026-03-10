@@ -7,176 +7,173 @@ window.sectionsContent['estado-arte'] = `
         <span>📌</span>
         <span>Objetivo de esta Sección</span>
     </div>
-    <p>Analizar los referentes existentes de ferias del libro en España para identificar buenas prácticas, modelos de gestión y oportunidades de diferenciación para nuestro proyecto.</p>
+    <p>Analizar los referentes existentes de ferias del libro en España para identificar buenas prácticas, modelos de gestión y oportunidades de diferenciación para nuestro proyecto en el IES Serra Perenxisa.</p>
 </div>
 
-<h3>2.2. 📊 Ferias de Referencia Nacional</h3>
+<div class="callout callout-warning">
+    <div class="callout-title">
+        <span>📝</span>
+        <span>Tarea para el Alumnado</span>
+    </div>
+    <p>Investiga y completa esta sección con:</p>
+    <ul>
+        <li>Información actualizada de 3 ferias del libro importantes en España</li>
+        <li>Entrevista a un librero local sobre su experiencia en ferias</li>
+        <li>Análisis de presupuestos públicos disponibles (portales de transparencia)</li>
+        <li>Identificación de proveedores de casetas en la Comunidad Valenciana</li>
+    </ul>
+</div>
+
+<h3>2.2. 📊 Ferias de Referencia Nacional - Guía de Investigación</h3>
 
 <h4>🏛️ Feria del Libro de Madrid</h4>
-<p>Es el evento literario más importante de España. Datos clave:</p>
+<div class="callout callout-info">
+    <p><strong>Fuentes para investigar:</strong></p>
+    <ul>
+        <li>Visita el sitio web oficial: feriadellibrodemadrid.es</li>
+        <li>Consulta memorias de ediciones anteriores</li>
+        <li>Analiza: ubicación, duración, número de stands, visitantes, organización</li>
+    </ul>
+</div>
+
+<h4>📚 Feria del Libro de Barcelona (Sant Jordi)</h4>
+<div class="callout callout-info">
+    <p><strong>Puntos a investigar:</strong></p>
+    <ul>
+        <li>¿Cómo aprovechan la tradición de Sant Jordi?</li>
+        <li>Modelo de concentración en un día masivo + semana cultural</li>
+        <li>Impacto económico: datos de ventas del gremio de libreros</li>
+    </ul>
+</div>
+
+<h4>🎭 Ferias del Libro en España (Referentes)</h4>
+<div class="callout callout-info">
+    <p><strong>Investiga también:</strong></p>
+    <ul>
+        <li>Feria del Libro de Valencia (histórica) - Archivo: valenciaferiadelllibre.es</li>
+        <li>Otras ferias relevantes en la Comunidad Valenciana</li>
+        <li>Problemáticas actuales y oportunidades de mejora</li>
+    </ul>
+</div>
+
+<h3>2.3. 🔍 Análisis de Modelos de Gestión - Actividad</h3>
+
+<div class="callout callout-warning">
+    <div class="callout-title">
+        <span>🔎</span>
+        <span>Actividad Comparativa</span>
+    </div>
+    <p>Completa la siguiente tabla investigando las características de cada modelo:</p>
+</div>
+
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-3 text-left">Característica</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Datos</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Modelo</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Ventajas</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Inconvenientes</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Ejemplo Real</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Ubicación</td>
-            <td class="border border-slate-300 px-4 py-3">Parque del Retiro</td>
+            <td class="border border-slate-300 px-4 py-3 font-bold">🏢 Modelo Público</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Ejemplo]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Duración</td>
-            <td class="border border-slate-300 px-4 py-3">15 días (mayo-junio)</td>
+            <td class="border border-slate-300 px-4 py-3 font-bold">🤝 Modelo Mixto</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Ejemplo]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Stands</td>
-            <td class="border border-slate-300 px-4 py-3">300+ casetas</td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">Visitantes</td>
-            <td class="border border-slate-300 px-4 py-3">2 millones anuales</td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">Organización</td>
-            <td class="border border-slate-300 px-4 py-3">Asociación de Libreros + Ayuntamiento</td>
+            <td class="border border-slate-300 px-4 py-3 font-bold">🏪 Modelo Privado</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Ejemplo]</em></td>
         </tr>
     </tbody>
 </table>
 
-<h4>📚 Feria del Libro de Barcelona (Sant Jordi)</h4>
-<p>Aprovecha la tradición catalana de Sant Jordi (23 de abril):</p>
-<ul class="list-disc list-inside space-y-2 my-6 text-slate-700">
-    <li><strong>Modelo:</strong> Concentración en un día masivo + semana cultural</li>
-    <li><strong>Particularidad:</strong> Regalo de libro y rosa</li>
-    <li><strong>Impacto:</strong> 1,5 millones de libros vendidos en un día</li>
-</ul>
-
-<h4>🎭 Feria del Libro de Valencia (Tradición Histórica)</h4>
-<p>Valencia ha tenido históricamente una feria en la Plaza del Ayuntamiento:</p>
-<ul class="list-disc list-inside space-y-2 my-6 text-slate-700">
-    <li><strong>Periodo:</strong> Tradicionalmente en abril-mayo</li>
-    <li><strong>Problemática actual:</strong> Reducción de espacio y visibilidad</li>
-    <li><strong>Oportunidad:</strong> Relanzamiento con nuevo formato y ubicación</li>
-</ul>
-
-<h3>2.3. 🔍 Análisis de Modelos de Gestión</h3>
-
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
-    <div class="p-5 bg-blue-50 rounded-xl border border-blue-100">
-        <h5 class="font-bold text-blue-800 mb-3">🏢 Modelo Público</h5>
-        <p class="text-sm text-blue-700 mb-3">Gestión municipal directa</p>
-        <ul class="text-xs text-blue-600 space-y-1">
-            <li>✅ Financiación garantizada</li>
-            <li>✅ Recursos institucionales</li>
-            <li>❌ Burocracia lenta</li>
-            <li>❌ Menos flexibilidad</li>
-        </ul>
-    </div>
-    <div class="p-5 bg-green-50 rounded-xl border border-green-100">
-        <h5 class="font-bold text-green-800 mb-3">🤝 Modelo Mixto</h5>
-        <p class="text-sm text-green-700 mb-3">Colaboración público-privada</p>
-        <ul class="text-xs text-green-600 space-y-1">
-            <li>✅ Recursos compartidos</li>
-            <li>✅ Agilidad empresarial</li>
-            <li>⚠️ Coordinación compleja</li>
-            <li>⚠️ Reparto de beneficios</li>
-        </ul>
-    </div>
-    <div class="p-5 bg-purple-50 rounded-xl border border-purple-100">
-        <h5 class="font-bold text-purple-800 mb-3">🏪 Modelo Privado</h5>
-        <p class="text-sm text-purple-700 mb-3">Gestión empresarial</p>
-        <ul class="text-xs text-purple-600 space-y-1">
-            <li>✅ Máxima agilidad</li>
-            <li>✅ Innovación constante</li>
-            <li>❌ Dependencia de patrocinios</li>
-            <li>❌ Riesgo económico</li>
-        </ul>
-    </div>
-</div>
-
 <h3>2.4. 📈 Tendencias Actuales en Ferias del Libro</h3>
+
+<div class="callout callout-success">
+    <div class="callout-title">
+        <span>💡</span>
+        <span>Consejo Pedagógico</span>
+    </div>
+    <p>Para identificar tendencias, revisa las redes sociales de ferias recientes, habla con libreros jóvenes y observa qué actividades tienen más engagement en TikTok e Instagram.</p>
+</div>
 
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
             <th class="border border-slate-300 px-4 py-3 text-left">Tendencia</th>
             <th class="border border-slate-300 px-4 py-3 text-left">Descripción</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Aplicación en Nuestro Proyecto</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Aplicable en el IES Serra Perenxisa?</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="border border-slate-300 px-4 py-3">🎙️ Podcasts en vivo</td>
-            <td class="border border-slate-300 px-4 py-3">Grabaciones de podcasts literarios con audiencia</td>
-            <td class="border border-slate-300 px-4 py-3">Espacio "Estudio Abierto"</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Justificar]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3">📱 Booktok Corner</td>
-            <td class="border border-slate-300 px-4 py-3">Espacio para influencers literarios</td>
-            <td class="border border-slate-300 px-4 py-3">Zona de contenido digital</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Justificar]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3">♿ Accesibilidad</td>
-            <td class="border border-slate-300 px-4 py-3">Adaptación para personas con discapacidad</td>
-            <td class="border border-slate-300 px-4 py-3">Recorros accesibles, libros en braille</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Justificar]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3">🌱 Sostenibilidad</td>
-            <td class="border border-slate-300 px-4 py-3">Eventos eco-friendly</td>
-            <td class="border border-slate-300 px-4 py-3">Stands reutilizables, cero plásticos</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Justificar]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3">👶 Familia</td>
-            <td class="border border-slate-300 px-4 py-3">Actividades infantiles</td>
-            <td class="border border-slate-300 px-4 py-3">Cuentacuentos, talleres de ilustración</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Justificar]</em></td>
         </tr>
     </tbody>
 </table>
 
-<h3>2.5. 🎯 Propuesta de Valor Diferencial</h3>
-<div class="callout callout-success">
+<h3>2.5. 🎯 Propuesta de Valor Diferencial - Actividad Creativa</h3>
+
+<div class="callout callout-warning">
     <div class="callout-title">
-        <span>✨</span>
-        <span>Elementos Innovadores de Nuestra Feria</span>
+        <span>✏️</span>
+        <span>Ejercicio de Creatividad</span>
     </div>
-    <ul class="space-y-3 mt-4">
-        <li class="flex items-start gap-3">
-            <span class="text-green-600 font-bold">✓</span>
-            <span><strong>Plan de Fomento Lector Integral:</strong> No solo es una feria, incluye programa educativo en colegios durante todo el año</span>
-        </li>
-        <li class="flex items-start gap-3">
-            <span class="text-green-600 font-bold">✓</span>
-            <span><strong>Autores Emergentes:</strong> 30% de stands reservados para autopublicación y nuevos talentos</span>
-        </li>
-        <li class="flex items-start gap-3">
-            <span class="text-green-600 font-bold">✓</span>
-            <span><strong>Tecnología:</strong> App de la feria con mapa interactivo, agenda personalizada y sistema de citas con autores</span>
-        </li>
-        <li class="flex items-start gap-3">
-            <span class="text-green-600 font-bold">✓</span>
-            <span><strong>Gastronomía Literaria:</strong> Espacio de food trucks temáticos basados en libros famosos</span>
-        </li>
-        <li class="flex items-start gap-3">
-            <span class="text-green-600 font-bold">✓</span>
-            <span><strong>Noches Temáticas:</strong> Apertura nocturna los viernes y sábados con actividades especiales</span>
-        </li>
+    <p>Diseña 5 elementos innovadores que diferenciarían nuestra feria en el IES Serra Perenxisa. Justifica cada uno explicando:</p>
+    <ul>
+        <li>¿Qué necesidad cubre?</li>
+        <li>¿Cómo se implementaría?</li>
+        <li>¿Qué recursos necesitaría?</li>
+        <li>¿Por qué atraería visitantes?</li>
     </ul>
 </div>
 
-<h3>2.6. 📝 Actividad para el Alumnado</h3>
-<div class="callout callout-warning">
+<h3>2.6. 📝 Actividad de Investigación Documental</h3>
+
+<div class="callout callout-info">
     <div class="callout-title">
-        <span>🔎</span>
-        <span>Tarea de Investigación</span>
+        <span>📚</span>
+        <span>Recursos para Investigar</span>
     </div>
-    <p>Investiga y amplía esta sección con:</p>
-    <ol class="list-decimal list-inside space-y-2 mt-3">
-        <li>Entrevista a un librero local sobre su experiencia en ferias</li>
-        <li>Analiza el presupuesto de una feria similar (disponible en transparencia municipal)</li>
-        <li>Identifica 3 proveedores de casetas para eventos en la Comunidad Valenciana</li>
-        <li>Propón 5 actividades originales no mencionadas en este documento</li>
-    </ol>
+    <p>Fuentes recomendadas:</p>
+    <ul>
+        <li>Ministerio de Cultura y Deporte - Estadísticas de lectura</li>
+        <li>Federación de Gremios de Editores de España - Anuario de edición</li>
+        <li>Portales de transparencia municipales - Presupuestos de ferias</li>
+        <li>Entrevistas a libreros de Torrent y Valencia</li>
+        <li>Visita guiada a alguna feria del libro cercana</li>
+    </ul>
 </div>
 `;
