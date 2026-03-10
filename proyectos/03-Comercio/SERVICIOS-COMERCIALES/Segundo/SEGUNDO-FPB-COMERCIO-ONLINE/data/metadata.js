@@ -6,5 +6,5 @@ window.metadata = {
     cycleName: 'Servicios Comerciales',
     cycleLevel: 'FP Básica',
     courseYear: 'Segundo',
-    projectImage: './images/hero.jpg'
+    projectImage: './images/hero.svg'
 };

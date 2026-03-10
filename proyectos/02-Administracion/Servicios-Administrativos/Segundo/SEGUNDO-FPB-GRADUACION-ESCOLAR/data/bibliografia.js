@@ -1,14 +1,44 @@
 // Bibliografía del Proyecto
 window.sectionsContent.bibliografia = `
 <div class="callout callout-info">
-    <div class="callout-title">
-        <span>📚</span>
-        <span>Bibliografía y Recursos</span>
-    </div>
-    <p class="mb-0">Referencias y recursos utilizados para el desarrollo del proyecto.</p>
+    <div class="callout-title"><span>📌</span><span>¿Qué vamos a hacer?</span></div>
+    <p>Vamos a listar los documentos y páginas web que usamos para hacer el proyecto.</p>
 </div>
 
-<h3>Normativa y Legislación 📜</h3>
+<h3>10.1. Normativa y Leyes 📜</h3>
+
+<h4>📝 Ejemplo Resuelto:</h4>
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem;">
+LEYES QUE USAMOS:
+
+- LOMLOE: Ley de Educación (2020)
+- Real Decreto 65/2022: FP Básica
+- RGPD: Protección de Datos
+- Ley 39/2015: Trámites administrativos
+
+Dónde: boe.es (web oficial del Estado)
+</div>
+
+<h4>Ahora Te Toca a Ti:</h4>
+<ol class="my-4 space-y-2 list-decimal list-inside">
+    <li><strong>Paso 1:</strong> Copia la lista de leyes de arriba</li>
+    <li><strong>Paso 2:</strong> Añade las leyes de tu comunidad autónoma</li>
+    <li><strong>Paso 3:</strong> Guarda los enlaces en un documento</li>
+</ol>
+
+<div class="callout callout-warning">
+    <div class="callout-title"><span>⚠️</span><span>¡Atención!</span></div>
+    <p>Usa solo webs oficiales (boe.es, gva.es). Las otras pueden no ser fiables.</p>
+</div>
+
+<div class="callout callout-success">
+    <div class="callout-title"><span>✅</span><span>Así Sabes que Está Bien:</span></div>
+    <ul class="my-4 space-y-2">
+        <li>Tienes al menos 4 leyes listadas</li>
+        <li>Cada ley tiene su enlace oficial</li>
+        <li>Sabes qué trata cada ley</li>
+    </ul>
+</div>
 
 <h4>Normativa Estatal</h4>
 
@@ -16,29 +46,29 @@ window.sectionsContent.bibliografia = `
     <thead>
         <tr class="bg-slate-100">
             <th class="border border-slate-300 px-4 py-2 text-left">Norma</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Descripción</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Qué es</th>
             <th class="border border-slate-300 px-4 py-2 text-left">Enlace</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="border border-slate-300 px-4 py-2"><strong>LOMLOE</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Ley Orgánica 3/2020 de Educación</td>
+            <td class="border border-slate-300 px-4 py-2">Ley Orgánica de Educación</td>
             <td class="border border-slate-300 px-4 py-2">boe.es</td>
         </tr>
         <tr class="bg-slate-50">
             <td class="border border-slate-300 px-4 py-2"><strong>Real Decreto 65/2022</strong></td>
-            <td class="border border-slate-300 px-4 py-2">FP Básica - Currículo básico</td>
+            <td class="border border-slate-300 px-4 py-2">FP Básica - Currículo</td>
             <td class="border border-slate-300 px-4 py-2">boe.es</td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-2"><strong>RGPD</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Reglamento General de Protección de Datos</td>
+            <td class="border border-slate-300 px-4 py-2">Protección de Datos</td>
             <td class="border border-slate-300 px-4 py-2">boe.es</td>
         </tr>
         <tr class="bg-slate-50">
             <td class="border border-slate-300 px-4 py-2"><strong>Ley 39/2015</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Procedimiento Administrativo Común</td>
+            <td class="border border-slate-300 px-4 py-2">Procedimiento Administrativo</td>
             <td class="border border-slate-300 px-4 py-2">boe.es</td>
         </tr>
     </tbody>
@@ -50,14 +80,14 @@ window.sectionsContent.bibliografia = `
     <thead>
         <tr class="bg-slate-100">
             <th class="border border-slate-300 px-4 py-2 text-left">Norma</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Descripción</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Qué es</th>
             <th class="border border-slate-300 px-4 py-2 text-left">Enlace</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="border border-slate-300 px-4 py-2"><strong>Decreto 108/2022</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Currículo FP Básica - Comunidad Valenciana</td>
+            <td class="border border-slate-300 px-4 py-2">Currículo FP Básica</td>
             <td class="border border-slate-300 px-4 py-2">dogv.gva.es</td>
         </tr>
         <tr class="bg-slate-50">
@@ -66,16 +96,59 @@ window.sectionsContent.bibliografia = `
             <td class="border border-slate-300 px-4 py-2">dogv.gva.es</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-2"><strong>Instrucciones de Convivencia</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Normativa de convivencia escolar</td>
+            <td class="border border-slate-300 px-4 py-2"><strong>Instrucciones Convivencia</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Normas de convivencia</td>
             <td class="border border-slate-300 px-4 py-2">educacion.gva.es</td>
         </tr>
     </tbody>
 </table>
 
-<h3>Libros de Texto y Manuales 📖</h3>
+<div class="callout callout-info">
+    <div class="callout-title"><span>📌</span><span>¿Qué vamos a hacer?</span></div>
+    <p>Vamos a listar los libros de texto que usamos para aprender las materias.</p>
+</div>
 
-<h4>Operaciones Administrativas</h4>
+<h3>10.2. Libros de Texto 📖</h3>
+
+<h4>📝 Ejemplo Resuelto:</h4>
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem;">
+LIBROS DE FPB:
+
+1. Operaciones Administrativas
+   Editorial: Paraninfo
+   Año: 2023
+
+2. Gestión Económica
+   Editorial: Editex
+   Año: 2023
+
+3. Comunicación y Atención al Cliente
+   Editorial: Santillana
+   Año: 2023
+</div>
+
+<h4>Ahora Te Toca a Ti:</h4>
+<ol class="my-4 space-y-2 list-decimal list-inside">
+    <li><strong>Paso 1:</strong> Mira los libros que usas en clase</li>
+    <li><strong>Paso 2:</strong> Apunta título, editorial y año</li>
+    <li><strong>Paso 3:</strong> Haz una lista con todos</li>
+</ol>
+
+<div class="callout callout-warning">
+    <div class="callout-title"><span>⚠️</span><span>¡Atención!</span></div>
+    <p>Apunta bien el nombre del libro. Así lo puedes encontrar si lo necesitas.</p>
+</div>
+
+<div class="callout callout-success">
+    <div class="callout-title"><span>✅</span><span>Así Sabes que Está Bien:</span></div>
+    <ul class="my-4 space-y-2">
+        <li>Tienes al menos 4 libros listados</li>
+        <li>Cada libro tiene editorial y año</li>
+        <li>Los libros son de tu ciclo formativo</li>
+    </ul>
+</div>
+
+<h4>Libros de Operaciones Administrativas</h4>
 
 <ul class="my-4 space-y-2">
     <li><strong>Título:</strong> Operaciones Administrativas - FP Básica</li>
@@ -84,7 +157,7 @@ window.sectionsContent.bibliografia = `
     <li><strong>Año:</strong> 2023</li>
 </ul>
 
-<h4>Gestión Económica y Tributaria</h4>
+<h4>Libros de Gestión Económica</h4>
 
 <ul class="my-4 space-y-2">
     <li><strong>Título:</strong> Gestión Económica y Tributaria - FP Básica</li>
@@ -93,7 +166,7 @@ window.sectionsContent.bibliografia = `
     <li><strong>Año:</strong> 2023</li>
 </ul>
 
-<h4>Comunicación y Atención al Cliente</h4>
+<h4>Libros de Comunicación</h4>
 
 <ul class="my-4 space-y-2">
     <li><strong>Título:</strong> Comunicación y Atención al Cliente - FP Básica</li>
@@ -102,7 +175,7 @@ window.sectionsContent.bibliografia = `
     <li><strong>Año:</strong> 2023</li>
 </ul>
 
-<h4>Organización y Archivo de Documentos</h4>
+<h4>Libros de Archivo de Documentos</h4>
 
 <ul class="my-4 space-y-2">
     <li><strong>Título:</strong> Organización y Archivo de Documentos - FP Básica</li>
@@ -111,27 +184,63 @@ window.sectionsContent.bibliografia = `
     <li><strong>Año:</strong> 2023</li>
 </ul>
 
-<h3>Recursos Online 💻</h3>
+<div class="callout callout-info">
+    <div class="callout-title"><span>📌</span><span>¿Qué vamos a hacer?</span></div>
+    <p>Vamos a listar las páginas web que usamos para buscar información.</p>
+</div>
 
-<h4>Portales de Administración Pública</h4>
+<h3>10.3. Páginas Web 💻</h3>
+
+<h4>📝 Ejemplo Resuelto:</h4>
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem;">
+WEBS DE ADMINISTRACIÓN:
+
+- Sede del centro: [URL del centro]
+- Educación GVA: educacion.gva.es
+- Hacienda: agenciatributaria.es
+- Seguridad Social: seguridad-social.es
+</div>
+
+<h4>Ahora Te Toca a Ti:</h4>
+<ol class="my-4 space-y-2 list-decimal list-inside">
+    <li><strong>Paso 1:</strong> Piensa qué webs usaste para el proyecto</li>
+    <li><strong>Paso 2:</strong> Escribe el nombre y la dirección</li>
+    <li><strong>Paso 3:</strong> Di para qué usaste cada web</li>
+</ol>
+
+<div class="callout callout-warning">
+    <div class="callout-title"><span>⚠️</span><span>¡Atención!</span></div>
+    <p>Comprueba que las direcciones web están bien escritas. Sin faltas.</p>
+</div>
+
+<div class="callout callout-success">
+    <div class="callout-title"><span>✅</span><span>Así Sabes que Está Bien:</span></div>
+    <ul class="my-4 space-y-2">
+        <li>Tienes al menos 4 webs listadas</li>
+        <li>Cada web tiene su dirección completa</li>
+        <li>Sabes qué información sacaste de cada una</li>
+    </ul>
+</div>
+
+<h4>Webs de Administración Pública</h4>
 
 <table class="w-full border-collapse border border-slate-300 my-6">
     <thead>
         <tr class="bg-slate-100">
             <th class="border border-slate-300 px-4 py-2 text-left">Portal</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Descripción</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Qué hay</th>
             <th class="border border-slate-300 px-4 py-2 text-left">Enlace</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-2"><strong>Sede Electrónica del Centro</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Trámites del centro educativo</td>
+            <td class="border border-slate-300 px-4 py-2"><strong>Sede del Centro</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Trámites del centro</td>
             <td class="border border-slate-300 px-4 py-2">[URL del centro]</td>
         </tr>
         <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2"><strong>GVA - Educación</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Portal de Educación de la Generalitat</td>
+            <td class="border border-slate-300 px-4 py-2"><strong>GVA Educación</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Portal de Educación</td>
             <td class="border border-slate-300 px-4 py-2">educacion.gva.es</td>
         </tr>
         <tr>
@@ -159,31 +268,72 @@ window.sectionsContent.bibliografia = `
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-2"><strong>Google Workspace for Education</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Suite de productividad</td>
+            <td class="border border-slate-300 px-4 py-2"><strong>Google Workspace</strong></td>
+            <td class="border border-slate-300 px-4 py-2">Ofimática online</td>
             <td class="border border-slate-300 px-4 py-2">edu.google.com</td>
         </tr>
         <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2"><strong>Canva for Education</strong></td>
+            <td class="border border-slate-300 px-4 py-2"><strong>Canva</strong></td>
             <td class="border border-slate-300 px-4 py-2">Diseño gráfico</td>
-            <td class="border border-slate-300 px-4 py-2">canva.com/education</td>
+            <td class="border border-slate-300 px-4 py-2">canva.com</td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-2"><strong>Trello</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Gestión de proyectos</td>
+            <td class="border border-slate-300 px-4 py-2">Gestión de tareas</td>
             <td class="border border-slate-300 px-4 py-2">trello.com</td>
         </tr>
         <tr class="bg-slate-50">
             <td class="border border-slate-300 px-4 py-2"><strong>Draw.io</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Diagramas y planos</td>
+            <td class="border border-slate-300 px-4 py-2">Diagramas</td>
             <td class="border border-slate-300 px-4 py-2">diagrams.net</td>
         </tr>
     </tbody>
 </table>
 
-<h3>Guías y Manuales de Eventos 📋</h3>
+<div class="callout callout-info">
+    <div class="callout-title"><span>📌</span><span>¿Qué vamos a hacer?</span></div>
+    <p>Vamos a listar las guías que nos ayudaron a organizar el evento.</p>
+</div>
 
-<h4>Organización de Eventos Escolares</h4>
+<h3>10.4. Guías de Eventos 📋</h3>
+
+<h4>📝 Ejemplo Resuelto:</h4>
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem;">
+GUÍAS USADAS:
+
+1. Guía para Organización de Eventos Escolares
+   Autor: Ministerio de Educación
+   Año: 2021
+   Web: educacion.gob.es
+
+2. Manual de Protocolo para Actos Académicos
+   Autor: Universidad Politécnica de Valencia
+   Año: 2020
+   Web: upv.es
+</div>
+
+<h4>Ahora Te Toca a Ti:</h4>
+<ol class="my-4 space-y-2 list-decimal list-inside">
+    <li><strong>Paso 1:</strong> Busca guías sobre organización de eventos</li>
+    <li><strong>Paso 2:</strong> Apunta autor, año y dónde está</li>
+    <li><strong>Paso 3:</strong> Guarda el enlace o PDF en tu carpeta</li>
+</ol>
+
+<div class="callout callout-warning">
+    <div class="callout-title"><span>⚠️</span><span>¡Atención!</span></div>
+    <p>Usa guías de fuentes oficiales. Las de particulares pueden no ser fiables.</p>
+</div>
+
+<div class="callout callout-success">
+    <div class="callout-title"><span>✅</span><span>Así Sabes que Está Bien:</span></div>
+    <ul class="my-4 space-y-2">
+        <li>Tienes al menos 2 guías listadas</li>
+        <li>Cada guía tiene autor y año</li>
+        <li>Puedes acceder a la guía si la necesitas</li>
+    </ul>
+</div>
+
+<h4>Guías de Organización de Eventos</h4>
 
 <ul class="my-4 space-y-2">
     <li><strong>Título:</strong> Guía para la Organización de Eventos Escolares</li>
@@ -192,55 +342,73 @@ window.sectionsContent.bibliografia = `
     <li><strong>Enlace:</strong> educacion.gob.es</li>
 </ul>
 
-<h4>Protocolo en Actos Académicos</h4>
+<h4>Guías de Protocolo</h4>
 
 <ul class="my-4 space-y-2">
-    <li><strong>Título:</strong> Manual de Protocolo para Actos Universitarios y Académicos</li>
+    <li><strong>Título:</strong> Manual de Protocolo para Actos Académicos</li>
     <li><strong>Autor:</strong> Universidad Politécnica de Valencia</li>
     <li><strong>Año:</strong> 2020</li>
     <li><strong>Enlace:</strong> upv.es</li>
 </ul>
 
-<h4>Prevención de Riesgos en Eventos</h4>
+<h4>Guías de Prevención de Riesgos</h4>
 
 <ul class="my-4 space-y-2">
     <li><strong>Título:</strong> Guía de Prevención de Riesgos en Eventos</li>
-    <li><strong>Autor:</strong> INSST (Instituto Nacional de Seguridad y Salud en el Trabajo)</li>
+    <li><strong>Autor:</strong> INSST</li>
     <li><strong>Año:</strong> 2022</li>
     <li><strong>Enlace:</strong> insst.es</li>
 </ul>
 
-<h3>Artículos y Publicaciones 📰</h3>
+<div class="callout callout-info">
+    <div class="callout-title"><span>📌</span><span>¿Qué vamos a hacer?</span></div>
+    <p>Vamos a listar las webs donde buscamos imágenes y música gratis.</p>
+</div>
 
-<h4>Aprendizaje Basado en Proyectos (ABP)</h4>
+<h3>10.5. Imágenes y Música 📷🎵</h3>
 
-<ul class="my-4 space-y-2">
-    <li><strong>Título:</strong> "El Aprendizaje Basado en Proyectos en FP: Una Experiencia Exitosa"</li>
-    <li><strong>Autor:</strong> García, M. y López, R.</li>
-    <li><strong>Revista:</strong> Revista de Educación y Formación Profesional</li>
-    <li><strong>Año:</strong> 2023</li>
-    <li><strong>Enlace:</strong> revistafp.es</li>
-</ul>
+<h4>📝 Ejemplo Resuelto:</h4>
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem;">
+IMÁGENES GRATIS:
 
-<h4>Competencias Clave en FP Básica</h4>
+- Pexels: pexels.com (fotos libres)
+- Unsplash: unsplash.com (fotos calidad)
+- Pixabay: pixabay.com (fotos y vectores)
 
-<ul class="my-4 space-y-2">
-    <li><strong>Título:</strong> "Desarrollo de Competencias Clave en FP Básica a través de Proyectos"</li>
-    <li><strong>Autor:</strong> Martínez, A.</li>
-    <li><strong>Revista:</strong> Cuadernos de Pedagogía</li>
-    <li><strong>Año:</strong> 2022</li>
-</ul>
+MÚSICA SIN COPYRIGHT:
 
-<h3>Recursos de Imágenes y Multimedia 📷</h3>
+- YouTube Audio Library: youtube.com/audiolibrary
+- Bensound: bensound.com
+</div>
 
-<h4>Bancos de Imágenes Gratuitos</h4>
+<h4>Ahora Te Toca a Ti:</h4>
+<ol class="my-4 space-y-2 list-decimal list-inside">
+    <li><strong>Paso 1:</strong> Entra en las webs de arriba</li>
+    <li><strong>Paso 2:</strong> Busca imágenes de "graduation"</li>
+    <li><strong>Paso 3:</strong> Guarda las que te gusten en tu carpeta</li>
+</ol>
+
+<div class="callout callout-warning">
+    <div class="callout-title"><span>⚠️</span><span>¡Atención!</span></div>
+    <p>Guarda el nombre del autor de cada imagen. A veces hay que citarlo.</p>
+</div>
+
+<div class="callout callout-success">
+    <div class="callout-title"><span>✅</span><span>Así Sabes que Está Bien:</span></div>
+    <ul class="my-4 space-y-2">
+        <li>Tienes al menos 3 webs de imágenes</li>
+        <li>Tienes al menos 2 webs de música</li>
+        <li>Sabes qué licencia tiene cada recurso</li>
+    </ul>
+</div>
+
+<h4>Bancos de Imágenes</h4>
 
 <table class="w-full border-collapse border border-slate-300 my-6">
     <thead>
         <tr class="bg-slate-100">
             <th class="border border-slate-300 px-4 py-2 text-left">Recurso</th>
             <th class="border border-slate-300 px-4 py-2 text-left">Tipo</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Licencia</th>
             <th class="border border-slate-300 px-4 py-2 text-left">Enlace</th>
         </tr>
     </thead>
@@ -248,25 +416,21 @@ window.sectionsContent.bibliografia = `
         <tr>
             <td class="border border-slate-300 px-4 py-2"><strong>Pexels</strong></td>
             <td class="border border-slate-300 px-4 py-2">Fotos y vídeos</td>
-            <td class="border border-slate-300 px-4 py-2">Gratis, sin atribución</td>
             <td class="border border-slate-300 px-4 py-2">pexels.com</td>
         </tr>
         <tr class="bg-slate-50">
             <td class="border border-slate-300 px-4 py-2"><strong>Unsplash</strong></td>
             <td class="border border-slate-300 px-4 py-2">Fotografías</td>
-            <td class="border border-slate-300 px-4 py-2">Gratis, sin atribución</td>
             <td class="border border-slate-300 px-4 py-2">unsplash.com</td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-2"><strong>Pixabay</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Fotos, ilustraciones, vídeos</td>
-            <td class="border border-slate-300 px-4 py-2">Gratis, sin atribución</td>
+            <td class="border border-slate-300 px-4 py-2">Fotos e ilustraciones</td>
             <td class="border border-slate-300 px-4 py-2">pixabay.com</td>
         </tr>
         <tr class="bg-slate-50">
             <td class="border border-slate-300 px-4 py-2"><strong>Freepik</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Vectores, fotos, PSD</td>
-            <td class="border border-slate-300 px-4 py-2">Gratis con atribución</td>
+            <td class="border border-slate-300 px-4 py-2">Vectores y fotos</td>
             <td class="border border-slate-300 px-4 py-2">freepik.com</td>
         </tr>
     </tbody>
@@ -279,7 +443,6 @@ window.sectionsContent.bibliografia = `
         <tr class="bg-slate-100">
             <th class="border border-slate-300 px-4 py-2 text-left">Recurso</th>
             <th class="border border-slate-300 px-4 py-2 text-left">Tipo</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Licencia</th>
             <th class="border border-slate-300 px-4 py-2 text-left">Enlace</th>
         </tr>
     </thead>
@@ -287,81 +450,61 @@ window.sectionsContent.bibliografia = `
         <tr>
             <td class="border border-slate-300 px-4 py-2"><strong>YouTube Audio Library</strong></td>
             <td class="border border-slate-300 px-4 py-2">Música y efectos</td>
-            <td class="border border-slate-300 px-4 py-2">Gratis, algunas requieren atribución</td>
             <td class="border border-slate-300 px-4 py-2">youtube.com/audiolibrary</td>
         </tr>
         <tr class="bg-slate-50">
             <td class="border border-slate-300 px-4 py-2"><strong>Bensound</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Música</td>
-            <td class="border border-slate-300 px-4 py-2">Gratis con atribución</td>
+            <td class="border border-slate-300 px-4 py-2">Música variada</td>
             <td class="border border-slate-300 px-4 py-2">bensound.com</td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-2"><strong>Free Music Archive</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Música variada</td>
-            <td class="border border-slate-300 px-4 py-2">Creative Commons</td>
+            <td class="border border-slate-300 px-4 py-2">Música Creative Commons</td>
             <td class="border border-slate-300 px-4 py-2">freemusicarchive.org</td>
         </tr>
     </tbody>
 </table>
 
-<h3>Plantillas y Modelos 📄</h3>
-
-<h4>Modelos de Documentos Administrativos</h4>
-
-<ul class="my-4 space-y-2">
-    <li><strong>Título:</strong> Plantillas de Documentos Administrativos para Centros Educativos</li>
-    <li><strong>Autor:</strong> Federación de AMPAS</li>
-    <li><strong>Año:</strong> 2023</li>
-</ul>
-
-<h4>Modelos de Autorizaciones</h4>
-
-<ul class="my-4 space-y-2">
-    <li><strong>Título:</strong> Modelos de Autorizaciones para Actividades Escolares</li>
-    <li><strong>Autor:</strong> Consejería de Educación</li>
-    <li><strong>Año:</strong> 2023</li>
-    <li><strong>Enlace:</strong> educacion.gva.es</li>
-</ul>
-
-<h3>Créditos de Imágenes del Proyecto 📸</h3>
-
-<h4>Imágenes Utilizadas</h4>
-
-<table class="w-full border-collapse border border-slate-300 my-6">
-    <thead>
-        <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-2 text-left">Imagen</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Fuente</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Autor</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Licencia</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="border border-slate-300 px-4 py-2">Hero (portada)</td>
-            <td class="border border-slate-300 px-4 py-2">Pexels</td>
-            <td class="border border-slate-300 px-4 py-2">[Nombre]</td>
-            <td class="border border-slate-300 px-4 py-2">Pexels License</td>
-        </tr>
-        <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">[Otras imágenes]</td>
-            <td class="border border-slate-300 px-4 py-2">[Fuente]</td>
-            <td class="border border-slate-300 px-4 py-2">[Autor]</td>
-            <td class="border border-slate-300 px-4 py-2">[Licencia]</td>
-        </tr>
-    </tbody>
-</table>
-
-<div class="callout callout-warning">
-    <div class="callout-title">
-        <span>⚠️</span>
-        <span>Importante: Derechos de Autor</span>
-    </div>
-    <p>Todas las imágenes utilizadas en este proyecto son de <strong>uso libre</strong> o cuentan con la correspondiente autorización. Recuerda siempre citar la fuente y respetar las licencias de uso.</p>
+<div class="callout callout-info">
+    <div class="callout-title"><span>📌</span><span>¿Qué vamos a hacer?</span></div>
+    <p>Vamos a aprender cómo se cita este proyecto si alguien lo usa.</p>
 </div>
 
-<h3>Cómo Citar este Proyecto 📝</h3>
+<h3>10.6. Cómo Citar este Proyecto 📝</h3>
+
+<h4>📝 Ejemplo Resuelto:</h4>
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem;">
+FORMATO APA:
+
+Apellido, N. (2026). Organización y Gestión de Graduación Escolar.
+Proyecto Intermodular FP Básica. IES Serra Perenxisa.
+
+FORMATO MLA:
+
+Apellido, Nombre. "Organización y Gestión de Graduación Escolar."
+Proyecto Intermodular, IES Serra Perenxisa, 2026.
+</div>
+
+<h4>Ahora Te Toca a Ti:</h4>
+<ol class="my-4 space-y-2 list-decimal list-inside">
+    <li><strong>Paso 1:</strong> Escribe tu nombre y apellidos</li>
+    <li><strong>Paso 2:</strong> Pon el año (2026)</li>
+    <li><strong>Paso 3:</strong> Copia el formato de arriba</li>
+</ol>
+
+<div class="callout callout-warning">
+    <div class="callout-title"><span>⚠️</span><span>¡Atención!</span></div>
+    <p>El formato APA y MLA son diferentes. Usa el que te diga tu profesor.</p>
+</div>
+
+<div class="callout callout-success">
+    <div class="callout-title"><span>✅</span><span>Así Sabes que Está Bien:</span></div>
+    <ul class="my-4 space-y-2">
+        <li>Tu nombre está bien escrito</li>
+        <li>El año es correcto (2026)</li>
+        <li>El formato sigue el ejemplo</li>
+    </ul>
+</div>
 
 <h4>Formato APA</h4>
 
@@ -378,11 +521,8 @@ Apellido, Nombre. "Organización y Gestión de Graduación Escolar."
 Proyecto Intermodular, IES Serra Perenxisa, 2026.
 </div>
 
-<div class="callout callout-info">
-    <div class="callout-title">
-        <span>💡</span>
-        <span>Consejo de Investigación</span>
-    </div>
-    <p>Cuando investigues para tu proyecto, <strong>guarda todas las fuentes</strong> que consultes. Usa herramientas como <strong>Zotero</strong> o <strong>Mendeley</strong> para gestionar tu bibliografía.</p>
+<div class="callout callout-success">
+    <div class="callout-title"><span>🎉</span><span>¡Bien Hecho!</span></div>
+    <p>Ahora tienes toda la bibliografía de tu proyecto. Guarda esta página por si la necesitas.</p>
 </div>
 `;

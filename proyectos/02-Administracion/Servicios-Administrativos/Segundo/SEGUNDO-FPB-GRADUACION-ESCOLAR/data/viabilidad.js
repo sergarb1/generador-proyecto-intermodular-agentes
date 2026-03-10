@@ -3,344 +3,294 @@ window.sectionsContent.viabilidad = `
 <div class="callout callout-info">
     <div class="callout-title">
         <span>📈</span>
-        <span>Estudio de Viabilidad</span>
+        <span>¿Se Puede Hacer Este Proyecto?</span>
     </div>
-    <p class="mb-0">En esta sección analizarás si el proyecto es realista y sostenible desde todos los puntos de vista.</p>
+    <p class="mb-0">En esta sección verás si el proyecto es posible con lo que tenéis.</p>
 </div>
 
-<h3>3.1. Análisis DAFO 🎯</h3>
+<h3>3.1. Lo Bueno y lo Malo del Proyecto 🎯</h3>
 
-<h4>¿Qué es un DAFO?</h4>
-
-<p>El <strong>análisis DAFO</strong> es una herramienta que te permite identificar:</p>
-
-<ul class="my-4 space-y-2">
-    <li><strong>D</strong>ebilidades - Factores internos negativos</li>
-    <li><strong>A</strong>menazas - Factores externos negativos</li>
-    <li><strong>F</strong>ortalezas - Factores internos positivos</li>
-    <li><strong>O</strong>portunidades - Factores externos positivos</li>
-</ul>
-
-<div class="callout callout-warning">
+<div class="callout callout-info">
     <div class="callout-title">
-        <span>📝</span>
-        <span>Tarea Práctica</span>
+        <span>📌</span>
+        <span>¿Qué vamos a hacer?</span>
     </div>
-    <p>Completa el siguiente DAFO para tu proyecto de graduación:</p>
+    <p>Vas a pensar en lo bueno y lo malo de organizar este evento. Así sabrás a qué atenerte.</p>
 </div>
 
-<h4 style="margin-top:0; color:#1e40af;">Matriz DAFO - Graduación Escolar 2026</h4>
+<h4>📝 Ejemplo Resuelto:</h4>
+
+<p>Esto es lo que podríais tener:</p>
 
 <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
     <thead>
         <tr>
-            <th style="padding: 1rem; background: #fef3c7; border: 2px solid #f59e0b; text-align: center; color: #92400e;">⚠️ DEBILIDADES (Internas)</th>
-            <th style="padding: 1rem; background: #fee2e2; border: 2px solid #ef4444; text-align: center; color: #991b1b;">🚨 AMENAZAS (Externas)</th>
+            <th style="padding: 1rem; background: #fef3c7; border: 2px solid #f59e0b; text-align: center; color: #92400e;">⚠️ LO MALO (vuestro)</th>
+            <th style="padding: 1rem; background: #fee2e2; border: 2px solid #ef4444; text-align: center; color: #991b1b;">🚨 PELIGROS (de fuera)</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 1rem; border: 2px solid #f59e0b; vertical-align: top; min-height: 150px;">
+            <td style="padding: 1rem; border: 2px solid #f59e0b; vertical-align: top;">
                 <ul style="margin: 0; padding-left: 1.25rem;">
-                    <li>Poca experiencia previa del alumnado</li>
-                    <li>Tiempo limitado para organización</li>
-                    <li>Presupuesto reducido</li>
-                    <li>[Añade más...]</li>
+                    <li>No habéis hecho esto antes</li>
+                    <li>Poco tiempo para organizar</li>
+                    <li>Poco dinero</li>
                 </ul>
             </td>
-            <td style="padding: 1rem; border: 2px solid #ef4444; vertical-align: top; min-height: 150px;">
+            <td style="padding: 1rem; border: 2px solid #ef4444; vertical-align: top;">
                 <ul style="margin: 0; padding-left: 1.25rem;">
-                    <li>Possibles cambios de fecha por imprevistos</li>
-                    <li>Subida de precios de proveedores</li>
-                    <li>Baja participación de familias</li>
-                    <li>[Añade más...]</li>
+                    <li>Puede llover el día del evento</li>
+                    <li>Los precios pueden subir</li>
+                    <li>Puede que no venga mucha gente</li>
                 </ul>
             </td>
         </tr>
         <tr>
-            <th style="padding: 1rem; background: #dbeafe; border: 2px solid #3b82f6; text-align: center; color: #1e40af;">💪 FORTALEZAS (Internas)</th>
-            <th style="padding: 1rem; background: #d1fae5; border: 2px solid #10b981; text-align: center; color: #065f46;">🌟 OPORTUNIDADES (Externas)</th>
+            <th style="padding: 1rem; background: #dbeafe; border: 2px solid #3b82f6; text-align: center; color: #1e40af;">💪 LO BUENO (vuestro)</th>
+            <th style="padding: 1rem; background: #d1fae5; border: 2px solid #10b981; text-align: center; color: #065f46;">🌟 OPORTUNIDADES (de fuera)</th>
         </tr>
         <tr>
-            <td style="padding: 1rem; border: 2px solid #3b82f6; vertical-align: top; min-height: 150px;">
+            <td style="padding: 1rem; border: 2px solid #3b82f6; vertical-align: top;">
                 <ul style="margin: 0; padding-left: 1.25rem;">
-                    <li>Alumnado motivado y creativo</li>
-                    <li>Apoyo del profesorado</li>
-                    <li>Instalaciones del centro disponibles</li>
-                    <li>[Añade más...]</li>
+                    <li>Estáis motivados</li>
+                    <li>Los profes os ayudan</li>
+                    <li>Tenéis el salón del centro</li>
                 </ul>
             </td>
-            <td style="padding: 1rem; border: 2px solid #10b981; vertical-align: top; min-height: 150px;">
+            <td style="padding: 1rem; border: 2px solid #10b981; vertical-align: top;">
                 <ul style="margin: 0; padding-left: 1.25rem;">
-                    <li>Colaboración con empresas locales</li>
-                    <li>Possibles patrocinios de comercios</li>
-                    <li>Redes sociales para difusión gratuita</li>
-                    <li>[Añade más...]</li>
+                    <li>Tiendas del pueblo pueden ayudar</li>
+                    <li>Podéis usar redes sociales gratis</li>
+                    <li>Las familias quieren colaborar</li>
                 </ul>
             </td>
         </tr>
     </tbody>
 </table>
 
-<h4>Estrategias DAFO</h4>
+<h4>Ahora Te Toca a Ti:</h4>
 
-<p>Una vez completado el DAFO, define estrategias:</p>
+<ol>
+    <li><strong>Paso 1:</strong> Piensa en 2 cosas buenas de tu equipo</li>
+    <li><strong>Paso 2:</strong> Piensa en 2 cosas difíciles</li>
+    <li><strong>Paso 3:</strong> Escribe cómo podéis solucionar lo difícil</li>
+</ol>
 
-<table class="w-full border-collapse border border-slate-300 my-6">
-    <thead>
-        <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-2 text-left">Tipo</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Estrategia</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Ejemplo</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="border border-slate-300 px-4 py-2"><strong>FO</strong> (Fortalezas + Oportunidades)</td>
-            <td class="border border-slate-300 px-4 py-2">Usar fortalezas para aprovechar oportunidades</td>
-            <td class="border border-slate-300 px-4 py-2">Usar motivación del alumnado para buscar patrocinios</td>
-        </tr>
-        <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2"><strong>DO</strong> (Debilidades + Oportunidades)</td>
-            <td class="border border-slate-300 px-4 py-2">Superar debilidades usando oportunidades</td>
-            <td class="border border-slate-300 px-4 py-2">Pedir ayuda a empresas para compensar falta de experiencia</td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-2"><strong>FA</strong> (Fortalezas + Amenazas)</td>
-            <td class="border border-slate-300 px-4 py-2">Usar fortalezas para evitar amenazas</td>
-            <td class="border border-slate-300 px-4 py-2">Usar apoyo del profesorado para anticipar imprevistos</td>
-        </tr>
-        <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2"><strong>DA</strong> (Debilidades + Amenazas)</td>
-            <td class="border border-slate-300 px-4 py-2">Minimizar debilidades y evitar amenazas</td>
-            <td class="border border-slate-300 px-4 py-2">Empezar pronto para compensar tiempo limitado</td>
-        </tr>
-    </tbody>
-</table>
+<h3>3.2. ¿Tenemos Suficiente Dinero? 💰</h3>
 
-<h3>3.2. Viabilidad Económica 💰</h3>
+<div class="callout callout-info">
+    <div class="callout-title">
+        <span>📌</span>
+        <span>¿Qué vamos a hacer?</span>
+    </div>
+    <p>Vas a calcular cuánto dinero necesitáis y de dónde lo vais a sacar.</p>
+</div>
 
-<h4>Estructura de Costes Estimada</h4>
+<h4>📝 Ejemplo Resuelto:</h4>
 
-<p>A continuación, una <strong>plantilla de presupuesto</strong> que deberás completar con datos reales:</p>
+<p>Esto es lo que podríais gastar:</p>
 
-<h4 style="margin-top:0; color:#1e40af;">Presupuesto de Ingresos</h4>
+<h4>Dinero que Entra</h4>
 
 <table class="w-full border-collapse border border-slate-300 my-6">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-2 text-left">Concepto</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Cantidad</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Precio Unitario</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">De dónde</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Cuántos</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Cuánto cada uno</th>
             <th class="border border-slate-300 px-4 py-2 text-left">Total</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Aportación familias (graduandos ESO)</td>
-            <td class="border border-slate-300 px-4 py-2">~60</td>
+            <td class="border border-slate-300 px-4 py-2">Familias (graduandos ESO)</td>
+            <td class="border border-slate-300 px-4 py-2">60</td>
             <td class="border border-slate-300 px-4 py-2">15€</td>
             <td class="border border-slate-300 px-4 py-2">900€</td>
         </tr>
         <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Aportación familias (graduandos FPB)</td>
-            <td class="border border-slate-300 px-4 py-2">~20</td>
+            <td class="border border-slate-300 px-4 py-2">Familias (graduandos FPB)</td>
+            <td class="border border-slate-300 px-4 py-2">20</td>
             <td class="border border-slate-300 px-4 py-2">15€</td>
             <td class="border border-slate-300 px-4 py-2">300€</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Patrocinios/Donaciones</td>
-            <td class="border border-slate-300 px-4 py-2">-</td>
-            <td class="border border-slate-300 px-4 py-2">-</td>
-            <td class="border border-slate-300 px-4 py-2">[Investigar]</td>
-        </tr>
-        <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Venta de entradas (familiares)</td>
-            <td class="border border-slate-300 px-4 py-2">~150</td>
+            <td class="border border-slate-300 px-4 py-2">Entradas para familiares</td>
+            <td class="border border-slate-300 px-4 py-2">150</td>
             <td class="border border-slate-300 px-4 py-2">5€</td>
             <td class="border border-slate-300 px-4 py-2">750€</td>
         </tr>
         <tr class="font-bold bg-slate-100">
-            <td class="border border-slate-300 px-4 py-2" colspan="3">TOTAL INGRESOS</td>
-            <td class="border border-slate-300 px-4 py-2">_______€</td>
+            <td class="border border-slate-300 px-4 py-2" colspan="3">TOTAL DINERO QUE ENTRA</td>
+            <td class="border border-slate-300 px-4 py-2">1.950€</td>
         </tr>
     </tbody>
 </table>
 
-<h4 style="margin-top:0; color:#1e40af;">Presupuesto de Gastos</h4>
+<h4>Dinero que Sale</h4>
 
 <table class="w-full border-collapse border border-slate-300 my-6">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-2 text-left">Concepto</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Cantidad</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Precio Unitario</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">En qué</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Cuántos</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Cuánto cada uno</th>
             <th class="border border-slate-300 px-4 py-2 text-left">Total</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Alquiler de birretes y estolas</td>
+            <td class="border border-slate-300 px-4 py-2">Birretes y estolas</td>
             <td class="border border-slate-300 px-4 py-2">80</td>
             <td class="border border-slate-300 px-4 py-2">8€</td>
             <td class="border border-slate-300 px-4 py-2">640€</td>
         </tr>
         <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Impresión de diplomas</td>
+            <td class="border border-slate-300 px-4 py-2">Diplomas</td>
             <td class="border border-slate-300 px-4 py-2">80</td>
             <td class="border border-slate-300 px-4 py-2">2€</td>
             <td class="border border-slate-300 px-4 py-2">160€</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Decoración del espacio</td>
+            <td class="border border-slate-300 px-4 py-2">Decoración</td>
             <td class="border border-slate-300 px-4 py-2">1</td>
             <td class="border border-slate-300 px-4 py-2">150€</td>
             <td class="border border-slate-300 px-4 py-2">150€</td>
         </tr>
         <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Equipamiento de sonido</td>
+            <td class="border border-slate-300 px-4 py-2">Sonido</td>
             <td class="border border-slate-300 px-4 py-2">1</td>
             <td class="border border-slate-300 px-4 py-2">100€</td>
             <td class="border border-slate-300 px-4 py-2">100€</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Fotógrafo profesional</td>
+            <td class="border border-slate-300 px-4 py-2">Fotógrafo</td>
             <td class="border border-slate-300 px-4 py-2">1</td>
             <td class="border border-slate-300 px-4 py-2">200€</td>
             <td class="border border-slate-300 px-4 py-2">200€</td>
         </tr>
         <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Merienda/Brindis</td>
+            <td class="border border-slate-300 px-4 py-2">Brindis</td>
             <td class="border border-slate-300 px-4 py-2">150</td>
             <td class="border border-slate-300 px-4 py-2">3€</td>
             <td class="border border-slate-300 px-4 py-2">450€</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Invitaciones y programas</td>
+            <td class="border border-slate-300 px-4 py-2">Invitaciones</td>
             <td class="border border-slate-300 px-4 py-2">150</td>
             <td class="border border-slate-300 px-4 py-2">0,50€</td>
             <td class="border border-slate-300 px-4 py-2">75€</td>
         </tr>
         <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Imprevistos (10%)</td>
+            <td class="border border-slate-300 px-4 py-2">Por si acaso (10%)</td>
             <td class="border border-slate-300 px-4 py-2">-</td>
             <td class="border border-slate-300 px-4 py-2">-</td>
-            <td class="border border-slate-300 px-4 py-2">[Calcular]</td>
+            <td class="border border-slate-300 px-4 py-2">175€</td>
         </tr>
         <tr class="font-bold bg-slate-100">
-            <td class="border border-slate-300 px-4 py-2" colspan="3">TOTAL GASTOS</td>
-            <td class="border border-slate-300 px-4 py-2">_______€</td>
+            <td class="border border-slate-300 px-4 py-2" colspan="3">TOTAL DINERO QUE SALE</td>
+            <td class="border border-slate-300 px-4 py-2">1.950€</td>
         </tr>
     </tbody>
 </table>
 
-<h4 style="margin-top:0; color:#1e40af;">Balance Final</h4>
+<h4>¿Cuánto Dinero Nos Queda?</h4>
 
 <div class="grid grid-cols-3 gap-4 my-8">
     <div class="p-6 bg-blue-50 rounded-xl border border-blue-200 text-center">
-        <div style="font-size: 0.9rem; color: #1e40af; margin-bottom: 0.5rem;">Total Ingresos</div>
-        <div style="font-size: 2rem; font-weight: 800; color: #1e40af;">_____€</div>
+        <div style="font-size: 0.9rem; color: #1e40af; margin-bottom: 0.5rem;">Entra</div>
+        <div style="font-size: 2rem; font-weight: 800; color: #1e40af;">1.950€</div>
     </div>
     <div class="p-6 bg-red-50 rounded-xl border border-red-200 text-center">
-        <div style="font-size: 0.9rem; color: #991b1b; margin-bottom: 0.5rem;">Total Gastos</div>
-        <div style="font-size: 2rem; font-weight: 800; color: #991b1b;">_____€</div>
+        <div style="font-size: 0.9rem; color: #991b1b; margin-bottom: 0.5rem;">Sale</div>
+        <div style="font-size: 2rem; font-weight: 800; color: #991b1b;">1.950€</div>
     </div>
     <div class="p-6 bg-green-50 rounded-xl border border-green-200 text-center">
-        <div style="font-size: 0.9rem; color: #166534; margin-bottom: 0.5rem;">Balance</div>
-        <div style="font-size: 2rem; font-weight: 800; color: #166534;">_____€</div>
+        <div style="font-size: 0.9rem; color: #166534; margin-bottom: 0.5rem;">Sobra</div>
+        <div style="font-size: 2rem; font-weight: 800; color: #166534;">0€</div>
     </div>
 </div>
 
 <div class="callout callout-warning">
     <div class="callout-title">
         <span>⚠️</span>
-        <span>Regla de Oro Presupuestaria</span>
+        <span>¡Atención!</span>
     </div>
-    <p class="mb-0"><strong>Los ingresos deben ser ≥ que los gastos.</strong> Si hay déficit, debéis: (1) reducir gastos, (2) aumentar ingresos, o (3) buscar financiación adicional.</p>
+    <p class="mb-0"><strong>Debe entrar tanto como sale.</strong> Si sale más, debéis: (1) gastar menos, (2) pedir más dinero, o (3) buscar más formas de ganar dinero.</p>
 </div>
 
-<h4>Indicadores de Viabilidad Económica</h4>
+<h4>Ahora Te Toca a Ti:</h4>
+
+<ol>
+    <li><strong>Paso 1:</strong> Haz una lista de todo lo que necesitáis comprar</li>
+    <li><strong>Paso 2:</strong> Pregunta cuánto cuesta cada cosa</li>
+    <li><strong>Paso 3:</strong> Suma todo el dinero que sale</li>
+    <li><strong>Paso 4:</strong> Calcula cuánto dinero entra</li>
+    <li><strong>Paso 5:</strong> Resta: entra - sale = ¿sobra o falta?</li>
+</ol>
+
+<div class="callout callout-success">
+    <div class="callout-title">
+        <span>✅</span>
+        <span>Así Sabes que Está Bien:</span>
+    </div>
+    <ul>
+        <li>El dinero que entra es igual o mayor que el que sale</li>
+        <li>Tienes todos los gastos apuntados</li>
+        <li>Has puesto dinero "por si acaso"</li>
+    </ul>
+</div>
+
+<h3>3.3. ¿Tenemos lo que Necesitamos? ⚙️</h3>
+
+<h4>Personas que Ayudan</h4>
 
 <table class="w-full border-collapse border border-slate-300 my-6">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-2 text-left">Indicador</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Fórmula</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Valor Objetivo</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Quién</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Qué hace</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Está disponible?</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-2"><strong>Superávit/Déficit</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Ingresos - Gastos</td>
-            <td class="border border-slate-300 px-4 py-2">≥ 0€</td>
+            <td class="border border-slate-300 px-4 py-2">Profesor tutor</td>
+            <td class="border border-slate-300 px-4 py-2">Ayuda y supervisa</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
         </tr>
         <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2"><strong>Coste por Graduando</strong></td>
-            <td class="border border-slate-300 px-4 py-2">Gastos Totales / Nº Graduandos</td>
-            <td class="border border-slate-300 px-4 py-2">&lt; 20€</td>
+            <td class="border border-slate-300 px-4 py-2">Alumnos de FPB</td>
+            <td class="border border-slate-300 px-4 py-2">Organizan todo</td>
+            <td class="border border-slate-300 px-4 py-2">[Cuántos]</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-2"><strong>Margen de Seguridad</strong></td>
-            <td class="border border-slate-300 px-4 py-2">(Ingresos - Gastos) / Ingresos × 100</td>
-            <td class="border border-slate-300 px-4 py-2">&gt; 10%</td>
+            <td class="border border-slate-300 px-4 py-2">Alumnos de 4º ESO</td>
+            <td class="border border-slate-300 px-4 py-2">Ayudan</td>
+            <td class="border border-slate-300 px-4 py-2">[Cuántos]</td>
+        </tr>
+        <tr class="bg-slate-50">
+            <td class="border border-slate-300 px-4 py-2">Familias</td>
+            <td class="border border-slate-300 px-4 py-2">Colaboran</td>
+            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
         </tr>
     </tbody>
 </table>
 
-<h3>3.3. Viabilidad Técnica y Organizativa ⚙️</h3>
-
-<h4>Recursos Disponibles</h4>
-
-<p>Completa el siguiente inventario:</p>
-
-<h4 style="margin-top:0; color:#1e40af;">Recursos Humanos</h4>
+<h4>Cosas que Tenéis en el Centro</h4>
 
 <table class="w-full border-collapse border border-slate-300 my-6">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-2 text-left">Rol</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">¿Quién?</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">¿Disponibilidad?</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Qué</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Está en el centro?</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Hay que reservar?</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Coordinador/a del proyecto</td>
-            <td class="border border-slate-300 px-4 py-2">Profesor/a tutor/a</td>
-            <td class="border border-slate-300 px-4 py-2">[Confirmar]</td>
-        </tr>
-        <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Equipo organizador (alumnado)</td>
-            <td class="border border-slate-300 px-4 py-2">2º FPB Servicios Administrativos</td>
-            <td class="border border-slate-300 px-4 py-2">[Nº personas]</td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-2">Colaboradores (4º ESO)</td>
-            <td class="border border-slate-300 px-4 py-2">Alumnado 4º ESO</td>
-            <td class="border border-slate-300 px-4 py-2">[Nº personas]</td>
-        </tr>
-        <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Voluntarios (familias)</td>
-            <td class="border border-slate-300 px-4 py-2">AMPA / Familias</td>
-            <td class="border border-slate-300 px-4 py-2">[Confirmar]</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4 style="margin-top:0; color:#1e40af;">Recursos Materiales</h4>
-
-<table class="w-full border-collapse border border-slate-300 my-6">
-    <thead>
-        <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-2 text-left">Recurso</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">¿Disponible en el centro?</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">¿Necesita reserva?</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="border border-slate-300 px-4 py-2">Salón de Actos / Gimnasio</td>
+            <td class="border border-slate-300 px-4 py-2">Salón de Actos</td>
             <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
             <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
         </tr>
@@ -350,7 +300,7 @@ window.sectionsContent.viabilidad = `
             <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Proyector/Pantalla</td>
+            <td class="border border-slate-300 px-4 py-2">Proyector</td>
             <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
             <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
         </tr>
@@ -359,133 +309,91 @@ window.sectionsContent.viabilidad = `
             <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
             <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
         </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-2">Ordenadores/Impresora</td>
-            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
-            <td class="border border-slate-300 px-4 py-2">[Sí/No]</td>
-        </tr>
     </tbody>
 </table>
 
-<h4 style="margin-top:0; color:#1e40af;">Recursos Temporales</h4>
+<h3>3.4. ¿Qué Puede Salir Mal? ⚠️</h3>
 
 <div class="callout callout-info">
     <div class="callout-title">
-        <span>📅</span>
-        <span>Cronograma Recomendado</span>
+        <span>📌</span>
+        <span>¿Qué vamos a hacer?</span>
     </div>
-    <table class="w-full mt-4">
-        <thead>
-            <tr class="bg-blue-50">
-                <th class="px-4 py-2 text-left text-blue-900">Mes</th>
-                <th class="px-4 py-2 text-left text-blue-900">Tareas Principales</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="border-b border-slate-200">
-                <td class="px-4 py-2 font-semibold">Marzo</td>
-                <td class="px-4 py-2">Constitución del equipo, investigación, primeros presupuestos</td>
-            </tr>
-            <tr class="border-b border-slate-200 bg-slate-50">
-                <td class="px-4 py-2 font-semibold">Abril</td>
-                <td class="px-4 py-2">Confirmar fecha y espacio, abrir reservas, pedir autorizaciones</td>
-            </tr>
-            <tr class="border-b border-slate-200">
-                <td class="px-4 py-2 font-semibold">Mayo</td>
-                <td class="px-4 py-2">Cerrar proveedores, diseñar invitaciones, confirmar asistentes</td>
-            </tr>
-            <tr class="border-b border-slate-200 bg-slate-50">
-                <td class="px-4 py-2 font-semibold">Junio</td>
-                <td class="px-4 py-2">Preparación final, ensayo general, celebración del evento</td>
-            </tr>
-        </tbody>
-    </table>
+    <p>Vas a pensar en lo que puede salir mal y cómo evitarlo.</p>
 </div>
 
-<h3>3.4. Evaluación de Riesgos ⚠️</h3>
-
-<h4>Matriz de Riesgos</h4>
-
-<p>Identifica y valora los posibles riesgos del proyecto:</p>
+<h4>📝 Ejemplo Resuelto:</h4>
 
 <table class="w-full border-collapse border border-slate-300 my-6">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-2 text-left">Riesgo</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Probabilidad (1-5)</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Impacto (1-5)</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Puntuación</th>
-            <th class="border border-slate-300 px-4 py-2 text-left">Medidas Preventivas</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Qué puede pasar</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Qué tan probable? (1-5)</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">¿Qué tan grave? (1-5)</th>
+            <th class="border border-slate-300 px-4 py-2 text-left">Cómo evitarlo</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Lluvia (si es al aire libre)</td>
+            <td class="border border-slate-300 px-4 py-2">Lluvia</td>
             <td class="border border-slate-300 px-4 py-2">2</td>
             <td class="border border-slate-300 px-4 py-2">5</td>
-            <td class="border border-slate-300 px-4 py-2">10</td>
-            <td class="border border-slate-300 px-4 py-2">Tener espacio interior alternativo</td>
+            <td class="border border-slate-300 px-4 py-2">Tener sitio dentro por si acaso</td>
         </tr>
         <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Baja asistencia de familias</td>
-            <td class="border border-slate-300 px-4 py-2">3</td>
+            <td class="border border-slate-300 px-4 py-2">No viene la gente</td>
+            <td class="border border-slate-300 px-4 py-2">2</td>
             <td class="border border-slate-300 px-4 py-2">4</td>
-            <td class="border border-slate-300 px-4 py-2">12</td>
-            <td class="border border-slate-300 px-4 py-2">Recordatorios múltiples, RSVP obligatorio</td>
+            <td class="border border-slate-300 px-4 py-2">Recordar varias veces la fecha</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Proveedor no se presenta</td>
+            <td class="border border-slate-300 px-4 py-2">El proveedor falla</td>
             <td class="border border-slate-300 px-4 py-2">2</td>
             <td class="border border-slate-300 px-4 py-2">5</td>
-            <td class="border border-slate-300 px-4 py-2">10</td>
-            <td class="border border-slate-300 px-4 py-2">Tener proveedor de respaldo</td>
+            <td class="border border-slate-300 px-4 py-2">Tener otro proveedor por si acaso</td>
         </tr>
         <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Exceso de presupuesto</td>
+            <td class="border border-slate-300 px-4 py-2">Gastar de más</td>
             <td class="border border-slate-300 px-4 py-2">3</td>
             <td class="border border-slate-300 px-4 py-2">4</td>
-            <td class="border border-slate-300 px-4 py-2">12</td>
-            <td class="border border-slate-300 px-4 py-2">Control semanal de gastos, 10% colchón</td>
+            <td class="border border-slate-300 px-4 py-2">Apuntar todo cada semana</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-2">Problemas técnicos (sonido)</td>
+            <td class="border border-slate-300 px-4 py-2">El sonido no funciona</td>
             <td class="border border-slate-300 px-4 py-2">3</td>
             <td class="border border-slate-300 px-4 py-2">3</td>
-            <td class="border border-slate-300 px-4 py-2">9</td>
-            <td class="border border-slate-300 px-4 py-2">Ensayo previo, tener equipo de reserva</td>
-        </tr>
-        <tr class="bg-slate-50">
-            <td class="border border-slate-300 px-4 py-2">Conflicto con otra actividad del centro</td>
-            <td class="border border-slate-300 px-4 py-2">2</td>
-            <td class="border border-slate-300 px-4 py-2">4</td>
-            <td class="border border-slate-300 px-4 py-2">8</td>
-            <td class="border border-slate-300 px-4 py-2">Coordinar con secretaría del centro</td>
+            <td class="border border-slate-300 px-4 py-2">Probar antes del evento</td>
         </tr>
     </tbody>
 </table>
 
-<p><strong>Escala de Probabilidad e Impacto:</strong></p>
+<p><strong>Escala:</strong></p>
 <ul class="my-4 space-y-1">
-    <li>1 = Muy bajo/a</li>
-    <li>2 = Bajo/a</li>
-    <li>3 = Medio</li>
-    <li>4 = Alto</li>
-    <li>5 = Muy alto/a</li>
-</ul>
-
-<p><strong>Puntuación = Probabilidad × Impacto</strong></p>
-
-<ul class="my-4 space-y-1">
-    <li><strong>15-25 puntos</strong>: Riesgo crítico - Acción inmediata requerida</li>
-    <li><strong>8-14 puntos</strong>: Riesgo moderado - Plan de contingencia recomendado</li>
-    <li><strong>1-7 puntos</strong>: Riesgo bajo - Monitorizar</li>
+    <li>1 = Muy poco probable o poco grave</li>
+    <li>2 = Poco probable o poco grave</li>
+    <li>3 = Normal</li>
+    <li>4 = Probable o grave</li>
+    <li>5 = Muy probable o muy grave</li>
 </ul>
 
 <div class="callout callout-success">
     <div class="callout-title">
         <span>✅</span>
-        <span>Conclusión de Viabilidad</span>
+        <span>Así Sabes que Está Bien:</span>
     </div>
-    <p class="mb-0">Tras completar este análisis, redacta una conclusión de <strong>máximo 10 líneas</strong> indicando si consideras que el proyecto es viable y qué condiciones deben cumplirse para asegurar su éxito.</p>
+    <ul>
+        <li>Has pensado en al menos 5 cosas que pueden salir mal</li>
+        <li>Sabes cómo evitar cada problema</li>
+        <li>Tienes un plan B para lo más grave</li>
+    </ul>
 </div>
+
+<h4>Ahora Te Toca a Ti:</h4>
+
+<ol>
+    <li><strong>Paso 1:</strong> Piensa en 3 cosas que pueden salir mal</li>
+    <li><strong>Paso 2:</strong> Pon qué tan probables son (1-5)</li>
+    <li><strong>Paso 3:</strong> Pon qué tan graves son (1-5)</li>
+    <li><strong>Paso 4:</strong> Escribe cómo puedes evitar cada una</li>
+</ol>
 `;
