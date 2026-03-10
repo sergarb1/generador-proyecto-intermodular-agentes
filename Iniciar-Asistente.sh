@@ -133,57 +133,16 @@ fi
 # Guardar la selección en config.ini
 save_config_tool "$tool"
 
-# Mensaje inicial para la IA
-initial_prompt="Hola! Soy el asistente de generacion de proyectos intermodulares del IES Serra Perenxisa.
-
-Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
-
-## 1. PREGUNTAME primero (de uno en uno):
-   - Que familia profesional? (Informatica o Administracion)
-   - Que ciclo formativo? (ASIR/SMR/DAM/DAW o GM-ADM/GS-ADMF/GS-ASID)
-   - Que curso? (Primero 25h o Segundo 96h)
-   - Alguna tematica concreta? (o deja que elijas tu)
-
-## 2. Una vez tengas los datos, GENERA el proyecto completo usando:
-   - La plantilla en: plantilla/index.html
-   - Los agentes en: agents/
-     * Para Informatica: agents/03-primer-curso.md o agents/04-segundo-curso.md
-     * Para Administracion: agents/05-administracion.md
-
-## 3. El proyecto debe:
-   - Tener descripcion completa del contexto y problematica
-   - Incluir sugerencias para que el alumnado complete el resto
-   - Usar lenguaje inclusivo (profesorado/alumnado)
-
-## 4. GUARDA el proyecto en esta estructura:
-   proyectos/
-   ├── 01-Informatica/ (o 02-Administracion)
-   │   └── [CICLO]/ (ASIR, DAM, GM-ADM, etc.)
-   │       └── [CURSO]/ (Primero o Segundo)
-   │           └── [CARPETA_PROYECTO]/
-   │               ├── proyecto.html
-   │               ├── logo.png (copiado desde plantilla/)
-   │               └── images/ (si hay imagenes)
-
-   Ejemplo: proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-APP-GESTION/
-
-## 5. Para guardar correctamente:
-   a) Crea la carpeta: proyectos/[FAMILIA]/[CICLO]/[CURSO]/[NOMBRE_PROYECTO]/
-   b) Copia plantilla/logo.png a esa carpeta
-   c) Genera el HTML ahi dentro como 'proyecto.html'
-   d) Si descargas imagenes, guardalas en 'images/' dentro de la carpeta
-
-   El nombre de la carpeta debe ser descriptivo:
-   - SEGUNDO-DAM-APP-GESTION
-   - PRIMER-ASIR-CLOUD-BASICO
-   - SEGUNDO-GS-ADMF-PLAN-EMPRESA
-
-Empezamos? Preguntame los datos del proyecto (de uno en uno)."
-
-# Guardar el prompt en el directorio del script para referencia
-echo -e "\e[90m[DEBUG] Guardando prompt en $PROMPT_PATH\e[0m"
-echo "$initial_prompt" > "$PROMPT_PATH"
-echo -e "\e[90m[DEBUG] Prompt guardado en $PROMPT_PATH\e[0m"
+# Leer el prompt inicial desde el archivo prompt-inicial.txt
+# Esto permite que cualquier modificacion en el archivo se refleje automaticamente
+echo -e "\e[90m[DEBUG] Leyendo prompt desde $PROMPT_PATH\e[0m"
+if [ -f "$PROMPT_PATH" ]; then
+    initial_prompt=$(cat "$PROMPT_PATH")
+    echo -e "\e[90m[DEBUG] Prompt cargado correctamente desde prompt-inicial.txt\e[0m"
+else
+    echo -e "\e[33m[WARNING] No se encontro prompt-inicial.txt, usando prompt por defecto\e[0m"
+    initial_prompt="Hola! Soy el asistente de generacion de proyectos intermodulares del IES Serra Perenxisa. Por favor, ayudame a generar un proyecto intermodular."
+fi
 
 echo ""
 echo -e "\e[36mIniciando $tool con prompt interactivo...\e[0m"

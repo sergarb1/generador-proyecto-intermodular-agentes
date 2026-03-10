@@ -1,6 +1,6 @@
 # 💎 Generador de Proyectos Intermodulares "Premium Pro"
 
-Este sistema automatiza la creación de proyectos intermodulares para Ciclos Formativos (Informática y Administración), siguiendo un enfoque **pedagógico avanzado** y un diseño visual **ejecutivo de alta gama**.
+Este sistema automatiza la creación de proyectos intermodulares para Ciclos Formativos (**Informática**, **Administración y Gestión**, y **Comercio y Marketing**), siguiendo un enfoque **pedagógico avanzado** y un diseño visual **ejecutivo de alta gama**.
 
 ## 🌐 Página Web Oficial
 
@@ -33,8 +33,8 @@ La aplicación está diseñada para ser utilizada de forma interactiva a través
     ./Iniciar-Asistente.ps1
     ```
 2.  El asistente detectará automáticamente tu entorno (Gemini o Qwen) y te pedirá los datos del proyecto uno a uno:
-    - Familia profesional (Informática o Administración).
-    - Ciclo formativo (ASIR, DAM, DAW, SMR, etc.).
+    - Familia profesional (Informática, Administración o Comercio).
+    - Ciclo formativo (ASIR, DAM, DAW, SMR, GM-ADM, GS-ADMF, GS-ASID, Servicios Comerciales, etc.).
     - Curso (Primero o Segundo).
     - Temática deseada.
 3.  La IA generará la estructura de carpetas y los archivos de datos necesarios dentro de la carpeta `proyectos/`.
@@ -61,6 +61,8 @@ El proyecto incluye una suite de agentes especializados que coordinan la generac
 - `01-experto-proyectos`: Consultor de estrategia y negocio.
 - `02-experto-informatica`: Especialista técnico para la familia de Informática.
 - `05-experto-administracion`: Especialista para la familia de Administración y Gestión.
+- `06-experto-comercio`: Especialista para la familia de Comercio y Marketing.
+- `03-primer-curso` y `04-segundo-curso`: Adaptan el contenido al nivel del curso.
 
 ---
 **Versión:** 3.0 (Premium Pro Edition)  

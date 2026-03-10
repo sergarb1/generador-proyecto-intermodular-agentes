@@ -112,76 +112,33 @@ if ($isQwen) {
 # Guardar la seleccion en config.ini
 Save-ConfigTool $tool
 
-# Mensaje inicial para la IA
-$initialPrompt = @"
-Hola! Soy el asistente de generacion de proyectos intermodulares del IES Serra Perenxisa.
-
-Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
-
-## 1. PREGUNTAME primero (de uno en uno):
-   - Que familia profesional? (Informatica o Administracion)
-   - Que ciclo formativo? (ASIR/SMR/DAM/DAW o GM-ADM/GS-ADMF/GS-ASID)
-   - Que curso? (Primero 25h o Segundo 96h)
-   - Alguna tematica concreta? (o deja que elijas tu)
-
-## 2. Una vez tengas los datos, GENERA el proyecto completo usando:
-   - La plantilla en: plantilla/index.html
-   - Los agentes en: agents/
-     * Para Informatica: agents/03-primer-curso.md o agents/04-segundo-curso.md
-     * Para Administracion: agents/05-administracion.md
-
-## 3. El proyecto debe:
-   - Tener descripcion completa del contexto y problematica
-   - Incluir sugerencias para que el alumnado complete el resto
-   - Usar lenguaje inclusivo (profesorado/alumnado)
-
-## 4. GUARDA el proyecto en esta estructura:
-   proyectos/
-   ├── 01-Informatica/ (o 02-Administracion)
-   │   └── [CICLO]/ (ASIR, DAM, GM-ADM, etc.)
-   │       └── [CURSO]/ (Primero o Segundo)
-   │           └── [CARPETA_PROYECTO]/
-   │               ├── proyecto.html
-   │               ├── logo.png (copiado desde plantilla/)
-   │               └── images/ (si hay imagenes)
-
-   Ejemplo: proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-APP-GESTION/
-
-## 5. Para guardar correctamente:
-   a) Crea la carpeta: proyectos/[FAMILIA]/[CICLO]/[CURSO]/[NOMBRE_PROYECTO]/
-   b) Copia plantilla/logo.png a esa carpeta
-   c) Genera el HTML ahi dentro como 'proyecto.html'
-   d) Si descargas imagenes, guardalas en 'images/' dentro de la carpeta
-
-   El nombre de la carpeta debe ser descriptivo:
-   - SEGUNDO-DAM-APP-GESTION
-   - PRIMER-ASIR-CLOUD-BASICO
-   - SEGUNDO-GS-ADMF-PLAN-EMPRESA
-
-Empezamos? Preguntame los datos del proyecto (de uno en uno).
-"@
-
-# Guardar el prompt en el directorio del script para referencia
-Write-Host "[DEBUG] Guardando prompt en $promptPath" -ForegroundColor DarkGray
-$initialPrompt | Set-Content $promptPath -Encoding UTF8
-Write-Host "[DEBUG] Prompt guardado en $promptPath" -ForegroundColor DarkGray
+# Leer el prompt inicial desde el archivo prompt-inicial.txt
+# Esto permite que cualquier modificacion en el archivo se refleje automaticamente
+Write-Host "[DEBUG] Leyendo prompt desde $promptPath" -ForegroundColor DarkGray
+if (Test-Path $promptPath) {
+    $initialPrompt = Get-Content $promptPath -Raw -Encoding UTF8
+    Write-Host "[DEBUG] Prompt cargado correctamente desde prompt-inicial.txt" -ForegroundColor DarkGray
+} else {
+    Write-Host "[WARNING] No se encontro prompt-inicial.txt, usando prompt por defecto" -ForegroundColor Yellow
+    $initialPrompt = "Hola! Soy el asistente de generacion de proyectos intermodulares del IES Serra Perenxisa. Por favor, ayudame a generar un proyecto intermodular."
+}
 
 Write-Host ""
 Write-Host "Iniciando $tool con prompt interactivo..." -ForegroundColor Cyan
 Write-Host ""
 
-# Mensaje informativo para la IA sobre el intérprete
+# Mensaje informativo para la IA sobre el interprete
 $interpreterInfo = @"
 
 ---
-ℹ️ INFORMACIÓN DEL INTÉRPRETE:
-Este script se está ejecutando en PowerShell ($PSVersionTable.PSVersion).
+ℹ️ INFORMACION DEL INTERPRETE:
+Este script se esta ejecutando en PowerShell (`$PSVersionTable.PSVersion).
 Los comandos de shell deben usar sintaxis PowerShell (no bash).
 ---
 
 "@
 
-# Combinar el prompt inicial con la información del intérprete
+# Combinar el prompt inicial con la informacion del interprete
 $fullPrompt = $initialPrompt + $interpreterInfo
 
 # Iniciar la herramienta seleccionada en modo interactivo con el prompt y YOLO
