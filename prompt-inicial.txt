@@ -21,13 +21,13 @@ Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
 
 ## 4. GUARDA el proyecto en esta estructura:
    proyectos/
-   â”œâ”€â”€ 01-Informatica/ (o 02-Administracion)
-   â”‚   â””â”€â”€ [CICLO]/ (ASIR, DAM, GM-ADM, etc.)
-   â”‚       â””â”€â”€ [CURSO]/ (Primero o Segundo)
-   â”‚           â””â”€â”€ [CARPETA_PROYECTO]/
-   â”‚               â”œâ”€â”€ proyecto.html
-   â”‚               â”œâ”€â”€ logo.png (copiado desde plantilla/)
-   â”‚               â””â”€â”€ images/ (si hay imagenes)
+   --- 01-Informatica/ (o 02-Administracion)
+   -‚   --- [CICLO]/ (ASIR, DAM, GM-ADM, etc.)
+   -‚       --- [CURSO]/ (Primero o Segundo)
+   -‚           --- [CARPETA_PROYECTO]/
+   -‚               --- proyecto.html
+   -‚               --- logo.png (copiado desde plantilla/)
+   -‚               --- images/ (si hay imagenes)
 
    Ejemplo: proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-APP-GESTION/
 
