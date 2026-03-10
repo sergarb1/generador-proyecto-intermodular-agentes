@@ -105,7 +105,7 @@ window.sectionsContent.bibliografia = `
 ### Aprendizaje Basado en Proyectos (ABP)
 
 * **Título:** "El Aprendizaje Basado en Proyectos en FP: Una Experiencia Exitosa"
-* **Autor:** García, M. & López, R.
+* **Autor:** García, M. y López, R.
 * **Revista:** Revista de Educación y Formación Profesional
 * **Año:** 2023
 * **Enlace:** revistafp.es
@@ -172,18 +172,18 @@ window.sectionsContent.bibliografia = `
 
 ### Formato APA
 
-```
-Apellido, N. (2026). Organización y Gestión de Graduación Escolar. 
-Proyecto Intermodular FP Básica Servicios Administrativos. 
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem;">
+Apellido, N. (2026). Organización y Gestión de Graduación Escolar.
+Proyecto Intermodular FP Básica Servicios Administrativos.
 IES Serra Perenxisa. [Documento no publicado]
-```
+</div>
 
 ### Formato MLA
 
-```
-Apellido, Nombre. "Organización y Gestión de Graduación Escolar." 
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem;">
+Apellido, Nombre. "Organización y Gestión de Graduación Escolar."
 Proyecto Intermodular, IES Serra Perenxisa, 2026.
-```
+</div>
 
 <div class="callout callout-info">
     <div class="callout-title">

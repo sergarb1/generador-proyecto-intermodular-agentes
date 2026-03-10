@@ -182,7 +182,7 @@ Puntuad como equipo cada criterio:
 
 ### Acta de Cierre
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 ACTA DE CIERRE DEL PROYECTO
 GRADUACIÓN ESCOLAR 2026
 IES SERRA PERENXISA
@@ -191,9 +191,9 @@ En [Población], a [FECHA]
 
 REUNIDOS:
 
-• D./Dña. [Nombre del Coordinador/a], como Coordinador/a del proyecto
-• D./Dña. [Nombre del Representante del Alumnado], como representante del equipo organizador
-• El resto del alumnado de 2º FPB Servicios Administrativos
+- D./Dña. [Nombre del Coordinador/a], como Coordinador/a del proyecto
+- D./Dña. [Nombre del Representante del Alumnado], como representante del equipo organizador
+- El resto del alumnado de 2º FPB Servicios Administrativos
 
 EXPONEN:
 
@@ -202,9 +202,9 @@ EXPONEN:
 2. Que el evento se celebró el día [FECHA] con [Nº] graduandos y [Nº] asistentes.
 
 3. Que el balance económico final es de:
-   • Ingresos: ______€
-   • Gastos: ______€
-   • Superávit/Déficit: ______€
+   - Ingresos: ______euro
+   - Gastos: ______euro
+   - Superávit/Déficit: ______euro
 
 4. Que se ha elaborado el presente informe de evaluación.
 
@@ -219,7 +219,7 @@ Coordinador/a            Representante del Alumnado
 
 _____________________
 Director/a del Centro (Visto Bueno)
-```
+</div>
 
 ## 9.6. Agradecimientos 🙏
 

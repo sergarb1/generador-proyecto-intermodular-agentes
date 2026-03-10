@@ -57,7 +57,7 @@ Deberás crear los siguientes documentos. Usa procesador de textos (Word/Google 
 
 #### 1. Solicitud Formal a Dirección
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem; white-space: pre-wrap; background: #f8fafc;">
 A LA ATENCIÓN DEL EQUIPO DIRECTIVO DEL IES SERRA PERENXISA
 
 D./Dña. [Nombre del representante del alumnado], alumno/a de 2º FPB Servicios Administrativos,
@@ -78,15 +78,14 @@ Adjuntamos memoria del proyecto y presupuesto estimado.
 
 En [Población], a [FECHA]
 
-
 Fdo.: [Nombre y Apellidos]
     Representante del Alumnado
     2º FPB Servicios Administrativos
-```
+</div>
 
 #### 2. Carta a las Familias (Información del Proyecto)
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem; white-space: pre-wrap; background: #f8fafc;">
 ESTIMADAS FAMILIAS:
 
 Nos dirigimos a ustedes para informarles que el alumnado de 2º FPB Servicios Administrativos,
@@ -105,7 +104,7 @@ Atentamente,
 La Comisión Organizadora
 IES Serra Perenxisa
 [Contacto: email/teléfono]
-```
+</div>
 
 #### 3. Presupuesto para Familias
 
@@ -174,7 +173,7 @@ Asegúrate de que el evento es **accesible para todas las personas**:
 
 Diseña un flujograma que muestre el proceso completo. Aquí tienes una plantilla:
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; overflow-x: auto;">
 ┌─────────────────┐
 │ 1. Constitución │
 │    del Equipo   │
@@ -221,7 +220,7 @@ Diseña un flujograma que muestre el proceso completo. Aquí tienes una plantill
 │ 8. Evaluación   │
 │    y Cierre     │
 └─────────────────┘
-```
+</div>
 
 <div class="callout callout-success">
     <div class="callout-title">

@@ -14,26 +14,20 @@ window.sectionsContent.diseno = `
 
 Diseña un organigrama que muestre cómo se organiza el equipo. Aquí tienes una propuesta:
 
-```
-                    ┌─────────────────────────┐
-                    │   Coordinador/a General │
-                    │   (Profesor/a Tutor/a)  │
-                    └───────────┬─────────────┘
-                                │
-            ┌───────────────────┼───────────────────┐
-            │                   │                   │
-    ┌───────▼────────┐  ┌──────▼───────┐  ┌───────▼────────┐
-    │  Vicecoord.    │  │  Secretaria/ │  │  Responsable    │
-    │  (Alumno/a)    │  │  Tesorería   │  │  de Comunicación│
-    └───────┬────────┘  └──────┬───────┘  └───────┬────────┘
-            │                   │                   │
-    ┌───────┴────────┐          │           ┌───────┴────────┐
-    │                │          │           │                │
-┌───▼────┐    ┌─────▼────┐ ┌───▼────┐  ┌───▼────┐   ┌─────▼────┐
-│Logística│    │Protocolo │  │Compras │  │Diseño  │   │Redes y   │
-│         │    │y Evento  │  │        │  │Gráfico │   │Prensa    │
-└─────────┘    └──────────┘  └────────┘  └────────┘   └──────────┘
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.75rem; overflow-x: auto; text-align: center;">
+                    [Coordinador/a General]
+                    (Profesor/a Tutor/a)
+                            │
+        ┌───────────────────┼───────────────────┐
+        │                   │                   │
+  [Vicecoord.]      [Secretaria/]       [Responsable]
+  (Alumno/a)        [Tesorería]         [Comunicación]
+        │                   │                   │
+        │                   │                   │
+   ┌────┴────┐          ┌───┴───┐          ┌────┴────┐
+   │         │          │       │          │         │
+[Logística] [Protocolo] [Compras] [Diseño] [Redes/Prensa]
+</div>
 
 ### Descripción de Puestos y Responsabilidades
 
@@ -162,7 +156,7 @@ Crea una identidad visual para el evento:
 
 | Elemento | Descripción | Herramienta Recomendada |
 |----------|-------------|------------------------|
-| 🎨 **Logotipo** | Diseño con "Graduación 2026" y elementos del centro | Canva |
+| 🎨 **Logotipo** | Diseño con Graduación 2026 y elementos del centro | Canva |
 | 🎨 **Paleta de colores** | 2-3 colores principales (ej: azul dorado blanco) | Coolors.co |
 | 🎨 **Tipografía** | 1-2 fuentes para todos los materiales | Google Fonts |
 | 🎨 **Lema/Motto** | Frase inspiradora para la promoción | Lluvia de ideas |

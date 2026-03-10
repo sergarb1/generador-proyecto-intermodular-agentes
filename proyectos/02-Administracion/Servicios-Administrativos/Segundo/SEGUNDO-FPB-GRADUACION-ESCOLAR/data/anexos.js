@@ -10,7 +10,7 @@ window.sectionsContent.anexos = `
 
 ## Anexo 1: Modelo de Autorización de Participación 📝
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 AUTORIZACIÓN PARA PARTICIPACIÓN EN ACTO DE GRADUACIÓN 2026
 IES SERRA PERENXISA
 
@@ -42,13 +42,13 @@ En __________________, a ____ de _______________ de 2026
 
 Firma del padre/madre/tutor:
 _____________________________
-```
+</div>
 
 ---
 
 ## Anexo 2: Modelo de Autorización de Uso de Imagen 📸
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 CONSENTIMIENTO PARA EL USO DE IMAGEN
 GRADUACIÓN 2026 - IES SERRA PERENXISA
 
@@ -62,8 +62,8 @@ Alumno/a de: __________________________________________________
 
 DECLARO:
 
-Que he sido informado/a de que durante el acto de graduación se 
-realizarán captaciones de imagen (fotografías y/o vídeo) en las 
+Que he sido informado/a de que durante el acto de graduación se
+realizarán captaciones de imagen (fotografías y/o vídeo) en las
 que podrá aparecer mi hijo/a.
 
 Que se me informa de que las finalidades del tratamiento son:
@@ -78,7 +78,7 @@ Que los derechos que me asisten son:
 • Oponerme a su tratamiento
 • Solicitar la limitación del tratamiento
 
-Que este consentimiento es VOLUNTARIO y puedo REVOCARLO en 
+Que este consentimiento es VOLUNTARIO y puedo REVOCARLO en
 cualquier momento.
 
 OPCIONES (marcar las que autoricen):
@@ -96,13 +96,13 @@ Firma: _______________________________
 Nombre y apellidos: ___________________
 Teléfono de contacto: _________________
 Email: _______________________________
-```
+</div>
 
 ---
 
 ## Anexo 3: Modelo de Confirmación de Asistencia (RSVP) ✉️
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 CONFIRMACIÓN DE ASISTENCIA - GRADUACIÓN 2026
 
 Datos del Graduando/a:
@@ -139,20 +139,20 @@ Formas de envío:
 □ Enviar por WhatsApp al: [número del equipo organizador]
 
 ¡Gracias por su colaboración!
-```
+</div>
 
 ---
 
 ## Anexo 4: Modelo de Presupuesto para Familias 💰
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 PRESUPUESTO GRADUACIÓN 2026
 IES SERRA PERENXISA
 
 CONCEPTO                     IMPORTE      CANTIDAD    TOTAL
 ─────────────────────────────────────────────────────────
 Aportación por graduando     15,00€         1         15,00€
-  (incluye organización, decoración, 
+  (incluye organización, decoración,
    programa del acto, brindis)
 
 Entradas adicionales          5,00€         __         __,__€
@@ -175,11 +175,11 @@ FORMAS DE PAGO:
 □ Transferencia bancaria
   IBAN: ESXX XXXX XXXX XXXX XXXX XXXX
   Concepto: "Graduación2026_[Nombre alumno]"
-  
+
 □ Bizum
   Teléfono: [número del AMPA]
   Concepto: "Graduación2026_[Nombre alumno]"
-  
+
 □ Efectivo en Secretaría
   (se entregará recibo justificativo)
 
@@ -191,13 +191,13 @@ IMPORTANTE:
 • Los conceptos opcionales deben solicitarse al formalizar la inscripción
 
 Para dudas o incidencias: graduacion2026@iesserraperenxisa.es
-```
+</div>
 
 ---
 
 ## Anexo 5: Modelo de Contrato con Proveedor 🤝
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 CONTRATO DE PRESTACIÓN DE SERVICIOS
 GRADUACIÓN 2026 - IES SERRA PERENXISA
 
@@ -221,10 +221,10 @@ En adelante, EL CENTRO
 
 EXPONEN
 
-Que EL CENTRO va a celebrar un acto de graduación el día ____ de 
+Que EL CENTRO va a celebrar un acto de graduación el día ____ de
 junio de 2026, y necesita contratar los servicios de EL PROVEEDOR.
 
-Que EL PROVEEDOR dispone de los medios necesarios para prestar 
+Que EL PROVEEDOR dispone de los medios necesarios para prestar
 dichos servicios.
 
 Por ello, ambas partes acuerdan:
@@ -236,7 +236,7 @@ _____________________________________________________________
 
 SEGUNDO.- PRECIO Y FORMA DE PAGO
 El precio total es de: __________€ (más/menos IVA)
-Forma de pago: 
+Forma de pago:
 □ 50% al firmar, 50% tras el evento
 □ 100% tras el evento (a 30 días)
 □ Otro: __________________________________________________
@@ -258,11 +258,11 @@ QUINTO.- OBLIGACIONES DEL CENTRO
 • Abonar el precio convenido en el plazo acordado
 
 SEXTO.- INCUMPLIMIENTO
-En caso de incumplimiento por cualquiera de las partes, se 
-podrá resolver el contrato y reclamar las daños y perjuicios 
+En caso de incumplimiento por cualquiera de las partes, se
+podrá resolver el contrato y reclamar las daños y perjuicios
 causados.
 
-Y en prueba de conformidad, firman el presente contrato por 
+Y en prueba de conformidad, firman el presente contrato por
 duplicado.
 
 
@@ -270,13 +270,13 @@ POR EL CENTRO:                          POR EL PROVEEDOR:
 
 _______________________                 _______________________
 El Director/a                            El Representante
-```
+</div>
 
 ---
 
 ## Anexo 6: Guión del Acto de Graduación 🎓
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 GUION DEL ACTO DE GRADUACIÓN 2026
 IES SERRA PERENXISA
 ____ de junio de 2026 - 17:30 horas
@@ -296,11 +296,11 @@ ____ de junio de 2026 - 17:30 horas
 Maestro/a de Ceremonias: [Nombre alumno/a 1] y [Nombre alumno/a 2]
 
 MC-1: "¡Buenas tardes a todos y todas!"
-MC-2: "Bienvenidos al acto de graduación de la promoción 2026 
+MC-2: "Bienvenidos al acto de graduación de la promoción 2026
        del IES Serra Perenxisa."
-MC-1: "Hoy es un día muy especial para nuestro alumnado de 
+MC-1: "Hoy es un día muy especial para nuestro alumnado de
        4º de ESO y de 2º de FP Básica en Servicios Administrativos."
-MC-2: "Comenzamos este acto que marca el fin de una etapa y 
+MC-2: "Comenzamos este acto que marca el fin de una etapa y
        el comienzo de nuevos caminos."
 
 ─────────────────────────────────────────────────────────────
@@ -312,7 +312,7 @@ MC-2: "Comenzamos este acto que marca el fin de una etapa y
 ─────────────────────────────────────────────────────────────
 17:40 - 17:50 | DISCURSO DEL EQUIPO DIRECTIVO
 ─────────────────────────────────────────────────────────────
-MC-1: "A continuación, invitamos a subir al escenario al 
+MC-1: "A continuación, invitamos a subir al escenario al
        Director/a del centro, D./Dña. [Nombre]."
 
 [Discurso del Director/a - 5 minutos aprox.]
@@ -320,7 +320,7 @@ MC-1: "A continuación, invitamos a subir al escenario al
 ─────────────────────────────────────────────────────────────
 17:50 - 18:05 | DISCURSO DEL ALUMNADO
 ─────────────────────────────────────────────────────────────
-MC-2: "Ahora es el momento de escuchar las palabras de quienes 
+MC-2: "Ahora es el momento de escuchar las palabras de quienes
        hoy son los protagonistas."
 
 [Discurso de representante del alumnado - 5 minutos aprox.]
@@ -361,7 +361,7 @@ FPB Servicios Administrativos:
 18:55 - 19:00 | DESPEDIDA Y BRINDIS
 ─────────────────────────────────────────────────────────────
 MC-1: "Ha llegado el momento de despedir este acto."
-MC-2: "Pero antes, queremos invitarles a un brindis por los 
+MC-2: "Pero antes, queremos invitarles a un brindis por los
        graduandos."
 
 MC-1 y MC-2 (al unísono): "¡Enhorabuena, promoción 2026!"
@@ -378,13 +378,13 @@ MC-1 y MC-2 (al unísono): "¡Enhorabuena, promoción 2026!"
 ─────────────────────────────────────────────────────────────
 20:00 | FIN DEL ACTO
 ─────────────────────────────────────────────────────────────
-```
+</div>
 
 ---
 
 ## Anexo 7: Checklist de Organización 📋
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
 CHECKLIST DE ORGANIZACIÓN - GRADUACIÓN 2026
 
 MARZO (Semana 1-4)
@@ -417,16 +417,16 @@ JUNIO (Semana 13-14)
 □ Agradecimientos
 □ Cierre económico
 □ Informe de evaluación
-```
+</div>
 
 ---
 
 ## Anexo 8: Plano del Espacio 🏛️
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;">
                     PLANO DEL SALÓN DE ACTOS
                     IES SERRA PERENXISA
-                    
+
     ┌─────────────────────────────────────────────────────────┐
     │                      ESCENARIO                          │
     │                                                         │
@@ -455,7 +455,7 @@ JUNIO (Semana 13-14)
     │                                                         │
     │              🍽️ ZONA BRINDIS (al fondo)                │
     └─────────────────────────────────────────────────────────┘
-    
+
     LEYENDA:
     🪑 = Silla
     🎤 = Micrófono
@@ -463,7 +463,7 @@ JUNIO (Semana 13-14)
     🚪 = Puerta
     ♿ = Zona accesible
     🍽️ = Zona de brindis
-```
+</div>
 
 ---
 

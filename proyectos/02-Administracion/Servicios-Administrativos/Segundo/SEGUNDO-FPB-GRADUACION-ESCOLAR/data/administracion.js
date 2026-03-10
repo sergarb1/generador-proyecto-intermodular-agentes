@@ -69,32 +69,32 @@ Compara el presupuesto inicial con el ejecutado:
 
 ### Modelo de Solicitud de Pago
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.8rem; white-space: pre-wrap; overflow-x: auto;">
 SOLICITUD DE PAGO - GRADUACIÓN 2026
 
 Fecha: __/__/____
 Nº de Expediente: GP2026-___
 
 DATOS DEL PROVEEDOR:
-• Nombre/Razón Social: _______________________________
-• NIF/CIF: _________________________________________
-• Domicilio: _______________________________________
-• IBAN: ES__ ____ ____ ____ ____ ____ ____
+- Nombre/Razón Social: _______________________________
+- NIF/CIF: _________________________________________
+- Domicilio: _______________________________________
+- IBAN: ES__ ____ ____ ____ ____ ____ ____
 
 DATOS DE LA FACTURA:
-• Nº de Factura: ___________________________________
-• Fecha de Emisión: __/__/____
-• Importe Total: __________€
-• Concepto: ________________________________________
+- Nº de Factura: ___________________________________
+- Fecha de Emisión: __/__/____
+- Importe Total: __________euro
+- Concepto: ________________________________________
 
 AUTORIZACIONES:
-□ Visto bueno del Coordinador/a: _________________ Fecha: __/__/____
-□ Aprobación de Tesorería: ______________________ Fecha: __/__/____
-□ Orden de pago emitida: ________________________ Fecha: __/__/____
+[ ] Visto bueno del Coordinador/a: _________________ Fecha: __/__/____
+[ ] Aprobación de Tesorería: ______________________ Fecha: __/__/____
+[ ] Orden de pago emitida: ________________________ Fecha: __/__/____
 
 Firma del Responsable de Compras: _________________
 Firma del Coordinador/a: __________________________
-```
+</div>
 
 <div class="callout callout-info">
     <div class="callout-title">
@@ -121,14 +121,14 @@ Aunque el evento lo organiza el centro educativo, es importante que conozcas los
 
 Si contratas a un profesional autónomo (ej: fotógrafo):
 
-```
-BASE IMponible:           200,00€
-(-) Retención IRPF (15%):  30,00€
-(=) Líquido a pagar:      170,00€
+<div class="callout callout-success" style="font-family: monospace; font-size: 0.85rem;">
+BASE IMPONIBLE:           200,00euro
+(-) Retención IRPF (15%):  30,00euro
+(=) Líquido a pagar:      170,00euro
 
-El profesional declara los 200€ en su IRPF, 
-tú ingresas 170€ y los 30€ de retención a Hacienda.
-```
+El profesional declara los 200euro en su IRPF,
+tú ingresas 170euro y los 30euro de retención a Hacienda.
+</div>
 
 <div class="callout callout-warning">
     <div class="callout-title">
@@ -186,7 +186,7 @@ El día del evento, la **atención a las familias** es crucial:
 
 #### Guión de Acogida
 
-```
+<div class="callout callout-info" style="font-family: monospace; font-size: 0.85rem;">
 1. SALUDO INICIAL
    "¡Buenas tardes! Bienvenidos a la Graduación 2026"
    
@@ -199,7 +199,7 @@ El día del evento, la **atención a las familias** es crucial:
    
 4. DESPEDIDA
    "Que disfruten del acto. Cualquier cosa, estamos aquí"
-```
+</div>
 
 ### Protocolo de Entrega de Diplomas
 
@@ -231,7 +231,7 @@ El día del evento, la **atención a las familias** es crucial:
 
 Organiza la documentación siguiendo un criterio lógico:
 
-```
+<div class="callout callout-warning" style="font-family: monospace; font-size: 0.8rem;">
 📁 GRADUACION-2026/
 │
 ├── 📁 01-ORGANIZACION/
@@ -264,7 +264,7 @@ Organiza la documentación siguiendo un criterio lógico:
     ├── Encuestas de satisfacción
     ├── Informe final
     └── Lecciones aprendidas
-```
+</div>
 
 <div class="callout callout-warning">
     <div class="callout-title">

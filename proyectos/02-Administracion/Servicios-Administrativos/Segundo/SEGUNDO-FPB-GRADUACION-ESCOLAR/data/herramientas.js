@@ -123,35 +123,35 @@ window.sectionsContent.herramientas = `
 
 **Para qué sirve:** Encuestas a familias, inscripciones, evaluación
 
-**Ejemplo de Formulario de Inscripción:**
+#### Ejemplo de Formulario de Inscripción
 
-```
-FORMULARIO DE INSCRIPCIÓN - GRADUACIÓN 2026
+<div class="callout callout-info" style="font-size: 0.85rem;">
+<strong>FORMULARIO DE INSCRIPCIÓN - GRADUACIÓN 2026</strong>
 
 1. Datos del Graduando
-   • Nombre completo: _______________
-   • Curso: ⬜ 4º ESO ⬜ FPB Servicios Administrativos
-   • Grupo: _______________
+   - Nombre completo: _______________
+   - Curso: [ ] 4º ESO  [ ] FPB Servicios Administrativos
+   - Grupo: _______________
 
 2. Datos de Contacto Familiar
-   • Nombre del padre/madre/tutor: _______________
-   • Teléfono: _______________
-   • Email: _______________
+   - Nombre del padre/madre/tutor: _______________
+   - Teléfono: _______________
+   - Email: _______________
 
 3. Asistencia
-   • ¿Asistirá al acto? ⬜ Sí ⬜ No
-   • Número de invitados: _______________
+   - ¿Asistirá al acto? [ ] Sí [ ] No
+   - Número de invitados: _______________
 
 4. Pagos
-   • ¿Forma de pago preferida? 
-     ⬜ Transferencia ⬜ Bizum ⬜ Efectivo
-   
+   - ¿Forma de pago preferida?
+     [ ] Transferencia  [ ] Bizum  [ ] Efectivo
+
 5. Autorizaciones
-   • ¿Autoriza uso de imagen? ⬜ Sí ⬜ No
-   • Acepto condiciones: ⬜ Sí
+   - ¿Autoriza uso de imagen? [ ] Sí [ ] No
+   - Acepto condiciones: [ ] Sí
 
 [ENVIAR]
-```
+</div>
 
 ### Typeform (Alternativa Premium)
 
