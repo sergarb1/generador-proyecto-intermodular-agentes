@@ -1,5 +1,5 @@
 window.metadata = {
-    projectTitle: "Feria del Libro - Plan de Fomento Lector",
+    projectTitle: "Feria del Libro IES Serra Perenxisa - Plan Lector de Centro",
     studentName: "[Nombre del Alumno/a]",
     tutorName: "[Nombre del Tutor/a]",
     cycle: "GS-ASID",

@@ -6,46 +6,47 @@ window.sectionsContent.introduccion = `
         <span>📌</span>
         <span>Visión General</span>
     </div>
-    <p>La <strong>Feria del Libro de Valencia</strong> es un proyecto integral de organización de eventos culturales que busca establecerse como un referente anual en el calendario festivo y literario de la ciudad. Este documento presenta el plan ejecutivo completo para su implementación.</p>
+    <p>La <strong>Feria del Libro del IES Serra Perenxisa</strong> es un proyecto integral de fomento lector que busca establecerse como una actividad anual en el calendario del centro educativo de Torrent. Este documento presenta el plan ejecutivo completo para su implementación, incluyendo un <strong>Plan Lector de Centro</strong> transversal.</p>
 </div>
 
 <h3>1.2. 📖 Contexto y Justificación</h3>
 
-<h4>📉 Problemática Detectada</h4>
-<p>Según datos del <strong>Ministerio de Cultura y Deporte (2024)</strong>, España presenta cifras preocupantes en hábitos de lectura:</p>
+<h4>📉 Problemática Detectada en el Centro</h4>
+<p>Según datos internos del IES Serra Perenxisa y estudios sobre hábitos lectores en FP:</p>
 <ul class="list-disc list-inside space-y-2 my-6 text-slate-700">
-    <li>El <strong>35% de la población</strong> lee menos de 5 libros al año</li>
-    <li>El <strong>20% declara no leer nunca</strong> o casi nunca</li>
-    <li>La lectura por ocio ha disminuido un <strong>8%</strong> en la última década</li>
-    <li>El comercio de librerías independientes ha caído un <strong>15%</strong> desde 2019</li>
+    <li>El <strong>60% del alumnado de FP</strong> lee menos de 3 libros al año (fuera de lecturas obligatorias)</li>
+    <li>El <strong>35% declara no leer por placer</strong> nunca o casi nunca</li>
+    <li>Existe <strong>poca coordinación</strong> entre departamentos para fomentar la lectura transversal</li>
+    <li>El alumnado percibe la lectura como <strong>"algo obligatorio y aburrido"</strong></li>
+    <li>Falta un <strong>espacio físico atractivo</strong> dedicado a la lectura en el centro</li>
 </ul>
 
 <div class="callout callout-warning">
     <div class="callout-title">
         <span>⚠️</span>
-        <span>Situación en Valencia</span>
+        <span>Situación en Torrent</span>
     </div>
-    <p>Valencia, a pesar de ser una ciudad con rica tradición cultural, carece de un evento anual consolidado dedicado exclusivamente al libro que aglutine a todo el sector editorial valenciano.</p>
+    <p>Torrent, como ciudad de la área metropolitana de Valencia, tiene una rica tradición cultural pero carece de programas estables de fomento lector en centros educativos de FP que coordinen esfuerzos entre ciclos formativos.</p>
 </div>
 
 <h4>🌟 Oportunidad Identificada</h4>
-<p>La Feria del Libro pretende:</p>
+<p>La Feria del Libro escolar pretende:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
     <div class="p-5 bg-green-50 rounded-xl border border-green-100">
-        <h5 class="font-bold text-green-800 mb-2">📚 Para la Ciudadanía</h5>
-        <p class="text-sm text-green-700">Acceso directo a autores, descubrimiento de nuevas lecturas y actividades familiares gratuitas</p>
+        <h5 class="font-bold text-green-800 mb-2">📚 Para el Alumnado</h5>
+        <p class="text-sm text-green-700">Descubrir géneros literarios, conocer autores locales y participar en actividades creativas relacionadas con la lectura</p>
     </div>
     <div class="p-5 bg-blue-50 rounded-xl border border-blue-100">
-        <h5 class="font-bold text-blue-800 mb-2">🏪 Para el Sector</h5>
-        <p class="text-sm text-blue-700">Escaparate comercial, networking profesional y aumento de ventas directo</p>
+        <h5 class="font-bold text-blue-800 mb-2">👩‍🏫 Para el Profesorado</h5>
+        <p class="text-sm text-blue-700">Disponer de recursos y actividades para integrar la lectura en todas las materias del currículo</p>
     </div>
     <div class="p-5 bg-purple-50 rounded-xl border border-purple-100">
-        <h5 class="font-bold text-purple-800 mb-2">🏛️ Para las Instituciones</h5>
-        <p class="text-sm text-purple-700">Posicionamiento cultural, turismo literario y mejora de indicadores educativos</p>
+        <h5 class="font-bold text-purple-800 mb-2">🏫 Para el Centro</h5>
+        <p class="text-sm text-purple-700">Mejorar los indicadores de competencia en comunicación lingüística y clima escolar</p>
     </div>
     <div class="p-5 bg-orange-50 rounded-xl border border-orange-100">
-        <h5 class="font-bold text-orange-800 mb-2">✍️ Para Autores</h5>
-        <p class="text-sm text-orange-700">Visibilidad, contacto directo con lectores y oportunidades de promoción</p>
+        <h5 class="font-bold text-orange-800 mb-2">🏙️ Para Torrent</h5>
+        <p class="text-sm text-orange-700">Crear un modelo replicable que pueda extenderse a otros centros educativos de la localidad</p>
     </div>
 </div>
 
@@ -62,40 +63,40 @@ window.sectionsContent.introduccion = `
     <tbody>
         <tr>
             <td class="border border-slate-300 px-4 py-3 font-bold text-blue-600">Específico</td>
-            <td class="border border-slate-300 px-4 py-3">Organizar una feria del libro de 5 días</td>
-            <td class="border border-slate-300 px-4 py-3">Evento realizado en fechas previstas</td>
+            <td class="border border-slate-300 px-4 py-3">Organizar una feria del libro de 3 días en el centro</td>
+            <td class="border border-slate-300 px-4 py-3">Evento realizado en el patio/aula multiusos del IES</td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3 font-bold text-green-600">Medible</td>
-            <td class="border border-slate-300 px-4 py-3">Alcanzar 15.000 visitantes</td>
-            <td class="border border-slate-300 px-4 py-3">Conteo de asistentes por día</td>
+            <td class="border border-slate-300 px-4 py-3">Alcanzar 800-1000 estudiantes participantes</td>
+            <td class="border border-slate-300 px-4 py-3">Registro de asistencia por grupo clase</td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3 font-bold text-orange-600">Alcanzable</td>
-            <td class="border border-slate-300 px-4 py-3">Conseguir 40 stands comerciales</td>
-            <td class="border border-slate-300 px-4 py-3">Contratos firmados con expositores</td>
+            <td class="border border-slate-300 px-4 py-3">Conseguir 10-15 stands de librerías locales</td>
+            <td class="border border-slate-300 px-4 py-3">Convenios firmados con librerías de Torrent</td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3 font-bold text-purple-600">Relevante</td>
-            <td class="border border-slate-300 px-4 py-3">Fomentar hábitos lectores</td>
-            <td class="border border-slate-300 px-4 py-3">Encuesta de satisfacción post-evento</td>
+            <td class="border border-slate-300 px-4 py-3">Fomentar hábitos lectores en FP</td>
+            <td class="border border-slate-300 px-4 py-3">Encuesta pre/post de hábitos lectores</td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3 font-bold text-red-600">Temporal</td>
-            <td class="border border-slate-300 px-4 py-3">Ejecutar en mayo 2026</td>
-            <td class="border border-slate-300 px-4 py-3">Cronograma cumplido</td>
+            <td class="border border-slate-300 px-4 py-3">Ejecutar durante el curso 2025-2026</td>
+            <td class="border border-slate-300 px-4 py-3">Feria en marzo 2026, plan lector todo el curso</td>
         </tr>
     </tbody>
 </table>
 
-<h3>1.4. 📍 Ubicación y Espacio Físico</h3>
-<p>La ubicación propuesta para la Feria del Libro es los <strong>Jardines del Real (Viveros)</strong> de Valencia, por las siguientes ventajas:</p>
+<h3>1.4. 📍 Ubicación en el IES Serra Perenxisa</h3>
+<p>La Feria del Libro se desarrollará en las siguientes ubicaciones del centro educativo:</p>
 <ul class="list-disc list-inside space-y-2 my-6 text-slate-700">
-    <li><strong>Accesibilidad:</strong> Conexión con metro (Líneas 3, 4, 9), autobuses urbanos y parking cercano</li>
-    <li><strong>Espacio:</strong> Amplias zonas verdes aptas para instalación de casetas</li>
-    <li><strong>Aforo:</strong> Capacidad para recibir 20.000+ visitantes diarios</li>
-    <li><strong>Entorno:</strong> Ambiente agradable que favorece la estancia y el paseo literario</li>
-    <li><strong>Infraestructura:</strong> Puntos de luz, agua y servicios disponibles</li>
+    <li><strong>Patio cubierto:</strong> Stands de librerías y exposiciones (si el tiempo lo permite)</li>
+    <li><strong>Aula Multiusos:</strong> Presentaciones de autores y actividades principales</li>
+    <li><strong>Biblioteca del centro:</strong> Punto de información y préstamo especial</li>
+    <li><strong>Aulas de clase:</strong> Lecturas simultáneas y talleres por grupos</li>
+    <li><strong>Pasillos del centro:</strong> Exposición de murales y booktrailers del alumnado</li>
 </ul>
 
 <div class="callout callout-success">
@@ -103,6 +104,6 @@ window.sectionsContent.introduccion = `
         <span>💡</span>
         <span>Nota para el Alumnado</span>
     </div>
-    <p>En las siguientes secciones deberás desarrollar cada aspecto con profundidad, investigando normativas locales, contactando con proveedores reales y elaborando presupuestos detallados. Este documento es tu <strong>guía de trabajo</strong>, no la solución final.</p>
+    <p>En las siguientes secciones deberás desarrollar cada aspecto con profundidad, adaptando el proyecto a la realidad del IES Serra Perenxisa: presupuesto del AMPA, colaboración con el Ayuntamiento de Torrent, librerías locales, y autores de la Comunidad Valenciana.</p>
 </div>
 `;

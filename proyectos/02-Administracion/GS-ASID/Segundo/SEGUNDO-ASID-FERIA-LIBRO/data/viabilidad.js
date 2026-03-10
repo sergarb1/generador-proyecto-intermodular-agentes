@@ -7,8 +7,304 @@ window.sectionsContent.viabilidad = `
         <span>📌</span>
         <span>Objetivo de esta Sección</span>
     </div>
-    <p>Evaluar la viabilidad del proyecto mediante el análisis de fortalezas, debilidades, oportunidades y amenazas, así como los indicadores financieros clave.</p>
+    <p>Evaluar la viabilidad del proyecto mediante el análisis de fortalezas, debilidades, oportunidades y amenazas, así como los indicadores financieros clave para un evento escolar.</p>
 </div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+    <div class="p-6 bg-green-50 rounded-xl border border-green-200">
+        <h4 class="font-bold text-green-800 mb-4 flex items-center gap-2">
+            <span>💪</span> Fortalezas
+        </h4>
+        <ul class="space-y-2 text-sm text-green-700">
+            <li>✓ Espacios del centro disponibles (patio, aula multiusos, biblioteca)</li>
+            <li>✓ AMPA como entidad colaboradora y financiadora</li>
+            <li>✓ Equipos directivos comprometidos con el fomento lector</li>
+            <li>✓ Librerías locales de Torrent interesadas en colaborar</li>
+            <li>✓ Alumnado de ASID como organizadores del evento</li>
+            <li>✓ Posibilidad de incluir en el proyecto educativo de centro</li>
+        </ul>
+    </div>
+    <div class="p-6 bg-red-50 rounded-xl border border-red-200">
+        <h4 class="font-bold text-red-800 mb-4 flex items-center gap-2">
+            <span>📉</span> Debilidades
+        </h4>
+        <ul class="space-y-2 text-sm text-red-700">
+            <li>✗ Presupuesto limitado (dependencia de subvenciones AMPA/Ayuntamiento)</li>
+            <li>✗ Espacios reducidos comparados con ferias profesionales</li>
+            <li>✗ Personal docente con poco tiempo disponible</li>
+            <li>✗ Falta de experiencia previa en eventos de este tipo</li>
+            <li>✗ Dependencia del horario lectivo para actividades</li>
+        </ul>
+    </div>
+    <div class="p-6 bg-blue-50 rounded-xl border border-blue-200">
+        <h4 class="font-bold text-blue-800 mb-4 flex items-center gap-2">
+            <span>🌟</span> Oportunidades
+        </h4>
+        <ul class="space-y-2 text-sm text-blue-700">
+            <li>✓ Subvenciones del Ayuntamiento de Torrent para cultura</li>
+            <li>✓ Colaboración con autores locales de la Comunidad Valenciana</li>
+            <li>✓ Integración curricular transversal en todas las materias</li>
+            <li>✓ Posibilidad de crear un club de lectura estable</li>
+            <li>✓ Proyección del centro en la localidad</li>
+            <li>✓ Convenios con editoriales educativas con descuentos</li>
+        </ul>
+    </div>
+    <div class="p-6 bg-orange-50 rounded-xl border border-orange-200">
+        <h4 class="font-bold text-orange-800 mb-4 flex items-center gap-2">
+            <span>⚠️</span> Amenazas
+        </h4>
+        <ul class="space-y-2 text-sm text-orange-700">
+            <li>✗ Cambios en el presupuesto del AMPA o subvenciones</li>
+            <li>✗ Conflictos de horarios con otras actividades del centro</li>
+            <li>✗ Baja participación del profesorado por carga lectiva</li>
+            <li>✗ Huelgas o cierres imprevistos del centro</li>
+            <li>✗ Pandemias o situaciones sanitarias excepcionales</li>
+        </ul>
+    </div>
+</div>
+
+<h3>3.2. 💰 Presupuesto Estimado de Ingresos</h3>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Concepto</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Cantidad</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Precio Unitario</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Total (€)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Alquiler de stands (10 stands × 3 días)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">10</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">50,00</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">500,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Subvención AMPA</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">1</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">1.500,00</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">1.500,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Subvención Ayuntamiento de Torrent</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">1</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">2.000,00</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">2.000,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Patrocinio librerías locales</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">3</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">300,00</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">900,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Venta de libros (beneficio para biblioteca)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">200</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">2,00</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">400,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Talleres de pago (simbólico)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">50</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">3,00</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">150,00</td>
+        </tr>
+        <tr class="bg-slate-50 font-bold">
+            <td class="border border-slate-300 px-4 py-3" colspan="3">TOTAL INGRESOS</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">5.450,00</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>3.3. 💸 Presupuesto Estimado de Gastos</h3>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Concepto</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Total (€)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Mesas y sillas (alquiler o transporte)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">300,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Decoración y cartelería</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">400,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Equipamiento de sonido (alquiler)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">250,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Dietas autores invitados (5 autores)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">500,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Transporte autores</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">150,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Material de oficina y papelería</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">200,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Impresión de programas y dípticos</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">350,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Seguro de responsabilidad civil (evento)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">180,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Premios concurso booktrailers</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">300,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Refrigerio para voluntariado y autores</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">200,00</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Imprevistos (10%)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">283,00</td>
+        </tr>
+        <tr class="bg-slate-50 font-bold">
+            <td class="border border-slate-300 px-4 py-3">TOTAL GASTOS</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">3.113,00</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>3.4. 📈 Resultado y Viabilidad Financiera</h3>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+    <div class="p-6 bg-green-50 rounded-xl border border-green-200 text-center">
+        <h4 class="font-bold text-green-800 mb-2">Ingresos Totales</h4>
+        <p class="text-3xl font-bold text-green-600">5.450 €</p>
+    </div>
+    <div class="p-6 bg-red-50 rounded-xl border border-red-200 text-center">
+        <h4 class="font-bold text-red-800 mb-2">Gastos Totales</h4>
+        <p class="text-3xl font-bold text-red-600">3.113 €</p>
+    </div>
+    <div class="p-6 bg-blue-50 rounded-xl border border-blue-200 text-center">
+        <h4 class="font-bold text-blue-800 mb-2">Superávit Estimado</h4>
+        <p class="text-3xl font-bold text-blue-600">2.337 €</p>
+    </div>
+</div>
+
+<div class="callout callout-success">
+    <div class="callout-title">
+        <span>✅</span>
+        <span>Conclusión de Viabilidad</span>
+    </div>
+    <p>El proyecto presenta <strong>viabilidad económica positiva</strong> con un superávit del 42%. El excedente se destinará a la biblioteca del centro para adquisición de nuevos fondos. El punto de equilibrio se alcanzaría con aproximadamente 6 stands alquilados, lo que proporciona un margen de seguridad adecuado.</p>
+</div>
+
+<h3>3.5. 📝 Indicadores Financieros Clave</h3>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Indicador</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Valor</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Interpretación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Ratio Ingreso/Gasto</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">1,75</td>
+            <td class="border border-slate-300 px-4 py-3">Saludable (&gt;1,5)</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Margen de Superávit</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">42,9%</td>
+            <td class="border border-slate-300 px-4 py-3">Muy bueno</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Punto de Equilibrio</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">6 stands</td>
+            <td class="border border-slate-300 px-4 py-3">60% de ocupación</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Coste por Alumno/a</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">3,89 €</td>
+            <td class="border border-slate-300 px-4 py-3">Muy eficiente</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">% Subvenciones</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">64%</td>
+            <td class="border border-slate-300 px-4 py-3">Dependencia moderada</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>3.6.  Plan Lector de Centro - Presupuesto Adicional</h3>
+
+<p>Además de la Feria del Libro, el Plan Lector de Centro incluye actividades durante todo el curso:</p>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Actividad</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Coste Estimado (€)</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Financiación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Club de Lectura (material + refrigerios)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">400</td>
+            <td class="border border-slate-300 px-4 py-3">AMPA</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Concurso de Booktrailers (premios)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">300</td>
+            <td class="border border-slate-300 px-4 py-3">Ayuntamiento Torrent</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Visita a biblioteca municipal</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">100</td>
+            <td class="border border-slate-300 px-4 py-3">Centro educativo</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Suscripción a revistas literarias (biblioteca)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">250</td>
+            <td class="border border-slate-300 px-4 py-3">Centro educativo</td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Adquisición de libros (biblioteca)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">1.000</td>
+            <td class="border border-slate-300 px-4 py-3">Superávit Feria + AMPA</td>
+        </tr>
+        <tr class="bg-slate-50 font-bold">
+            <td class="border border-slate-300 px-4 py-3">TOTAL PLAN LECTOR</td>
+            <td class="border border-slate-300 px-4 py-3 text-right">2.050</td>
+            <td class="border border-slate-300 px-4 py-3">Diversificada</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>3.7. 🎯 Actividad para el Alumnado</h3>
+<div class="callout callout-warning">
+    <div class="callout-title">
+        <span>🔎</span>
+        <span>Tarea de Análisis Financiero</span>
+    </div>
+    <p>Completa y personaliza esta sección con:</p>
+    <ol class="list-decimal list-inside space-y-2 mt-3">
+        <li>Contacta con el AMPA del IES Serra Perenxisa para conocer el presupuesto disponible real</li>
+        <li>Solicita información en el Ayuntamiento de Torrent sobre subvenciones culturales para centros educativos</li>
+        <li>Pide presupuestos reales a 3 librerías de Torrent para la compra de libros con descuento</li>
+        <li>Elabora un escenario pesimista (50% de subvenciones) y propone medidas correctoras</li>
+        <li>Diseña una hoja de cálculo Excel con fórmulas automáticas para el seguimiento del presupuesto</li>
+    </ol>
+</div>
+`;
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
     <div class="p-6 bg-green-50 rounded-xl border border-green-200">
