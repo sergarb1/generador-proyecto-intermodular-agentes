@@ -117,6 +117,22 @@
             margin-left: 0;
         }
 
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+            .sidebar:not(.sidebar-collapsed) {
+                transform: translateX(0);
+                box-shadow: 20px 0 50px rgba(0,0,0,0.1);
+            }
+            .main-container {
+                margin-left: 0 !important;
+            }
+            .sidebar-collapsed {
+                transform: translateX(-100%);
+            }
+        }
+
         header {
             height: var(--header-height);
             background: rgba(255, 255, 255, 0.8);
@@ -474,6 +490,11 @@
                 }
             },
             mounted() {
+                // Colapsar sidebar en móviles por defecto
+                if (window.innerWidth < 1024) {
+                    this.sidebarOpen = false;
+                }
+
                 // Actualizar título de la página una vez cargado
                 if (window.metadata?.projectTitle) {
                     this.projectTitle = window.metadata.projectTitle;
