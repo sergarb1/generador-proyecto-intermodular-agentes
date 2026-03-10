@@ -2,6 +2,12 @@
 
 Este sistema automatiza la creación de proyectos intermodulares para Ciclos Formativos (Informática y Administración), siguiendo un enfoque **pedagógico avanzado** y un diseño visual **ejecutivo de alta gama**.
 
+## 🌐 Página Web Oficial
+
+Visita la página web del proyecto para acceder a información detallada y ejemplos de proyectos generados:
+
+👉 **[sergarb1.github.io/generador-proyecto-intermodular-agentes/](https://sergarb1.github.io/generador-proyecto-intermodular-agentes/)**
+
 ## 🎯 Enfoque Pedagógico: "Enseña a Pescar"
 
 A diferencia de otros generadores, este sistema no entrega el proyecto resuelto. Su objetivo es actuar como un **tutor experto**:
