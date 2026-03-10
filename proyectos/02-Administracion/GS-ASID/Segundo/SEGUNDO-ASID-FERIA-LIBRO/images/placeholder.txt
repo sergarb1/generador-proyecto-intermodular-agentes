@@ -1,0 +1,4 @@
+<!-- Placeholder para hero.jpg -->
+<!-- Descarga una imagen gratuita de libros/lectura de Pexels.com -->
+<!-- Recomendaciones de búsqueda: "book fair", "library", "reading", "books" -->
+<!-- Guarda la imagen como hero.jpg en esta carpeta images/ -->
