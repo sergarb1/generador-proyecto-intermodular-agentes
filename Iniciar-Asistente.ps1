@@ -170,13 +170,27 @@ Write-Host ""
 Write-Host "Iniciando $tool con prompt interactivo..." -ForegroundColor Cyan
 Write-Host ""
 
+# Mensaje informativo para la IA sobre el intérprete
+$interpreterInfo = @"
+
+---
+ℹ️ INFORMACIÓN DEL INTÉRPRETE:
+Este script se está ejecutando en PowerShell ($PSVersionTable.PSVersion).
+Los comandos de shell deben usar sintaxis PowerShell (no bash).
+---
+
+"@
+
+# Combinar el prompt inicial con la información del intérprete
+$fullPrompt = $initialPrompt + $interpreterInfo
+
 # Iniciar la herramienta seleccionada en modo interactivo con el prompt y YOLO
 if ($tool -eq "qwen") {
     Write-Host "[DEBUG] Lanzando 'qwen -i ... -y'..." -ForegroundColor DarkGray
-    qwen -i "$initialPrompt" -y
+    qwen -i "$fullPrompt" -y
 } elseif ($tool -eq "gemini") {
     Write-Host "[DEBUG] Lanzando 'gemini -i ... -y'..." -ForegroundColor DarkGray
-    gemini -i "$initialPrompt" -y
+    gemini -i "$fullPrompt" -y
 }
 
 exit

@@ -2,13 +2,6 @@
 
 Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
 
-## 📚 DOCUMENTACIÓN DE REFERENCIA (CARGAR AL INICIO)
-   Antes de empezar, lee y carga el contexto de estos archivos:
-   - **GEMINI.md**: Agente Orquestador "Premium Pro" - Define el flujo de trabajo, estilo visual y mandatos críticos
-   - **agents/00-orchestrator.md**: Orquestador Principal - Coordina la generación y validación del proyecto
-   
-   Usa estas guías como referencia principal para todo el proceso.
-
 ## 1. PREGUNTAME primero (de uno en uno):
    - Que familia profesional? (Informatica o Administracion)
    - Que ciclo formativo? (ASIR/SMR/DAM/DAW o GM-ADM/GS-ADMF/GS-ASID)
@@ -19,40 +12,22 @@ Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
    - La plantilla en: plantilla/index.html
    - Los agentes en: agents/
      * Para Informatica: agents/03-primer-curso.md o agents/04-segundo-curso.md
-     * Para Administracion: agents/05-experto-administracion.md
-   - Sigue los mandatos de **GEMINI.md** y **agents/00-orchestrator.md**
+     * Para Administracion: agents/05-administracion.md
 
 ## 3. El proyecto debe:
-   - Tener descripcion completa del contexto y problematica (SOLO en Introducción)
-   - El resto de secciones deben ser GUÍAS DIDÁCTICAS (no soluciones completas)
+   - Tener descripcion completa del contexto y problematica
    - Incluir sugerencias para que el alumnado complete el resto
    - Usar lenguaje inclusivo (profesorado/alumnado)
-   - Usar estilo "Premium Pro": callouts, grids, tablas, iconos visuales
-   - Las imágenes deben ser de Pexels.com y guardarse localmente en images/
 
 ## 4. GUARDA el proyecto en esta estructura:
    proyectos/
-   ├── 01-Informatica/ (o 02-Administracion)
-   │   └── [CICLO]/ (ASIR, DAM, GM-ADM, etc.)
-   │       └── [CURSO]/ (Primero o Segundo)
-   │           └── [CARPETA_PROYECTO]/
-   │               ├── proyecto.html
-   │               ├── logo.png (copiado desde plantilla/)
-   │               ├── images/ (imagenes de Pexels)
-   │               └── data/
-   │                   ├── metadata.js
-   │                   ├── resumen.js
-   │                   ├── introduccion.js
-   │                   ├── estado-arte.js
-   │                   ├── viabilidad.js
-   │                   ├── requisitos.js
-   │                   ├── diseno.js
-   │                   ├── implementacion.js
-   │                   ├── administracion.js
-   │                   ├── herramientas.js
-   │                   ├── conclusiones.js
-   │                   ├── bibliografia.js
-   │                   └── anexos.js
+   â”œâ”€â”€ 01-Informatica/ (o 02-Administracion)
+   â”‚   â””â”€â”€ [CICLO]/ (ASIR, DAM, GM-ADM, etc.)
+   â”‚       â””â”€â”€ [CURSO]/ (Primero o Segundo)
+   â”‚           â””â”€â”€ [CARPETA_PROYECTO]/
+   â”‚               â”œâ”€â”€ proyecto.html
+   â”‚               â”œâ”€â”€ logo.png (copiado desde plantilla/)
+   â”‚               â””â”€â”€ images/ (si hay imagenes)
 
    Ejemplo: proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-APP-GESTION/
 
@@ -60,21 +35,11 @@ Por favor, ayudame a generar un proyecto intermodular siguiendo estos pasos:
    a) Crea la carpeta: proyectos/[FAMILIA]/[CICLO]/[CURSO]/[NOMBRE_PROYECTO]/
    b) Copia plantilla/logo.png a esa carpeta
    c) Genera el HTML ahi dentro como 'proyecto.html'
-   d) Genera todos los archivos .js en la carpeta data/
-   e) Si descargas imagenes de Pexels, guardalas en 'images/' dentro de la carpeta
+   d) Si descargas imagenes, guardalas en 'images/' dentro de la carpeta
 
    El nombre de la carpeta debe ser descriptivo:
    - SEGUNDO-DAM-APP-GESTION
    - PRIMER-ASIR-CLOUD-BASICO
    - SEGUNDO-GS-ADMF-PLAN-EMPRESA
-
-## ✅ CHECKLIST DE VALIDACIÓN (antes de finalizar)
-   - [ ] ¿La Introducción es detallada con contexto empresarial realista?
-   - [ ] ¿El resto de secciones son guías didácticas (NO soluciones completas)?
-   - [ ] ¿La numeración es correcta y jerárquica (X.Y)?
-   - [ ] ¿Usa el estilo Premium Pro (grids, callouts, tablas)?
-   - [ ] ¿Es apto para offline (file://, sin dependencias externas en datos)?
-   - [ ] ¿Las imágenes son de Pexels y están enlazadas localmente?
-   - [ ] ¿El lenguaje es inclusivo (profesorado, alumnado)?
 
 Empezamos? Preguntame los datos del proyecto (de uno en uno).
