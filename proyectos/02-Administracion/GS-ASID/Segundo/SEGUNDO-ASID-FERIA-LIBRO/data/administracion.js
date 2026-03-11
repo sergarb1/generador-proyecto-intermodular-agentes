@@ -1,382 +1,235 @@
-window.sectionsContent = window.sectionsContent || {};
+// Administración - Feria del Libro IES Serra Perenxisa
 window.sectionsContent.administracion = `
-<h3>7.1. ⚙️ Administración y Gestión del Proyecto - Guía de Gestión</h3>
-
 <div class="callout callout-info">
     <div class="callout-title">
         <span>📌</span>
         <span>Objetivo de esta Sección</span>
     </div>
-    <p>Describir la gestión administrativa, fiscal, laboral y comercial necesaria para la organización de la Feria del Libro del IES Serra Perenxisa.</p>
+    <p>Aprenderás a gestionar el dinero del evento de forma sencilla y transparente.</p>
 </div>
+
+<h3>7.1. Presupuesto - Ingresos y Gastos</h3>
 
 <div class="callout callout-warning">
     <div class="callout-title">
         <span>📝</span>
-        <span>Tarea para el Alumnado</span>
+        <span>Tu Tarea</span>
     </div>
-    <p>Completa esta sección con:</p>
-    <ul>
-        <li>Elabora 5 modelos de nóminas completas con diferentes supuestos</li>
-        <li>Rellena los modelos oficiales AEAT (036, 303, 111)</li>
-        <li>Diseña el plan de comunicación completo con calendario de publicaciones</li>
-        <li>Crea los contratos tipo para proveedores y colaboradores</li>
-        <li>Desarrolla el documento de evaluación de riesgos laborales del evento</li>
-    </ul>
+    <p>Completa este presupuesto con datos reales. Pide presupuestos a proveedores reales.</p>
 </div>
 
-<h3>7.2. 📋 Plan de Marketing y Comunicación - Guía de Estrategia</h3>
+<h4>💰 Ingresos - ¿De dónde sale el dinero?</h4>
 
-<h4>🎯 Objetivos de Marketing - Plantilla</h4>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
-    <div class="p-5 bg-blue-50 rounded-xl border border-blue-100">
-        <h5 class="font-bold text-blue-800 mb-2">📊 Notoriedad</h5>
-        <p class="text-sm text-blue-700"><em>[Definir: % de conocimiento del evento en la comunidad educativa del IES Serra Perenxisa]</em></p>
-    </div>
-    <div class="p-5 bg-green-50 rounded-xl border border-green-100">
-        <h5 class="font-bold text-green-800 mb-2">👥 Asistencia</h5>
-        <p class="text-sm text-green-700"><em>[Estimar: nº de visitantes durante los 5 días]</em></p>
-    </div>
-    <div class="p-5 bg-purple-50 rounded-xl border border-purple-100">
-        <h5 class="font-bold text-purple-800 mb-2">💬 Engagement</h5>
-        <p class="text-sm text-purple-700"><em>[Calcular: interacciones esperadas en redes sociales]</em></p>
-    </div>
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Concepto</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Cantidad</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Precio</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Total (€)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Subvención AMPA</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[1]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Consultar]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[_______]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Subvención Ayuntamiento</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[1]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Consultar]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[_______]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Alquiler stands (librerías)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Nº stands]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[50-100€]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[_______]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Venta de libros (si aplica)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Estimar]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Variable]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[_______]</em></td>
+        </tr>
+        <tr class="bg-slate-50 font-bold">
+            <td class="border border-slate-300 px-4 py-3" colspan="3">TOTAL INGRESOS</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[SUMAR]</em></td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>💸 Gastos - ¿En qué se gasta el dinero?</h4>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Concepto</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Total (€)</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Proveedor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Alquiler carpas/mesas</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Pedir 3 presupuestos]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Nombre empresa]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Equipo de sonido</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[¿El centro tiene?]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Si no, buscar]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Carteles y programas</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Pedir presupuesto]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Imprenta local]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Invitación a autores</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Viaje/alojamiento]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Autores locales]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Merienda/refrigerio</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Opcional]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Quién lo trae?]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Imprevistos (10%)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[10% del total]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Siempre hay]</em></td>
+        </tr>
+        <tr class="bg-slate-50 font-bold">
+            <td class="border border-slate-300 px-4 py-3">TOTAL GASTOS</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[SUMAR]</em></td>
+            <td class="border border-slate-300 px-4 py-3"></td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>✅ Balance Final</h4>
+
+<div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8">
+    <p class="font-bold text-lg mb-4">Fórmula:</p>
+    <p class="text-xl"><strong>INGRESOS - GASTOS = </strong> <em style="font-size: 1.5em;">[RESULTADO] €</em></p>
+    <p class="mt-4 text-slate-600">
+        <strong style="color: green;">Si es positivo o cero:</strong> ✅ El evento es viable<br>
+        <strong style="color: red;">Si es negativo:</strong> ⚠️ Reduce gastos o busca más ingresos
+    </p>
 </div>
-
-<h4>📢 Estrategia de las 4P's - Actividad</h4>
 
 <div class="callout callout-success">
     <div class="callout-title">
         <span>💡</span>
-        <span>Consejo Pedagógico</span>
+        <span>Consejo de Presupuesto</span>
     </div>
-    <p>Las 4P's del marketing mix son: Producto, Precio, Plaza y Promoción. Para cada una, define decisiones estratégicas que se alineen con los objetivos del evento.</p>
+    <p>Para un evento escolar, un presupuesto realista es 300-1500€. No necesitas miles de euros.</p>
 </div>
 
-<table class="w-full border-collapse my-8">
-    <thead>
-        <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-3 text-left">P</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Elemento</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Estrategia</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Acciones Concretas</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold text-blue-600">PRODUCTO</td>
-            <td class="border border-slate-300 px-4 py-3">Feria del Libro + Actividades</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Definir estrategia]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Listar acciones]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold text-green-600">PRECIO</td>
-            <td class="border border-slate-300 px-4 py-3">Entrada gratuita</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Definir estrategia]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Listar acciones]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold text-orange-600">PLAZA</td>
-            <td class="border border-slate-300 px-4 py-3">IES Serra Perenxisa, Torrent</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Definir estrategia]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Listar acciones]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold text-purple-600">PROMOCIÓN</td>
-            <td class="border border-slate-300 px-4 py-3">Campaña 360º</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Definir estrategia]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Listar acciones]</em></td>
-        </tr>
-    </tbody>
-</table>
-
-<h4>📅 Calendario de Comunicación - Plantilla</h4>
-
-<div class="callout callout-warning">
-    <div class="callout-title">
-        <span>🔎</span>
-        <span>Actividad de Planificación</span>
-    </div>
-    <p>Diseña un calendario completo de comunicación indicando para cada momento:</p>
-    <ul>
-        <li>Canal de comunicación (RRSS, prensa, radio, email, cartelería)</li>
-        <li>Mensaje clave a transmitir</li>
-        <li>Responsable de la acción</li>
-        <li>Presupuesto asignado</li>
-        <li>Métrica de éxito</li>
-    </ul>
-</div>
-
-<table class="w-full border-collapse my-8">
-    <thead>
-        <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-3 text-left">Momento</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Acción</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Canales</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Responsable</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">Mes -3</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Especificar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Asignar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">Mes -2</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Especificar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Asignar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">Mes -1</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Especificar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Asignar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">Semana -1</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Especificar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Asignar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">Durante</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Especificar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Asignar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">Post</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Especificar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Asignar]</em></td>
-        </tr>
-    </tbody>
-</table>
-
-<h3>7.3. 👥 Gestión de Recursos Humanos - Guía de Costes</h3>
+<h3>7.2. Control de Gastos - Libro de Caja</h3>
 
 <div class="callout callout-info">
     <div class="callout-title">
         <span>📊</span>
-        <span>Cálculo de Coste Laboral</span>
+        <span>Para el Día del Evento</span>
     </div>
-    <p>El coste total de un trabajador incluye:</p>
-    <ul>
-        <li><strong>Salario bruto:</strong> Lo que percibe el trabajador</li>
-        <li><strong>Seguridad Social (empresa):</strong> ~33% sobre el salario bruto</li>
-        <li><strong>Otros costes:</strong> Formación, EPIs, dietas, etc.</li>
-    </ul>
+    <p>Apunta TODO lo que gastes, aunque sea pequeño:</p>
 </div>
-
-<h4>Tabla de Coste de Personal - Plantilla para Completar</h4>
 
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-3 text-left">Perfil</th>
-            <th class="border border-slate-300 px-4 py-3 text-right">Nº</th>
-            <th class="border border-slate-300 px-4 py-3 text-right">Horas</th>
-            <th class="border border-slate-300 px-4 py-3 text-right">€/hora</th>
-            <th class="border border-slate-300 px-4 py-3 text-right">Subtotal</th>
-            <th class="border border-slate-300 px-4 py-3 text-right">SS (33%)</th>
-            <th class="border border-slate-300 px-4 py-3 text-right">Total</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Fecha</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Concepto</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Ingreso (€)</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Gasto (€)</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Saldo (€)</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Definir]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Sumar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Fecha]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>Saldo inicial</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>0,00</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>0,00</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>0,00</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Definir]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Sumar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Fecha]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Ej: Subvención AMPA]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[_______]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em></em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[_______]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Definir]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Sumar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Fecha]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Ej: Carteles imprenta]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em></em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[_______]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[_______]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Definir]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Sumar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Definir]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Sumar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Definir]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Sumar]</em></td>
-        </tr>
-        <tr class="bg-slate-50 font-bold">
-            <td class="border border-slate-300 px-4 py-3" colspan="4">TOTAL</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[SUMAR]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[SUMAR]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[SUMAR]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[...]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[...]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em></em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em></em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em></em></td>
         </tr>
     </tbody>
 </table>
+
+<h3>7.3. Facturas y Justificantes</h3>
 
 <div class="callout callout-warning">
     <div class="callout-title">
         <span>⚠️</span>
-        <span>Nota sobre Voluntariado</span>
+        <span>Importante</span>
     </div>
-    <p>El voluntariado no tiene coste salarial, pero sí tiene costes asociados: seguros de accidentes, formación, acreditaciones, merchandising de bienvenida y certificado final. <strong>Investiga y presupuesta estos costes.</strong></p>
-</div>
-
-<h3>7.4. 💰 Obligaciones Fiscales - Guía de Investigación</h3>
-
-<div class="callout callout-success">
-    <div class="callout-title">
-        <span>💡</span>
-        <span>Consejo Pedagógico</span>
-    </div>
-    <p>Para conocer las obligaciones fiscales reales:</p>
-    <ul>
-        <li>Visita la web de la Agencia Tributaria (agenciatributaria.es)</li>
-        <li>Consulta los modelos oficiales (036, 303, 111, 200)</li>
-        <li>Investiga tipos impositivos vigentes</li>
-        <li>Consulta las tasas del Ayuntamiento de Torrent</li>
-    </ul>
+    <p>Guarda TODAS las facturas y tickets. Sin justificante, no se puede justificar el gasto.</p>
 </div>
 
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-3 text-left">Impuesto</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Descripción</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Tipo/Importe</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Periodo</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Qué guardar?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Por qué?</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">IVA</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Impuesto sobre el Valor Añadido</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3">✅ Facturas de proveedores</td>
+            <td class="border border-slate-300 px-4 py-3">Para justificar gastos al centro/AMPA</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">IRPF</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Retenciones a trabajadores y profesionales</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3">✅ Tickets pequeños (cinta, rotuladores)</td>
+            <td class="border border-slate-300 px-4 py-3">Los gastos pequeños suman</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">Impuesto Sociedades</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Sobre beneficios de la entidad</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3">✅ Resguardos de transferencia</td>
+            <td class="border border-slate-300 px-4 py-3">Para justificar ingresos</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">IAE</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Impuesto de Actividades Económicas</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Investigar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3 font-bold">Tasas Municipales</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Ocupación de vía pública (Torrent)</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Consultar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Consultar]</em></td>
+            <td class="border border-slate-300 px-4 py-3">✅ Emails de confirmación</td>
+            <td class="border border-slate-300 px-4 py-3">Por si hay problemas con proveedores</td>
         </tr>
     </tbody>
 </table>
 
-<h3>7.5. 🛡️ Prevención de Riesgos Laborales - Actividad</h3>
-
-<div class="callout callout-warning">
-    <div class="callout-title">
-        <span>🔎</span>
-        <span>Tarea de Evaluación de Riesgos</span>
-    </div>
-    <p>Elabora un documento de evaluación de riesgos laborales que incluya:</p>
-    <ul>
-        <li>Identificación de riesgos por puesto de trabajo</li>
-        <li>Evaluación de la probabilidad y severidad de cada riesgo</li>
-        <li>Medidas preventivas específicas</li>
-        <li>EPIs necesarios para cada puesto</li>
-        <li>Protocolos de actuación en caso de accidente</li>
-    </ul>
-</div>
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-    <div class="p-5 bg-orange-50 rounded-xl border border-orange-100">
-        <h4 class="font-bold text-orange-800 mb-3 flex items-center gap-2">
-            <span>⚠️</span> Riesgos a Identificar
-        </h4>
-        <ul class="space-y-2 text-sm text-orange-700">
-            <li>• <em>[Investigar: riesgos de caídas]</em></li>
-            <li>• <em>[Investigar: riesgos de sobreesfuerzos]</em></li>
-            <li>• <em>[Investigar: riesgos de exposición solar]</em></li>
-            <li>• <em>[Investigar: riesgos de ruido]</em></li>
-            <li>• <em>[Investigar: riesgos de aglomeraciones]</em></li>
-            <li>• <em>[Investigar: riesgos eléctricos]</em></li>
-        </ul>
-    </div>
-    <div class="p-5 bg-green-50 rounded-xl border border-green-100">
-        <h4 class="font-bold text-green-800 mb-3 flex items-center gap-2">
-            <span>✅</span> Medidas a Establecer
-        </h4>
-        <ul class="space-y-2 text-sm text-green-700">
-            <li>• <em>[Diseñar: señalización]</em></li>
-            <li>• <em>[Planificar: formación]</em></li>
-            <li>• <em>[Proveer: EPIs]</em></li>
-            <li>• <em>[Establecer: controles]</em></li>
-            <li>• <em>[Organizar: dispositivos de seguridad]</em></li>
-            <li>• <em>[Programar: revisiones]</em></li>
-        </ul>
-    </div>
-</div>
-
-<h3>7.6. 📝 Actividad de Documentación Administrativa</h3>
-
 <div class="callout callout-info">
     <div class="callout-title">
-        <span>📋</span>
-        <span>Entregables Administrativos</span>
+        <span>📁</span>
+        <span>Organización</span>
     </div>
-    <p>Prepara la siguiente documentación lista para uso real:</p>
-    <ol>
-        <li>5 modelos de nóminas completas (con diferentes supuestos)</li>
-        <li>Modelos oficiales AEAT rellenados (036, 303, 111)</li>
-        <li>Plan de comunicación con calendario de publicaciones (3 meses)</li>
-        <li>Contratos tipo para proveedores y colaboradores</li>
-        <li>Documento de evaluación de riesgos laborales del evento</li>
-        <li>Justificación de las decisiones tomadas en cada caso</li>
-    </ol>
+    <p>Crea una carpeta para el evento con estas subcarpetas:</p>
+    <ul>
+        <li>📂 01-Presupuestos</li>
+        <li>📂 02-Facturas</li>
+        <li>📂 03-Ingresos</li>
+        <li>📂 04-Contratos</li>
+        <li>📂 05-Permisos</li>
+    </ul>
 </div>
 `;

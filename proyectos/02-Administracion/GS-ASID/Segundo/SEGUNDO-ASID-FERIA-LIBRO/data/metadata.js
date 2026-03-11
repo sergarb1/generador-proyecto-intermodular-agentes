@@ -8,3 +8,6 @@ window.metadata = {
     courseYear: "Segundo Curso",
     projectImage: "./images/hero.jpg"
 };
+
+// Inicializar objeto de secciones
+window.sectionsContent = {};

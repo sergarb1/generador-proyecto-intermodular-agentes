@@ -1,282 +1,159 @@
-window.sectionsContent = window.sectionsContent || {};
+// Anexos - Feria del Libro IES Serra Perenxisa
 window.sectionsContent.anexos = `
-<h3>📎 Anexos Técnicos - Guía de Desarrollo</h3>
-
 <div class="callout callout-info">
     <div class="callout-title">
         <span>📌</span>
-        <span>Documentación Complementaria</span>
+        <span>Objetivo de esta Sección</span>
     </div>
-    <p>Este apartado contiene los modelos, plantillas y documentación adicional que el alumnado debe desarrollar y completar para la Feria del Libro del IES Serra Perenxisa.</p>
+    <p>Plantillas y modelos que puedes usar para tu proyecto.</p>
 </div>
 
-<div class="callout callout-warning">
-    <div class="callout-title">
-        <span>📝</span>
-        <span>Tarea para el Alumnado</span>
-    </div>
-    <p>Todos los anexos deben ser desarrollados, completados y entregados como parte del proyecto final. Cada anexo debe incluir:</p>
-    <ul class="list-disc list-inside space-y-2 mt-3">
-        <li>Nombre del documento y código de identificación</li>
-        <li>Fecha de elaboración y versión</li>
-        <li>Autoría (nombre del alumno/a)</li>
-        <li>Documento completo listo para uso real</li>
-        <li>Justificación de las decisiones tomadas</li>
-    </ul>
-</div>
-
-<h3>Anexo A: Modelos de Documentos - Plantillas para Desarrollar</h3>
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h4 class="font-bold text-slate-800 mb-3 flex items-center gap-2">
-            <span>📄</span> A.1 Solicitud de Stand
-        </h4>
-        <p class="text-sm text-slate-600 mb-3">Formulario para que libreros y editoriales soliciten su participación.</p>
-        <div class="callout callout-warning">
-            <p class="text-xs"><strong>Tarea:</strong> Diseña el formulario completo con datos fiscales, metros cuadrados, necesidades eléctricas y términos y condiciones.</p>
-        </div>
-    </div>
-
-    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h4 class="font-bold text-slate-800 mb-3 flex items-center gap-2">
-            <span>📝</span> A.2 Contrato de Colaboración
-        </h4>
-        <p class="text-sm text-slate-600 mb-3">Modelo de contrato para patrocinadores y colaboradores.</p>
-        <div class="callout callout-warning">
-            <p class="text-xs"><strong>Tarea:</strong> Redacta el contrato completo con contraprestaciones, exclusividades, pagos y cláusulas de rescisión.</p>
-        </div>
-    </div>
-
-    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h4 class="font-bold text-slate-800 mb-3 flex items-center gap-2">
-            <span>✉️</span> A.3 Carta de Invitación a Autores
-        </h4>
-        <p class="text-sm text-slate-600 mb-3">Comunicación formal para invitar a escritores a participar.</p>
-        <div class="callout callout-warning">
-            <p class="text-xs"><strong>Tarea:</strong> Escribe la carta completa con detalles de la invitación, condiciones, alojamiento y agenda prevista.</p>
-        </div>
-    </div>
-
-    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h4 class="font-bold text-slate-800 mb-3 flex items-center gap-2">
-            <span>🙋</span> A.4 Formulario de Voluntariado
-        </h4>
-        <p class="text-sm text-slate-600 mb-3">Inscripción para personas interesadas en colaborar como voluntarias.</p>
-        <div class="callout callout-warning">
-            <p class="text-xs"><strong>Tarea:</strong> Crea el formulario con datos personales, disponibilidad, preferencias de área y compromiso.</p>
-        </div>
-    </div>
-
-    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h4 class="font-bold text-slate-800 mb-3 flex items-center gap-2">
-            <span>📊</span> A.5 Hoja de Inscripción a Talleres
-        </h4>
-        <p class="text-sm text-slate-600 mb-3">Registro de participantes para actividades de aforo limitado.</p>
-        <div class="callout callout-warning">
-            <p class="text-xs"><strong>Tarea:</strong> Diseña la hoja de inscripción con datos del participante, taller seleccionado y confirmación de pago.</p>
-        </div>
-    </div>
-
-    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h4 class="font-bold text-slate-800 mb-3 flex items-center gap-2">
-            <span>⭐</span> A.6 Encuesta de Satisfacción
-        </h4>
-        <p class="text-sm text-slate-600 mb-3">Cuestionario para evaluar la experiencia de visitantes y expositores.</p>
-        <div class="callout callout-warning">
-            <p class="text-xs"><strong>Tarea:</strong> Elabora la encuesta con escala Likert, preguntas abiertas y NPS (Net Promoter Score).</p>
-        </div>
-    </div>
-</div>
-
-<h3>Anexo B: Planos y Diseños - Actividad Gráfica</h3>
+<h3>Anexo 1: Modelo de Email para Librerías</h3>
 
 <div class="callout callout-info">
     <div class="callout-title">
-        <span>🗺️</span>
-        <span>Documentación Gráfica Requerida</span>
+        <span>📧</span>
+        <span>Para Copiar y Adaptar</span>
     </div>
-    <p>El alumnado debe desarrollar la siguiente documentación gráfica para el IES Serra Perenxisa:</p>
+    <p>Usa este modelo para contactar con librerías:</p>
 </div>
+
+<div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8" style="font-family: monospace; font-size: 0.85rem; white-space: pre-wrap;">
+Asunto: Invitación a Jornada del Libro - IES Serra Perenxisa
+
+Estimados/as:
+
+Me dirijo a ustedes en nombre del IES Serra Perenxisa de Torrent para invitarles a participar en nuestra Jornada del Libro que se celebrará el [FECHA] en nuestro centro.
+
+DETALLES DEL EVENTO:
+- Fecha: [DÍA/MES/AÑO]
+- Horario: [HORARIO]
+- Lugar: IES Serra Perenxisa, Torrent
+- Público esperado: Alumnado del centro y familias
+
+LO QUE OFRECEMOS:
+- Espacio para stand (mesa y silla incluidas)
+- Difusión en redes del centro
+- Posibilidad de vender libros durante el evento
+
+LO QUE PEDIMOS:
+- Traer libros para exponer/vender
+- Colaborar en alguna actividad (firma, presentación)
+
+¿Estarían interesados en participar?
+
+Quedamos a la espera de su respuesta.
+
+Atentamente,
+
+[TU NOMBRE]
+Alumno/a de [TU CURSO]
+IES Serra Perenxisa
+[TELÉFONO/EMAIL]
+</div>
+
+<h3>Anexo 2: Modelo de Email para Autores</h3>
+
+<div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8" style="font-family: monospace; font-size: 0.85rem; white-space: pre-wrap;">
+Asunto: Invitación a Jornada del Libro - IES Serra Perenxisa
+
+Estimado/a [NOMBRE DEL AUTOR/A]:
+
+Somos alumnos/as del IES Serra Perenxisa de Torrent y estamos organizando una Jornada del Libro en nuestro centro.
+
+Nos gustaría mucho contar con su presencia para:
+- Una charla con el alumnado (30-45 min)
+- Una firma de libros (opcional)
+
+FECHA: [DÍA/MES/AÑO]
+HORA: [HORA]
+LUGAR: IES Serra Perenxisa, Torrent
+
+¿Estaría disponible/a?
+
+Quedamos a la espera de su respuesta.
+
+Atentamente,
+
+[TU NOMBRE]
+Alumno/a de [TU CURSO]
+IES Serra Perenxisa
+[TELÉFONO/EMAIL]
+</div>
+
+<h3>Anexo 3: Programa Tipo del Evento</h3>
+
+<div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8" style="font-family: monospace; font-size: 0.85rem;">
+JORNADA DEL LIBRO - IES SERRA PERENXISA
+[FECHA]
+
+09:00 - Llegada del equipo organizador
+09:30 - Montaje de stands
+10:00 - INAUGURACIÓN (Director/a del centro)
+10:30 - Visita de clases a los stands
+11:30 - Taller de lectura (1º ESO)
+12:30 - Encuentro con [AUTOR/A]
+13:30 - Firma de libros
+14:00 - Comida
+15:00 - Taller de booktok (2º ESO)
+16:00 - Concurso de bookstagram
+17:00 - CLAUSURA
+17:30 - Desmontaje
+</div>
+
+<h3>Anexo 4: Checklist de Tareas</h3>
 
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-3 text-left">Documento</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Descripción</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Herramienta Sugerida</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Estado</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Tarea</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Hecha?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Quién?</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">B.1 Plano del Recinto</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Distribución completa de stands, escenarios y servicios en el IES Serra Perenxisa</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">AutoCAD, SketchUp, Floorplanner</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">B.2 Mapa de Flujo de Visitantes</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Recorridos previstos y puntos de congestión</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Visio, Lucidchart</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">B.3 Diseño de Stands Tipo</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Vista 3D de la caseta estándar de 9m²</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">SketchUp, Blender</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">B.4 Señalización del Evento</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Pictogramas, mapas y señalética direccional</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Illustrator, Canva</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">B.5 Mockups de Merchandising</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Bolsas, marcapáginas, credenciales, programas</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm">Photoshop, Canva</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Completar]</em></td>
-        </tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Hablar con dirección del centro</td><td class="border border-slate-300 px-4 py-3"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Nombre]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Reservar fecha y espacio</td><td class="border border-slate-300 px-4 py-3"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Nombre]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Contactar con librerías</td><td class="border border-slate-300 px-4 py-3"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Nombre]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Contactar con autores</td><td class="border border-slate-300 px-4 py-3"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Nombre]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Hacer carteles</td><td class="border border-slate-300 px-4 py-3"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Nombre]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Pedir presupuestos</td><td class="border border-slate-300 px-4 py-3"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Nombre]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Preparar programa del evento</td><td class="border border-slate-300 px-4 py-3"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Nombre]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Imprimir programas</td><td class="border border-slate-300 px-4 py-3"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Nombre]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Confirmar asistentes</td><td class="border border-slate-300 px-4 py-3"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Nombre]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Preparar espacio el día anterior</td><td class="border border-slate-300 px-4 py-3"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Nombre]</em></td></tr>
     </tbody>
 </table>
 
-<h3>Anexo C: Cronogramas Detallados - Actividad de Planificación</h3>
+<h3>Anexo 5: Presupuesto en Blanco</h3>
 
-<div class="my-8 p-6 bg-slate-50 rounded-xl border border-slate-200">
-    <h4 class="font-bold text-slate-800 mb-4">C.1 Diagrama de Gantt del Proyecto</h4>
-    <p class="text-sm text-slate-600 mb-4">El alumnado debe elaborar un diagrama de Gantt completo que incluya:</p>
-    <ul class="text-sm text-slate-600 space-y-2">
-        <li>✓ Todas las fases del proyecto (planificación, comercialización, difusión, ejecución, evaluación)</li>
-        <li>✓ Dependencias entre tareas</li>
-        <li>✓ Hitos principales marcados</li>
-        <li>✓ Asignación de responsables por tarea</li>
-        <li>✓ Porcentaje de avance estimado</li>
-    </ul>
-    <div class="callout callout-warning mt-4">
-        <p class="text-xs"><strong>Herramientas sugeridas:</strong> MS Project, GanttProject (gratuito), TeamGantt, Excel</p>
-    </div>
+<div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8">
+    <p class="text-sm text-slate-600 mb-4">Imprime esta hoja para apuntar gastos durante el proyecto:</p>
+    <table class="w-full border-collapse">
+        <thead>
+            <tr class="bg-slate-200">
+                <th class="border border-slate-300 px-4 py-2 text-left">Fecha</th>
+                <th class="border border-slate-300 px-4 py-2 text-left">Concepto</th>
+                <th class="border border-slate-300 px-4 py-2 text-right">Ingreso</th>
+                <th class="border border-slate-300 px-4 py-2 text-right">Gasto</th>
+                <th class="border border-slate-300 px-4 py-2 text-right">Saldo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td></tr>
+            <tr><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td></tr>
+            <tr><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td></tr>
+            <tr><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td></tr>
+            <tr><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td><td class="border border-slate-300 px-4 py-2"></td></tr>
+        </tbody>
+    </table>
 </div>
 
-<h3>Anexo D: Presupuestos Detallados - Plantillas</h3>
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h4 class="font-bold text-slate-800 mb-3">D.1 Presupuesto de Ingresos</h4>
-        <p class="text-sm text-slate-600 mb-3">Desglose detallado con justificación de cada partida:</p>
-        <ul class="text-xs text-slate-500 space-y-1">
-            <li>• Stands (por tipología y tamaño)</li>
-            <li>• Subvenciones (convocatorias específicas del Ayuntamiento de Torrent)</li>
-            <li>• Patrocinios (por nivel: oro, plata, bronce)</li>
-            <li>• Actividades de pago (por tipo de taller)</li>
-            <li>• Concesiones (food trucks, merchandising)</li>
-        </ul>
-    </div>
-
-    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-        <h4 class="font-bold text-slate-800 mb-3">D.2 Presupuesto de Gastos</h4>
-        <p class="text-sm text-slate-600 mb-3">Desglose detallado con 3 presupuestos por proveedor:</p>
-        <ul class="text-xs text-slate-500 space-y-1">
-            <li>• Infraestructura (casetas, escenario, electricidad)</li>
-            <li>• Personal (salarios + seguros sociales)</li>
-            <li>• Marketing (diseño, impresión, publicidad)</li>
-            <li>• Seguros y tasas</li>
-            <li>• Imprevistos (10% del total)</li>
-        </ul>
-    </div>
-</div>
-
-<h3>Anexo E: Plan de Emergencia - Protocolos para Desarrollar</h3>
-
-<div class="callout callout-warning">
+<div class="callout callout-success">
     <div class="callout-title">
-        <span>⚠️</span>
-        <span>Protocolos de Actuación</span>
+        <span>💡</span>
+        <span>Consejo</span>
     </div>
-    <p>El alumnado debe desarrollar los siguientes protocolos de emergencia para el IES Serra Perenxisa:</p>
-</div>
-
-<table class="w-full border-collapse my-8">
-    <thead>
-        <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-3 text-left">Situación</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Protocolo a Desarrollar</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Responsable</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">🌧️ Lluvia intensa</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Desarrollar: activación de carpas, reubicación, comunicación]</em></td>
-            <td class="border border-slate-300 px-4 py-3">Coordinador de Stands</td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">🚑 Emergencia médica</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Desarrollar: primeros auxilios, llamada 112, acompañamiento]</em></td>
-            <td class="border border-slate-300 px-4 py-3">Responsable de Seguridad</td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">🔥 Incendio</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Desarrollar: alarmas, evacuación, punto de encuentro]</em></td>
-            <td class="border border-slate-300 px-4 py-3">Director General</td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">👥 Aglomeración</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Desarrollar: control de accesos, cierre temporal, refuerzo seguridad]</em></td>
-            <td class="border border-slate-300 px-4 py-3">Responsable de Seguridad</td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">⚡ Corte eléctrico</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Desarrollar: generador de respaldo, comunicación]</em></td>
-            <td class="border border-slate-300 px-4 py-3">Técnico Eléctrico</td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">🎤 Cancelación de autor</td>
-            <td class="border border-slate-300 px-4 py-3 text-sm"><em>[Desarrollar: reprogramación, comunicación a afectados]</em></td>
-            <td class="border border-slate-300 px-4 py-3">Coordinador Literario</td>
-        </tr>
-    </tbody>
-</table>
-
-<h3>Anexo F: Checklist de Verificación Final - Para Completar</h3>
-
-<div class="my-8 p-6 bg-green-50 rounded-xl border border-green-200">
-    <h4 class="font-bold text-green-800 mb-4">✅ Lista de Comprobación Pre-Evento</h4>
-    <p class="text-sm text-green-700 mb-4">El alumnado debe completar y marcar cada ítem de esta lista:</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Permisos y licencias aprobados (Ayuntamiento de Torrent)</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Seguros contratados y pagados</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Todos los stands reservados</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Autores confirmados (100%)</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Programa publicado en web</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Campaña de marketing activa</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Personal contratado y formado</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Voluntariado briefing completado</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Proveedores confirmados por escrito</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Equipamiento técnico probado</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Plan de emergencia revisado</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Material de papelería impreso</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> App móvil testeada</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Redes sociales programadas</div>
-        <div class="flex items-center gap-2"><input type="checkbox" disabled> Presupuesto cerrado y aprobado</div>
-    </div>
-</div>
-
-<h3>Anexo G: Documentación Adicional - Guía</h3>
-
-<div class="callout callout-info">
-    <div class="callout-title">
-        <span>📋</span>
-        <span>Otros Anexos Recomendados</span>
-    </div>
-    <p>Considera añadir también:</p>
-    <ul>
-        <li><strong>Anexo H:</strong> Glosario de términos (conceptos técnicos explicados)</li>
-        <li><strong>Anexo I:</strong> Manual de acogida para voluntariado</li>
-        <li><strong>Anexo J:</strong> Guía de estilo para comunicaciones (logos, colores, tipografías)</li>
-        <li><strong>Anexo K:</strong> Base de datos de contactos (autores, proveedores, instituciones)</li>
-        <li><strong>Anexo L:</strong> Memoria fotográfica de ediciones anteriores (si las hubiera)</li>
-    </ul>
+    <p>Imprime estos anexos y úsalos como plantillas. Adapta los textos a tu proyecto real.</p>
 </div>
 `;

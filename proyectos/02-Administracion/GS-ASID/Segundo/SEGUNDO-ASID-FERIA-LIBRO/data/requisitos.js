@@ -1,226 +1,186 @@
-window.sectionsContent = window.sectionsContent || {};
+// Requisitos - Feria del Libro IES Serra Perenxisa
 window.sectionsContent.requisitos = `
-<h3>4.1. 📋 Requisitos Legales y Administrativos - Guía de Trámites</h3>
-
 <div class="callout callout-info">
     <div class="callout-title">
         <span>📌</span>
         <span>Objetivo de esta Sección</span>
     </div>
-    <p>Identificar todos los trámites legales, permisos y documentación necesaria para la organización de un evento de estas características en Torrent.</p>
+    <p>Investigarás qué permisos necesitas para hacer el evento en el instituto. Para un evento escolar los trámites son sencillos.</p>
 </div>
+
+<h3>4.1. Permisos Necesarios - ¿Qué Necesitas?</h3>
 
 <div class="callout callout-warning">
     <div class="callout-title">
         <span>📝</span>
-        <span>Tarea para el Alumnado</span>
+        <span>Tu Tarea</span>
     </div>
-    <p>Investiga y completa esta sección con:</p>
-    <ul>
-        <li>Descarga los modelos oficiales de solicitud del Ayuntamiento de Torrent</li>
-        <li>Solicita 3 presupuestos de seguros de responsabilidad civil para eventos</li>
-        <li>Redacta un contrato tipo para la cesión de stands a libreros</li>
-        <li>Elabora un checklist de documentación con fechas límite reales</li>
-        <li>Investiga las sanciones por incumplimiento de la normativa de ruidos</li>
-    </ul>
+    <p>Para un evento en un instituto, necesitas estos permisos. Investiga cada uno:</p>
 </div>
 
-<h3>4.2. 🏛️ Permisos y Licencias - Plantilla para Investigar</h3>
+<h4>📋 Checklist de Permisos</h4>
 
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-3 text-left">Trámite</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Organismo</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Plazo</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Coste Aprox.</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Permiso</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Quién lo da?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Lo tienes?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Notas</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Licencia de Actividades</strong><br><small class="text-slate-500">Autorización para celebración de eventos</small></td>
-            <td class="border border-slate-300 px-4 py-3">Ayuntamiento de Torrent<br><small>Registro General</small></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Consultar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><strong>Aprobación del Centro</strong><br><small>Lo más importante</small></td>
+            <td class="border border-slate-300 px-4 py-3">Equipo Directivo del IES</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ] Sí [ ] No</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Habla con dirección]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Ocupación de Vía Pública</strong><br><small class="text-slate-500">Uso de espacio en el IES Serra Perenxisa</small></td>
-            <td class="border border-slate-300 px-4 py-3">Ayuntamiento de Torrent<br><small>Delegación de Espacios Públicos</small></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Consultar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><strong>Uso del Espacio</strong><br><small>Reservar el patio</small></td>
+            <td class="border border-slate-300 px-4 py-3">Secretaría del Centro</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ] Sí [ ] No</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Qué fecha?]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Autorización Sanitaria</strong><br><small class="text-slate-500">Para food trucks y venta de alimentos</small></td>
-            <td class="border border-slate-300 px-4 py-3">Conselleria de Sanidad</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Consultar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><strong>Seguro Escolar</strong><br><small>Ver cobertura</small></td>
+            <td class="border border-slate-300 px-4 py-3">Secretaría del Centro</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ] Sí [ ] No</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Cubre el evento?]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Comunicación Previa de Actividad Musical</strong><br><small class="text-slate-500">Presentaciones con sonido amplificado</small></td>
-            <td class="border border-slate-300 px-4 py-3">Ayuntamiento de Torrent<br><small>Sección de Ruidos</small></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Consultar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><strong>Autorización Familias</strong><br><small>Para actividades</small></td>
+            <td class="border border-slate-300 px-4 py-3">Padres/Madres</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ] Sí [ ] No</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Crear modelo]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Alta en IAE</strong><br><small class="text-slate-500">Impuesto de Actividades Económicas - Epígrafe 989</small></td>
-            <td class="border border-slate-300 px-4 py-3">Agencia Tributaria</td>
-            <td class="border border-slate-300 px-4 py-3">Antes de iniciar</td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Declaración Responsable</strong><br><small class="text-slate-500">Cumplimiento normativa seguridad</small></td>
+            <td class="border border-slate-300 px-4 py-3"><strong>Comunicación Ayuntamiento</strong><br><small>Si hay impacto exterior</small></td>
             <td class="border border-slate-300 px-4 py-3">Ayuntamiento de Torrent</td>
-            <td class="border border-slate-300 px-4 py-3">Inmediato</td>
-            <td class="border border-slate-300 px-4 py-3">Gratuito</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ] Sí [ ] No</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Es necesario?]</em></td>
         </tr>
     </tbody>
 </table>
-
-<h3>4.3. 📄 Documentación Obligatoria - Checklist</h3>
 
 <div class="callout callout-success">
     <div class="callout-title">
         <span>💡</span>
-        <span>Consejo Pedagógico</span>
+        <span>Importante</span>
     </div>
-    <p>Organiza la documentación en carpetas separadas: Mercantil, Seguros, Certificaciones y Contratos. Usa un sistema de versionado para mantener actualizados los documentos.</p>
+    <p>Para un evento escolar dentro del instituto, NO necesitas licencias complejas. El seguro escolar suele cubrir actividades educativas.</p>
 </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-    <div class="p-5 bg-blue-50 rounded-xl border border-blue-100">
-        <h4 class="font-bold text-blue-800 mb-3 flex items-center gap-2">
-            <span>📑</span> Documentación Mercantil
-        </h4>
-        <ul class="space-y-2 text-sm text-blue-700">
-            <li>☐ NIF/CIF de la entidad organizadora</li>
-            <li>☐ Estatutos sociales (si es asociación/fundación)</li>
-            <li>☐ Poder de representación del solicitante</li>
-            <li>☐ Alta en censo de empresarios (modelo 036)</li>
-        </ul>
-    </div>
-    <div class="p-5 bg-green-50 rounded-xl border border-green-100">
-        <h4 class="font-bold text-green-800 mb-3 flex items-center gap-2">
-            <span>🛡️</span> Seguros Obligatorios
-        </h4>
-        <ul class="space-y-2 text-sm text-green-700">
-            <li>☐ Responsabilidad Civil (mín. 600.000 €)</li>
-            <li>☐ Accidentes para personal y voluntariado</li>
-            <li>☐ Cancelación de eventos (recomendado)</li>
-            <li>☐ Póliza de caución (si requiere el Ayuntamiento)</li>
-        </ul>
-    </div>
-    <div class="p-5 bg-purple-50 rounded-xl border border-purple-100">
-        <h4 class="font-bold text-purple-800 mb-3 flex items-center gap-2">
-            <span>⚡</span> Certificaciones Técnicas
-        </h4>
-        <ul class="space-y-2 text-sm text-purple-700">
-            <li>☐ Certificado eléctrico de la instalación</li>
-            <li>☐ Certificado de montaje de estructuras</li>
-            <li>☐ Plan de autoprotección (si aforo >2000)</li>
-            <li>☐ Certificado de seguridad contra incendios</li>
-        </ul>
-    </div>
-    <div class="p-5 bg-orange-50 rounded-xl border border-orange-100">
-        <h4 class="font-bold text-orange-800 mb-3 flex items-center gap-2">
-            <span>📝</span> Contratos y Convenios
-        </h4>
-        <ul class="space-y-2 text-sm text-orange-700">
-            <li>☐ Contrato de alquiler del espacio</li>
-            <li>☐ Convenio de colaboración con Ayuntamiento de Torrent</li>
-            <li>☐ Contratos con proveedores y artistas</li>
-            <li>☐ Convenios con patrocinadores</li>
-        </ul>
-    </div>
-</div>
-
-<h3>4.4. ⚖️ Normativa de Aplicación - Investigación Guiada</h3>
+<h3>4.2. Modelo de Solicitud al Centro - Plantilla</h3>
 
 <div class="callout callout-info">
     <div class="callout-title">
-        <span>📚</span>
-        <span>Recursos para Investigar</span>
+        <span>📄</span>
+        <span>Completa esta plantilla</span>
     </div>
-    <p>Busca el texto completo de cada norma y resume los artículos que afecten directamente a la organización del evento:</p>
+    <p>Copia este modelo y rellénalo con tus datos:</p>
 </div>
+
+<div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8" style="font-family: monospace; font-size: 0.85rem; white-space: pre-wrap;">
+A LA ATENCIÓN DEL EQUIPO DIRECTIVO DEL IES SERRA PERENXISA
+
+D./Dña. [TU NOMBRE], alumno/a de [TU CURSO] de [TU CICLO],
+
+EXPONE:
+
+Que deseo organizar una Jornada del Libro en el centro educativo, con los siguientes detalles:
+
+- Fecha propuesta: [DÍA/MES/AÑO]
+- Duración: [1 o 2 días]
+- Espacio necesario: Patio del instituto
+- Actividad: Stands de librerías, talleres de lectura, encuentro con autores
+
+SOLICITA:
+
+1. Aprobación del equipo directivo para la realización del evento
+2. Reserva del espacio (patio) para la fecha indicada
+3. Información sobre el seguro escolar y su cobertura
+4. Autorización para contactar con librerías locales
+
+Adjunto memoria del proyecto y presupuesto estimado.
+
+En Torrent, a [FECHA]
+
+Fdo.: [TU NOMBRE]
+    Alumno/a de [CURSO]
+    IES Serra Perenxisa
+</div>
+
+<h3>4.3. Autorización de Familias - Modelo</h3>
+
+<div class="callout callout-warning">
+    <div class="callout-title">
+        <span>📝</span>
+        <span>Para Completar</span>
+    </div>
+    <p>Crea un modelo de autorización para las familias si el alumnado sale del centro o participa en actividades especiales:</p>
+</div>
+
+<div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8" style="font-family: monospace; font-size: 0.85rem;">
+AUTORIZACIÓN PARA ACTIVIDAD ESCOLAR
+JORNADA DEL LIBRO - IES SERRA PERENXISA
+
+D./Dña. _________________________________
+Como padre/madre/tutor de: _______________
+Alumno/a de: ____________________________
+
+AUTORIZO:
+[ ] Participación en la Jornada del Libro
+[ ] Salida del centro (si aplica)
+[ ] Uso de imagen (fotos del evento)
+
+Fecha: __/__/____    Firma: _______________
+</div>
+
+<h3>4.4. Contactos Útiles - Investiga</h3>
 
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-3 text-left">Normativa</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Artículos Relevantes</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Impacto en el Proyecto</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Organismo/Persona</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Teléfono/Email</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Para qué?</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Ley 7/1985</strong><br><small>Reguladora de las Bases de Régimen Local</small></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Analizar]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Dirección del IES Serra Perenxisa</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Buscar en web del centro]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Aprobación del evento</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Ordenanza Municipal de Actividades</strong><br><small>Ayuntamiento de Torrent</small></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Analizar]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Secretaría del Centro</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Buscar en web del centro]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Reserva de espacio, seguro</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Real Decreto 2816/1982</strong><br><small>sobre espectáculos públicos</small></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Analizar]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Ayuntamiento de Torrent</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Buscar: torrent.es]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Subvenciones, información</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Ley 31/1995</strong><br><small>de Prevención de Riesgos Laborales</small></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Analizar]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Librerías de Torrent</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Buscar en Google Maps]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Stands, colaboración</td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>RGPD (UE) 2016/679</strong><br><small>de Protección de Datos</small></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Analizar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Ley 7/1996</strong><br><small>de Ordenación del Comercio Minorista</small></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Analizar]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3"><strong>Ordenanza de Ruidos</strong><br><small>municipal</small></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>[Analizar]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Biblioteca Municipal</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Buscar en Google]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Colaboración, préstamo de libros</td>
         </tr>
     </tbody>
 </table>
 
-<h3>4.5. 📊 Flujo de Trámites Administrativos - Actividad</h3>
-
-<div class="callout callout-warning">
-    <div class="callout-title">
-        <span>🔎</span>
-        <span>Tarea de Investigación</span>
-    </div>
-    <p>Elabora un diagrama de flujo con los trámites administrativos necesarios. Para cada trámite indica:</p>
-    <ul>
-        <li>Organismo donde se presenta</li>
-        <li>Documentación requerida</li>
-        <li>Plazo de resolución</li>
-        <li>Coste/tasa asociada</li>
-        <li>Consecuencias del retraso</li>
-    </ul>
-</div>
-
-<h3>4.6. 🎯 Actividad Práctica de Documentación</h3>
-
 <div class="callout callout-info">
     <div class="callout-title">
-        <span>📋</span>
-        <span>Entregables</span>
+        <span>📞</span>
+        <span>Consejo</span>
     </div>
-    <p>Prepara la siguiente documentación lista para uso real:</p>
-    <ol>
-        <li>Modelo oficial de solicitud de licencia de actividades (Torrent)</li>
-        <li>Comparativa de 3 presupuestos de seguros de RC</li>
-        <li>Contrato tipo para cesión de stands (con cláusulas legales)</li>
-        <li>Checklist de documentación con fechas límite</li>
-        <li>Resumen de sanciones por incumplimiento normativo</li>
-    </ol>
+    <p>Llama o envía email a estos contactos. Anota las respuestas en tu proyecto.</p>
 </div>
 `;
