@@ -1,62 +1,119 @@
-window.sectionsContent = window.sectionsContent || {};
+// Viabilidad del Proyecto - Feria del Libro IES Serra Perenxisa
 window.sectionsContent.viabilidad = `
-<h3>3.1. 📊 Análisis DAFO - Guía de Elaboración</h3>
-
 <div class="callout callout-info">
     <div class="callout-title">
         <span>📌</span>
         <span>Objetivo de esta Sección</span>
     </div>
-    <p>Aprender a evaluar la viabilidad del proyecto mediante el análisis de fortalezas, debilidades, oportunidades y amenazas, así como los indicadores financieros clave.</p>
+    <p>Aprenderás a evaluar si el evento es viable con un análisis DAFO y un presupuesto realista.</p>
 </div>
+
+<h3>3.1. Análisis DAFO - Guía Paso a Paso</h3>
 
 <div class="callout callout-warning">
     <div class="callout-title">
         <span>📝</span>
-        <span>Tarea para el Alumnado</span>
+        <span>Tarea: Completa el DAFO</span>
     </div>
-    <p>Completa el análisis DAFO investigando:</p>
-    <ul>
-        <li>Entrevista al equipo directivo del IES Serra Perenxisa (fortalezas internas)</li>
-        <li>Encuesta a potenciales visitantes (debilidades percibidas)</li>
-        <li>Análisis de eventos similares en Torrent (oportunidades)</li>
-        <li>Estudio de factores externos (amenazas)</li>
-    </ul>
+    <p>El DAFO analiza Fortalezas, Debilidades, Oportunidades y Amenazas. Completa cada cuadro:</p>
 </div>
 
-<h3>3.2. 💰 Presupuesto - Plantilla para Completar</h3>
+<h4>📊 Matriz DAFO - Plantilla para Completar</h4>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr>
+            <th class="border border-slate-300 px-4 py-3 bg-yellow-100">⚠️ DEBILIDADES (Internas)</th>
+            <th class="border border-slate-300 px-4 py-3 bg-red-100">🚨 AMENAZAS (Externas)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3" style="min-height: 150px; vertical-align: top;">
+                <p class="text-sm text-slate-600 mb-2"><em>Ejemplos para inspirarte:</em></p>
+                <ul class="text-sm list-disc list-inside">
+                    <li><em>Poco presupuesto del centro</em></li>
+                    <li><em>Pocos profesores disponibles</em></li>
+                    <li><em>[Añade los tuyos...]</em></li>
+                </ul>
+                <p class="mt-4"><strong>Tus debilidades:</strong></p>
+                <p><em>[Escribe aquí...]</em></p>
+            </td>
+            <td class="border border-slate-300 px-4 py-3" style="min-height: 150px; vertical-align: top;">
+                <p class="text-sm text-slate-600 mb-2"><em>Ejemplos para inspirarte:</em></p>
+                <ul class="text-sm list-disc list-inside">
+                    <li><em>Lluia el día del evento</em></li>
+                    <li><em>Coincide con otros eventos</em></li>
+                    <li><em>[Añade los tuyos...]</em></li>
+                </ul>
+                <p class="mt-4"><strong>Tus amenazas:</strong></p>
+                <p><em>[Escribe aquí...]</em></p>
+            </td>
+        </tr>
+        <tr>
+            <th class="border border-slate-300 px-4 py-3 bg-blue-100">💪 FORTALEZAS (Internas)</th>
+            <th class="border border-slate-300 px-4 py-3 bg-green-100">🌟 OPORTUNIDADES (Externas)</th>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3" style="min-height: 150px; vertical-align: top;">
+                <p class="text-sm text-slate-600 mb-2"><em>Ejemplos para inspirarte:</em></p>
+                <ul class="text-sm list-disc list-inside">
+                    <li><em>Patio amplio disponible</em></li>
+                    <li><em>Alumnado motivado</em></li>
+                    <li><em>[Añade los tuyos...]</em></li>
+                </ul>
+                <p class="mt-4"><strong>Tus fortalezas:</strong></p>
+                <p><em>[Escribe aquí...]</em></p>
+            </td>
+            <td class="border border-slate-300 px-4 py-3" style="min-height: 150px; vertical-align: top;">
+                <p class="text-sm text-slate-600 mb-2"><em>Ejemplos para inspirarte:</em></p>
+                <ul class="text-sm list-disc list-inside">
+                    <li><em>Librerías locales interesadas</em></li>
+                    <li><em>Subvenciones del ayuntamiento</em></li>
+                    <li><em>[Añade los tuyos...]</em></li>
+                </ul>
+                <p class="mt-4"><strong>Tus oportunidades:</strong></p>
+                <p><em>[Escribe aquí...]</em></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="callout callout-success">
+    <div class="callout-title">
+        <span>💡</span>
+        <span>Cómo Hacer el DAFO</span>
+    </div>
+    <ol class="list-decimal list-inside space-y-2">
+        <li>Entrevista al equipo directivo (fortalezas del centro)</li>
+        <li>Encuesta a 10 compañeros (¿vendrían al evento?)</li>
+        <li>Investiga eventos similares en otros institutos</li>
+        <li>Consulta en el ayuntamiento por subvenciones</li>
+    </ol>
+</div>
+
+<h3>3.2. Presupuesto - Plantilla Realista</h3>
 
 <div class="callout callout-info">
     <div class="callout-title">
-        <span>💡</span>
-        <span>Consejo Pedagógico</span>
+        <span>💰</span>
+        <span>Consejo de Presupuesto</span>
     </div>
-    <p>Para elaborar presupuestos reales:</p>
-    <ul>
-        <li>Solicita al menos 3 presupuestos por cada concepto</li>
-        <li>Utiliza hojas de cálculo con fórmulas automáticas</li>
-        <li>Investiga tasas municipales reales en el Ayuntamiento de Torrent</li>
-        <li>Consulta convocatorias de subvenciones oficiales</li>
-    </ul>
+    <p>Un instituto tiene presupuesto limitado. Sé realista con los costes.</p>
 </div>
 
-<h4>Tabla de Ingresos - Plantilla</h4>
+<h4>Tabla de INGRESOS - Completa</h4>
+
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
             <th class="border border-slate-300 px-4 py-3 text-left">Concepto</th>
             <th class="border border-slate-300 px-4 py-3 text-right">Cantidad</th>
-            <th class="border border-slate-300 px-4 py-3 text-right">Precio Unitario</th>
+            <th class="border border-slate-300 px-4 py-3 text-right">Precio</th>
             <th class="border border-slate-300 px-4 py-3 text-right">Total (€)</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">Alquiler de stands</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Investigar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Presupuesto]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-        </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3">Subvención Ayuntamiento de Torrent</td>
             <td class="border border-slate-300 px-4 py-3 text-right"><em>[Investigar]</em></td>
@@ -64,21 +121,21 @@ window.sectionsContent.viabilidad = `
             <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Patrocinios (empresas locales)</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Definir]</em></td>
+            <td class="border border-slate-300 px-4 py-3">Subvención Generalitat</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Investigar]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Consultar]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Alquiler stands a librerías</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Nº stands]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[50-100€/stand]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Patrocinio AMPA</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Consultar]</em></td>
             <td class="border border-slate-300 px-4 py-3 text-right"><em>[Negociar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">Actividades de pago</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Estimar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Fijar]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">Concesiones (food trucks, etc.)</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Definir]</em></td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Presupuestar]</em></td>
             <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
         </tr>
         <tr class="bg-slate-50 font-bold">
@@ -88,146 +145,128 @@ window.sectionsContent.viabilidad = `
     </tbody>
 </table>
 
-<h4>Tabla de Gastos - Plantilla</h4>
+<h4>Tabla de GASTOS - Completa</h4>
+
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
             <th class="border border-slate-300 px-4 py-3 text-left">Concepto</th>
             <th class="border border-slate-300 px-4 py-3 text-right">Total (€)</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Proveedor (3 presupuestos)</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">3 Presupuestos</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Alquiler de espacio (tasas municipales)</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Consultar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Ayuntamiento de Torrent</em></td>
+            <td class="border border-slate-300 px-4 py-3">Alquiler carpas para stands</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Pedir 3 presupuestos]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Nombres de empresas]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Alquiler de casetas y mobiliario</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Solicitar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Empresas de eventos</em></td>
+            <td class="border border-slate-300 px-4 py-3">Mesas y sillas</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[¿El centro tiene?]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Si no, pedir presupuesto]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Escenario y equipamiento sonoro</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Solicitar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Empresas de sonido</em></td>
+            <td class="border border-slate-300 px-4 py-3">Equipo de sonido</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[¿El centro tiene?]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Si no, pedir presupuesto]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Electricidad y agua</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Presupuestar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Compañías suministradoras</em></td>
+            <td class="border border-slate-300 px-4 py-3">Publicidad (carteles, dípticos)</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Pedir 3 presupuestos]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Imprentas de Torrent]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Seguros (RC, accidentes, cancelación)</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Solicitar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Aseguradoras</em></td>
+            <td class="border border-slate-300 px-4 py-3">Invitación a autores</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Viaje + alojamiento]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Autores locales]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Permisos y licencias</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Consultar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Ayuntamiento de Torrent</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">Marketing y publicidad</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Diseñar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Agencias/Imprentas</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">Personal (seguridad, limpieza, técnicos)</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Empresas ETT</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">Dietas y desplazamientos autores</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Negociar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Directamente</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">Material de oficina y gestión</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Presupuestar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Papelerías</em></td>
-        </tr>
-        <tr>
-            <td class="border border-slate-300 px-4 py-3">App y desarrollo web</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Solicitar]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Desarrolladores</em></td>
+            <td class="border border-slate-300 px-4 py-3">Seguro del evento</td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Consultar seguro escolar]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Secretaría del centro]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3">Imprevistos (10%)</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3"><em>Reserva</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-right"><em>[10% del total]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Siempre hay imprevistos]</em></td>
         </tr>
         <tr class="bg-slate-50 font-bold">
-            <td class="border border-slate-300 px-4 py-3">TOTAL GASTOS</td>
+            <td class="border border-slate-300 px-4 py-3" colspan="1">TOTAL GASTOS</td>
             <td class="border border-slate-300 px-4 py-3 text-right"><em>[SUMAR]</em></td>
-            <td class="border border-slate-300 px-4 py-3">-</td>
+            <td class="border border-slate-300 px-4 py-3"></td>
         </tr>
     </tbody>
 </table>
 
-<h3>3.3. 📈 Indicadores Financieros - Guía de Cálculo</h3>
+<h4>✅ Balance Final - Fórmula</h4>
 
-<div class="callout callout-success">
+<div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8">
+    <p class="font-bold text-lg mb-4">Calcula el balance:</p>
+    <p class="text-xl"><strong>INGRESOS - GASTOS = </strong> <em style="font-size: 1.5em;">[RESULTADO] €</em></p>
+    <p class="mt-4 text-slate-600">
+        <strong>Si es positivo:</strong> ✅ El evento es viable<br>
+        <strong>Si es negativo:</strong> ⚠️ Debes reducir gastos o buscar más ingresos
+    </p>
+</div>
+
+<div class="callout callout-warning">
     <div class="callout-title">
-        <span>💡</span>
-        <span>Consejo Pedagógico</span>
+        <span>⚠️</span>
+        <span>Consejo Importante</span>
     </div>
-    <p>Los indicadores financieros te ayudarán a determinar si el proyecto es viable. Investiga las fórmulas de:</p>
-    <ul>
-        <li><strong>ROI:</strong> (Beneficio Neto / Inversión) × 100</li>
-        <li><strong>Margen de Beneficio:</strong> (Beneficio / Ingresos) × 100</li>
-        <li><strong>Punto de Equilibrio:</strong> Gastos Fijos / (Precio - Gastos Variables Unitarios)</li>
-    </ul>
+    <p>Para un instituto, un presupuesto realista es 500-2000€. No pongas cifras de grandes eventos.</p>
+</div>
+
+<h3>3.3. ¿Es Viable el Proyecto?</h3>
+
+<div class="callout callout-info">
+    <div class="callout-title">
+        <span>📋</span>
+        <span>Checklist de Viabilidad</span>
+    </div>
+    <p>Responde SÍ o NO a cada pregunta:</p>
 </div>
 
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
-            <th class="border border-slate-300 px-4 py-3 text-left">Indicador</th>
-            <th class="border border-slate-300 px-4 py-3 text-right">Valor (a calcular)</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Interpretación</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Pregunta</th>
+            <th class="border border-slate-300 px-4 py-3 text-center">SÍ</th>
+            <th class="border border-slate-300 px-4 py-3 text-center">NO</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">ROI (Retorno de Inversión)</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3">¿Es rentable? (>0%)</td>
+            <td class="border border-slate-300 px-4 py-3">¿El centro aprueba el evento?</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Margen de Beneficio</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3">¿Es saludable? (>15%)</td>
+            <td class="border border-slate-300 px-4 py-3">¿Hay presupuesto suficiente?</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Punto de Equilibrio</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3">¿Cuántos stands mínimos?</td>
+            <td class="border border-slate-300 px-4 py-3">¿Hay espacio en el patio?</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
         </tr>
         <tr>
-            <td class="border border-slate-300 px-4 py-3">Ratio Gastos/Ingresos</td>
-            <td class="border border-slate-300 px-4 py-3 text-right"><em>[Calcular]</em></td>
-            <td class="border border-slate-300 px-4 py-3">¿Es eficiente? (<85%)</td>
+            <td class="border border-slate-300 px-4 py-3">¿Hay profesores voluntarios?</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">¿Librerías interesadas?</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
         </tr>
     </tbody>
 </table>
 
-<h3>3.4. 🎯 Actividad de Análisis de Viabilidad</h3>
-
-<div class="callout callout-warning">
-    <div class="callout-title">
-        <span>🔎</span>
-        <span>Tarea de Análisis Financiero</span>
-    </div>
-    <p>Completa esta sección con:</p>
-    <ol>
-        <li>Solicita 3 presupuestos reales de alquiler de casetas para eventos</li>
-        <li>Investiga las tasas municipales reales para ocupación de vía pública en Torrent</li>
-        <li>Calcula el coste real de personal con seguros sociales incluidos</li>
-        <li>Elabora un escenario pesimista (50% de ocupación) y propone medidas correctoras</li>
-        <li>Diseña una hoja de cálculo Excel con fórmulas automáticas para el presupuesto</li>
-        <li>Investiga subvenciones disponibles en la web del Ayuntamiento de Torrent</li>
-    </ol>
-</div>
+<p class="text-center font-bold text-lg mt-4">
+    <em>Si tienes 4-5 SÍ → El proyecto es VIABLE ✅</em><br>
+    <em>Si tienes 0-3 SÍ → Replantea el proyecto ⚠️</em>
+</p>
 `;
