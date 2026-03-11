@@ -50,6 +50,101 @@ window.sectionsContent.introduccion = `
     </tbody>
 </table>
 
+<h4>👥 ¿Quién Puede Venir?</h4>
+
+<div class="callout callout-info">
+    <div class="callout-title">
+        <span>📌</span>
+        <span>Visitantes del Evento</span>
+    </div>
+    <p>No solo es para tu instituto. ¡Puedes invitar a más gente!</p>
+</div>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Grupo</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Cuándo?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Actividades para ellos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Alumnado del centro</strong></td>
+            <td class="border border-slate-300 px-4 py-3">Durante el horario lectivo</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Visitar stands, talleres]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Familias</strong></td>
+            <td class="border border-slate-300 px-4 py-3">Tarde o finde</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Comprar libros, actividades]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Colegios de primaria</strong></td>
+            <td class="border border-slate-300 px-4 py-3">Mañanas (invitados)</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Cuenta cuentos, taller de ilustración]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Otros institutos</strong></td>
+            <td class="border border-slate-300 px-4 py-3">Horario lectivo</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Intercambio de experiencias]</em></td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>📚 Actividades para Niños de Primaria</h4>
+
+<div class="callout callout-warning">
+    <div class="callout-title">
+        <span>📝</span>
+        <span>Si Vienen Colegios</span>
+    </div>
+    <p>Los niños de primaria necesitan actividades especiales. Completa esta tabla:</p>
+</div>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Actividad</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Para qué edad?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Qué necesitas?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Quién lo hace?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Cuenta cuentos</strong></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[3º-6º primaria]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Libros, espacio tranquilo]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Profesor/a o voluntario]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Taller de ilustración</strong></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Todos]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Papeles, lápices, ceras]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Alumnos de tu centro]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Intercambio de libros</strong></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Todos]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Libros de su biblioteca]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Profesores de primaria]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Teatrillo de títeres</strong></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[1º-3º primaria]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Títeres, guion]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Voluntarios]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Búsqueda del tesoro literaria</strong></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[4º-6º primaria]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Pistas, premios]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Alumnos organizadores]</em></td>
+        </tr>
+    </tbody>
+</table>
+
 <h4>📚 Problemática: Fomento Lector en el Centro</h4>
 
 <div class="callout callout-info">

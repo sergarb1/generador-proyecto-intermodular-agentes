@@ -125,6 +125,85 @@ JORNADA DEL LIBRO - IES SERRA PERENXISA
     </tbody>
 </table>
 
+<h3>Anexo 6: Modelo para Invitar a Colegios de Primaria</h3>
+
+<div class="callout callout-info">
+    <div class="callout-title">
+        <span>🏫</span>
+        <span>Para Copiar y Adaptar</span>
+    </div>
+    <p>Usa este modelo para invitar a colegios de primaria:</p>
+</div>
+
+<div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8" style="font-family: monospace; font-size: 0.85rem; white-space: pre-wrap;">
+Asunto: Invitación a Jornada del Libro - IES Serra Perenxisa
+
+Estimados/as compañeros/as del CEIP [NOMBRE DEL COLEGIO]:
+
+Desde el IES Serra Perenxisa estamos organizando una JORNADA DEL LIBRO
+y nos encantaría que vuestro centro pudiera participar.
+
+DETALLES DEL EVENTO:
+- Fecha: [DÍA/MES/AÑO]
+- Horario para colegios: [Ej: 10:00 - 13:00]
+- Lugar: IES Serra Perenxisa, [Dirección]
+- Destinatarios: Alumnado de 3º-6º de primaria
+
+ACTIVIDADES ESPECÍFICAS PARA PRIMARIA:
+✓ Cuenta cuentos (30-45 min)
+✓ Taller de ilustración (45-60 min)
+✓ Intercambio de libros (traer 1 libro y llevarse otro)
+✓ Teatrillo de títeres (20-30 min)
+✓ Búsqueda del tesoro literaria (30-45 min)
+
+TODO GRATUITO - Solo necesitamos confirmación de asistencia.
+
+¿Os animáis a venir?
+
+Para organizarlo mejor, necesitamos saber:
+- Nº de alumnos/as que vendrían
+- Curso/s (para adaptar actividades)
+- Si tenéis alguna necesidad especial (accesibilidad, etc.)
+
+Esperamos vuestra respuesta.
+
+Un saludo compañero/a,
+
+[TU NOMBRE]
+Alumno/a de [TU CURSO]
+IES Serra Perenxisa
+[TELÉFONO/EMAIL]
+</div>
+
+<h3>Anexo 7: Checklist para Actividades de Primaria</h3>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Material</th>
+            <th class="border border-slate-300 px-4 py-3 text-center">¿Listo?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Notas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td class="border border-slate-300 px-4 py-3">Libros de cuentos</td><td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[¿De la biblioteca?]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Papeles, lápices, ceras</td><td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[¿Del centro?]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Títeres</td><td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[¿Dónde conseguir?]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Premios (marcapáginas, chuches)</td><td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Para búsqueda del tesoro]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Voluntarios para contar cuentos</td><td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[¿Quiénes?]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Haber invitado a los colegios</td><td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[Enviar email 2 semanas antes]</em></td></tr>
+        <tr><td class="border border-slate-300 px-4 py-3">Confirmación de colegios</td><td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td><td class="border border-slate-300 px-4 py-3"><em>[¿Cuántos vienen?]</em></td></tr>
+    </tbody>
+</table>
+
+<div class="callout callout-success">
+    <div class="callout-title">
+        <span>💡</span>
+        <span>Consejo para Colegios</span>
+    </div>
+    <p>Invita a los colegios con 2-3 semanas de antelación. Así pueden organizar el transporte y los permisos.</p>
+</div>
+
 <h3>Anexo 5: Presupuesto en Blanco</h3>
 
 <div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8">

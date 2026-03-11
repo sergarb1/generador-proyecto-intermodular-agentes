@@ -155,7 +155,157 @@ window.sectionsContent.diseno = `
     </ul>
 </div>
 
-<h3>5.3. Cronograma de Actividades - Plantilla</h3>
+<h3>5.3. Actividades para Colegios de Primaria</h3>
+
+<div class="callout callout-info">
+    <div class="callout-title">
+        <span>🎒</span>
+        <span>Si Invitas a Otros Centros</span>
+    </div>
+    <p>Los niños de primaria necesitan actividades adaptadas. Completa esta planificación:</p>
+</div>
+
+<h4>📚 Actividades Especiales para Niños</h4>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Actividad</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Duración</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Dónde?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Quién la dirige?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Cuenta cuentos</strong></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[30-45 min]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Biblioteca o aula]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Profesor/a o voluntario]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Taller de ilustración</strong></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[45-60 min]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Aula de plástica]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Alumnos de tu centro]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Intercambio de libros</strong></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Todo el día]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Stand especial]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Voluntarios]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Teatrillo de títeres</strong></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[20-30 min]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Rincón pequeño]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Voluntarios]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3"><strong>Búsqueda del tesoro</strong></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[30-45 min]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Por el centro]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Alumnos organizadores]</em></td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>📧 Invitar a Colegios - Modelo de Email</h4>
+
+<div class="callout callout-warning">
+    <div class="callout-title">
+        <span>📝</span>
+        <span>Para Completar</span>
+    </div>
+    <p>Escribe un email a los colegios de primaria de la zona:</p>
+</div>
+
+<div class="p-6 bg-slate-50 rounded-xl border border-slate-200 my-8" style="font-family: monospace; font-size: 0.85rem; white-space: pre-wrap;">
+Asunto: Invitación a Jornada del Libro - IES Serra Perenxisa
+
+Estimados/as compañeros/as del CEIP [NOMBRE]:
+
+Desde el IES Serra Perenxisa estamos organizando una Jornada del Libro
+y nos gustaría invitar a vuestro centro a participar.
+
+FECHA: [DÍA/MES/AÑO]
+HORARIO PARA COLEGIOS: [Ej: 10:00 - 13:00]
+
+ACTIVIDADES PARA PRIMARIA:
+- Cuenta cuentos
+- Taller de ilustración
+- Intercambio de libros (traer 1 libro y llevarse otro)
+- Teatrillo de títeres
+- Búsqueda del tesoro literaria
+
+¿Os animáis a venir?
+
+Necesitaríamos confirmar:
+- Nº de alumnos/as que vendrían
+- Curso/s (para adaptar actividades)
+- Profundizar en necesidades especiales
+
+Esperamos vuestra respuesta.
+
+Un saludo,
+
+[TU NOMBRE]
+Alumno/a de [TU CURSO]
+IES Serra Perenxisa
+[TELÉFONO/EMAIL]
+</div>
+
+<h4>✅ Checklist para Actividades de Primaria</h4>
+
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Qué necesito?</th>
+            <th class="border border-slate-300 px-4 py-3 text-center">¿Lo tengo?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Notas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Libros de cuentos para leer</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿De la biblioteca?]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Papeles, lápices, ceras</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Del centro?]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Títeres o marionetas</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Dónde conseguir?]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Premios pequeños (chuches, marcapáginas)</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Para la búsqueda]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Voluntarios para contar cuentos</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Quiénes?]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Autorización de los colegios</td>
+            <td class="border border-slate-300 px-4 py-3 text-center"><em>[ ]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Enviar email]</em></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="callout callout-success">
+    <div class="callout-title">
+        <span>💡</span>
+        <span>Consejo</span>
+    </div>
+    <p>Los niños de primaria se aburren rápido. Haz actividades cortas (30-45 min) y muy participativas.</p>
+</div>
 
 <div class="callout callout-info">
     <div class="callout-title">
