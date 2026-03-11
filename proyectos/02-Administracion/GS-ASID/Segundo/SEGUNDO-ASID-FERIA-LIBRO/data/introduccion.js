@@ -49,60 +49,160 @@ window.sectionsContent.introduccion = `
     </div>
 </div>
 
-<h3>1.3. 🎯 Objetivos SMART</h3>
+<h3>1.3. 🎯 Objetivos SMART - Guía de Definición</h3>
+
+<div class="callout callout-info">
+    <div class="callout-title">
+        <span>📌</span>
+        <span>¿Qué son los Objetivos SMART?</span>
+    </div>
+    <p>Los objetivos SMART deben ser: <strong>E</strong>specíficos, <strong>M</strong>edibles, <strong>A</strong>lcanzables, <strong>R</strong>elevantes y <strong>T</strong>emporales.</p>
+</div>
+
+<div class="callout callout-warning">
+    <div class="callout-title">
+        <span>📝</span>
+        <span>Tarea para el Alumnado</span>
+    </div>
+    <p>Define 5 objetivos SMART para la Feria del Libro del IES Serra Perenxisa. Investiga:</p>
+    <ul>
+        <li>¿Qué datos de ediciones anteriores hay en el centro?</li>
+        <li>¿Cuál es el aforo máximo del IES Serra Perenxisa?</li>
+        <li>¿Qué recursos están disponibles?</li>
+    </ul>
+</div>
 
 <table class="w-full border-collapse my-8">
     <thead>
         <tr class="bg-slate-100">
             <th class="border border-slate-300 px-4 py-3 text-left">Tipo</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Objetivo</th>
-            <th class="border border-slate-300 px-4 py-3 text-left">Indicador</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Objetivo (DEBES COMPLETAR)</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Indicador (DEBES DEFINIR)</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="border border-slate-300 px-4 py-3 font-bold text-blue-600">Específico</td>
-            <td class="border border-slate-300 px-4 py-3">Organizar una feria del libro de 5 días en el IES Serra Perenxisa</td>
-            <td class="border border-slate-300 px-4 py-3">Evento realizado en fechas previstas</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Qué evento exacto quieres organizar?]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Cómo sabrás que se ha realizado?]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3 font-bold text-green-600">Medible</td>
-            <td class="border border-slate-300 px-4 py-3">Alcanzar 15.000 visitantes</td>
-            <td class="border border-slate-300 px-4 py-3">Conteo de asistentes por día</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Qué cifra de visitantes esperas?]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Cómo contarás los asistentes?]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3 font-bold text-orange-600">Alcanzable</td>
-            <td class="border border-slate-300 px-4 py-3">Conseguir 40 stands comerciales</td>
-            <td class="border border-slate-300 px-4 py-3">Contratos firmados con expositores</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Cuántos stands son realistas?]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Qué contratos necesitas?]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3 font-bold text-purple-600">Relevante</td>
-            <td class="border border-slate-300 px-4 py-3">Fomentar hábitos lectores en la comunidad educativa</td>
-            <td class="border border-slate-300 px-4 py-3">Encuesta de satisfacción post-evento</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Cómo fomentará la lectura?]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Cómo medirás la satisfacción?]</em></td>
         </tr>
         <tr>
             <td class="border border-slate-300 px-4 py-3 font-bold text-red-600">Temporal</td>
-            <td class="border border-slate-300 px-4 py-3">Ejecutar en mayo 2026</td>
-            <td class="border border-slate-300 px-4 py-3">Cronograma cumplido</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿En qué fechas se celebrará?]</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[¿Qué hitos debe tener el cronograma?]</em></td>
         </tr>
     </tbody>
 </table>
 
-<h3>1.4. 📍 Ubicación y Espacio Físico</h3>
-<p>La ubicación propuesta para la Feria del Libro es el <strong>IES Serra Perenxisa, Torrent</strong>, por las siguientes ventajas:</p>
-<ul class="list-disc list-inside space-y-2 my-6 text-slate-700">
-    <li><strong>Accesibilidad:</strong> Conexión con metro (Línea 1, 2, 7), autobuses urbanos y parking cercano</li>
-    <li><strong>Espacio:</strong> Amplias zonas del instituto aptas para instalación de casetas</li>
-    <li><strong>Aforo:</strong> Capacidad para recibir 20.000+ visitantes diarios</li>
-    <li><strong>Entorno:</strong> Ambiente educativo que favorece la estancia y el paseo literario</li>
-    <li><strong>Infraestructura:</strong> Puntos de luz, agua y servicios disponibles en el centro</li>
-</ul>
+<div class="callout callout-success">
+    <div class="callout-title">
+        <span>💡</span>
+        <span>Consejo Pedagógico</span>
+    </div>
+    <p>Para definir objetivos realistas:</p>
+    <ul>
+        <li>Consulta con el equipo directivo del IES Serra Perenxisa</li>
+        <li>Investiga eventos similares en otros centros educativos</li>
+        <li>Considera el presupuesto disponible</li>
+        <li>Ten en cuenta la capacidad del recinto</li>
+    </ul>
+</div>
+
+<h3>1.4. 📍 Ubicación y Espacio Físico - Guía de Análisis</h3>
+
+<div class="callout callout-warning">
+    <div class="callout-title">
+        <span>📝</span>
+        <span>Tarea de Investigación</span>
+    </div>
+    <p>Analiza el IES Serra Perenxisa como ubicación para el evento. Debes:</p>
+    <ul>
+        <li>Visitar el centro y tomar medidas de los espacios disponibles</li>
+        <li>Identificar zonas aptas para instalación de casetas</li>
+        <li>Verificar accesos para personas con movilidad reducida</li>
+        <li>Comprobar conexiones de transporte público</li>
+    </ul>
+</div>
+
+<h4>✅ Checklist de Evaluación del Espacio</h4>
+<table class="w-full border-collapse my-8">
+    <thead>
+        <tr class="bg-slate-100">
+            <th class="border border-slate-300 px-4 py-3 text-left">Criterio</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">¿Cumple?</th>
+            <th class="border border-slate-300 px-4 py-3 text-left">Notas / Medidas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Accesibilidad (metro, bus, parking)</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[ ] Sí  [ ] No</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Anotar líneas de metro/bus]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Espacio para casetas</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[ ] Sí  [ ] No</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Anotar m² disponibles]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Aforo suficiente</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[ ] Sí  [ ] No</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Anotar aforo máximo]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Infraestructura (luz, agua)</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[ ] Sí  [ ] No</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Anotar puntos disponibles]</em></td>
+        </tr>
+        <tr>
+            <td class="border border-slate-300 px-4 py-3">Accesibilidad universal</td>
+            <td class="border border-slate-300 px-4 py-3"><em>[ ] Sí  [ ] No</em></td>
+            <td class="border border-slate-300 px-4 py-3"><em>[Anotar adaptaciones]</em></td>
+        </tr>
+    </tbody>
+</table>
 
 <div class="callout callout-success">
     <div class="callout-title">
         <span>💡</span>
-        <span>Nota para el Alumnado</span>
+        <span>Consejo Pedagógico</span>
     </div>
-    <p>En las siguientes secciones deberás desarrollar cada aspecto con profundidad, investigando normativas locales, contactando con proveedores reales y elaborando presupuestos detallados. Este documento es tu <strong>guía de trabajo</strong>, no la solución final.</p>
+    <p>Para evaluar el espacio:</p>
+    <ul>
+        <li>Usa una cinta métrica o app de medición</li>
+        <li>Haz fotos de las diferentes zonas</li>
+        <li>Dibuja un plano sencillo con las medidas</li>
+        <li>Consulta con el equipo de mantenimiento del centro</li>
+    </ul>
+</div>
+
+<div class="callout callout-success">
+    <div class="callout-title">
+        <span>💡</span>
+        <span>Nota Importante para el Alumnado</span>
+    </div>
+    <p>Este documento es tu <strong>guía de trabajo</strong>, NO la solución final. En las siguientes secciones deberás:</p>
+    <ul>
+        <li>✅ Investigar normativas locales en el Ayuntamiento de Torrent</li>
+        <li>✅ Contactar con proveedores reales y solicitar presupuestos</li>
+        <li>✅ Elaborar presupuestos detallados con datos reales</li>
+        <li>✅ Completar las plantillas con tu investigación</li>
+        <li>✅ Desarrollar cada aspecto con profundidad</li>
+    </ul>
 </div>
 `;
