@@ -439,7 +439,8 @@
                     </a>
                 </div>
                 <div class="my-6 border-t border-slate-100 mx-6"></div>
-                <a href="#orientaciones-didacticas" class="nav-item" :class="{ active: activeSection === 'orientaciones-didacticas' }"
+                <a href="#orientaciones-didacticas" class="nav-item"
+                    :class="{ active: activeSection === 'orientaciones-didacticas' }"
                     @click="activeSection = 'orientaciones-didacticas'">
                     <span class="text-lg">📚</span> <span class="ml-3">Orientaciones Didácticas</span>
                 </a>
@@ -635,41 +636,68 @@
                 },
                 async exportWord() {
 
-                    const element = document.getElementById('export-content');
+                    const element = document.getElementById("export-content");
                     const clone = element.cloneNode(true);
 
                     const originalImgs = element.querySelectorAll("img");
                     const clonedImgs = clone.querySelectorAll("img");
+
+                    // Esperar a que todas las imágenes estén cargadas
+                    await Promise.all(
+                        [...originalImgs].map(img =>
+                            img.complete
+                                ? Promise.resolve()
+                                : new Promise(resolve => { img.onload = resolve; })
+                        )
+                    );
 
                     for (let i = 0; i < originalImgs.length; i++) {
 
                         const base64 = this.imageToBase64(originalImgs[i]);
 
                         clonedImgs[i].src = base64;
-                        clonedImgs[i].style.maxWidth = "100%";
+
+                        // Copiar tamaño visual real
+                        const rect = originalImgs[i].getBoundingClientRect();
+
+                        clonedImgs[i].setAttribute("width", rect.width);
+                        clonedImgs[i].setAttribute("height", rect.height);
+
+                        clonedImgs[i].style.display = "block";
                     }
 
                     const styles = `
     <style>
-    body { font-family: "Segoe UI", sans-serif; padding:20px; }
-    h1,h2,h3 { color:#2563eb; }
-    .callout {
-        padding:15px;
-        border:1px solid #e2e8f0;
-        border-radius:10px;
-        background:#f8fafc;
-        margin:20px 0;
-    }
+        body {
+            font-family: "Segoe UI", sans-serif;
+            padding: 20px;
+        }
+
+        h1,h2,h3 {
+            color:#2563eb;
+        }
+
+        img{
+            max-width:100%;
+        }
+
+        .callout{
+            padding:15px;
+            border:1px solid #e2e8f0;
+            border-radius:10px;
+            background:#f8fafc;
+            margin:20px 0;
+        }
     </style>
     `;
 
                     const header = `
     <html xmlns:o="urn:schemas-microsoft-com:office:office"
-    xmlns:w="urn:schemas-microsoft-com:office:word"
-    xmlns="http://www.w3.org/TR/REC-html40">
+          xmlns:w="urn:schemas-microsoft-com:office:word"
+          xmlns="http://www.w3.org/TR/REC-html40">
     <head>
-    <meta charset="utf-8">
-    ${styles}
+        <meta charset="utf-8">
+        ${styles}
     </head>
     <body>
     `;
@@ -685,7 +713,6 @@
                     const url = URL.createObjectURL(blob);
 
                     const link = document.createElement("a");
-
                     link.href = url;
                     link.download = this.projectTitle.replace(/ /g, "_") + ".doc";
 
