@@ -7,7 +7,7 @@ window.metadata = {
     cycleName: "Servicios Administrativos",
     cycleLevel: "FP Básica",
     courseYear: "Segundo Curso",
-    projectImage: "./images/hero.svg",
+    projectImage: "./images/hero.jpg",
     family: "Administración y Gestión",
     hours: 96,
     academicYear: "2025/2026"

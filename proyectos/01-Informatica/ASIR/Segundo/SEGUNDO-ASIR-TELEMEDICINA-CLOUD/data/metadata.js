@@ -6,6 +6,6 @@ window.metadata = {
     cycleName: 'Administración de Sistemas Informáticos en Red',
     cycleLevel: 'Grado Superior',
     courseYear: 'Segundo',
-    projectImage: './images/telemedicina.jpg'
+    projectImage: './images/hero.jpg'
 };
 

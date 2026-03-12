@@ -5,5 +5,6 @@ window.metadata = {
     cycle: "GS-ASID",
     cycleName: "Asistencia a la Dirección",
     cycleLevel: "Grado Superior",
-    courseYear: "2025/2026"
+    courseYear: "2025/2026",
+    projectImage: "./images/hero.jpg"
 };

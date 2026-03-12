@@ -5,8 +5,8 @@ window.sectionsContent.anexos = `
 
 <h4>Anexo A: Modelo de Presupuesto (Para Rellenar)</h4>
 
-\`\`\`
-DIGITAL MARKETING PRO S.L.
+<div class="bg-slate-100 p-4 rounded-lg font-mono text-xs my-4 overflow-x-auto">
+<pre>DIGITAL MARKETING PRO S.L.
 Calle Colón, 45, Valencia
 Tel: 963 00 00 00
 Email: info@digitalmarketingpro.es
@@ -29,15 +29,15 @@ IVA (21%)                                        ____ €
 TOTAL                                           ____ €
 
 Validez del presupuesto: 15 días
-Forma de pago: 50% al aceptar, 50% al finalizar
-\`\`\`
+Forma de pago: 50% al aceptar, 50% al finalizar</pre>
+</div>
 
 <hr>
 
 <h4>Anexo B: Modelo de Factura (Para Rellenar)</h4>
 
-\`\`\`
-FACTURA Nº: __________
+<div class="bg-slate-100 p-4 rounded-lg font-mono text-xs my-4 overflow-x-auto">
+<pre>FACTURA Nº: __________
 Fecha: _______________
 
 EMISOR: DIGITAL MARKETING PRO S.L.
@@ -59,8 +59,8 @@ TOTAL A COBRAR                                   ____ €
 
 FORMA DE PAGO: _______________
 IBAN: ES12 3456 7890 1234 5678 9012
-Vencimiento: _______________
-\`\`\`
+Vencimiento: _______________</pre>
+</div>
 
 <hr>
 
@@ -145,8 +145,8 @@ Vencimiento: _______________
 
 <h4>Anexo F: Cálculo de Beneficio</h4>
 
-\`\`\`
-┌─────────────────────────────────────────┐
+<div class="bg-slate-100 p-4 rounded-lg font-mono text-xs my-4 overflow-x-auto">
+<pre>┌─────────────────────────────────────────┐
 │         CUENTA DE RESULTADOS            │
 ├─────────────────────────────────────────┤
 │                                         │
@@ -164,29 +164,29 @@ Vencimiento: _______________
 │                                         │
 │  BENEFICIO NETRO            _______ €   │
 │                                         │
-└─────────────────────────────────────────┘
-\`\`\`
+└─────────────────────────────────────────┘</pre>
+</div>
 
 <hr>
 
 <h4>Anexo G: Modelo de Contrato (Para Rellenar)</h4>
 
-\`\`\`
-CONTRATO DE PRESTACIÓN DE SERVICIOS DE MARKETING DIGITAL
+<div class="bg-slate-100 p-4 rounded-lg font-mono text-xs my-4 overflow-x-auto">
+<pre>CONTRATO DE PRESTACIÓN DE SERVICIOS DE MARKETING DIGITAL
 
 En __________, a ___ de ___________ de 20___
 
 REUNIDOS
 
-De una parte, DIGITAL MARKETING PRO S.L., con NIF B12345678 
+De una parte, DIGITAL MARKETING PRO S.L., con NIF B12345678
 y domicilio en Calle Colón, 45, Valencia.
 
-De otra parte, ________________________, con NIF ___________ 
+De otra parte, ________________________, con NIF ___________
 y domicilio en ________________________________.
 
 EXPONEN
 
-Que ambas partes acuerdan firmar este contrato con las 
+Que ambas partes acuerdan firmar este contrato con las
 siguientes condiciones:
 
 PRIMERA.- OBJETO
@@ -199,7 +199,7 @@ TERCERA.- PRECIO
 El cliente pagará ___ €/mes + IVA.
 
 CUARTA.- FORMA DE PAGO
-El pago se hará por transferencia bancaria antes del día 5 
+El pago se hará por transferencia bancaria antes del día 5
 de cada mes.
 
 QUINTA.- SERVICIOS INCLUIDOS
@@ -216,8 +216,8 @@ Y en prueba de conformidad, firman por duplicado.
 
 
 _________________                    _________________
-Digital Marketing Pro                El Cliente
-\`\`\`
+Digital Marketing Pro                El Cliente</pre>
+</div>
 
 <hr>
 

@@ -138,16 +138,16 @@ window.sectionsContent.administracion = `
 
 <h4>Ejemplo de Cálculo de IVA</h4>
 
-\`\`\`
-Facturamos en un trimestre: 10.000 €
+<div class="bg-slate-100 p-4 rounded-lg font-mono text-xs my-4 overflow-x-auto">
+<pre>Facturamos en un trimestre: 10.000 €
 IVA que cobramos (21%): 2.100 €
 
 Gastos que tenemos: 4.000 €
 IVA que pagamos (21%): 840 €
 
 IVA a pagar a Hacienda:
-2.100 € - 840 € = 1.260 €
-\`\`\`
+2.100 € - 840 € = 1.260 €</pre>
+</div>
 
 <div class="callout callout-success">
     <div class="callout-title">

@@ -468,25 +468,104 @@
                 printProject() {
                     window.print();
                 },
-                async exportWord() {
-                    const element = document.getElementById('export-content');
+                                async exportWord() {
+
+                    const element = document.getElementById("export-content");
                     const clone = element.cloneNode(true);
-                    const imgs = clone.getElementsByTagName('img');
-                    for (let img of imgs) {
-                        img.style.maxWidth = '100%';
+
+                    const originalImgs = element.querySelectorAll("img");
+                    const clonedImgs = clone.querySelectorAll("img");
+
+                    // Esperar a que todas las imágenes estén cargadas
+                    await Promise.all(
+                        [...originalImgs].map(img =>
+                            img.complete
+                                ? Promise.resolve()
+                                : new Promise(resolve => { img.onload = resolve; })
+                        )
+                    );
+
+                    for (let i = 0; i < originalImgs.length; i++) {
+
+                        const base64 = this.imageToBase64(originalImgs[i]);
+
+                        clonedImgs[i].src = base64;
+
+                        // Copiar tamaño visual real
+                        const rect = originalImgs[i].getBoundingClientRect();
+
+                        clonedImgs[i].setAttribute("width", rect.width);
+                        clonedImgs[i].setAttribute("height", rect.height);
+
+                        clonedImgs[i].style.display = "block";
                     }
-                    const styles = '<style>body { font-family: "Segoe UI", sans-serif; padding: 20px; } h1, h2, h3 { color: #2563eb; } .callout { padding: 15px; border: 1px solid #e2e8f0; border-radius: 10px; background: #f8fafc; margin: 20px 0; }</style>';
-                    const header = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8">' + styles + '</head><body>';
-                    const footer = '</body></html>';
+
+                    const styles = `
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            padding: 20px;
+        }
+
+        h1,h2,h3 {
+            color:#2563eb;
+        }
+
+        img{
+            max-width:100%;
+        }
+
+        .callout{
+            padding:15px;
+            border:1px solid #e2e8f0;
+            border-radius:10px;
+            background:#f8fafc;
+            margin:20px 0;
+        }
+    </style>
+    `;
+
+                    const header = `
+    <html xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:w="urn:schemas-microsoft-com:office:word"
+          xmlns="http://www.w3.org/TR/REC-html40">
+    <head>
+        <meta charset="utf-8">
+        ${styles}
+    </head>
+    <body>
+    `;
+
+                    const footer = `</body></html>`;
+
                     const sourceHTML = header + clone.innerHTML + footer;
-                    const blob = new Blob(['\ufeff', sourceHTML], { type: 'application/msword' });
+
+                    const blob = new Blob(['\ufeff', sourceHTML], {
+                        type: 'application/msword'
+                    });
+
                     const url = URL.createObjectURL(blob);
-                    const link = document.createElement('a');
+
+                    const link = document.createElement("a");
                     link.href = url;
-                    link.download = this.projectTitle.replace(/ /g, '_') + '.doc';
+                    link.download = this.projectTitle.replace(/ /g, "_") + ".doc";
+
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
+                },
+
+                imageToBase64(img) {
+
+                    const canvas = document.createElement("canvas");
+                    const ctx = canvas.getContext("2d");
+
+                    canvas.width = img.naturalWidth;
+                    canvas.height = img.naturalHeight;
+
+                    ctx.drawImage(img, 0, 0);
+
+                    return canvas.toDataURL("image/png");
                 }
             },
             mounted() {

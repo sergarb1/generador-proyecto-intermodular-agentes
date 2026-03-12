@@ -6,7 +6,7 @@ window.metadata = {
     cycleName: "Gestión Administrativa",
     cycleLevel: "Segundo Curso",
     courseYear: "2025-2026",
-    projectImage: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    projectImage: "./images/hero.jpg"
 };
 
 // Inicializar objeto para el contenido de las secciones

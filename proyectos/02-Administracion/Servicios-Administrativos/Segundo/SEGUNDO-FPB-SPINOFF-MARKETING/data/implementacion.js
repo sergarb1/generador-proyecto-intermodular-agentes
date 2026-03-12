@@ -47,8 +47,8 @@ window.sectionsContent.implementacion = `
 
 <h5>📋 Ejemplo Resuelto:</h5>
 
-\`\`\`
-DIGITAL MARKETING PRO S.L.
+<div class="bg-slate-100 p-4 rounded-lg font-mono text-xs my-4 overflow-x-auto">
+<pre>DIGITAL MARKETING PRO S.L.
 Calle Colón, 45, Valencia
 Tel: 963 00 00 00
 Email: info@digitalmarketingpro.es
@@ -67,8 +67,8 @@ Diseño de 2 carteles        2           25 €      50 €
 SUBTOTAL                                         200 €
 IVA (21%)                                       42 €
                                               ─────────
-TOTAL                                           242 €
-\`\`\`
+TOTAL                                           242 €</pre>
+</div>
 
 <h5>Ahora Te Toca a Ti:</h5>
 
@@ -111,8 +111,8 @@ TOTAL                                           242 €
 
 <h5>📋 Ejemplo Resuelto:</h5>
 
-\`\`\`
-FACTURA Nº: 2026-001
+<div class="bg-slate-100 p-4 rounded-lg font-mono text-xs my-4 overflow-x-auto">
+<pre>FACTURA Nº: 2026-001
 Fecha: 1 de febrero de 2026
 
 EMISOR: DIGITAL MARKETING PRO S.L.
@@ -134,8 +134,8 @@ TOTAL A COBRAR                                   242 €
 
 FORMA DE PAGO: Transferencia bancaria
 IBAN: ES12 3456 7890 1234 5678 9012
-Vencimiento: 15 de febrero de 2026
-\`\`\`
+Vencimiento: 15 de febrero de 2026</pre>
+</div>
 
 <h5>Ahora Te Toca a Ti:</h5>
 
@@ -170,22 +170,22 @@ Vencimiento: 15 de febrero de 2026
 
 <h5>📋 Modelo de Contrato:</h5>
 
-\`\`\`
-CONTRATO DE PRESTACIÓN DE SERVICIOS DE MARKETING DIGITAL
+<div class="bg-slate-100 p-4 rounded-lg font-mono text-xs my-4 overflow-x-auto">
+<pre>CONTRATO DE PRESTACIÓN DE SERVICIOS DE MARKETING DIGITAL
 
 En Valencia, a ___ de ___________ de 2026
 
 REUNIDOS
 
-De una parte, DIGITAL MARKETING PRO S.L., con NIF B12345678 
+De una parte, DIGITAL MARKETING PRO S.L., con NIF B12345678
 y domicilio en Calle Colón, 45, Valencia.
 
-De otra parte, [NOMBRE DEL CLIENTE], con NIF ___________ 
+De otra parte, [NOMBRE DEL CLIENTE], con NIF ___________
 y domicilio en ________________________________.
 
 EXPONEN
 
-Que ambas partes acuerdan firmar este contrato con las 
+Que ambas partes acuerdan firmar este contrato con las
 siguientes condiciones:
 
 PRIMERA.- OBJETO
@@ -198,7 +198,7 @@ TERCERA.- PRECIO
 El cliente pagará ___ €/mes + IVA.
 
 CUARTA.- FORMA DE PAGO
-El pago se hará por transferencia bancaria antes del día 5 
+El pago se hará por transferencia bancaria antes del día 5
 de cada mes.
 
 QUINTA.- SERVICIOS INCLUIDOS
@@ -210,8 +210,8 @@ Y en prueba de conformidad, firman por duplicado.
 
 
 _________________                    _________________
-Digital Marketing Pro                El Cliente
-\`\`\`
+Digital Marketing Pro                El Cliente</pre>
+</div>
 
 <h5>Ahora Te Toca a Ti:</h5>
 
@@ -259,16 +259,16 @@ Digital Marketing Pro                El Cliente
 
 <h5>Fórmulas para Excel:</h5>
 
-\`\`\`
-Para sumar todos los ingresos:
+<div class="bg-slate-100 p-4 rounded-lg font-mono text-xs my-4 overflow-x-auto">
+<pre>Para sumar todos los ingresos:
 =SUMAR.SI(C2:C100;"Ingreso";D2:D100)
 
 Para sumar todos los gastos:
 =SUMAR.SI(C2:C100;"Gasto";D2:D100)
 
 Para calcular beneficio:
-=Ingresos - Gastos
-\`\`\`
+=Ingresos - Gastos</pre>
+</div>
 
 <h5>Ahora Te Toca a Ti:</h5>
 
