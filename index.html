@@ -63,6 +63,7 @@
                 </div>
                 <div class="hidden md:flex items-center gap-6 text-sm">
                     <a href="#como-funciona" class="hover:text-blue-200 transition">Cómo Funciona</a>
+                    <a href="#herramientas" class="hover:text-blue-200 transition">Herramientas</a>
                     <a href="#demo" class="hover:text-blue-200 transition">Demos</a>
                     <a href="#agentes" class="hover:text-blue-200 transition">Agentes</a>
                     <a href="https://github.com/sergarb1/generador-proyecto-intermodular-agentes" target="_blank" class="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/30 transition">
@@ -337,6 +338,68 @@
                         callouts, grids y tablas premium.
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIs Soportados Section -->
+    <section id="herramientas" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 block">⚙️</span>
+                <h3 class="text-3xl font-bold text-slate-800 mb-4">Herramientas de IA Soportadas</h3>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Elige tu herramienta de IA favorita. El sistema detecta automáticamente cuál está instalada.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Gemini CLI -->
+                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border-2 border-blue-200 card-hover text-center">
+                    <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-white text-4xl mb-4 mx-auto">🔮</div>
+                    <h4 class="font-bold text-xl text-blue-800 mb-2">Gemini CLI</h4>
+                    <p class="text-sm text-blue-600 mb-6">Google's Advanced AI Model</p>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Acceso a Gemini, el modelo IA de Google con capacidades avanzadas de razonamiento.
+                    </p>
+                    <code class="block bg-white p-3 rounded-lg text-xs text-slate-700 overflow-x-auto">
+                        npm install -g @google/gemini-cli
+                    </code>
+                </div>
+                
+                <!-- Qwen Code -->
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 border-2 border-amber-200 card-hover text-center">
+                    <div class="w-16 h-16 bg-amber-500 rounded-2xl flex items-center justify-center text-white text-4xl mb-4 mx-auto">🎯</div>
+                    <h4 class="font-bold text-xl text-amber-800 mb-2">Qwen Code</h4>
+                    <p class="text-sm text-amber-600 mb-6">Alibaba's Code Specialist</p>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Especializado en generación de código con Qwen, el modelo de Alibaba optimizado para programación.
+                    </p>
+                    <code class="block bg-white p-3 rounded-lg text-xs text-slate-700 overflow-x-auto">
+                        npm install -g @qwen-code/qwen-code
+                    </code>
+                </div>
+                
+                <!-- GitHub Copilot CLI -->
+                <div class="bg-gradient-to-br from-slate-50 to-gray-50 rounded-2xl p-8 border-2 border-slate-200 card-hover text-center">
+                    <div class="w-16 h-16 bg-slate-700 rounded-2xl flex items-center justify-center text-white text-4xl mb-4 mx-auto">✨</div>
+                    <h4 class="font-bold text-xl text-slate-800 mb-2">GitHub Copilot CLI</h4>
+                    <p class="text-sm text-slate-600 mb-6">GitHub's AI Assistant</p>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Integración con GitHub Copilot, el asistente IA de GitHub powered by OpenAI.
+                    </p>
+                    <code class="block bg-white p-3 rounded-lg text-xs text-slate-700 overflow-x-auto">
+                        npm install -g @github/gh-cli
+                    </code>
+                </div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto mt-12 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6">
+                <p class="text-sm text-blue-900">
+                    <strong>💡 Tip:</strong> El sistema detecta automáticamente qué herramientas tienes instaladas y te permite elegir. 
+                    Solo necesitas tener instalada una de ellas para empezar. Si tienes múltiples instaladas, 
+                    podrás elegir cuál usar en cada sesión.
+                </p>
             </div>
         </div>
     </section>
@@ -723,6 +786,7 @@
                     <h4 class="font-bold mb-4">Enlaces Rápidos</h4>
                     <ul class="space-y-2 text-sm text-slate-400">
                         <li><a href="#como-funciona" class="hover:text-white transition">Cómo Funciona</a></li>
+                        <li><a href="#herramientas" class="hover:text-white transition">Herramientas</a></li>
                         <li><a href="#demo" class="hover:text-white transition">Proyectos Demo</a></li>
                         <li><a href="#agentes" class="hover:text-white transition">Agentes</a></li>
                     </ul>
@@ -754,6 +818,9 @@
                 <p class="mt-2 text-xs">
                     Eres libre de compartir y adaptar este material, incluso con fines comerciales, 
                     siempre que des atribución y compartas bajo la misma licencia.
+                </p>
+                <p class="mt-4 text-xs text-slate-500">
+                    <strong>Versión 3.1:</strong> Soporta Gemini CLI, Qwen Code y GitHub Copilot CLI
                 </p>
             </div>
         </div>

@@ -21,18 +21,30 @@ A diferencia de otros generadores, este sistema no entrega el proyecto resuelto.
 
 ## 🚀 Cómo se usa
 
-La aplicación está diseñada para ser utilizada de forma interactiva a través de una terminal (PowerShell).
+La aplicación está diseñada para ser utilizada de forma interactiva a través de una terminal (PowerShell, Bash o CMD).
 
 ### Requisitos previos
 - Tener instalado **Node.js**.
-- Tener instalado **Gemini CLI** (`npm install -g @google/gemini-cli`) o **Qwen Code**.
+- Tener instalado **al menos una** de estas herramientas IA:
+  - **Gemini CLI** (`npm install -g @google/gemini-cli`)
+  - **Qwen Code** (`npm install -g @qwen-code/qwen-code`)
+  - **GitHub Copilot CLI** (`npm install -g @github/gh-cli`)
 
 ### Pasos para generar un proyecto
-1.  Ejecuta el script de inicio:
+1.  Ejecuta el script de inicio según tu terminal:
     ```powershell
+    # En PowerShell
     ./Iniciar-Asistente.ps1
     ```
-2.  El asistente detectará automáticamente tu entorno (Gemini o Qwen) y te pedirá los datos del proyecto uno a uno:
+    ```bash
+    # En Bash/Mac/Linux
+    ./Iniciar-Asistente.sh
+    ```
+    ```cmd
+    # En CMD.exe
+    .\Iniciar-Asistente.bat
+    ```
+2.  El asistente detectará automáticamente tu entorno (Gemini, Qwen o Copilot) y te pedirá los datos del proyecto uno a uno:
     - Familia profesional (Informática, Administración o Comercio).
     - Ciclo formativo (ASIR, DAM, DAW, SMR, GM-ADM, GS-ADMF, GS-ASID, Servicios Comerciales, etc.).
     - Curso (Primero o Segundo).
@@ -65,6 +77,7 @@ El proyecto incluye una suite de agentes especializados que coordinan la generac
 - `03-primer-curso` y `04-segundo-curso`: Adaptan el contenido al nivel del curso.
 
 ---
-**Versión:** 3.0 (Premium Pro Edition)  
+**Versión:** 3.1 (Premium Pro Edition - Multi-CLI Support)  
 **Centro:** IES Serra Perenxisa  
-**Autor:** Sergio García (Desarrollado con Gemini CLI)
+**Autor:** Sergio García  
+**CLIs Soportados:** Gemini CLI, Qwen Code, GitHub Copilot CLI

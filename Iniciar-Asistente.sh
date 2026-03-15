@@ -51,9 +51,10 @@ save_config_tool() {
     echo -e "\e[90m[DEBUG] Config guardada\e[0m"
 }
 
-# Detectar si estamos dentro de Qwen o Gemini
+# Detectar si estamos dentro de Qwen, Gemini o Copilot
 is_qwen=false
 is_gemini=false
+is_copilot=false
 
 if [ -n "$QWEN_CODE" ] || [ -n "$QWEN_CLI" ]; then
     is_qwen=true
@@ -63,11 +64,16 @@ if [ -n "$GEMINI_CLI" ]; then
     is_gemini=true
 fi
 
-echo -e "\e[90m[DEBUG] isQwen=$is_qwen, isGemini=$is_gemini\e[0m"
+if [ -n "$GITHUB_COPILOT_CLI" ]; then
+    is_copilot=true
+fi
+
+echo -e "\e[90m[DEBUG] isQwen=$is_qwen, isGemini=$is_gemini, isCopilot=$is_copilot\e[0m"
 
 # Detectar herramientas disponibles
 has_qwen=false
 has_gemini=false
+has_copilot=false
 
 if command -v qwen &> /dev/null; then
     has_qwen=true
@@ -77,7 +83,11 @@ if command -v gemini &> /dev/null; then
     has_gemini=true
 fi
 
-echo -e "\e[90m[DEBUG] hasQwen=$has_qwen, hasGemini=$has_gemini\e[0m"
+if command -v gh &> /dev/null; then
+    has_copilot=true
+fi
+
+echo -e "\e[90m[DEBUG] hasQwen=$has_qwen, hasGemini=$has_gemini, hasCopilot=$has_copilot\e[0m"
 
 echo ""
 echo -e "\e[33mDetectando entorno...\e[0m"
@@ -89,6 +99,9 @@ if [ "$is_qwen" = true ]; then
 elif [ "$is_gemini" = true ]; then
     echo -e "\e[32mEjecutando dentro de Gemini CLI\e[0m"
     tool="gemini"
+elif [ "$is_copilot" = true ]; then
+    echo -e "\e[32mEjecutando dentro de GitHub Copilot CLI\e[0m"
+    tool="copilot"
 else
     # No estamos dentro de ningún entorno, verificar herramientas instaladas
     echo -e "\e[90m[DEBUG] No estamos dentro de un entorno CLI, verificando herramientas...\e[0m"
@@ -102,8 +115,23 @@ else
     elif [ "$last_tool" = "gemini" ] && [ "$has_gemini" = true ]; then
         echo -e "\e[32mUsando Gemini CLI (última selección)\e[0m"
         tool="gemini"
+    elif [ "$last_tool" = "copilot" ] && [ "$has_copilot" = true ]; then
+        echo -e "\e[32mUsando GitHub Copilot CLI (última selección)\e[0m"
+        tool="copilot"
+    elif [ "$has_qwen" = true ] && [ "$has_gemini" = true ] && [ "$has_copilot" = true ]; then
+        # Los tres disponibles, preguntar al usuario
+        echo -e "\e[33mHerramientas detectadas: Qwen Code, Gemini CLI y GitHub Copilot CLI\e[0m"
+        echo ""
+        read -p "¿Qué herramienta quieres usar? (qwen/gemini/copilot) [qwen]: " choice
+        if [ "$choice" = "gemini" ]; then
+            tool="gemini"
+        elif [ "$choice" = "copilot" ]; then
+            tool="copilot"
+        else
+            tool="qwen"
+        fi
     elif [ "$has_qwen" = true ] && [ "$has_gemini" = true ]; then
-        # Ambos disponibles, preguntar al usuario
+        # Dos disponibles (Qwen y Gemini), preguntar al usuario
         echo -e "\e[33mHerramientas detectadas: Qwen Code y Gemini CLI\e[0m"
         echo ""
         read -p "¿Qué herramienta quieres usar? (qwen/gemini) [qwen]: " choice
@@ -112,18 +140,42 @@ else
         else
             tool="qwen"
         fi
+    elif [ "$has_qwen" = true ] && [ "$has_copilot" = true ]; then
+        # Dos disponibles (Qwen y Copilot), preguntar al usuario
+        echo -e "\e[33mHerramientas detectadas: Qwen Code y GitHub Copilot CLI\e[0m"
+        echo ""
+        read -p "¿Qué herramienta quieres usar? (qwen/copilot) [qwen]: " choice
+        if [ "$choice" = "copilot" ]; then
+            tool="copilot"
+        else
+            tool="qwen"
+        fi
+    elif [ "$has_gemini" = true ] && [ "$has_copilot" = true ]; then
+        # Dos disponibles (Gemini y Copilot), preguntar al usuario
+        echo -e "\e[33mHerramientas detectadas: Gemini CLI y GitHub Copilot CLI\e[0m"
+        echo ""
+        read -p "¿Qué herramienta quieres usar? (gemini/copilot) [gemini]: " choice
+        if [ "$choice" = "copilot" ]; then
+            tool="copilot"
+        else
+            tool="gemini"
+        fi
     elif [ "$has_qwen" = true ]; then
         echo -e "\e[32mQwen Code detectado\e[0m"
         tool="qwen"
     elif [ "$has_gemini" = true ]; then
         echo -e "\e[32mGemini CLI detectado\e[0m"
         tool="gemini"
+    elif [ "$has_copilot" = true ]; then
+        echo -e "\e[32mGitHub Copilot CLI detectado\e[0m"
+        tool="copilot"
     else
-        echo -e "\e[31mERROR: No se encuentra Qwen o Gemini\e[0m"
+        echo -e "\e[31mERROR: No se encuentra Qwen, Gemini o Copilot\e[0m"
         echo ""
         echo -e "\e[33mInstala uno de los siguientes:\e[0m"
-        echo -e "  \e[90m- Qwen Code:     npm install -g @qwen-code/qwen-code\e[0m"
-        echo -e "  \e[90m- Gemini CLI:    npm install -g @google/gemini-cli\e[0m"
+        echo -e "  \e[90m- Qwen Code:              npm install -g @qwen-code/qwen-code\e[0m"
+        echo -e "  \e[90m- Gemini CLI:             npm install -g @google/gemini-cli\e[0m"
+        echo -e "  \e[90m- GitHub Copilot CLI:     npm install -g @github/gh-cli\e[0m"
         echo ""
         read -p "Presiona Enter para salir"
         exit 1
@@ -166,6 +218,9 @@ if [ "$tool" = "qwen" ]; then
 elif [ "$tool" = "gemini" ]; then
     echo -e "\e[90m[DEBUG] Lanzando 'gemini -i ... -y'...\e[0m"
     gemini -i "$full_prompt" -y
+elif [ "$tool" = "copilot" ]; then
+    echo -e "\e[90m[DEBUG] Lanzando 'gh copilot --input'...\e[0m"
+    gh copilot --input "$full_prompt"
 fi
 
 exit

@@ -46,17 +46,19 @@ function Save-ConfigTool($tool) {
     Write-Host "[DEBUG] Config guardada" -ForegroundColor DarkGray
 }
 
-# Detectar si estamos dentro de Qwen o Gemini
+# Detectar si estamos dentro de Qwen, Gemini o Copilot
 $isQwen = $env:QWEN_CODE -ne $null -or $env:QWEN_CLI -ne $null
 $isGemini = $env:GEMINI_CLI -ne $null
+$isCopilot = $env:GITHUB_COPILOT_CLI -ne $null
 
-Write-Host "[DEBUG] isQwen=$isQwen, isGemini=$isGemini" -ForegroundColor DarkGray
+Write-Host "[DEBUG] isQwen=$isQwen, isGemini=$isGemini, isCopilot=$isCopilot" -ForegroundColor DarkGray
 
 # Detectar herramientas disponibles
 $hasQwen = Get-Command qwen -ErrorAction SilentlyContinue
 $hasGemini = Get-Command gemini -ErrorAction SilentlyContinue
+$hasCopilot = Get-Command gh -ErrorAction SilentlyContinue
 
-Write-Host "[DEBUG] hasQwen=$(if($hasQwen){'True'}else{'False'}), hasGemini=$(if($hasGemini){'True'}else{'False'})" -ForegroundColor DarkGray
+Write-Host "[DEBUG] hasQwen=$(if($hasQwen){'True'}else{'False'}), hasGemini=$(if($hasGemini){'True'}else{'False'}), hasCopilot=$(if($hasCopilot){'True'}else{'False'})" -ForegroundColor DarkGray
 
 Write-Host ""
 Write-Host "Detectando entorno..." -ForegroundColor Yellow
@@ -68,6 +70,9 @@ if ($isQwen) {
 } elseif ($isGemini) {
     Write-Host "Ejecutando dentro de Gemini CLI" -ForegroundColor Green
     $tool = "gemini"
+} elseif ($isCopilot) {
+    Write-Host "Ejecutando dentro de GitHub Copilot CLI" -ForegroundColor Green
+    $tool = "copilot"
 } else {
     # No estamos dentro de ningun entorno, verificar herramientas instaladas
     Write-Host "[DEBUG] No estamos dentro de un entorno CLI, verificando herramientas..." -ForegroundColor DarkGray
@@ -81,8 +86,23 @@ if ($isQwen) {
     } elseif ($lastTool -eq "gemini" -and $hasGemini) {
         Write-Host "Usando Gemini CLI (ultima seleccion)" -ForegroundColor Green
         $tool = "gemini"
+    } elseif ($lastTool -eq "copilot" -and $hasCopilot) {
+        Write-Host "Usando GitHub Copilot CLI (ultima seleccion)" -ForegroundColor Green
+        $tool = "copilot"
+    } elseif ($hasQwen -and $hasGemini -and $hasCopilot) {
+        # Los tres disponibles, preguntar al usuario
+        Write-Host "Herramientas detectadas: Qwen Code, Gemini CLI y GitHub Copilot CLI" -ForegroundColor Yellow
+        Write-Host ""
+        $choice = Read-Host "Que herramienta quieres usar? (qwen/gemini/copilot) [qwen]"
+        if ($choice -eq "gemini") {
+            $tool = "gemini"
+        } elseif ($choice -eq "copilot") {
+            $tool = "copilot"
+        } else {
+            $tool = "qwen"
+        }
     } elseif ($hasQwen -and $hasGemini) {
-        # Ambos disponibles, preguntar al usuario
+        # Dos disponibles (Qwen y Gemini), preguntar al usuario
         Write-Host "Herramientas detectadas: Qwen Code y Gemini CLI" -ForegroundColor Yellow
         Write-Host ""
         $choice = Read-Host "Que herramienta quieres usar? (qwen/gemini) [qwen]"
@@ -91,18 +111,42 @@ if ($isQwen) {
         } else {
             $tool = "qwen"
         }
+    } elseif ($hasQwen -and $hasCopilot) {
+        # Dos disponibles (Qwen y Copilot), preguntar al usuario
+        Write-Host "Herramientas detectadas: Qwen Code y GitHub Copilot CLI" -ForegroundColor Yellow
+        Write-Host ""
+        $choice = Read-Host "Que herramienta quieres usar? (qwen/copilot) [qwen]"
+        if ($choice -eq "copilot") {
+            $tool = "copilot"
+        } else {
+            $tool = "qwen"
+        }
+    } elseif ($hasGemini -and $hasCopilot) {
+        # Dos disponibles (Gemini y Copilot), preguntar al usuario
+        Write-Host "Herramientas detectadas: Gemini CLI y GitHub Copilot CLI" -ForegroundColor Yellow
+        Write-Host ""
+        $choice = Read-Host "Que herramienta quieres usar? (gemini/copilot) [gemini]"
+        if ($choice -eq "copilot") {
+            $tool = "copilot"
+        } else {
+            $tool = "gemini"
+        }
     } elseif ($hasQwen) {
         Write-Host "Qwen Code detectado" -ForegroundColor Green
         $tool = "qwen"
     } elseif ($hasGemini) {
         Write-Host "Gemini CLI detectado" -ForegroundColor Green
         $tool = "gemini"
+    } elseif ($hasCopilot) {
+        Write-Host "GitHub Copilot CLI detectado" -ForegroundColor Green
+        $tool = "copilot"
     } else {
-        Write-Host "ERROR: No se encuentra Qwen o Gemini" -ForegroundColor Red
+        Write-Host "ERROR: No se encuentra Qwen, Gemini o Copilot" -ForegroundColor Red
         Write-Host ""
         Write-Host "Instala uno de los siguientes:" -ForegroundColor Yellow
-        Write-Host "  - Qwen Code:     npm install -g @qwen-code/qwen-code" -ForegroundColor Gray
-        Write-Host "  - Gemini CLI:    npm install -g @google/gemini-cli" -ForegroundColor Gray
+        Write-Host "  - Qwen Code:              npm install -g @qwen-code/qwen-code" -ForegroundColor Gray
+        Write-Host "  - Gemini CLI:             npm install -g @google/gemini-cli" -ForegroundColor Gray
+        Write-Host "  - GitHub Copilot CLI:     npm install -g @github/gh-cli" -ForegroundColor Gray
         Write-Host ""
         Read-Host "Presiona Enter para salir"
         exit 1
@@ -148,6 +192,9 @@ if ($tool -eq "qwen") {
 } elseif ($tool -eq "gemini") {
     Write-Host "[DEBUG] Lanzando 'gemini -i ... -y'..." -ForegroundColor DarkGray
     gemini -i "$fullPrompt" -y
+} elseif ($tool -eq "copilot") {
+    Write-Host "[DEBUG] Lanzando 'gh copilot --input'..." -ForegroundColor DarkGray
+    gh copilot --input "$fullPrompt"
 }
 
 exit
