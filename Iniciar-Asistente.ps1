@@ -105,9 +105,11 @@ if ($isQwen) {
         # Dos disponibles (Qwen y Gemini), preguntar al usuario
         Write-Host "Herramientas detectadas: Qwen Code y Gemini CLI" -ForegroundColor Yellow
         Write-Host ""
-        $choice = Read-Host "Que herramienta quieres usar? (qwen/gemini) [qwen]"
+        $choice = Read-Host "Que herramienta quieres usar? (qwen/gemini/copilot) [qwen]"
         if ($choice -eq "gemini") {
             $tool = "gemini"
+        } elseif ($choice -eq "copilot") {
+            $tool = "copilot"
         } else {
             $tool = "qwen"
         }
@@ -115,8 +117,10 @@ if ($isQwen) {
         # Dos disponibles (Qwen y Copilot), preguntar al usuario
         Write-Host "Herramientas detectadas: Qwen Code y GitHub Copilot CLI" -ForegroundColor Yellow
         Write-Host ""
-        $choice = Read-Host "Que herramienta quieres usar? (qwen/copilot) [qwen]"
-        if ($choice -eq "copilot") {
+        $choice = Read-Host "Que herramienta quieres usar? (qwen/gemini/copilot) [qwen]"
+        if ($choice -eq "gemini") {
+            $tool = "gemini"
+        } elseif ($choice -eq "copilot") {
             $tool = "copilot"
         } else {
             $tool = "qwen"
@@ -125,9 +129,11 @@ if ($isQwen) {
         # Dos disponibles (Gemini y Copilot), preguntar al usuario
         Write-Host "Herramientas detectadas: Gemini CLI y GitHub Copilot CLI" -ForegroundColor Yellow
         Write-Host ""
-        $choice = Read-Host "Que herramienta quieres usar? (gemini/copilot) [gemini]"
+        $choice = Read-Host "Que herramienta quieres usar? (qwen/gemini/copilot) [gemini]"
         if ($choice -eq "copilot") {
             $tool = "copilot"
+        } elseif ($choice -eq "qwen") {
+            $tool = "qwen"
         } else {
             $tool = "gemini"
         }
@@ -193,8 +199,8 @@ if ($tool -eq "qwen") {
     Write-Host "[DEBUG] Lanzando 'gemini -i ... -y'..." -ForegroundColor DarkGray
     gemini -i "$fullPrompt" -y
 } elseif ($tool -eq "copilot") {
-    Write-Host "[DEBUG] Lanzando 'gh copilot --input'..." -ForegroundColor DarkGray
-    gh copilot --input "$fullPrompt"
+    Write-Host "[DEBUG] Lanzando 'copilot -i ... --yolo'..." -ForegroundColor DarkGray
+    copilot -i "$fullPrompt" --yolo
 }
 
 exit

@@ -134,9 +134,11 @@ else
         # Dos disponibles (Qwen y Gemini), preguntar al usuario
         echo -e "\e[33mHerramientas detectadas: Qwen Code y Gemini CLI\e[0m"
         echo ""
-        read -p "¿Qué herramienta quieres usar? (qwen/gemini) [qwen]: " choice
+        read -p "¿Qué herramienta quieres usar? (qwen/gemini/copilot) [qwen]: " choice
         if [ "$choice" = "gemini" ]; then
             tool="gemini"
+        elif [ "$choice" = "copilot" ]; then
+            tool="copilot"
         else
             tool="qwen"
         fi
@@ -144,8 +146,10 @@ else
         # Dos disponibles (Qwen y Copilot), preguntar al usuario
         echo -e "\e[33mHerramientas detectadas: Qwen Code y GitHub Copilot CLI\e[0m"
         echo ""
-        read -p "¿Qué herramienta quieres usar? (qwen/copilot) [qwen]: " choice
-        if [ "$choice" = "copilot" ]; then
+        read -p "¿Qué herramienta quieres usar? (qwen/gemini/copilot) [qwen]: " choice
+        if [ "$choice" = "gemini" ]; then
+            tool="gemini"
+        elif [ "$choice" = "copilot" ]; then
             tool="copilot"
         else
             tool="qwen"
@@ -154,9 +158,11 @@ else
         # Dos disponibles (Gemini y Copilot), preguntar al usuario
         echo -e "\e[33mHerramientas detectadas: Gemini CLI y GitHub Copilot CLI\e[0m"
         echo ""
-        read -p "¿Qué herramienta quieres usar? (gemini/copilot) [gemini]: " choice
+        read -p "¿Qué herramienta quieres usar? (qwen/gemini/copilot) [gemini]: " choice
         if [ "$choice" = "copilot" ]; then
             tool="copilot"
+        elif [ "$choice" = "qwen" ]; then
+            tool="qwen"
         else
             tool="gemini"
         fi
@@ -219,8 +225,8 @@ elif [ "$tool" = "gemini" ]; then
     echo -e "\e[90m[DEBUG] Lanzando 'gemini -i ... -y'...\e[0m"
     gemini -i "$full_prompt" -y
 elif [ "$tool" = "copilot" ]; then
-    echo -e "\e[90m[DEBUG] Lanzando 'gh copilot --input'...\e[0m"
-    gh copilot --input "$full_prompt"
+    echo -e "\e[90m[DEBUG] Lanzando 'copilot -i ... --yolo'...\e[0m"
+    copilot -i "$full_prompt" --yolo
 fi
 
 exit

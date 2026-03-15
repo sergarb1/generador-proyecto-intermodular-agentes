@@ -106,8 +106,10 @@ if defined HAS_QWEN (
         )
         echo Herramientas detectadas: Qwen Code y Gemini CLI
         echo.
-        choice /C QG /N /M "Que herramienta quieres usar? (Q=Qwen, G=Gemini) [Qwen]: "
-        if errorlevel 2 (
+        choice /C QGC /N /M "Que herramienta quieres usar? (Q=Qwen, G=Gemini, C=Copilot) [Qwen]: "
+        if errorlevel 3 (
+            set "TOOL=copilot"
+        ) else if errorlevel 2 (
             set "TOOL=gemini"
         ) else (
             set "TOOL=qwen"
@@ -117,9 +119,11 @@ if defined HAS_QWEN (
     if defined HAS_COPILOT (
         echo Herramientas detectadas: Qwen Code y GitHub Copilot CLI
         echo.
-        choice /C QC /N /M "Que herramienta quieres usar? (Q=Qwen, C=Copilot) [Qwen]: "
-        if errorlevel 2 (
+        choice /C QGC /N /M "Que herramienta quieres usar? (Q=Qwen, G=Gemini, C=Copilot) [Qwen]: "
+        if errorlevel 3 (
             set "TOOL=copilot"
+        ) else if errorlevel 2 (
+            set "TOOL=gemini"
         ) else (
             set "TOOL=qwen"
         )
@@ -134,11 +138,13 @@ if defined HAS_GEMINI (
     if defined HAS_COPILOT (
         echo Herramientas detectadas: Gemini CLI y GitHub Copilot CLI
         echo.
-        choice /C GC /N /M "Que herramienta quieres usar? (G=Gemini, C=Copilot) [Gemini]: "
-        if errorlevel 2 (
+        choice /C QGC /N /M "Que herramienta quieres usar? (Q=Qwen, G=Gemini, C=Copilot) [Gemini]: "
+        if errorlevel 3 (
             set "TOOL=copilot"
-        ) else (
+        ) else if errorlevel 2 (
             set "TOOL=gemini"
+        ) else (
+            set "TOOL=qwen"
         )
         goto :SELECTED
     )
@@ -209,7 +215,7 @@ if "%TOOL%"=="qwen" (
 ) else if "%TOOL%"=="gemini" (
     gemini -i "!FULL_PROMPT!" -y
 ) else if "%TOOL%"=="copilot" (
-    gh copilot --input "!FULL_PROMPT!"
+    copilot -i "!FULL_PROMPT!" --yolo
 )
 
 endlocal
