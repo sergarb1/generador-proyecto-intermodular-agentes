@@ -175,7 +175,7 @@ const PROJECTS = [
     },
 
     // ==================== COMERCIO ====================
-    
+
     // FPB Servicios Comerciales - Segundo
     {
         id: "fpb-comercio-online",
@@ -188,6 +188,22 @@ const PROJECTS = [
         category: "orange",
         description: "Tienda online de productos ecológicos y de proximidad. Digitalización del comercio local con WooCommerce.",
         url: "./proyectos/03-Comercio/SERVICIOS-COMERCIALES/Segundo/SEGUNDO-FPB-COMERCIO-ONLINE/proyecto.html"
+    },
+
+    // ==================== TURISMO Y HOSTELERÍA ====================
+
+    // FPB Servicios en Restauración - Segundo
+    {
+        id: "fpb-restauracion-digital",
+        title: "Transformación Digital de Restaurante Tradicional",
+        family: "Turismo y Hostelería",
+        cycle: "FPB",
+        course: "Segundo Curso",
+        emoji: "🍽️",
+        gradient: "from-cyan-500 to-teal-600",
+        category: "cyan",
+        description: "Digitalización completa de 'El Rincón del Sabor': reservas online, carta digital QR, gestión de redes sociales y protocolo de atención al cliente.",
+        url: "./proyectos/04-Turismo/SERVICIOS-RESTAURACION/Segundo/SEGUNDO-FPB-SR-RESTAURANTE-DIGITAL/proyecto.html"
     }
 ];
 
@@ -206,7 +222,8 @@ function getCategoryBadge(category) {
     const badges = {
         green: { bg: "bg-green-100", text: "text-green-700", label: "Administración" },
         purple: { bg: "bg-purple-100", text: "text-purple-700", label: "Informática" },
-        orange: { bg: "bg-orange-100", text: "text-orange-700", label: "Comercio" }
+        orange: { bg: "bg-orange-100", text: "text-orange-700", label: "Comercio" },
+        cyan: { bg: "bg-cyan-100", text: "text-cyan-700", label: "Turismo y Hostelería" }
     };
     const badge = badges[category] || badges.green;
     return `<span class="px-3 py-1 ${badge.bg} ${badge.text} text-xs font-semibold rounded-full">${badge.label}</span>`;
