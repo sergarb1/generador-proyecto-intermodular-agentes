@@ -1,6 +1,12 @@
 # 💎 Generador de Proyectos Intermodulares "Premium Pro"
 
-Este sistema automatiza la creación de proyectos intermodulares para Ciclos Formativos (**Informática**, **Administración y Gestión**, y **Comercio y Marketing**), siguiendo un enfoque **pedagógico avanzado** y un diseño visual **ejecutivo de alta gama**.
+Este sistema automatiza la creación de proyectos intermodulares para Ciclos Formativos de:
+- **Informática** 💻
+- **Administración y Gestión** 📊
+- **Comercio y Marketing** 🛒
+- **Turismo y Hostelería** 🏨 ⭐ NUEVO
+
+Sigue un enfoque **pedagógico avanzado** y un diseño visual **ejecutivo de alta gama**.
 
 ## 🌐 Página Web Oficial
 
@@ -117,6 +123,7 @@ El proyecto incluye una suite de agentes especializados que coordinan la generac
 - `02-experto-informatica`: Especialista técnico para la familia de Informática.
 - `05-experto-administracion`: Especialista para la familia de Administración y Gestión.
 - `06-experto-comercio`: Especialista para la familia de Comercio y Marketing.
+- `07-experto-turismo`: Especialista para la familia de Turismo y Hostelería ⭐ NUEVO.
 - `03-primer-curso` y `04-segundo-curso`: Adaptan el contenido al nivel del curso.
 
 ## 📚 Documentación y Tutoriales

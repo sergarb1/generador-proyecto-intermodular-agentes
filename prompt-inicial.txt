@@ -13,6 +13,7 @@ Haz las siguientes preguntas **una por una**:
 * Informática
 * Administración y Gestión
 * Comercio y Marketing
+* **Turismo y Hostelería** ⭐ NUEVO
 
 ---
 
@@ -80,6 +81,28 @@ Grado Superior:
 
 ---
 
+#### Turismo y Hostelería ⭐ NUEVO
+
+FPB:
+
+* Servicios en Restauración
+* Servicios de Alojamiento
+
+Grado Medio:
+
+* Cocina y Gastronomía
+* Gestión de Alojamientos Turísticos
+* Servicios en Restauración
+
+Grado Superior:
+
+* Agencias de Viajes y Gestión de Eventos
+* Dirección de Cocina
+* Dirección de Alojamiento
+* Gestión de Alojamientos Turísticos
+
+---
+
 ### 4️⃣ Curso del ciclo
 
 * Primero
@@ -104,6 +127,11 @@ Ejemplos:
 * Desarrollo de apps
 * Redes y servidores
 * Logística
+* **Gestión hotelera y de restaurantes** ⭐ NUEVO
+* **Experiencia del cliente en turismo** ⭐ NUEVO
+* **Revenue management** ⭐ NUEVO
+* **Turismo sostenible** ⭐ NUEVO
+* **Eventos y congresos** ⭐ NUEVO
 
 O puedes indicar:
 
@@ -169,6 +197,20 @@ Especialista en:
 
 ---
 
+**Turismo y Hostelería** ⭐ NUEVO
+`agents/07-experto-turismo.md`
+
+Especialista en:
+
+* gestión hotelera y de restaurantes
+* experiencia del cliente
+* revenue management
+* marketing turístico
+* gestión de eventos
+* sostenibilidad turística
+
+---
+
 ### Agentes por Nivel de Curso (PARA TODAS LAS FAMILIAS)
 
 Primer curso
@@ -203,6 +245,7 @@ Proyectos:
 * Informática → `agents/02-experto-informatica.md`
 * Administración → `agents/05-experto-administracion.md`
 * Comercio → `agents/06-experto-comercio.md`
+* **Turismo y Hostelería → `agents/07-experto-turismo.md`** ⭐ NUEVO
 
 3️⃣ Según el curso:
 
@@ -243,6 +286,7 @@ proyectos/
 ├── 01-Informatica/
 ├── 02-Administracion/
 ├── 03-Comercio/
+├── 04-Turismo/
 │
 │   └── [CICLO]/
 │       └── [CURSO]/
@@ -262,6 +306,10 @@ proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-APP-GESTION/
 proyectos/02-Administracion/GS-ADMF/Segundo/SEGUNDO-ADMF-PLAN-EMPRESA/
 
 proyectos/03-Comercio/ACTIVIDADES-COMERCIALES/Primero/PRIMERO-GM-AC-TIENDA-ONLINE/
+
+proyectos/04-Turismo/DIRECCION-ALOJAMIENTO/Segundo/SEGUNDO-GS-DA-HOTEL-BOUTIQUE/
+proyectos/04-Turismo/COCINA-GASTRONOMIA/Primero/PRIMERO-GM-CG-MENU-ESTACIONAL/
+proyectos/04-Turismo/AGENCIAS-VIAJES/Segundo/SEGUNDO-GS-AV-PACKETE-TURISTICO/
 ```
 
 ---
@@ -308,6 +356,11 @@ PRIMERO-GM-ADM-OFICINA-DIGITAL
 SEGUNDO-GS-ADMF-PLAN-EMPRESA
 PRIMERO-GM-AC-TIENDA-ONLINE
 SEGUNDO-GS-MARKETING-CAMPANA-DIGITAL
+PRIMERO-GM-CG-MENU-ESTACIONAL
+SEGUNDO-GS-DA-HOTEL-BOUTIQUE
+SEGUNDO-GS-AV-PACKETE-TURISTICO
+PRIMERO-SR-SERVICIO-SALA
+SEGUNDO-GAT-RESERVAS-ONLINE
 ```
 
 ---
@@ -320,6 +373,7 @@ Primera pregunta:
 
 **¿Qué familia profesional quieres usar?**
 
-* Informática
-* Administración y Gestión
-* Comercio y Marketing
+* Informática 🖥️
+* Administración y Gestión 📊
+* Comercio y Marketing 🛒
+* **Turismo y Hostelería** 🏨 ⭐ NUEVO

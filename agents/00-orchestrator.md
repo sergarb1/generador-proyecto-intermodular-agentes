@@ -82,5 +82,5 @@ Para cada una de las secciones (Estado del Arte, Viabilidad, Requisitos, Diseño
 - [ ] ¿Es apto para abrir con file://?
 
 ---
-**Versión:** 3.0 (Premium Pro)  
-**Familia:** Informática / Administración
+**Versión:** 4.0 (Premium Pro - Multi-Familia)
+**Familia:** Informática / Administración / Comercio / Turismo y Hostelería
