@@ -157,6 +157,23 @@
             z-index: 40;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             left: 0;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .sidebar::-webkit-scrollbar-thumb {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        .sidebar::-webkit-scrollbar-thumb:hover {
+            background: #cbd5e1;
         }
 
         .sidebar-collapsed {
@@ -409,7 +426,7 @@
     <div id="app" v-cloak>
         <!-- Sidebar -->
         <aside class="sidebar no-print" :class="{ 'sidebar-collapsed': !sidebarOpen }">
-            <div class="h-20 flex items-center px-8 border-b border-slate-200 bg-white">
+            <div class="h-20 flex items-center px-8 border-b border-slate-200 bg-white sticky top-0 z-10">
                 <div class="flex items-center gap-4">
                     <div class="logo-box">
                         <img :src="logoUrl" alt="Logo" class="max-h-full">
