@@ -64,6 +64,7 @@
                     </div>
                 </div>
                 <div class="hidden md:flex items-center gap-6 text-sm">
+                    <a href="#tutoriales" class="hover:text-blue-200 transition">Tutoriales</a>
                     <a href="#como-funciona" class="hover:text-blue-200 transition">Cómo Funciona</a>
                     <a href="#herramientas" class="hover:text-blue-200 transition">Herramientas</a>
                     <a href="#demo" class="hover:text-blue-200 transition">Demos</a>
@@ -92,19 +93,30 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://github.com/sergarb1/generador-proyecto-intermodular-agentes" target="_blank" class="bg-white text-blue-600 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition shadow-lg">
-                        📦 Ver en GitHub
+                    <a href="https://github.com/sergarb1/generador-proyecto-intermodular-agentes/releases/latest" target="_blank" class="bg-white text-blue-600 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition shadow-lg flex items-center justify-center gap-2">
+                        <span>📥</span> Descargar ZIP
+                    </a>
+                    <a href="https://github.com/sergarb1/generador-proyecto-intermodular-agentes" target="_blank" class="bg-white/20 backdrop-blur-sm text-white font-bold px-8 py-4 rounded-xl hover:bg-white/30 transition flex items-center justify-center gap-2">
+                        <span>📦</span> Ver en GitHub
                     </a>
                     <a href="#demo" class="bg-white/20 backdrop-blur-sm text-white font-bold px-8 py-4 rounded-xl hover:bg-white/30 transition">
                         Ver Proyectos de Ejemplo
                     </a>
                 </div>
 
-                <div class="mt-8 flex items-center justify-center gap-2 text-sm text-blue-200">
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-blue-200">
                     <span>💻</span>
                     <span>Repositorio en:</span>
                     <a href="https://github.com/sergarb1/generador-proyecto-intermodular-agentes" target="_blank" class="underline hover:text-white transition font-semibold">
                         github.com/sergarb1/generador-proyecto-intermodular-agentes
+                    </a>
+                    <span class="mx-2">•</span>
+                    <a href="./TutorialInstalacion.md" target="_blank" class="underline hover:text-white transition font-semibold">
+                        📚 Tutorial Instalación
+                    </a>
+                    <span class="mx-2">•</span>
+                    <a href="./TutorialUso.md" target="_blank" class="underline hover:text-white transition font-semibold">
+                        🚀 Tutorial de Uso
                     </a>
                 </div>
             </div>
@@ -339,6 +351,94 @@
                         Diseño visual profesional con Vue.js, Tailwind CSS, 
                         callouts, grids y tablas premium.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutoriales Section -->
+    <section id="tutoriales" class="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-4xl mb-4 block">📚</span>
+                <h3 class="text-3xl font-bold text-slate-800 mb-4">Tutoriales y Documentación</h3>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Guías completas para instalar y utilizar el generador de proyectos.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Tutorial Instalación -->
+                <a href="./TutorialInstalacion.md" target="_blank" class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition card-hover border-2 border-blue-200">
+                    <div class="flex items-start gap-4">
+                        <div class="w-14 h-14 bg-blue-500 rounded-xl flex items-center justify-center text-white text-3xl flex-shrink-0">
+                            📦
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl text-slate-800 mb-2">Tutorial de Instalación</h4>
+                            <p class="text-slate-600 mb-4">
+                                Guía paso a paso para instalar el proyecto y configurar las herramientas de IA.
+                                Incluye configuración de API Keys y solución de problemas.
+                            </p>
+                            <ul class="text-sm text-slate-500 space-y-1">
+                                <li>• Requisitos previos</li>
+                                <li>• Descarga del proyecto</li>
+                                <li>• Instalación de Gemini CLI, Qwen Code o Copilot</li>
+                                <li>• Configuración de API Keys</li>
+                                <li>• Verificación de la instalación</li>
+                            </ul>
+                            <div class="mt-4 text-blue-600 font-semibold flex items-center gap-2">
+                                Ver tutorial <span>→</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Tutorial Uso -->
+                <a href="./TutorialUso.md" target="_blank" class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition card-hover border-2 border-green-200">
+                    <div class="flex items-start gap-4">
+                        <div class="w-14 h-14 bg-green-500 rounded-xl flex items-center justify-center text-white text-3xl flex-shrink-0">
+                            🚀
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl text-slate-800 mb-2">Tutorial de Uso</h4>
+                            <p class="text-slate-600 mb-4">
+                                Cómo generar proyectos intermodulares paso a paso con ejemplos prácticos
+                                y consejos de personalización.
+                            </p>
+                            <ul class="text-sm text-slate-500 space-y-1">
+                                <li>• Iniciar el asistente</li>
+                                <li>• Proceso de generación</li>
+                                <li>• Estructura del proyecto</li>
+                                <li>• Visualización y exportación</li>
+                                <li>• Ejemplos prácticos</li>
+                            </ul>
+                            <div class="mt-4 text-green-600 font-semibold flex items-center gap-2">
+                                Ver tutorial <span>→</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Descarga ZIP -->
+            <div class="max-w-3xl mx-auto mt-12 bg-white rounded-2xl p-8 shadow-lg border-2 border-purple-200">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="w-20 h-20 bg-purple-500 rounded-2xl flex items-center justify-center text-white text-5xl flex-shrink-0">
+                        📥
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h4 class="font-bold text-xl text-slate-800 mb-2">Descarga Rápida (ZIP)</h4>
+                        <p class="text-slate-600 mb-4">
+                            Descarga la última versión del proyecto lista para usar. Incluye todos los agentes,
+                            plantillas y proyectos de ejemplo.
+                        </p>
+                        <a href="https://github.com/sergarb1/generador-proyecto-intermodular-agentes/releases/latest" 
+                           target="_blank"
+                           class="inline-flex items-center gap-2 bg-purple-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-purple-700 transition">
+                            <span>⬇️</span> Descargar desde Releases
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

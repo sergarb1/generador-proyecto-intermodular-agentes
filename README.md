@@ -8,6 +8,33 @@ Visita la página web del proyecto para acceder a información detallada y ejemp
 
 👉 **[sergarb1.github.io/generador-proyecto-intermodular-agentes/](https://sergarb1.github.io/generador-proyecto-intermodular-agentes/)**
 
+## 📚 Tutoriales
+
+| Tutorial | Descripción | Enlace |
+|----------|-------------|--------|
+| **📦 Instalación** | Guía completa para instalar el proyecto y configurar las herramientas de IA | [Ver TutorialInstalacion.md](./TutorialInstalacion.md) |
+| **🚀 Uso** | Cómo generar proyectos paso a paso con ejemplos prácticos | [Ver TutorialUso.md](./TutorialUso.md) |
+
+## 📥 Descarga Rápida
+
+### Última Versión (ZIP)
+
+Descarga la última versión del proyecto lista para usar:
+
+👉 **[Descargar ZIP desde Releases](https://github.com/sergarb1/generador-proyecto-intermodular-agentes/releases/latest)**
+
+**Pasos:**
+1. Descarga el archivo `generador-proyecto-intermodular-agentes.zip`
+2. Extrae el contenido en una carpeta
+3. Sigue el [Tutorial de Instalación](./TutorialInstalacion.md)
+
+### Clonar desde GitHub
+
+```bash
+git clone https://github.com/sergarb1/generador-proyecto-intermodular-agentes.git
+cd generador-proyecto-intermodular-agentes
+```
+
 ## 🎯 Enfoque Pedagógico: "Enseña a Pescar"
 
 A diferencia de otros generadores, este sistema no entrega el proyecto resuelto. Su objetivo es actuar como un **tutor experto**:
@@ -23,34 +50,50 @@ A diferencia de otros generadores, este sistema no entrega el proyecto resuelto.
 
 La aplicación está diseñada para ser utilizada de forma interactiva a través de una terminal (PowerShell, Bash o CMD).
 
-### Requisitos previos
-- Tener instalado **Node.js**.
-- Tener instalado **al menos una** de estas herramientas IA:
-  - **Gemini CLI** (`npm install -g @google/gemini-cli`)
-  - **Qwen Code** (`npm install -g @qwen-code/qwen-code`)
-  - **GitHub Copilot CLI** (`npm install -g @github/gh-cli`)
+### 📋 Requisitos previos
 
-### Pasos para generar un proyecto
-1.  Ejecuta el script de inicio según tu terminal:
-    ```powershell
-    # En PowerShell
-    ./Iniciar-Asistente.ps1
-    ```
-    ```bash
-    # En Bash/Mac/Linux
-    ./Iniciar-Asistente.sh
-    ```
-    ```cmd
-    # En CMD.exe
-    .\Iniciar-Asistente.bat
-    ```
-2.  El asistente detectará automáticamente tu entorno (Gemini, Qwen o Copilot) y te pedirá los datos del proyecto uno a uno:
-    - Familia profesional (Informática, Administración o Comercio).
-    - Ciclo formativo (ASIR, DAM, DAW, SMR, GM-ADM, GS-ADMF, GS-ASID, Servicios Comerciales, etc.).
-    - Curso (Primero o Segundo).
-    - Temática deseada.
-3.  La IA generará la estructura de carpetas y los archivos de datos necesarios dentro de la carpeta `proyectos/`.
-4.  Abre el archivo `proyecto.html` generado directamente en tu navegador para ver el resultado.
+- Tener instalado **Node.js** (v18 o superior)
+- Tener instalado **Git**
+- Tener instalado **al menos una** de estas herramientas de IA:
+
+| Herramienta | Comando de Instalación | URL |
+|-------------|----------------------|-----|
+| **Gemini CLI** | `npm install -g @google/gemini-cli` | [Google AI](https://aistudio.google.com/) |
+| **Qwen Code** | `npm install -g @qwen-code/qwen-code` | [Alibaba Qwen](https://dashscope.console.aliyun.com/) |
+| **GitHub Copilot CLI** | `npm install -g @github/gh-cli` | [GitHub Copilot](https://github.com/copilot) |
+
+> **⚠️ Importante:** Necesitas configurar una API Key para la herramienta que elijas. Consulta el [Tutorial de Instalación](./TutorialInstalacion.md) para más detalles.
+
+### 📝 Pasos para generar un proyecto
+
+1. **Inicia el asistente** según tu sistema operativo:
+
+   ```powershell
+   # En PowerShell (Windows)
+   ./Iniciar-Asistente.ps1
+   ```
+
+   ```bash
+   # En Bash (Linux/Mac)
+   ./Iniciar-Asistente.sh
+   ```
+
+   ```cmd
+   # En CMD (Windows)
+   .\Iniciar-Asistente.bat
+   ```
+
+2. **El asistente detectará automáticamente** tu entorno (Gemini, Qwen o Copilot) y te pedirá los datos del proyecto uno a uno:
+   - Familia profesional (Informática, Administración o Comercio)
+   - Ciclo formativo (ASIR, DAM, DAW, SMR, GM-ADM, GS-ADMF, GS-ASID, etc.)
+   - Curso (Primero o Segundo)
+   - Temática deseada
+
+3. **La IA generará** la estructura de carpetas y los archivos de datos necesarios dentro de la carpeta `proyectos/`
+
+4. **Abre el archivo** `proyecto.html` generado directamente en tu navegador para ver el resultado
+
+> **📖 Para más detalles:** Consulta el [Tutorial de Uso](./TutorialUso.md) con ejemplos prácticos y solución de problemas.
 
 ## ✨ Estándar Visual "Premium Pro"
 
@@ -76,8 +119,38 @@ El proyecto incluye una suite de agentes especializados que coordinan la generac
 - `06-experto-comercio`: Especialista para la familia de Comercio y Marketing.
 - `03-primer-curso` y `04-segundo-curso`: Adaptan el contenido al nivel del curso.
 
+## 📚 Documentación y Tutoriales
+
+### Tutoriales Disponibles
+
+| Tutorial | Descripción |
+|----------|-------------|
+| [📦 Tutorial de Instalación](./TutorialInstalacion.md) | Guía completa para instalar el proyecto y configurar las herramientas de IA |
+| [🚀 Tutorial de Uso](./TutorialUso.md) | Cómo generar proyectos paso a paso con ejemplos prácticos |
+
+### Crear ZIP para Release
+
+Para empaquetar el proyecto y distribuirlo:
+
+```bash
+# Linux/Mac
+./scripts/create-release-zip.sh
+
+# Windows
+.\scripts\create-release-zip.bat
+```
+
+El script creará un archivo ZIP con todos los archivos necesarios listo para subir a GitHub Releases.
+
+## 🔗 Enlaces de Interés
+
+- **[Página Web del Proyecto](https://sergarb1.github.io/generador-proyecto-intermodular-agentes/)**
+- **[Releases](https://github.com/sergarb1/generador-proyecto-intermodular-agentes/releases)** - Descarga la última versión en ZIP
+- **[Issues](https://github.com/sergarb1/generador-proyecto-intermodular-agentes/issues)** - Reporta problemas o sugerencias
+- **[IES Serra Perenxisa](https://iesserraperenxisa.es)** - Web del centro educativo
+
 ---
-**Versión:** 3.1 (Premium Pro Edition - Multi-CLI Support)  
-**Centro:** IES Serra Perenxisa  
-**Autor:** Sergio García  
+**Versión:** 3.2 (Premium Pro Edition - Con Tutoriales)
+**Centro:** IES Serra Perenxisa
+**Autor:** Sergio García
 **CLIs Soportados:** Gemini CLI, Qwen Code, GitHub Copilot CLI
