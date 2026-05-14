@@ -18,6 +18,20 @@ const PROJECTS = [
         url: "./proyectos/02-Administracion/GS-ASID/Segundo/SEGUNDO-ASID-PLAN-EMPRESA-STARTUP-TORRENT/proyecto.html"
     },
     
+    // GS-ASID - Segundo (Recogida de Alimentos)
+    {
+        id: "gs-asid-recogida-alimentos",
+        title: "Campaña Solidaria: Recogida de Alimentos para ONG",
+        family: "Administración",
+        cycle: "GS-ASID",
+        course: "Segundo Curso",
+        emoji: "🤝",
+        gradient: "from-rose-500 to-red-600",
+        category: "green",
+        description: "Organización integral de una campaña solidaria de recogida de alimentos en el IES Serra Perenxisa, con termómetro visual de progreso, colaboración con ONG locales (Banco de Alimentos, Cáritas) y gestión administrativa completa.",
+        url: "./proyectos/02-Administracion/GS-ASID/Segundo/SEGUNDO-GS-ASID-RECOGIDA-ALIMENTOS/proyecto.html"
+    },
+
     // GS-ASID - Segundo (Feria del Libro)
     {
         id: "gs-asid-feria-libro",

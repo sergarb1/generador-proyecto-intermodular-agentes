@@ -164,9 +164,43 @@ El script creará un archivo ZIP con todos los archivos necesarios listo para su
 - **[IES Serra Perenxisa](https://iesserraperenxisa.es)** - Web del centro educativo
 
 ---
-**Versión:** 3.4 (Premium Pro Edition - Scripts mejorados)
+**Versión:** 3.5 (Premium Pro Edition - Nuevos proyectos)
 **Centro:** IES Serra Perenxisa
 **Autor:** Sergio García
 **CLIs Soportados:** Opencode CLI, Gemini CLI, Qwen Code, GitHub Copilot CLI
 **Auto-detección:** Los scripts detectan automáticamente tu entorno y herramientas instaladas
 **Personalización:** Edita `prompt-inicial.txt` para cambiar el prompt base
+
+## 📂 Proyectos Generados
+
+### Administración y Gestión
+| Proyecto | Ciclo | Curso | Enlace |
+|----------|-------|-------|--------|
+| Campaña Solidaria: Recogida de Alimentos para ONG | GS-ASID | Segundo | [Ver proyecto](./proyectos/02-Administracion/GS-ASID/Segundo/SEGUNDO-GS-ASID-RECOGIDA-ALIMENTOS/proyecto.html) |
+| Feria del Libro IES Serra Perenxisa | GS-ASID | Segundo | [Ver proyecto](./proyectos/02-Administracion/GS-ASID/Segundo/SEGUNDO-ASID-FERIA-LIBRO/proyecto.html) |
+| Plan de Empresa: Startup de Torrent | GS-ASID | Segundo | [Ver proyecto](./proyectos/02-Administracion/GS-ASID/Segundo/SEGUNDO-ASID-PLAN-EMPRESA-STARTUP-TORRENT/proyecto.html) |
+| Transformación Digital en PYME | GS-ADMF | Segundo | [Ver proyecto](./proyectos/02-Administracion/GS-ADMF/Segundo/SEGUNDO-ADMF-TRANSFORMACION-DIGITAL/proyecto.html) |
+| Gestoría Digital - Servicios Online | GM-ADM | Segundo | [Ver proyecto](./proyectos/02-Administracion/GM-ADM/Segundo/SEGUNDO-GM-ADM-GESTORIA-DIGITAL/proyecto.html) |
+| Spin-off Marketing Digital | FPB Servicios Administrativos | Segundo | [Ver proyecto](./proyectos/02-Administracion/Servicios-Administrativos/Segundo/SEGUNDO-FPB-SPINOFF-MARKETING/proyecto.html) |
+| Graduación Escolar | FPB Servicios Administrativos | Segundo | [Ver proyecto](./proyectos/02-Administracion/Servicios-Administrativos/Segundo/SEGUNDO-FPB-GRADUACION-ESCOLAR/proyecto.html) |
+
+### Informática
+| Proyecto | Ciclo | Curso | Enlace |
+|----------|-------|-------|--------|
+| Telemedicina en la Nube | ASIR | Segundo | [Ver proyecto](./proyectos/01-Informatica/ASIR/Segundo/SEGUNDO-ASIR-TELEMEDICINA-CLOUD/proyecto.html) |
+| Cloud y Automatización | ASIR | Segundo | [Ver proyecto](./proyectos/01-Informatica/ASIR/Segundo/SEGUNDO-ASIR-CLOUD-AUTOMATIZACION/index.html) |
+| App de Citas Médicas | DAM | Segundo | [Ver proyecto](./proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-APP-CITAS-MEDICAS/proyecto.html) |
+| LogiScan Pro | DAM | Segundo | [Ver proyecto](./proyectos/01-Informatica/DAM/Segundo/SEGUNDO-DAM-LOGISTICA-ODOO-FLUTTER/proyecto.html) |
+| EventHub Pro | DAW | Segundo | [Ver proyecto](./proyectos/01-Informatica/DAW/Segundo/SEGUNDO-DAW-PLATAFORMA-EVENTOS/proyecto.html) |
+| Monitorización de Parque | SMR | Segundo | [Ver proyecto](./proyectos/01-Informatica/SMR/Segundo/SEGUNDO-SMR-MONITORIZACION-PARQUE/proyecto.html) |
+| Domótica para el Aula | FPB Informática de Oficina | Segundo | [Ver proyecto](./proyectos/01-Informatica/INFORMATICA-OFICINA/Segundo/SEGUNDO-FPB-IO-DOMOTICA-AULA/proyecto.html) |
+
+### Comercio y Marketing
+| Proyecto | Ciclo | Curso | Enlace |
+|----------|-------|-------|--------|
+| EcoMarket Valencia | FPB Servicios Comerciales | Segundo | [Ver proyecto](./proyectos/03-Comercio/SERVICIOS-COMERCIALES/Segundo/SEGUNDO-FPB-COMERCIO-ONLINE/proyecto.html) |
+
+### Turismo y Hostelería
+| Proyecto | Ciclo | Curso | Enlace |
+|----------|-------|-------|--------|
+| Transformación Digital de Restaurante Tradicional | FPB Servicios en Restauración | Segundo | [Ver proyecto](./proyectos/04-Turismo/SERVICIOS-RESTAURACION/Segundo/SEGUNDO-FPB-SR-RESTAURANTE-DIGITAL/proyecto.html) |
