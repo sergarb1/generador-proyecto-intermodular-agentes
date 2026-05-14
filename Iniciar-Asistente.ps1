@@ -128,7 +128,6 @@ if ($isQwen) {
 Save-ConfigTool $tool
 
 # Leer el prompt inicial desde el archivo prompt-inicial.txt
-# Esto permite que cualquier modificacion en el archivo se refleje automaticamente
 Write-Host "[DEBUG] Leyendo prompt desde $promptPath" -ForegroundColor DarkGray
 if (Test-Path $promptPath) {
     $initialPrompt = Get-Content $promptPath -Raw -Encoding UTF8
@@ -147,7 +146,7 @@ $interpreterInfo = @"
 
 ---
 ℹ️ INFORMACION DEL INTERPRETE:
-Este script se esta ejecutando en PowerShell (`$PSVersionTable.PSVersion).
+Este script se esta ejecutando en PowerShell ($($PSVersionTable.PSVersion)).
 Los comandos de shell deben usar sintaxis PowerShell (no bash).
 ---
 
@@ -156,19 +155,23 @@ Los comandos de shell deben usar sintaxis PowerShell (no bash).
 # Combinar el prompt inicial con la informacion del interprete
 $fullPrompt = $initialPrompt + $interpreterInfo
 
-# Iniciar la herramienta seleccionada en modo interactivo con el prompt
+# Iniciar la herramienta seleccionada
 if ($tool -eq "opencode") {
-    Write-Host "[DEBUG] Lanzando 'opencode run ...'..." -ForegroundColor DarkGray
-    opencode run "$fullPrompt"
+    # OPENDCODE: Usamos --prompt para abrir el TUI con el mensaje precargado
+    Write-Host "[DEBUG] Lanzando 'opencode --prompt ...' (TUI interactivo)" -ForegroundColor DarkGray
+    Write-Host "✅ El prompt ya está escrito. Presiona ENTER para enviarlo a la IA." -ForegroundColor Green
+    Write-Host "💡 Luego podrás seguir respondiendo a sus preguntas." -ForegroundColor Green
+    Write-Host ""
+    opencode --prompt $fullPrompt
 } elseif ($tool -eq "qwen") {
     Write-Host "[DEBUG] Lanzando 'qwen -i ... -y'..." -ForegroundColor DarkGray
-    qwen -i "$fullPrompt" -y
+    qwen -i $fullPrompt -y
 } elseif ($tool -eq "gemini") {
     Write-Host "[DEBUG] Lanzando 'gemini -i ... -y'..." -ForegroundColor DarkGray
-    gemini -i "$fullPrompt" -y
+    gemini -i $fullPrompt -y
 } elseif ($tool -eq "copilot") {
     Write-Host "[DEBUG] Lanzando 'copilot -i ... --yolo'..." -ForegroundColor DarkGray
-    copilot -i "$fullPrompt" --yolo
+    copilot -i $fullPrompt --yolo
 }
 
 exit

@@ -10,189 +10,164 @@ echo    IES Serra Perenxisa
 echo =========================================
 echo.
 
-REM Ruta del script
 set "SCRIPT_DIR=%~dp0"
 set "CONFIG_PATH=%SCRIPT_DIR%config.ini"
 set "PROMPT_PATH=%SCRIPT_DIR%prompt-inicial.txt"
 
-REM Detectar entornos
-set "IS_QWEN="
-set "IS_GEMINI="
-set "IS_COPILOT="
-set "IS_OPENCODE="
-
-if defined QWEN_CODE set "IS_QWEN=1"
-if defined QWEN_CLI set "IS_QWEN=1"
-if defined GEMINI_CLI set "IS_GEMINI=1"
-if defined GITHUB_COPILOT_CLI set "IS_COPILOT=1"
-if defined OPENCODE set "IS_OPENCODE=1"
-
-REM Detectar herramientas disponibles
+:: Detectar herramientas instaladas
+set "HAS_OPENCODE="
 set "HAS_QWEN="
 set "HAS_GEMINI="
 set "HAS_COPILOT="
 
-where qwen >nul 2>&1 && set "HAS_QWEN=1"
-where gemini >nul 2>&1 && set "HAS_GEMINI=1"
-where gh >nul 2>&1 && set "HAS_COPILOT=1"
-where opencode >nul 2>&1 && set "HAS_OPENCODE=1"
+where opencode >nul 2>&1
+if %errorlevel% equ 0 set "HAS_OPENCODE=1"
 
-echo.
+where qwen >nul 2>&1
+if %errorlevel% equ 0 set "HAS_QWEN=1"
+
+where gemini >nul 2>&1
+if %errorlevel% equ 0 set "HAS_GEMINI=1"
+
+where copilot >nul 2>&1
+if %errorlevel% equ 0 set "HAS_COPILOT=1"
+
 echo Detectando entorno...
+echo.
 
-REM Si estamos dentro de un entorno, usar ese
-if defined IS_QWEN (
-    echo Ejecutando dentro de Qwen Code
-    set "TOOL=qwen"
-    goto :SELECTED
-)
-
-if defined IS_GEMINI (
-    echo Ejecutando dentro de Gemini CLI
-    set "TOOL=gemini"
-    goto :SELECTED
-)
-
-if defined IS_COPILOT (
-    echo Ejecutando dentro de GitHub Copilot CLI
-    set "TOOL=copilot"
-    goto :SELECTED
-)
-
-if defined IS_OPENCODE (
-    echo Ejecutando dentro de Opencode CLI
-    set "TOOL=opencode"
-    goto :SELECTED
-)
-
-REM No estamos dentro de ningun entorno, verificar herramientas
-set "TOOL_FROM_CONFIG="
+:: Leer herramienta guardada
+set "TOOL="
 if exist "%CONFIG_PATH%" (
-    for /f "tokens=2 delims==" %%a in ('findstr /i "^tool=" "%CONFIG_PATH%"') do (
-        set "TOOL_FROM_CONFIG=%%a"
+    for /f "tokens=2 delims==" %%a in ('findstr /i "^tool=" "%CONFIG_PATH%" 2^>nul') do (
+        set "TOOL=%%a"
     )
 )
 
-if "%TOOL_FROM_CONFIG%"=="qwen" (
-    if defined HAS_QWEN (
-        echo Usando Qwen Code (ultima seleccion)
-        set "TOOL=qwen"
-        goto :SELECTED
-    )
+:: Si no hay guardada o la guardada ya no está disponible, elegir la primera disponible
+if not defined TOOL (
+    if defined HAS_OPENCODE set "TOOL=opencode"
+    if defined HAS_QWEN set "TOOL=qwen"
+    if defined HAS_GEMINI set "TOOL=gemini"
+    if defined HAS_COPILOT set "TOOL=copilot"
 )
 
-if "%TOOL_FROM_CONFIG%"=="gemini" (
-    if defined HAS_GEMINI (
-        echo Usando Gemini CLI (ultima seleccion)
-        set "TOOL=gemini"
-        goto :SELECTED
-    )
+:: Si no hay ninguna herramienta, error
+if not defined TOOL (
+    echo ERROR: No se encuentra ninguna herramienta CLI instalada.
+    echo.
+    echo Instala una de las siguientes:
+    echo   - Opencode:            npm install -g opencode
+    echo   - Qwen Code:           npm install -g @qwen-code/qwen-code
+    echo   - Gemini CLI:          npm install -g @google/gemini-cli
+    echo   - GitHub Copilot CLI:  npm install -g @github/copilot-cli
+    echo.
+    pause
+    exit /b 1
 )
 
-if "%TOOL_FROM_CONFIG%"=="copilot" (
-    if defined HAS_COPILOT (
-        echo Usando GitHub Copilot CLI (ultima seleccion)
-        set "TOOL=copilot"
-        goto :SELECTED
-    )
-)
-
-if "%TOOL_FROM_CONFIG%"=="opencode" (
-    if defined HAS_OPENCODE (
-        echo Usando Opencode CLI (ultima seleccion)
-        set "TOOL=opencode"
-        goto :SELECTED
-    )
-)
-
-REM Construir lista de herramientas disponibles
-set "TOOL_LIST="
-if defined HAS_OPENCODE set "TOOL_LIST=opencode %TOOL_LIST%"
-if defined HAS_QWEN set "TOOL_LIST=%TOOL_LIST% qwen"
-if defined HAS_GEMINI set "TOOL_LIST=%TOOL_LIST% gemini"
-if defined HAS_COPILOT set "TOOL_LIST=%TOOL_LIST% copilot"
-
-REM Contar herramientas disponibles
-set "TOOL_COUNT=0"
-for %%t in (%TOOL_LIST%) do set /a TOOL_COUNT+=1
-
-if %TOOL_COUNT% EQU 0 goto :NO_TOOLS_FOUND
-
-if %TOOL_COUNT% EQU 1 (
-    for %%t in (%TOOL_LIST%) do set "TOOL=%%t"
-    echo %TOOL% detectado
-    goto :SELECTED
-)
-
-echo Herramientas detectadas:%TOOL_LIST%
+:: Mostrar herramientas disponibles (sin guiones)
+echo Herramientas disponibles:
+if defined HAS_OPENCODE echo   opencode
+if defined HAS_QWEN echo   qwen
+if defined HAS_GEMINI echo   gemini
+if defined HAS_COPILOT echo   copilot
 echo.
-set "USER_CHOICE="
-set /p "USER_CHOICE=Que herramienta quieres usar? (opencode/qwen/gemini/copilot) [opencode]: "
-if not defined USER_CHOICE set "USER_CHOICE=opencode"
-set "TOOL_VALID="
-for %%t in (%TOOL_LIST%) do (
-    if /i "%%t"=="%USER_CHOICE%" set "TOOL_VALID=1" & set "TOOL=%%t"
+
+:: Preguntar si quiere cambiar
+set "CAMBIAR="
+set /p "CAMBIAR=Herramienta actual: %TOOL%. ¿Quieres cambiar? (s/n) [n]: "
+if /i "%CAMBIAR%"=="s" (
+    set "TOOL="
+    set /p "TOOL_SEL=Elige herramienta (opencode/qwen/gemini/copilot): "
+    
+    if /i "%TOOL_SEL%"=="opencode" (
+        if defined HAS_OPENCODE set "TOOL=opencode"
+    )
+    if /i "%TOOL_SEL%"=="qwen" (
+        if defined HAS_QWEN set "TOOL=qwen"
+    )
+    if /i "%TOOL_SEL%"=="gemini" (
+        if defined HAS_GEMINI set "TOOL=gemini"
+    )
+    if /i "%TOOL_SEL%"=="copilot" (
+        if defined HAS_COPILOT set "TOOL=copilot"
+    )
+    
+    if not defined TOOL (
+        echo Herramienta no v%LIDA o no disponible. Manteniendo la anterior.
+        :: Recuperar la primera disponible como fallback
+        if defined HAS_OPENCODE set "TOOL=opencode"
+        if defined HAS_QWEN set "TOOL=qwen"
+        if defined HAS_GEMINI set "TOOL=gemini"
+        if defined HAS_COPILOT set "TOOL=copilot"
+    )
 )
-if defined TOOL_VALID goto :SELECTED
-echo Opcion no valida, usando opencode
-set "TOOL=opencode"
-goto :SELECTED
 
-:NO_TOOLS_FOUND
-REM Ninguna herramienta encontrada
-echo.
-echo ERROR: No se encuentra ninguna herramienta CLI
-echo.
-echo Instala uno de los siguientes:
-echo   - Opencode CLI:           npm install -g opencode
-echo   - Qwen Code:              npm install -g @qwen-code/qwen-code
-echo   - Gemini CLI:             npm install -g @google/gemini-cli
-echo   - GitHub Copilot CLI:     npm install -g @github/gh-cli
-echo.
-pause
-exit /b 1
-
-:SELECTED
-REM Guardar la seleccion
+:: Guardar selección
 echo tool=%TOOL% > "%CONFIG_PATH%"
 
-REM Leer el prompt inicial
+:: Asegurar que existe el archivo de prompt
+if not exist "%PROMPT_PATH%" (
+    echo Creando archivo prompt-inicial.txt por defecto...
+    (
+        echo Eres un asistente experto en Formacion Profesional del IES Serra Perenxisa.
+        echo.
+        echo PROCESO - PREGUNTA UNO POR UNO:
+        echo 1. Familia profesional (Informatica/Administracion/Comercio/Turismo)
+        echo 2. Nivel (FPB/GM/GS)
+        echo 3. Ciclo formativo
+        echo 4. Curso (Primero/Segundo)
+        echo 5. Tematica (o "elige tu")
+        echo.
+        echo Al final, genera proyecto completo con contexto, tareas, entregables y metodologia ABP.
+        echo Guarda en: proyectos/[Familia]/[Ciclo]/[Curso]/[NombreProyecto]/proyecto.html
+        echo.
+        echo ^¡Comienza preguntando la familia profesional^!
+    ) > "%PROMPT_PATH%"
+)
+
+:: Leer prompt inicial (usando un archivo temporal para evitar problemas con líneas)
+set "TEMP_PROMPT=%TEMP%\opencode_prompt_%RANDOM%.txt"
+set "FULL_PROMPT_FILE=%TEMP%\full_prompt_%RANDOM%.txt"
+
+:: Copiar el contenido del prompt inicial al archivo temporal
+copy "%PROMPT_PATH%" "%TEMP_PROMPT%" >nul
+
+:: Añadir la información del intérprete al archivo completo
+(
+    type "%TEMP_PROMPT%"
+    echo.
+    echo ---
+    echo INFORMACION DEL INTERPRETE:
+    echo Este script se ejecuta en CMD.exe de Windows.
+    echo Los comandos de shell deben usar sintaxis CMD nativa (no PowerShell ni bash).
+    echo ---
+) > "%FULL_PROMPT_FILE%"
+
+:: Leer el contenido completo del prompt en una variable (limitado a ~8191 caracteres)
+set "FULL_PROMPT="
 setlocal enabledelayedexpansion
-set "INITIAL_PROMPT="
-if exist "%PROMPT_PATH%" (
-    for /f "delims=" %%a in ('type "%PROMPT_PATH%"') do (
-        if defined INITIAL_PROMPT (
-            set "INITIAL_PROMPT=!INITIAL_PROMPT! %%a"
-        ) else (
-            set "INITIAL_PROMPT=%%a"
-        )
+for /f "usebackq delims=" %%i in ("%FULL_PROMPT_FILE%") do (
+    if not defined FULL_PROMPT (
+        set "FULL_PROMPT=%%i"
+    ) else (
+        set "FULL_PROMPT=!FULL_PROMPT! %%i"
     )
 )
-
-if not defined INITIAL_PROMPT (
-    set "INITIAL_PROMPT=Hola! Soy el asistente de generacion de proyectos intermodulares del IES Serra Perenxisa. Por favor, ayudame a generar un proyecto intermodular."
-)
-
-REM Informacion del interprete
-set "INTERPRETER_INFO=^
-
----^
-INFORMACION DEL INTERPRETE:^
-Este script se esta ejecutando en CMD.exe.^
-Los comandos de shell deben usar sintaxis PowerShell (no bash).^
----^
-^"
-
-REM Combinar prompts
-set "FULL_PROMPT=!INITIAL_PROMPT!!INTERPRETER_INFO!"
 
 echo.
 echo Iniciando %TOOL% con prompt interactivo...
 echo.
 
-REM Iniciar la herramienta seleccionada
+:: Ejecutar según la herramienta
 if "%TOOL%"=="opencode" (
-    opencode run "!FULL_PROMPT!"
+    echo.
+    echo ============================================================
+    echo   El prompt ya está cargado en OpenCode TUI.
+    echo   Presiona ENTER para enviarlo y comenzar la conversación.
+    echo ============================================================
+    echo.
+    opencode --prompt "!FULL_PROMPT!"
 ) else if "%TOOL%"=="qwen" (
     qwen -i "!FULL_PROMPT!" -y
 ) else if "%TOOL%"=="gemini" (
@@ -202,4 +177,12 @@ if "%TOOL%"=="opencode" (
 )
 
 endlocal
-exit /b
+
+:: Limpiar archivos temporales
+del "%TEMP_PROMPT%" 2>nul
+del "%FULL_PROMPT_FILE%" 2>nul
+
+echo.
+echo Proceso finalizado.
+pause
+exit /b 0

@@ -1,7 +1,7 @@
 #!/bin/bash
 # Generador de Proyectos Intermodulares
 # IES Serra Perenxisa
-# Versión Linux/bash
+# Versión Linux/bash - Soporte interactivo para opencode con --prompt
 
 # Configurar UTF-8
 export LANG=en_US.UTF-8
@@ -27,28 +27,30 @@ echo -e "\e[90m[DEBUG] Config path: $CONFIG_PATH\e[0m"
 
 # Función para leer la configuración
 get_config_tool() {
-    echo -e "\e[90m[DEBUG] Leyendo configuración desde $CONFIG_PATH\e[0m"
+    echo -e "\e[90m[DEBUG] Leyendo configuración desde $CONFIG_PATH\e[0m" >&2
     if [ -f "$CONFIG_PATH" ]; then
         local config=$(cat "$CONFIG_PATH")
-        echo -e "\e[90m[DEBUG] Contenido config.ini: $config\e[0m"
+        echo -e "\e[90m[DEBUG] Contenido config.ini: $config\e[0m" >&2
         if [[ $config =~ tool[[:space:]]*=[[:space:]]*([a-zA-Z]+) ]]; then
             local tool="${BASH_REMATCH[1]}"
-            echo -e "\e[90m[DEBUG] Tool encontrada: $tool\e[0m"            echo "${tool,,}"  # Convertir a minúsculas
-            return
+            echo -e "\e[90m[DEBUG] Tool encontrada: $tool\e[0m" >&2
+            echo "${tool,,}"  # Convertir a minúsculas
+            return 0
         fi
-        echo -e "\e[90m[DEBUG] No se encontró 'tool=' en el config\e[0m"
+        echo -e "\e[90m[DEBUG] No se encontró 'tool=' en el config\e[0m" >&2
     else
-        echo -e "\e[90m[DEBUG] El archivo config.ini no existe\e[0m"
+        echo -e "\e[90m[DEBUG] El archivo config.ini no existe\e[0m" >&2
     fi
     echo ""
+    return 1
 }
 
 # Función para guardar la configuración
 save_config_tool() {
     local tool=$1
-    echo -e "\e[90m[DEBUG] Guardando tool='$tool' en $CONFIG_PATH\e[0m"
+    echo -e "\e[90m[DEBUG] Guardando tool='$tool' en $CONFIG_PATH\e[0m" >&2
     echo "tool=$tool" > "$CONFIG_PATH"
-    echo -e "\e[90m[DEBUG] Config guardada\e[0m"
+    echo -e "\e[90m[DEBUG] Config guardada\e[0m" >&2
 }
 
 # Detectar si estamos dentro de Qwen, Gemini, Copilot u Opencode
@@ -130,13 +132,15 @@ else
     [ "$has_copilot" = true ] && available_tools+=("copilot")
 
     # Si la última herramienta configurada sigue disponible, usarla
-    for t in "${available_tools[@]}"; do
-        if [ "$last_tool" = "$t" ]; then
-            echo -e "\e[32mUsando $t (última selección)\e[0m"
-            tool="$t"
-            break
-        fi
-    done
+    if [ -n "$last_tool" ]; then
+        for t in "${available_tools[@]}"; do
+            if [ "$last_tool" = "$t" ]; then
+                echo -e "\e[32mUsando $t (última selección)\e[0m"
+                tool="$t"
+                break
+            fi
+        done
+    fi
 
     if [ -z "$tool" ]; then
         if [ ${#available_tools[@]} -eq 0 ]; then
@@ -183,13 +187,12 @@ fi
 save_config_tool "$tool"
 
 # Leer el prompt inicial desde el archivo prompt-inicial.txt
-# Esto permite que cualquier modificacion en el archivo se refleje automaticamente
 echo -e "\e[90m[DEBUG] Leyendo prompt desde $PROMPT_PATH\e[0m"
 if [ -f "$PROMPT_PATH" ]; then
     initial_prompt=$(cat "$PROMPT_PATH")
     echo -e "\e[90m[DEBUG] Prompt cargado correctamente desde prompt-inicial.txt\e[0m"
 else
-    echo -e "\e[33m[WARNING] No se encontro prompt-inicial.txt, usando prompt por defecto\e[0m"
+    echo -e "\e[33m[WARNING] No se encontró prompt-inicial.txt, usando prompt por defecto\e[0m"
     initial_prompt="Hola! Soy el asistente de generacion de proyectos intermodulares del IES Serra Perenxisa. Por favor, ayudame a generar un proyecto intermodular."
 fi
 
@@ -201,17 +204,21 @@ echo ""
 interpreter_info="
 ---
 ℹ️ INFORMACIÓN DEL INTÉRPRETE:
-Este script se está ejecutando en bash ($(bash --version | head -n1)).
+Este script se está ejecutando en bash ($(bash --version | head -n1 | cut -d' ' -f4)).
 Los comandos de shell deben usar sintaxis bash (no PowerShell).
 ---"
 
 # Combinar el prompt inicial con la información del intérprete
-full_prompt="$initial_prompt $interpreter_info"
+full_prompt="$initial_prompt"$'\n\n'"$interpreter_info"
 
-# Iniciar la herramienta seleccionada en modo interactivo con el prompt y YOLO
+# Iniciar la herramienta seleccionada
 if [ "$tool" = "opencode" ]; then
-    echo -e "\e[90m[DEBUG] Lanzando 'opencode run ...'...\e[0m"
-    opencode run "$full_prompt"
+    # Opencode: usar --prompt para abrir TUI con el mensaje precargado
+    echo -e "\e[90m[DEBUG] Lanzando 'opencode --prompt ...' (TUI interactivo)\e[0m"
+    echo -e "\e[32m✅ El prompt ya está escrito. Presiona ENTER para enviarlo a la IA.\e[0m"
+    echo -e "\e[32m💡 Luego podrás seguir respondiendo a sus preguntas.\e[0m"
+    echo ""
+    opencode --prompt "$full_prompt"
 elif [ "$tool" = "qwen" ]; then
     echo -e "\e[90m[DEBUG] Lanzando 'qwen -i ... -y'...\e[0m"
     qwen -i "$full_prompt" -y
@@ -223,4 +230,4 @@ elif [ "$tool" = "copilot" ]; then
     copilot -i "$full_prompt" --yolo
 fi
 
-exit
+exit 0

@@ -67,7 +67,7 @@ La aplicación está diseñada para ser utilizada de forma interactiva a través
 | **Opencode CLI** | `npm install -g opencode` | [opencode.ai](https://opencode.ai) |
 | **Gemini CLI** | `npm install -g @google/gemini-cli` | [Google AI](https://aistudio.google.com/) |
 | **Qwen Code** | `npm install -g @qwen-code/qwen-code` | [Alibaba Qwen](https://dashscope.console.aliyun.com/) |
-| **GitHub Copilot CLI** | `npm install -g @github/gh-cli` | [GitHub Copilot](https://github.com/copilot) |
+| **GitHub Copilot CLI** | `npm install -g @githubnext/github-copilot-cli` | [GitHub Copilot](https://github.com/copilot) |
 
 > **⚠️ Importante:** Necesitas configurar una API Key para la herramienta que elijas. Consulta el [Tutorial de Instalación](./TutorialInstalacion.md) para más detalles.
 
@@ -90,8 +90,8 @@ La aplicación está diseñada para ser utilizada de forma interactiva a través
    .\Iniciar-Asistente.bat
    ```
 
-2. **El asistente detectará automáticamente** tu entorno (Opencode, Gemini, Qwen o Copilot) y te pedirá los datos del proyecto uno a uno:
-   - Familia profesional (Informática, Administración o Comercio)
+2. **El asistente detectará automáticamente** tu entorno (dentro de Opencode, Gemini, Qwen o Copilot) y las herramientas CLI instaladas, guardando tu elección en `config.ini` para la próxima vez. Te pedirá los datos del proyecto uno a uno:
+   - Familia profesional (Informática, Administración, Comercio o Turismo)
    - Ciclo formativo (ASIR, DAM, DAW, SMR, GM-ADM, GS-ADMF, GS-ASID, etc.)
    - Curso (Primero o Segundo)
    - Temática deseada
@@ -101,6 +101,12 @@ La aplicación está diseñada para ser utilizada de forma interactiva a través
 4. **Abre el archivo** `proyecto.html` generado directamente en tu navegador para ver el resultado
 
 > **📖 Para más detalles:** Consulta el [Tutorial de Uso](./TutorialUso.md) con ejemplos prácticos y solución de problemas.
+
+### 🔧 Personalización avanzada
+
+- **`prompt-inicial.txt`**: Edita este archivo para cambiar el prompt base que se envía a la IA al iniciar.
+- **`config.ini`**: Guarda la última herramienta CLI seleccionada para no tener que elegir cada vez.
+- **Información del intérprete**: Los scripts añaden automáticamente al prompt si estás en PowerShell, CMD o Bash, para que la IA genere comandos compatibles con tu terminal.
 
 ## ✨ Estándar Visual "Premium Pro"
 
@@ -158,7 +164,9 @@ El script creará un archivo ZIP con todos los archivos necesarios listo para su
 - **[IES Serra Perenxisa](https://iesserraperenxisa.es)** - Web del centro educativo
 
 ---
-**Versión:** 3.3 (Premium Pro Edition - Con Tutoriales)
+**Versión:** 3.4 (Premium Pro Edition - Scripts mejorados)
 **Centro:** IES Serra Perenxisa
 **Autor:** Sergio García
 **CLIs Soportados:** Opencode CLI, Gemini CLI, Qwen Code, GitHub Copilot CLI
+**Auto-detección:** Los scripts detectan automáticamente tu entorno y herramientas instaladas
+**Personalización:** Edita `prompt-inicial.txt` para cambiar el prompt base

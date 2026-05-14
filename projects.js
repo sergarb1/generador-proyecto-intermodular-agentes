@@ -174,6 +174,20 @@ const PROJECTS = [
         url: "./proyectos/01-Informatica/DAW/Segundo/SEGUNDO-DAW-PLATAFORMA-EVENTOS/proyecto.html"
     },
 
+    // FPB Informática de Oficina - Segundo (Domótica)
+    {
+        id: "fpb-io-domotica-aula",
+        title: "Sistema de Domótica para el Aula Inteligente",
+        family: "Informática",
+        cycle: "FPB",
+        course: "Segundo Curso",
+        emoji: "🌡️",
+        gradient: "from-orange-500 to-red-600",
+        category: "purple",
+        description: "Sistema de domótica educativa con Arduino Uno que enciende un ventilador al superar los 26°C y activa luz+sonido 3 minutos antes del final de clase.",
+        url: "./proyectos/01-Informatica/INFORMATICA-OFICINA/Segundo/SEGUNDO-FPB-IO-DOMOTICA-AULA/proyecto.html"
+    },
+
     // ==================== COMERCIO ====================
 
     // FPB Servicios Comerciales - Segundo

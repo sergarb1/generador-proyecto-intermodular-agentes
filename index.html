@@ -198,10 +198,16 @@
                         <div class="flex-shrink-0 w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg">1</div>
                         <div class="flex-1 bg-white rounded-2xl p-6 shadow-md">
                             <h4 class="font-bold text-lg text-slate-800 mb-2">Recopilación de Datos</h4>
-                            <p class="text-slate-600 mb-3">El sistema pregunta al usuario:</p>
+                            <p class="text-slate-600 mb-3">Ejecuta el script correspondiente a tu SO y el asistente IA te guiará:</p>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                <code class="bg-slate-100 px-3 py-1 rounded text-sm">./Iniciar-Asistente.ps1</code>
+                                <code class="bg-slate-100 px-3 py-1 rounded text-sm">./Iniciar-Asistente.sh</code>
+                                <code class="bg-slate-100 px-3 py-1 rounded text-sm">.\Iniciar-Asistente.bat</code>
+                            </div>
+                            <p class="text-slate-600 mb-3">El script <strong>detecta automáticamente</strong> tu herramienta CLI (Opencode, Gemini, Qwen, Copilot), persiste la elección en <code>config.ini</code> y carga el prompt base desde <code>prompt-inicial.txt</code>. Luego pregunta al usuario:</p>
                             <ul class="text-sm text-slate-500 space-y-1">
-                                <li>• Familia profesional (Informática / Administración / Comercio)</li>
-                                <li>• Ciclo formativo (ASIR, DAM, DAW, SMR, GM-ADM, GS-ASID, Comercio...)</li>
+                                <li>• Familia profesional (Informática / Administración / Comercio / Turismo)</li>
+                                <li>• Ciclo formativo (ASIR, DAM, DAW, SMR, etc.)</li>
                                 <li>• Curso (Primero / Segundo)</li>
                                 <li>• Temática concreta (opcional)</li>
                             </ul>
@@ -520,16 +526,17 @@
                         Integración con GitHub Copilot, el asistente IA de GitHub powered by OpenAI.
                     </p>
                     <code class="block bg-white p-3 rounded-lg text-xs text-slate-700 overflow-x-auto">
-                        npm install -g @github/gh-cli
+                        npm install -g @githubnext/github-copilot-cli
                     </code>
                 </div>
             </div>
             
             <div class="max-w-3xl mx-auto mt-12 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-6">
                 <p class="text-sm text-blue-900">
-                    <strong>💡 Tip:</strong> El sistema detecta automáticamente qué herramientas tienes instaladas y te permite elegir. 
-                    Solo necesitas tener instalada una de ellas para empezar. Si tienes múltiples instaladas, 
-                    podrás elegir cuál usar en cada sesión.
+                    <strong>💡 Tip:</strong> Los scripts <code>Iniciar-Asistente.*</code> detectan automáticamente tu entorno 
+                    (dentro de la CLI o herramientas instaladas) y persisten la elección en <code>config.ini</code>. 
+                    También añaden al prompt la información del intérprete (PowerShell / CMD / Bash) para que la IA 
+                    genere comandos compatibles. Puedes personalizar el prompt base editando <code>prompt-inicial.txt</code>.
                 </p>
             </div>
         </div>
@@ -627,7 +634,7 @@
                     siempre que des atribución y compartas bajo la misma licencia.
                 </p>
                 <p class="mt-4 text-xs text-slate-500">
-                    <strong>Versión 3.3:</strong> Soporta Opencode CLI, Gemini CLI, Qwen Code y GitHub Copilot CLI
+                    <strong>Versión 3.4:</strong> Asistentes mejorados con auto-detección de entorno, config.ini persistente y prompt-inicial.txt personalizable
                 </p>
             </div>
         </div>
