@@ -80,6 +80,13 @@ Iniciar-Asistente.bat
 
 Si prefieres usar directamente tu herramienta de IA:
 
+#### Con Opencode CLI (Recomendado)
+
+```bash
+cd /ruta/al/proyecto
+opencode run "<prompt-inicial>"
+```
+
 #### Con Gemini CLI
 
 ```bash

@@ -3,20 +3,26 @@
 ## Para gente con prisa 👋
 
 ### ¿Qué necesitas?
-- **Qwen Code** (gratis) - Se instala en 1 minuto
+- **Opencode CLI** o **Qwen Code** (gratis) - Se instalan en 1 minuto
 
 ### ¿Qué haces?
-1. Instalas Qwen
+1. Instalas Opencode o Qwen
 2. Ejecutas el script
 3. Respondes 4 preguntas
 4. ¡Proyecto listo!
 
 ---
 
-## Paso 1: Instalar Qwen Code
+## Paso 1: Instalar una herramienta CLI
 
 Abre **PowerShell** (como administrador) y ejecuta:
 
+**Opencode CLI (Recomendada):**
+```powershell
+npm install -g opencode
+```
+
+**O Qwen Code (Alternativa):**
 ```powershell
 npm install -g @qwen-code/qwen-code
 ```

@@ -399,7 +399,7 @@
                             <ul class="text-sm text-slate-500 space-y-1">
                                 <li>• Requisitos previos</li>
                                 <li>• Descarga del proyecto</li>
-                                <li>• Instalación de Gemini CLI, Qwen Code o Copilot</li>
+                                <li>• Instalación de Opencode CLI, Gemini CLI, Qwen Code o Copilot</li>
                                 <li>• Configuración de API Keys</li>
                                 <li>• Verificación de la instalación</li>
                             </ul>
@@ -471,7 +471,20 @@
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <!-- Opencode CLI -->
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-200 card-hover text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center text-white text-4xl mb-4 mx-auto">⚡</div>
+                    <h4 class="font-bold text-xl text-green-800 mb-2">Opencode CLI</h4>
+                    <p class="text-sm text-green-600 mb-6">CLI Agent nativo</p>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Asistente IA conversacional que ejecuta tareas directamente desde la terminal. Sin suscripción.
+                    </p>
+                    <code class="block bg-white p-3 rounded-lg text-xs text-slate-700 overflow-x-auto">
+                        npm install -g opencode
+                    </code>
+                </div>
+
                 <!-- Gemini CLI -->
                 <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border-2 border-blue-200 card-hover text-center">
                     <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center text-white text-4xl mb-4 mx-auto">🔮</div>
@@ -614,7 +627,7 @@
                     siempre que des atribución y compartas bajo la misma licencia.
                 </p>
                 <p class="mt-4 text-xs text-slate-500">
-                    <strong>Versión 3.1:</strong> Soporta Gemini CLI, Qwen Code y GitHub Copilot CLI
+                    <strong>Versión 3.3:</strong> Soporta Opencode CLI, Gemini CLI, Qwen Code y GitHub Copilot CLI
                 </p>
             </div>
         </div>

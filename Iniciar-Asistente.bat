@@ -19,11 +19,13 @@ REM Detectar entornos
 set "IS_QWEN="
 set "IS_GEMINI="
 set "IS_COPILOT="
+set "IS_OPENCODE="
 
 if defined QWEN_CODE set "IS_QWEN=1"
 if defined QWEN_CLI set "IS_QWEN=1"
 if defined GEMINI_CLI set "IS_GEMINI=1"
 if defined GITHUB_COPILOT_CLI set "IS_COPILOT=1"
+if defined OPENCODE set "IS_OPENCODE=1"
 
 REM Detectar herramientas disponibles
 set "HAS_QWEN="
@@ -33,6 +35,7 @@ set "HAS_COPILOT="
 where qwen >nul 2>&1 && set "HAS_QWEN=1"
 where gemini >nul 2>&1 && set "HAS_GEMINI=1"
 where gh >nul 2>&1 && set "HAS_COPILOT=1"
+where opencode >nul 2>&1 && set "HAS_OPENCODE=1"
 
 echo.
 echo Detectando entorno...
@@ -53,6 +56,12 @@ if defined IS_GEMINI (
 if defined IS_COPILOT (
     echo Ejecutando dentro de GitHub Copilot CLI
     set "TOOL=copilot"
+    goto :SELECTED
+)
+
+if defined IS_OPENCODE (
+    echo Ejecutando dentro de Opencode CLI
+    set "TOOL=opencode"
     goto :SELECTED
 )
 
@@ -88,82 +97,54 @@ if "%TOOL_FROM_CONFIG%"=="copilot" (
     )
 )
 
-REM Ambos/Tres disponibles o ninguno configurado
-if defined HAS_QWEN (
-    if defined HAS_GEMINI (
-        if defined HAS_COPILOT (
-            echo Herramientas detectadas: Qwen Code, Gemini CLI y GitHub Copilot CLI
-            echo.
-            choice /C QGC /N /M "Que herramienta quieres usar? (Q=Qwen, G=Gemini, C=Copilot) [Qwen]: "
-            if errorlevel 3 (
-                set "TOOL=copilot"
-            ) else if errorlevel 2 (
-                set "TOOL=gemini"
-            ) else (
-                set "TOOL=qwen"
-            )
-            goto :SELECTED
-        )
-        echo Herramientas detectadas: Qwen Code y Gemini CLI
-        echo.
-        choice /C QGC /N /M "Que herramienta quieres usar? (Q=Qwen, G=Gemini, C=Copilot) [Qwen]: "
-        if errorlevel 3 (
-            set "TOOL=copilot"
-        ) else if errorlevel 2 (
-            set "TOOL=gemini"
-        ) else (
-            set "TOOL=qwen"
-        )
+if "%TOOL_FROM_CONFIG%"=="opencode" (
+    if defined HAS_OPENCODE (
+        echo Usando Opencode CLI (ultima seleccion)
+        set "TOOL=opencode"
         goto :SELECTED
     )
-    if defined HAS_COPILOT (
-        echo Herramientas detectadas: Qwen Code y GitHub Copilot CLI
-        echo.
-        choice /C QGC /N /M "Que herramienta quieres usar? (Q=Qwen, G=Gemini, C=Copilot) [Qwen]: "
-        if errorlevel 3 (
-            set "TOOL=copilot"
-        ) else if errorlevel 2 (
-            set "TOOL=gemini"
-        ) else (
-            set "TOOL=qwen"
-        )
-        goto :SELECTED
-    )
-    echo Qwen Code detectado
-    set "TOOL=qwen"
+)
+
+REM Construir lista de herramientas disponibles
+set "TOOL_LIST="
+if defined HAS_OPENCODE set "TOOL_LIST=opencode %TOOL_LIST%"
+if defined HAS_QWEN set "TOOL_LIST=%TOOL_LIST% qwen"
+if defined HAS_GEMINI set "TOOL_LIST=%TOOL_LIST% gemini"
+if defined HAS_COPILOT set "TOOL_LIST=%TOOL_LIST% copilot"
+
+REM Contar herramientas disponibles
+set "TOOL_COUNT=0"
+for %%t in (%TOOL_LIST%) do set /a TOOL_COUNT+=1
+
+if %TOOL_COUNT% EQU 0 goto :NO_TOOLS_FOUND
+
+if %TOOL_COUNT% EQU 1 (
+    for %%t in (%TOOL_LIST%) do set "TOOL=%%t"
+    echo %TOOL% detectado
     goto :SELECTED
 )
 
-if defined HAS_GEMINI (
-    if defined HAS_COPILOT (
-        echo Herramientas detectadas: Gemini CLI y GitHub Copilot CLI
-        echo.
-        choice /C QGC /N /M "Que herramienta quieres usar? (Q=Qwen, G=Gemini, C=Copilot) [Gemini]: "
-        if errorlevel 3 (
-            set "TOOL=copilot"
-        ) else if errorlevel 2 (
-            set "TOOL=gemini"
-        ) else (
-            set "TOOL=qwen"
-        )
-        goto :SELECTED
-    )
-    echo Gemini CLI detectado
-    set "TOOL=gemini"
-    goto :SELECTED
+echo Herramientas detectadas:%TOOL_LIST%
+echo.
+set "USER_CHOICE="
+set /p "USER_CHOICE=Que herramienta quieres usar? (opencode/qwen/gemini/copilot) [opencode]: "
+if not defined USER_CHOICE set "USER_CHOICE=opencode"
+set "TOOL_VALID="
+for %%t in (%TOOL_LIST%) do (
+    if /i "%%t"=="%USER_CHOICE%" set "TOOL_VALID=1" & set "TOOL=%%t"
 )
+if defined TOOL_VALID goto :SELECTED
+echo Opcion no valida, usando opencode
+set "TOOL=opencode"
+goto :SELECTED
 
-if defined HAS_COPILOT (
-    echo GitHub Copilot CLI detectado
-    set "TOOL=copilot"
-    goto :SELECTED
-)
-
+:NO_TOOLS_FOUND
 REM Ninguna herramienta encontrada
 echo.
-echo ERROR: No se encuentra Qwen, Gemini o Copilot
+echo ERROR: No se encuentra ninguna herramienta CLI
 echo.
 echo Instala uno de los siguientes:
+echo   - Opencode CLI:           npm install -g opencode
 echo   - Qwen Code:              npm install -g @qwen-code/qwen-code
 echo   - Gemini CLI:             npm install -g @google/gemini-cli
 echo   - GitHub Copilot CLI:     npm install -g @github/gh-cli
@@ -210,7 +191,9 @@ echo Iniciando %TOOL% con prompt interactivo...
 echo.
 
 REM Iniciar la herramienta seleccionada
-if "%TOOL%"=="qwen" (
+if "%TOOL%"=="opencode" (
+    opencode run "!FULL_PROMPT!"
+) else if "%TOOL%"=="qwen" (
     qwen -i "!FULL_PROMPT!" -y
 ) else if "%TOOL%"=="gemini" (
     gemini -i "!FULL_PROMPT!" -y

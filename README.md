@@ -64,6 +64,7 @@ La aplicación está diseñada para ser utilizada de forma interactiva a través
 
 | Herramienta | Comando de Instalación | URL |
 |-------------|----------------------|-----|
+| **Opencode CLI** | `npm install -g opencode` | [opencode.ai](https://opencode.ai) |
 | **Gemini CLI** | `npm install -g @google/gemini-cli` | [Google AI](https://aistudio.google.com/) |
 | **Qwen Code** | `npm install -g @qwen-code/qwen-code` | [Alibaba Qwen](https://dashscope.console.aliyun.com/) |
 | **GitHub Copilot CLI** | `npm install -g @github/gh-cli` | [GitHub Copilot](https://github.com/copilot) |
@@ -89,7 +90,7 @@ La aplicación está diseñada para ser utilizada de forma interactiva a través
    .\Iniciar-Asistente.bat
    ```
 
-2. **El asistente detectará automáticamente** tu entorno (Gemini, Qwen o Copilot) y te pedirá los datos del proyecto uno a uno:
+2. **El asistente detectará automáticamente** tu entorno (Opencode, Gemini, Qwen o Copilot) y te pedirá los datos del proyecto uno a uno:
    - Familia profesional (Informática, Administración o Comercio)
    - Ciclo formativo (ASIR, DAM, DAW, SMR, GM-ADM, GS-ADMF, GS-ASID, etc.)
    - Curso (Primero o Segundo)
@@ -157,7 +158,7 @@ El script creará un archivo ZIP con todos los archivos necesarios listo para su
 - **[IES Serra Perenxisa](https://iesserraperenxisa.es)** - Web del centro educativo
 
 ---
-**Versión:** 3.2 (Premium Pro Edition - Con Tutoriales)
+**Versión:** 3.3 (Premium Pro Edition - Con Tutoriales)
 **Centro:** IES Serra Perenxisa
 **Autor:** Sergio García
-**CLIs Soportados:** Gemini CLI, Qwen Code, GitHub Copilot CLI
+**CLIs Soportados:** Opencode CLI, Gemini CLI, Qwen Code, GitHub Copilot CLI

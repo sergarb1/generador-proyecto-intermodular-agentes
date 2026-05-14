@@ -74,7 +74,7 @@ cd generador-proyecto-intermodular-agentes
 
 ## Instalación de Herramientas de IA
 
-El sistema funciona con **cualquiera** de estas herramientas de IA. Solo necesitas instalar **UNA** de ellas.
+El sistema funciona con **cualquiera** de estas herramientas de IA. Solo necesitas instalar **UNA** de ellas. La herramienta recomendada es **Opencode CLI** por su facilidad de uso y coste cero.
 
 ### 🔮 Opción A: Gemini CLI (Recomendada)
 
@@ -192,6 +192,26 @@ gh copilot suggest
 
 ---
 
+### ⚡ Opción D: Opencode CLI
+
+**Opencode CLI - Asistente IA conversacional para terminal**
+
+#### Paso 1: Instalar Opencode CLI
+
+```bash
+npm install -g opencode
+```
+
+#### Paso 2: Verificar Instalación
+
+```bash
+opencode --version
+```
+
+> **Nota:** Opencode CLI funciona sin necesidad de API Key adicional. Es gratuito y no requiere suscripción.
+
+---
+
 ## Configuración del Entorno
 
 ### Paso 1: Verificar Estructura de Carpetas
@@ -249,6 +269,7 @@ Completa esta lista para asegurarte de que todo está correcto:
 - [ ] **npm instalado** → `npm --version` muestra 9+
 - [ ] **Git instalado** → `git --version` funciona
 - [ ] **Al menos una herramienta de IA instalada**:
+  - [ ] `opencode --version` funciona, O
   - [ ] `gemini --version` funciona, O
   - [ ] `qwen --version` funciona, O
   - [ ] `gh --version` funciona
@@ -334,6 +355,7 @@ npm install
 
 ## Recursos Adicionales
 
+- [Documentación de Opencode CLI](https://opencode.ai)
 - [Documentación de Gemini CLI](https://github.com/google-gemini/gemini-cli)
 - [Documentación de Qwen Code](https://github.com/alibaba/qwen-code)
 - [Documentación de GitHub Copilot](https://docs.github.com/en/copilot)
